@@ -2,12 +2,13 @@
 
 * Central Protagonists: Kyou Kirisaki, Inoue Shinozaki
 * Victim: Kyou Kirisaki
-* Cause of Death: Burned alive
+* Cause of Death: Burned Alive
 * Suspect: Sayo Ronoroa, Inoue Shinozaki
 * Word Count Goal: 35,000 words
 * Estimated Length: 2-3 hours
 * Central Arc Focus: The Labyrinth
 * Nursery Rhyme: Ring Around The Rosie
+* Inspired By: Higurashi No Naku Koro Ni, Virtue's Last Reward, Silent Hill
 
 * Scene Outline:
 - Prologue: The story opens at night at Maria St. Claire Institute. A night guard making his rounds spots a female student in the storage room performing an occultic ritual and is half-crazed. Fast-forward one year where ten interconnected deaths are being reported.
@@ -17,6 +18,34 @@
 - President: Sayo Ronoroa
 - Auditor: Akira Ichibana
 - P.I.O: Watanabe
+
+* Principal: Mrs. Sokoguchi
+
+* Advisers
+- IV-A: Ms. Ishii Harada
+- IV-C: Mrs. Ren Kanako
+
+* Science Club
+- President: Kyou Kirisaki
+- Vice President: Sumiko Tokubei
+- Secretary: Ichirou Yokohama
+
+* Mathematics Club
+- President: Inoue Shinozaki
+- Vice Presdient: Miyu Hirano
+- Treasurer: Hikaru Yamamoto
+
+* English Club
+- President: Ayumi Nakashima
+
+* Police Investigative Authorities
+- Inspector Harold Emmerich
+- Sergeant Deitch
+
+* Other Characters
+- Ikari Suzumoto
+- Tomonori Shinozaki
+- Akane Yuuichi
 
 * Sacred Heart Curse Killings Victim List
 - June:			Fuujo Rikiyama
@@ -30,9 +59,70 @@
 - February:		Ayanami Hayashibara
 - March:		Kugimiya Oizumi
 
+* Red Herrings
+- Sayo narrating the latter part of the June 18, 2013 section - her catchphrase is present, despite the whole thing narrated in the Third-Person perspective. In truth, this is just meant to throw off readers in case they do not realize the similarity of events happening at the same time.
+- The letters sent by L.C. (Let Carnegie) to the two prisoners seem to have an undertone that incriminates the other by giving away information only they would know (unless they were in a gathering). This is an antithesis of the Prisoner's Dilemma, both in having the two participants unaware of the other player's identity and having incriminating evidence overall!
+- While Kyou's brief recollection establishes the culprit's identity coming from eight of the protagonists, leaving Miyu out, this is actually a brilliant plan spun by Miyu himself.
+- The painting connected to the alternate lyrics to Au Clair De La Lune appears during Inoue's side of the living room. Again, it seems to foreshadow her death if you look at the English lyrics. Averted later on... for now.
+- Kyou starts getting detached to reality after he gets his finger pricked by a syringe. Of course, the trance earlier debunks that.
+- In case you didn't get it, both the living quarter segments for Kyou and Inoue end up with them dying... not for reals, of course.
+- There are two large wires hanging from the ceiling JUST ABOVE the sedimentation pool. Of course, these don't do anything to Inoue... EVER.
+- L.C. (Miyu) says that he can't recall stating any rules between him and Inoue, leading us (and her, by extension) to believe that she was clean... UP TO THAT POINT. While Kyou is burning, Inoue is contacted by L.C. again, only this time to say "Rules are rules." Just goes to show how naive Inoue is taking things at face value.
+- The narrative makes us want to think that the Minotaur is disguised as Inoue, starting with her sudden silence when Kyou asks her about it. From there, it just becomes gradually worse. Even she is framed for Kyou's murder... BY HERSELF.
+
+* Hallucinations
+- Inoue: The entirety of the living quarters -- corpse, painting, and her entrance.
+- Inoue: The chase between her and the Minotaur.
+- Inoue: After solving the water tank puzzle to reach the keycard, the water drains slightly and is replaced with blood... eventually including bits of flesh. In addition, various scary images appear on the surface -- more references to the Bubonic Plague.
+- Kyou: The chase between him and the Minotaur.
+- Kyou: The small chain of events prior to his near-incapacitation in the Chemistry Lab. He suspects Inoue as a disguise for the monster.
+- Kyou: Ring around the rosie... Pocket full of posies... Ashes... Ashes... We all fall down...
+
+* Foreshadowing
+- The prologue gives us an idea what the ending would be like.
+- It's not noticeable at first, but the presence of the book of music sheets gives us the identity of the culprit.
+- Akira is a bad secret keeper - this is a point that will be used against him several times later leading to his demise. Of course, Miyu was listening in on Sumiko and Akira's conversation so he knows about this fact. Keyword: chips - casino chips.
+- Rika Suzumiya's death is given special attention in this chapter. The equivalent of her death to "Ten Little Indians" is a red herring. Cue Inoue drowning and ACTUALLY surviving despite her convincing death in the Labyrinth.
+- All this talk about a "catalyst" seems to apply only with Suzumoto after she's found half-crazed in the storage room. However, L.C. (Miyu) specifically points out in his letter asking Kyou, "What is a 'catalyst' in your sense?" He's basically saying, "Did you know that I'll go after you FIRST?" Kyou pieces the whole letter's message together and basically tells Inoue (and the audience) that he knows he's going to die.
+- The solution to the puzzle in Inoue's cell is replicating the notes of Au Clair De La Lune, second verse. So how does it go? "Go to the neighbor's,/I think she's there/Because in her kitchen/Someone is lighting the fire." Yeah...
+- Kyou is bleeding on his crown after having several shelves topple over his head during his hallucination. His companion in the Labyrinth is Inoue, whose death is connected to "Jack and Jill." "Jack fell down and broke his crown and Jill came tumbling after."
+- Agatha Christie's "The Moving Finger" is the sixth book in the living quarter's book set. This is the basis for the plot of the November chapter.
+- The appearance of two cow paintings foreshadow the "Minotaur" hallucination of Kyou later on. Even made more blatant with Inoue ACTUALLY seeing a painting with the Minotaur as subject.
+- "I can vouch for her innocence." That is entirely TRUE, including Miyu's statement that Akira arrived after him. Obviously because he abducted Kyou and Inoue without anyone knowing.
+- There's a warning tag on the paper Inoue finds that says, "Explosion risk - Do not overload tanks. Limit pressure to 100 psi." Near the middle of the second nightmare sequence... BOOM! Though, this isn't enough to kill Inoue.
+- L.C. slightly skewing Sayo's catchphrase in his last (not really) message to Inoue is meant to incriminate the latter. Of course, this is what happens for the rest of the first half.
+- Notice how Sumiko gets mentioned frequently by Kyou whenever Science-related things come up. This is meant to signify that HE is the only one among the protagonists who can tell the effects and properties of the hallucinogens (particularly Ketamine) used by Miyu.
+- Speaking of rule-breaking, Inoue does by sharing all of her experiences with Kyou, who then gets killed through another mental breakdown. Of course, L.C. (Miyu) was never lying to both. In Chapter 5, Inoue DOES get personally killed by Miyu, the latter knowing that she couldn't keep her mouth shut.
+
+* Puzzles (Yes! The cryptic-shit puzzles from The Hunter's Mansion return in their full glory)
+- Kyou's Cell/ Dvorak Keyboard Puzzle: The Dvorak keyboard needs an input "EASY" to grant access. This is not that easy, however, as it requires knowledge of the QWERTY keyboard. Kyou is supposed to write the QWERTY keys over the Dvorak keyboard to get the corresponding parallels of both keyboards (EASY -> .AOF). He'd then have to type the equivalent positions of the letters from the QWERTY keyboard to the Dvorak (VARU). Gosh!
+- Inoue's Cell/ Piano Puzzle: This is straight-forward. Just look up a music sheet of "Au Clair De La Lune's" second verse. Then, play the notes as they appear in the music sheet.
+- Living Quarters/ Ten Books Puzzle (Kyou): The ink is a red herring; rather, the solution lies on the painting's side. First, the ten books are detailed by Kyou, in which he must read a certain number of them as the painting dictates. Meaning, Q/9 first, then books 1, 3, 4, and 7. The message is as follows: "Don't go check table tree" (Don't check the bonsai). Of course, Kyou ignores the Q (pronounced as "Kyu" or 9; it's his name, dammit!) and checks anyway. Well...
+- Sedimentary Pool/ Water Tank Puzzle (Inoue): The paper in the wetsuit describes values needed to initiate the water purification process (and partially drain the pool water). Each whole turn of a certain valve pressurizes or depressurizes all tanks. Here are the ff. amounts of pressure applied on all tanks per valve turn (in tank order):
+	+ Small Valve:	+25 psi | +40 psi | +10 psi
+	+ Medium Valve:	+20 psi | -10 psi | +35 psi
+	+ Large Valve:	-15 psi | +20 psi | -45 psi
+The solution: S-S-M-M-L-M-L-M (100 psi | 80 psi | 70 psi)
+
+* Ten Books
+- Book 1: English-Japanese Dictionary
+- Book 2: Japanese Culture
+- Book 3: Diseases and History of Major Epidemics
+- Book 4: Quantum Mechanics
+- Book 5: Greek Mythology and Legends
+- Book 6: The Moving Finger
+- Book 7: Nursery Rhyme Collection
+- Book 8: Grimms' Fairy Tales
+- Book 9: Philosophical Investigations
+- Book 10: Philosophical Writings
+
+* Philosophical Concepts
+- Solipsism
+- Prisoner's Dilemma
+
 * The girl's name in the beginning is Ikari Suzumoto, pleading a bargain to the supposed supernatural force that is instigating the fateful curse killings.
 * Take note of the details of Kugimiya Oizumi's death in the prologue. Later, when Sayo and Inoue exchange information about the past curse killings, you'll realize that the first letter of her name is part of another name: FURUDE RIKA. Why is the A and K switched? It's a subtle bit of foreshadowing later in the endgame.
-* On the subject of anagrams, Suzumoto's surname is part of one: BERNKASTEL. Again, the inscriptions on her hands are clues and lead-ins to the key riddle to be revealed at the endgame.
+* On the subject of anagrams, Suzumoto's surname is part of one: BERNKASTEL. Again, the inscriptions on her hands are clues and lead-ins to the key riddle to be revealed at the endgame; that is, "What's left must be in order, what's right is in order."
 * The poker thing plays a large part in connecting "The Hunter's Mansion" and "Death Roulette." While it might be irrelevant now, a few games with Sayo can reveal how the culprit is making his moves, much like Erika in the former. That's right, "his."
 * Furthermore, the reveal of Sayo's secret hobby foreshadows what will become of her later on: a Designated Villain, a gambit made to catch the real culprit.
 * Note that Akira is the first protagonist who has First Person POV. However, he is not one of the central protagonists of the chapter. This can happen to other protagonists as well, having a short spotlight.
@@ -40,7 +130,30 @@
 * Take note of this order, starting from Ichirou: Ichirou, Kyou, Hiroshi, Miyu, Sayo, Inoue, Hikaru, Sumiko, Akira, and Yoshiro.
 * It helps to know that the UNO game shows the order in which the protagonists will be killed based on the last numbered card they placed. Subverted by Miyu, who drops a 0.
 * The book of music sheets belonging to Sayo contains some nursery rhymes. Later on, these nursery rhymes will become the basis of the ten murders throughout the story.
-* It's not noticeable at first, but the presence of the book of music sheets gives us the identity of the culprit.
 * So how to explain the phone call between Sayo and Inoue? Simple. Miyu was listening in on their conversation beforehand. There are warning signs during the phone conversation itself that lead to that idea. For example, "I can think of better ways that those."
 * Enumerate the number of accidents in the Sacred Heart Curse Killings - they outnumber those involving foul play. They make a series of curse killings, indeed. The next set, the Death Roulette Curse Killings, obviously invokes murder as manifested in the manner of the victims' deaths.
 * Notice this: The chapter's central protagonists have no short introduction, unlike the eight that preceded them.
+* Why is Inoue and Kyou making a fuss of the previous Curse Killings? Easy. It's to give an idea how the investigations will play out. It's also to foreshadow who will die in the chapter.
+* There's now a reason why Kyou will become one of the targets of the culprit besides Inoue. Kyou noticed a discrepancy in Sayo's manner of conversing, both through personal expreience and through Inoue's story.
+* The penultimate scene before the murders start establishes Sayo and a few classmates as members of a Youth Group. The montage at the start of the actual vigil shows the ten protagonists' last actions early that evening - before one or two of them disappear the following week; both of which "knew too much."
+* The montage shows one of two things: investigate the past tragedy, or set up the events for later.
+* June 16, 2013's Daily Bread, one of the primary readings in the Vigil, speaks a lot about Kyou and Inoue. In general, everyone's personalities break down when danger is imminent.
+* Sayo's discussion with Ikuko about the Daily Bread SEEMS incriminating at worst since the phone conversation is still fresh off everyone's minds. As usual, it fits into plan.
+* Even though Sanae Yoshida debuts in the next chapter, she gets a mention here in the same fashion as Aria Utada.
+* Prepare to hear Miyu and Yoshiro giving out their theories to each crime. The former's eerie accuracy is a gambit in itself, if one reads carefully. In addition, there are context clues (such as having witness statements "as their only word") to point out who is lying and who is telling the truth.
+* The Creatives Committee of each class deals with projects mostly involving arts and crafts.
+* The main theme for this labyrinth section is the Prisoner's Dilemma. Twist is, the two captives never see each other until near the end and that their decisions actually mean harm to the other.
+* Prior to the scene where Kyou is revealed to have been captured, he experiences certain sensations. They'll only make sense once Ring Around The Rosie plays in the climax, as he describes several symptoms of the Bubonic Plague, the basis of the rhyme.
+* The contents of Kyou and Inoue's letters are different. However, they both contain hints about the culprit and the possible fates of the victims themselves. They are more of a threat letter than anything given the subtle malice the words are peppered with.
+* Kyou's death is foreshadowed as early as JUNE 14. This is even re-iterated during the sequence in Kyou's holding cell. The irony hits it when he quotes "Crime and Punishment" and claiming that he won't fall. Sure, he and Inoue never encounter the culprit in the Labyrinth, but he ends up becoming the eventual victim, anyway.
+* Inoue shows signs of hallucination as early as her first appearance after her abduction. Kyou, on the other hand, suffers right before he enters the living room.
+* There's a sort of sexual undertone when Inoue describes herself as a doll after her initial shock. "My posture is that of a doll, left by its owner on the bed after playtime." Even more disturbing is the paragraph that succeeds it.
+* It may not be noticeable at first, but all of the books - especially the ones that are part of the solution in Kyou's side of the living room - play a part in explaining the story and franchise as a whole.
+* There seems to be a "telepathic cross-knowledge" between Inoue and Kyou as they traverse the Labyrinth.
+* Rika Suzumiya is the first death from the Sacred Heart Curse Killings that is shown directly. This is meant to parallel Inoue's own experience in drowning because the latter has either forgotten to swim out of fear or does not know how to swim. Yup. The "already too late" line is a Foregone Conclusion.
+* Kyou inverting his clothes after coming to the second forked path is a reference to the "Tikbalang's" legend. Since he knows it is a possible scenario, he did just that to make sure. It does end hilariously as his school uniform can only be properly worn on one side.
+* The code for the Chemistry Lab's keypad seems to be "1665", the same time the Bubonic Plague hit London. However, Inoue (who is already sober after she nearly drowns in the pool) later states that the correct code is "1666." What is this? The year of the Great Fire of London, of course... and we all know what happens next to Kyou...
+* Though not the core rhyme for the chapter, "Au Clair De La Lune" deserves special attention especially during Inoue's segments. Justified since this is one of the few chapters where the two central protagonists are exposed to the same danger.
+* Provided one has read "The Hunter's Mansion" first, remember the "Madman's Tea Party?" Yoshiro passes by the said artist's house, exactly where Arcas has described it to Erika.
+* While not a "Red Herring," Inoue was thought to have been raped... not physically, however, but mentally.
+* There's a reason why Miyu called Ichirou: to pinpoint his location. It was even hinted by the long silence during the call.

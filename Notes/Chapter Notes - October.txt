@@ -5,13 +5,15 @@
 * Cause of Death: Nail Pierce
 * Suspect: Sayo Ronoroa
 * Word Count Goal: 45,000 words
-* Estimated Length: 3 hours
+* Estimated Length: 3-4 hours
 * Central Arc Focus: Theater Night
 * Nursery Rhyme: Jack and Jill
+* Inspired By: Higurashi No Naku Koro Ni, Macbeth
 
-* Theater Night - The following sections are assigned the ff. stories (based on Shakespeare's Five Tragedies):
-	1. IV-B - King Lear
-	2. IV-C - Macbeth
-	3. IV-D - Hamlet
-	4. IV-E - Othello
-	5. IV-A - Romeo and Juliet
+* Theater Night - The following sections are assigned the ff. stories (based on Shakespeare's Macbeth):
+	1. IV-B - Macbeth Act I
+	2. IV-C - Macbeth Act II
+	3. IV-D - Macbeth Act III
+	4. IV-E - Macbeth Act IV
+	5. IV-A - Macbeth Act V
+* [CONCEPT] As one of the main subplots, Sayo decides to resign from her position prior to Theater Night, given that four students have died already during her term. This divides not only her friends and batchmates but the whole STUDENT BODY. It's already worse once you realize she is the prime suspect for the Curse Killings.

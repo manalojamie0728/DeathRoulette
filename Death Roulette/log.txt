@@ -1,30 +1,91 @@
-Sun Jun 11 20:35:38 2017
+Wed Aug 30 16:21:30 2017
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.12.4.2187
  
 
-Bootstrap to the start of init.init took 0.13s
-Early init took 0.02s
-Loader init took 0.04s
-Loading error handling took 0.03s
-Loading script took 0.11s
+Bootstrap to the start of init.init took 0.15s
+Early init took 0.04s
+Loader init took 0.06s
+Loading error handling took 0.04s
+Loading script took 0.33s
 Loading persistent took 0.01s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.19s
+Running init code took 0.17s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Dump and make backups. took 0.09s
+Backing up script files to 'C:\\Users\\pc\\AppData\\Roaming/RenPy/backups\\Death Roulette':
+Dump and make backups. took 0.10s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.000000
-Creating interface object took 0.03s
+Creating interface object took 0.06s
 Cleaning stores took 0.00s
 Init translation took 0.08s
-Build styles took 0.01s
-Load screen analysis took 0.05s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
+Build styles took 0.04s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.08s
 Prepare screens took 0.09s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save bytecode. took 0.05s
+Running _start took 0.00s
+Interface start took 0.05s
+
+primary display bounds: (0, 0, 1280, 800)
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1178, 663) drawable=(1178, 663)
+Vendor: 'Microsoft Corporation'
+Renderer: 'GDI Generic'
+Version: '1.1.0'
+Display Info: <Info({'blit_sw_CC': False, 'refresh_rate': 60, 'bitsize': 32, 'wm': True, 'losses': (0, 0, 0, 8), 'hw': False, 'masks': (16711680L, 65280L, 255L, 0L), 'current_h': 800, 'current_w': 1280, 'shifts': (16, 8, 0, 0), 'blit_sw_A': False, 'blit_hw': False, 'blit_sw': False, 'bytesize': 4, 'blit_hw_CC': False, 'blit_hw_A': False, 'video_mem': 268435456})>
+Fixed-function is blacklisted.
+Extensions:
+    GL_EXT_bgra
+    GL_EXT_paletted_texture
+    GL_WIN_swap_hint
+Number of texture units: 0
+Can't find a workable environment.
+
+primary display bounds: (0, 0, 1280, 800)
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1178, 663) drawable=(1178, 663)
+Vendor: 'Google Inc.'
+Renderer: 'ANGLE (Mobile Intel(R) 45 Express Chipset Family (Microsoft Corporation - WDDM 1.1))'
+Version: 'OpenGL ES 2.0 (ANGLE 1.0.0.1166)'
+Display Info: <Info({'blit_sw_CC': False, 'refresh_rate': 60, 'bitsize': 32, 'wm': True, 'losses': (0, 0, 0, 8), 'hw': False, 'masks': (16711680L, 65280L, 255L, 0L), 'current_h': 800, 'current_w': 1280, 'shifts': (16, 8, 0, 0), 'blit_sw_A': False, 'blit_hw': False, 'blit_sw': False, 'bytesize': 4, 'blit_hw_CC': False, 'blit_hw_A': False, 'video_mem': 268435456})>
+Extensions:
+    GL_ANGLE_framebuffer_blit
+    GL_ANGLE_instanced_arrays
+    GL_ANGLE_pack_reverse_row_order
+    GL_ANGLE_texture_compression_dxt3
+    GL_ANGLE_texture_compression_dxt5
+    GL_ANGLE_texture_usage
+    GL_ANGLE_translated_shader_source
+    GL_EXT_occlusion_query_boolean
+    GL_EXT_read_format_bgra
+    GL_EXT_robustness
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_format_BGRA8888
+    GL_EXT_texture_storage
+    GL_NV_fence
+    GL_OES_element_index_uint
+    GL_OES_packed_depth_stencil
+    GL_OES_rgb8_rgba8
+    GL_OES_standard_derivatives
+    GL_OES_texture_float
+    GL_OES_texture_half_float
+    GL_OES_texture_half_float_linear
+Number of texture units: 16
+Using shader environment.
+Using copy RTT.
+Using angle renderer.
+Texture testing:
+- Hardware max texture size: 4096
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Total time until interface ready: 2.33799982071s
