@@ -17,6 +17,13 @@ define kk9 = Character("Kyou")
 define hy10 = Character("Hikaru")
 
 # SECONDARY
+define tomonori = Character("Tomonori")
+define ikuko = Character("Ikuko")
+define t_gen = Character("Mrs. Genkai")
+define t_har = Character("Ms. Harada")
+define t_kan = Character("Mrs. Kanako")
+define prin = Character("Mrs. Sokoguchi")
+define ms_shi = Character("Mrs. Shinozaki")
 define guard = Character("Guard")
 define unk = Character("???")
 
@@ -44,13 +51,13 @@ label start:
 
     #call ch01_01_prologue1
     #call ch01_02_prologue2
-    call ch01_03_clubday
-    call ch01_04_tenvictims
-    call ch01_05_sacredheart
-    call ch01_06_kyou
-    call ch01_07_countdown
-    call ch01_08_disappearance
-    call ch01_09_labkyou1
+    #call ch01_03_clubday
+    #call ch01_04_tenvictims
+    #call ch01_05_sacredheart
+    #call ch01_06_kyou
+    #call ch01_07_countdown
+    #call ch01_08_disappearance
+    #call ch01_09_labkyou1
     call ch01_10_labinoue1
     call ch01_11_labkyou2
     call ch01_12_labinoue2
@@ -421,7 +428,7 @@ label ch01_03_clubday:
     ai2 "Oh! Thank you! Thank you! Thank you! Anything for you, Ms. President.{w} We have plenty of time to loiter around – er, I mean, finish up everything. Hehehe..."
 
     "Sayo gave a sugary smile, moving her head slightly to her left."
-    "After ensuring all appliances were turned off, they locked the council’s office behind them.{w} IV-A’s room is their direct neighbor. They only took a few steps to the west staircase, which is directly across the room."
+    "After ensuring all appliances were turned off, they locked the council’s office behind them.{w} IV-A’s room is their direct neighbour. They only took a few steps to the west staircase, which is directly across the room."
 
     sr5 "And what will we do exactly when we get there?"
     ai2 "I honestly don’t know what he’s planning to do. We’ll find out on the spot. Last thing I know is that we’ll be playing cards together."
@@ -448,30 +455,852 @@ label ch01_03_clubday:
 
 label ch01_04_tenvictims:
     "JUNE 7, 2013 - 1730H"
+    "At the side of the auditorium near the backstage entrance sat a circle of eight.{w} Clockwise from Ichirou were Kyou, Hiroshi, Miyu, Inoue, Hikaru, Sumiko, and Yoshiro."
+    "They began by greeting each other and telling how their day went and all.{w} Questions were raised about why they were so few and what they will do."
+    "Without an agenda, however, they are free to do anything as they wish."
+
+    iy1 "Cards. You brought the cards, Sumiko?"
+    st3 "Why not? This is the go-to game for gatherings."
+
+    "He dropped a pack of UNO cards at the center. Much to their delight, the conversations stopped and all eyes were on it."
+
+    iy1 "So, we start when Akira gets here. We don’t want to leave anybody out, don’t we?"
+    mh8 "I can’t see from here. How about you, Ichirou? Have they come out yet?"
+    iy1 "\'They?\'{w} Oh, Sayo and Akira? Haven’t noticed them.{w} Hey – you think she’ll come along?"
+    mh8 "How should I know? You’re the one who set up this gathering.{w} And you gave instructions to tap anyone who’s willing to join, didn’t you?"
+    is4 "Could’ve said, \'maybe.\'"
+    mh8 "Yeah, but I’m just trying to explain things across."
+    is4 "You always over explain things, Miyu – an acquired habit, perhaps? *giggle*"
+    mh8 "{i}*sigh*{/i} Fine.{w} {i}I’ll just shut up and watch Yoshiro. I’m bored.{i}"
+
+    "After the second one-minute solve by Yoshiro, footsteps –{w} a pair sounded from behind Miyu’s side.{w} Looking up, Ichirou and Hiroshi acknowledged the tenth participant."
+
+    sr5 "Hey, everyone!"
+
+    "Sayo was trailing behind Akira, giving her sweetest smile to the group.{w}"
+    "She took her place between Miyu and Inoue, the closest to the stairs where they came from.{w} Akira, on the other hand, sat beween Sumiko and Yoshiro."
+    "Likewise, the rest welcomed the new arrivals."
+
+    sr5 "Pardon. We had to give a detailed report to Mrs. Genkai. Were you about to start?"
+    iy1 "We chose to wait. But actually, we didn’t expect you to come – so, thanks... welcome!"
+    sr5 "I feel the same. I was about to go home until Akira told me about it.{w} A one in a thousand chance, so why not? I might as well squeeze in some fun time while I’m at it."
+
+    "The conversation was cut short by Sumiko, who was already dealing cards to the players - five a hand, as per usual rules.{w} He placed the deck in the middle and dealt a card as a start."
+
+    window show
+    nvl clear
+    narr "The rules are simple."
+    narr "The deck consists of cards numbered from 0 to 9, all colored red, blue, yellow, or green.{w} Depending on the game type, there are different special cards and rules available. The first is of the regular type."
+    narr "First, one player drops a card from his hand, after which he determines the turn order."
+    narr "Then, the next player must drop one of two kinds of cards: either of the same value or the same color as the previous card dropped.{w} If he has neither, then he draws cards until he gets a suitable one."
+
+    nvl clear
+    narr "To further add strategy and suspense to the game, there are special cards available.{w} When a player drops one of these, the next player has to drop a card with the specified color."
+    narr "First are the {i}Wild Cards{/i}.{w} It can follow any card dropped by a player;{w} anyone who drops one specifies the next color to drop."
+    narr "Second are the {i}Draw Cards{/i} which add cards to the next player’s hand.{w} Two types: the {i}+2 cards{/i}, which are colored and can be stacked;{w} the {i}+4 cards{/i}, also stackable but is also a {i}Draw Card{/i} hybrid.{w} These cards cannot be mixed in subsequent moves."
+    narr "Third are the {i}Turn Manipulation Cards{/i}, a collective category containing the {i}Reverse{/i} and {i}Skip Turn{/i} cards. The former does exactly as its name, the latter skips the next player’s turn."
+
+    nvl clear
+    narr "Anytime a player has one card left in hand, he must declare \"UNO!\" before anyone else. In the group’s case, the first hand to the floor."
+    narr "If another player gets to the ground first, it is an automatic +2 Draw for the player."
+    narr "A player wins if he empties his hand first.{w} The game may continue until all or a set number of players finish. The deck replenishes infinitely unless agreed otherwise."
+
+    nvl clear
+    window hide
+
+    is4 "One more thing.{w} Anyone who’s dead last in the \"UNO!\" declaration shall get a {i}ketchup{/i} from the other players."
+    is4 "...Right, Miyu?"
+    mh8 "Yes...{w} I suppose so."
+
+    call ch01_04A_uno # To Be Added
+
+    window show
+    nvl clear
+    narr "It is a little before six o’ clock, with the sun setting down. Its beautiful colors of red and orange reflected all over the open field.{w} While not a reflection, these colors are on everybody’s arms as well."
+    narr "{i}Ketchup{/i} as Inoue refers to it."
+    narr "After one suspenseful round, the small party decided to wind down and share a few stories. All ears were on those who spoke.{w} Laughter, sorrow, fright, and other emotions exhibited on their faces."
+
+    nvl clear
+    window hide
+
+    hy10 "Then Aria and I went to the arcade at Blue Wave. We tried one of those Whack-A-Mole games.{w} Unsuspectingly, she got a hammer on her head. {i}*snort*{/i} Poor thing if I say so."
+    hk7 "What a meanie!"
+    hy10 "Afterwards, she suggested that we play a light-gun horror game. It’s part of the series I am currently playing so I gave it a shot.{w} Halfway through the first stage, I died."
+    is4 "And... what about it?"
+    hy10 "I begged her for a few more tokens, but she didn’t have any.{w} Eventually, she died and the countdown screen showed up. We walked away, and I noticed she left my side."
+    hy10 "The kicker?{w} Turns out she had a lot of tokens stashed away secretly! Hmph. What nerve!"
+
+    "Though half-humorous, she managed to elicit a few laughs.{w} Miyu shrugged, knowing that this is a common occurrence between the two best friends."
+    "A quarter of an hour passed.{w} Sayo fumbled through her backpack, long enough for someone to take notice."
+
+    st3 "Is something amiss?"
+    sr5 "My music sheets. I must have forgotten it somewhere.{w} Ah! It must be inside the auditorium."
+    hy10 "Can’t you get it next week? Besides, the main entrance is already closed off."
+    sr5 "No – you don’t understand.{w} The music sheets contain some songs we’ll use at Sunday. I’m glad I didn’t head straight home just yet. Could anyone find it for me?"
+
+    "A minute passed with eyes looking at each other. Miyu finally broke the silence and rose from his seat."
+
+    mh8 "How many was it?"
+    sr5 "It’s a book of music sheets.{w} You should find it somewhere in the backstage or in the main auditorium. I know since I was the last to leave after Mass."
+    mh8 "I'll go. Just tell me the cover's color."
+    sr5 "Thank you, Miyu!{w} It's black - you do have a flashlight with you? You can borrow mine if you wish."
+
+    "Miyu pointed at his phone's flashlight.{w} He went around the circle, laying his hand on the backstage door. He twisted the knob and gave the door a light push."
+    "Activating the flashlight, he entered the dark room and searched for the light switch.{w} Once he found it, Miyu flipped it up.{w}.. Except..."
+
+    mh8 "Power’s out.{w} Oh, silly of me - it’s past six o’ clock. They must have cut the power from the main building. Moving on..."
+    st3 "Make it quick, Miyu. I think the guard’s already signaling us to leave. He’s going to make a second whistle in fifteen minutes."
+
+    "Light shuffling and occasional sounds of objects being moved emanated from the backdoor.{w} As time passed by, the sound became softer and softer...{w} until Miyu can no longer be heard."
+    "To combat silence, the party was able to squeeze in another story, this time coming from Sayo.{w} In contrast to the previous stories, there was no opportunity to laugh.{w} All eyes were on her."
+    "It was serious, a subject Miyu is especially interested on. Shame he is currently navigating around the dark building."
+
+    kk9 "I remember it being on the news, yes. A year ago, if I remember correctly."
+    sr5 "That’s right.{w} Ten students snuffed out one by one throughout the year in brutal ways - all from Sacred Heart Village.{w} It was definitely news back then, the hot topic of the neighbourhood."
+    is4 "But the deed is done, right? I mean, what did they call it?{w} \"Curse Killings\"?"
+    sr5 "The Sacred Heart Curse Killings, derived from the name of the victims’ school.{w} It’s also the name of the place they lived in."
+    kk9 "Senior-level high school students, weren't they?{w} So close to graduation... a tragedy indeed. May God bless their souls."
+    sr5 "I haven’t dug deep into the details yet. All I’ve got were information from news reports and conspiracy theories around the internet.{w} Frankly, I wouldn’t touch the latter, but I guess they’d make a good topic."
+
+    "From her backpack, Sayo took out a small notepad.{w} She opened it to a page containing bullet points of the theories she researched. She recited each point, not yet filtering the factual from the trivial."
+
+    ys6 "Planned from the beginning, you say? It doesn’t look that way to me considering the news reports and your statements. There’s no exact way to fit it."
+    sr5 "I know, but what if it was?{w} I considered every possible angle I could look upon. It all leads to that in some way. I might formulate my own theory some time later when I look it up again."
+    ys6 "How about the identities of potential suspects? Have you got ‘em?"
+    sr5 "Unfortunately, still zero. All suspects were acquitted.{w} It’s one of the main reasons why this case is still open. How about all of you? Your thoughts?"
+    iy1 "You know, if Miyu was here, he’d be delighted to share something.{w} He’s still inside and, from here, I can’t seem to detect his presence."
+
+    "Ichirou took a quick glance towards the backstage door. Just plain blackness.{w} No Miyu in sight, no footsteps to hear.{w} For a moment, the party silenced themselves to think."
+
+    hk7 "You might want to consider this, Sayo.{w} Before we went here, we decided to drop by the guard’s post for a little chat. You might not have noticed us."
+    sr5 "I’m listening."
+    hk7 "He asked us how our activities went and we asked how his day went in return.{w} The ball came to the recent Curse Killings. We pretended to listen given how we felt the theories he talked about was absurd."
+    hk7 "That is... until he mentioned Suzumoto-san."
+    sr5 "Ikari Suzumoto,{w} two batches ahead of us and part of the honor roll? How is she involved in the tragedies?"
+
+    "Before proceeding, Hiroshi made everyone promise that whatever he tells must not be spilled.{w} Everyone agreed on his conditions and he related the story he was told."
+    "Shock –{w} the single word to accurately describe the party’s collective reaction."
+
+    is4 "Preposterous! It’s beyond the rules – there’s no rational way...{w} Still, I never expected the poor girl to be that way. She looked... alright."
+    ys6 "That’s what he told us.{w} I, too, am in disbelief.{w} And take note, it didn’t come from him but from Suzumoto herself."
+    kk9 "A deal made to the devil – certainly not a proper way to stop the curse.{w} But the idea is there. There’s still no way these things are related. Pestilence and death do not necessarily go hand in hand."
+    ys6 "Exactly. We were certainly not placed under high security.{w} Some of our upperclassmen were inflicted with dangerous illnesses, that’s all. They all managed to survive by a miracle."
+    ys6 "Sacred Heart Academy suffered death, blunt I may sound.{w} They contrast each other!"
+    kk9 "A {i}catalyst{/i} if you want to put Suzumoto-san that way, otherwise none."
+    ys6 "But she did the conjuration, not them.{w} {b}*grunt*{/b} Sometimes, supernatural forces need to stay as they are."
+    hy10 "So what does this mean for us?"
+    sr5 "Nothing. We’re left out of it.{w} Kyou and Yoshiro are correct.{w} There must exist no connection. Nothing at all."
+    is4 "Then we leave it as a campfire story she made up on the spot. A commendable effort, I should say, to pull that off.{w} Anyway, I’m more interested in the latter part of the story. What did the symbol look like again?"
+    hk7 "From what I can remember, he said Suzumoto formed a pseudo-circle resembling a clock. Ten, not twelve, graduation pictures were pinned along its perimeter.{w} She was among those – I don’t know. I haven’t seen it personally."
+    is4 "Interesting.{w} Now, I’ve thought of something. How many are we right now?"
+    is4 "One."
+
+    "Clockwise from Inoue, each member of the circle counted themselves."
+
+    sr5 "Nine."
+    is4 "It’s all good. Forget I said any-"
+    mh8 "Ten!"
+
+    "Everyone jumped at the voice.{w} Miyu emerged from the door, a small book under his left arm. He approached Sayo and gave it to her.{w} With a smile on her face, she scanned the pages for any missing sheets."
+    "They were all complete.{w} She replaced the book into her backpack and thanked Miyu for his trouble."
+
+    mh8 "So what were they about? Sunday School? I saw some nursery rhymes contained inside."
+    sr5 "That’s right.{w} My older sister brings this with her every Sunday for that purpose. The rest of the week, it’s with me, especially on First Friday Mass."
+
+    "Miyu responded with a look of satisfaction. He asked the others a rundown of what he missed.{w} Hiroshi repeated the story to him in a brief manner."
+
+    mh8 "I missed a lot! How dare you exclude me, guys?{w} I'm just kidding. Hahaha..."
+    st3 "Strange... what took you so long, Miyu?"
+    mh8 "I had a bit of difficulty navigating around the place. My flashlight isn’t that bright either.{w} I might have missed the book several times.{w} {i}*grunt* Why did it have to be black{/i}?"
+    st3 "Fair enough. And since you’re here, we can leave now, right?"
+    iy1 "Oh, that.{w} Let me thank everyone for coming. I honestly did not expect that much for this gathering - I planned to do it only once."
+    ai2 "Well, it was fun while it lasted.{w} We’ve ten months ahead of us. Lots of time to fool around with each other again."    
+    sr5 "It was a wonderful idea, Ichirou! Let me know if you plan to hold another one.{w} It’s good to join this every once in a while.{w} I think {i}I{/i} can influence the others to come along."
+    iy1 "You spoke for me, and I am left with no words.{w} Well, until we meet again – tomorrow! That’s right, I’ll be seeing you at the Parents-Teachers Conference tomorrow morning."
+    iy1 "Have a safe trip home!"
+
+    "Exactly when the group tidied up, the guard motioned them to leave.{w} The sun was nowhere in sight, coloring the sky a dark shade of blue. A few casual conversations were made along the way."
+    "Inoue approached Sayo, the latter noticing her grim expression and anticipated her words.{w} She took the initiative."
+
+    sr5 "You look a bit pale. Can you make it tomorrow?"
+    is4 "I’ll be fine. It’s just that –{w} look, I know I’m not into that kind of stuff.{w} Yet, it disturbs me, the first to do so."
+
+    "Sayo’s smile dropped and was replaced by a look of concern. Her pace slowed down."
+
+    sr5 "Inoue, be specific. The Sacred Heart mystery or Suzumoto’s story?"
+    is4 "Both.{w} I’ve thought about it, compared the two events, and I seem to have found a link. What if –"
+    sr5 "I get it.{w} That’s why you counted how many we are earlier, isn’t it? It’s not going to happen, I assure you. A majority of us have already agreed on that."
+    is4 "Alright, but I just want my curiosities cleared.{w} I need someone rational enough to delve deeper into the subject.{w} That’s why I came to you."
+    sr5 "Then I’ll research further on the Curse Killings if I have time,{w} but what interest is there?"
+    sr5 "Get a good night’s sleep, Inoue - chase away whatever hex is lingering in your brain.{w} Besides, we have two days to unwind."
+    is4 "I suppose you’re right.{w} I probably should stop thinking about it..."
+    "They were nearly overtaken by the group of Sumiko, Akira, Yoshiro, and Miyu."
+    "What interest is there, indeed?"
+    return
+
+label ch01_04A_uno:
+    "--OPTIONAL--"
     return
 
 label ch01_05_sacredheart:
     "JUNE 13, 2013 - 1900H"
+    window show
+    nvl clear
+    narr "Thursday night."
+    narr "A peaceful night almost devoid of sound, save for the light tapping made by the raindrops - not enough to suspend classes the following day."
+    narr "And cutlery! They accompanied the aroma of the sumptuous meal that the Shinozakis enjoyed.{w} Elegant candelabra in the middle to match the aesthetics.{w} It had class, though they were not that wealthy at all."
+    narr "Dinner talk was the usual: how did school go, what trips and appointments to attend to at work and where to go for the weekend – ordinary family matters.{w} Once they had their fill, they tidied themselves up, as no maid is in their employ."
+    narr "While their parents headed straight up to the master bedroom, Inoue and her brother stayed behind in the living room. They tuned in to their favorite channel after watching the primetime news."
+
+    nvl clear
+    window hide
+
+    "{b}*RING* *RING*{/b}"
+
+    "Who could be calling us tonight? I am expecting nobody.{w} Probably for big brother again... not my business."
+
+    tomonori "Inoue, this call's for you."
+
+    "He handed the receiver to me, moving away and lowering the volume. A polite chap, he is."
+
+    is4 "Hello? Inoue Shinozaki speaking."
+    unk "Good evening!{w} Sayo Ronoroa here. How are you?"
+    is4 "Pleasant. You must feel the same.{w} I didn’t expect you to call tonight, so what brings you to?"
+    sr5 "I was hoping for a quick chat with you. The evening weather probably will become worse by midnight.{w} But I want you to hold on for... an hour or so, I think. Am I not a bother?"
+
+    "I sat down, preparing the couch pillow. Involuntarily, I looked around even though I didn’t need to.{w} Brother is there – enjoying the TV show by himself."
+
+    is4 "This is about last week, isn’t it? When we were heading back home?"
+    sr5 "Yes, yes. In fact, I wanted to come to you earlier during lunch break.{w} I just didn’t know how to put it in a {i}pleasant{/i} way then. I feared I might ruin your day."
+    is4 "It’s alright. We’re on the line now – just the two of us. What did you find?"
+    sr5 "Lots.{w} Besides the facts I’ve researched a few months ago, there have been quite some developments.{w} I noticed a pattern – the time frames at which the victims were killed."
+    sr5 "There was exactly one victim per month – starting from June 2012 until March 2013."
+    is4 "Ten months, ten victims.{w} A grand-scale murder if it ever was one. But what was the motive?{w} It seems all random and disconnected to me – yet, somehow they all connect!"
+    sr5 "Not motive... {i}motives{/i}.{w}. There is no single method in each of the killings – those who knew the victims related the manner of their death to... some aspect of their life."
+    sr5 "There must exist a mastermind, then, {i}if{/i} the deaths were orchestrated.{w} Who were the accomplices? None proven, hence why this case is still open."
+    is4 "Can you give me the names?"
+    sr5 "They are as follows:"
+
+    window show
+    nvl clear
+    narr "Fuuko Rikiyama{w} - died by electrocution, June 28th.{w} He supposedly hanged herself using a live wire. Not certain how {i}that{/i} is possible."
+    narr "Utsune Mushido{w} – died on a hiking accident, July 21st.{w} His was determined to be an overdose of chemicals from several poison darts."
+    narr "Rioichi Yasuda{w} – death by hemorrhage, August 26th.{w} A marble figurine dropped to his head while in the ICU."
+    narr "Ukemi Hajime{w} – death by hypothermia, September 30th.{w} Found inside her family’s slaughterhouse in one of the freezers, the same state as the other meat."
+    narr "Domina Shibuya{w} – drilled in the throat during their Home Economics class, October 19th –"
+
+    nvl clear
+    window hide
+
+    is4 "Hold up!"
+
+    "Did I just hear that right? A direct assault!{w} But... how come is the October victim’s death part of the ten? Unless..."
+
+    is4 "If not direct assault, then the drill must be faulty or rigged."
+    sr5 "Correct. Bad luck on his part.{w} With the previous deaths occurring, those who witnessed it saw it a part of the Curse Killings, dismissing any rational explanation.{w} Home Economics classes were suspended for a month to make room for investigations."
+    sr5 "They had one suspect, Rika Suzumiya, whose fingerprints were found on the drill.{w} She and Shibuya shared a long-time argument regarding a botched group project, even taking it personally."
+    sr5 "However, she was proven innocent by reliable witness statements.{w} Another dead end was created."
+    is4 "That’s horrible! Even in school they weren’t safe.{w} What caused all this?{w} This phenomenon is beyond science – supernatural! I’d be a believer if I ever saw it with my own eyes."
+    sr5 "Noted."
+    is4 "You may proceed.{w} Excuse the hysteria."
+
+    window show
+    nvl clear
+    narr "The sixth is Eiko Shikata, council president{w} - victim of a gunshot wound to the heart, November 23rd.{w} The weapon was triggered by a device planted on her chair."
+    narr "Seventh victim is Rika Suzumiya{w} – formerly accused of Shibuya’s murder, was killed herself on Christmas Day.{w} She drowned in the icy waters during a night beach trip, dead on arrival."
+    narr "The eighth is Ikaruga Takezono{w} – found drugged inside a crushed car in a junkyard, January 25th.{w} Likewise, dead on arrival."
+    narr "The ninth is named Ayanami Hayashibara{w} – suffered third-degree burns from a faulty tanning machine, February 24th.{w} It is akin to one of those horror movie deaths, the ones that seemed impossible in real life."
+    narr "And finally, Kugimiya Oizumi{w} – hanged in her own room, head sliced in half by a hatchet, March 28th.{w} Such a shame for the girl – it was her school’s Commencement Exercises."
+
+    nvl clear
+    window hide
+
+    sr5 "All in all, that’s ten.{w} What are your thoughts, Inoue? I want your input."
+    is4 "Hmmm... One of them is the student council president, am I correct?{w} That sounds someone like you. Hehehehe..."
+    sr5 "A haunting thought, I must admit. {i}*chuckle*{/i}{w} But it is all finished. What interest is there if no harm is expected?{w} Anything else?"
+
+    "Let me enumerate each cause of death again."
+    "Electrocution,{w} poisoning,{w} blunt trauma,{w} \"slaughtered\",{w} drilled in the throat,{w} gunshot wound,{w} drowning,{w} crushed to death,{w} third-degree burns,{w} and hanging."
+    "Six to four, and on the latter half of each month!{w} Half a grand-scale murder in my book, but the absence of \"Who, Why, and How\" deems it a supernatural case, no wonder!"
+    "Sayo seems to agree with me."
+
+    sr5 "Yes... We are on the same track so far."
+    is4 "Brutal – what lack of a better word to describe it all."
+    sr5 "Hmph. Lame.{w} I have {i}better{/i} ideas."
+    is4 "Excuse me?"
+    sr5 "That reminds me. There is one other detail I nearly forgot to bring up –{w} the story of Ikari Suzumoto."
+
+    "My attention was replenished and I changed my seating position.{w} I might as well catch another outburst from her."
+
+    is4 "The upperclassman? Tomonori-kun's batchmate?{w} Did you find any link between her and the crimes?"
+    sr5 "I love how you label them as {i}crimes{/i}.{w} Actually, that's true. Our girl is a Sacred Heart Village resident herself."
+    sr5 "There’s even a corresponding news article of her interview, published at the aftermath of Oizumi’s death."
+
+    "I had forgotten about Suzumoto.{w} Yes. Her interview was in the front page of The Correspondent. She did address the victims, but never can you read a word about the night guard’s story."
+    "It’s an obscure secret, outrageous to many if it's leaked.{w} And as Kyou described, a catalyst and precursor to the following tragedy.{w} It is,{w} however, far-fetched."
+
+    sr5 "It’s doubtful, but all roads lead there.{w} The passage of time enforces the belief.{w} What interest is there in fighting the unknown?"
+    sr5 "We, the firm believers of the scientific method,{w} have no ground against this{w} – an established supernatural phenomenon.{w} Quantum mechanics is the closest weapon, yes, but not enough. What’s to prove that dark matter truly exists?"
+    is4 "You must be joking. The absence of evidence does not imply the work of demonic forces!{w} It is clear that the law has simply given up!{w} Such a gullible superstitious society we live in..."
+    sr5 "{i}*sigh*{/i}"
+
+    "I might have offended Sayo.{w} I haven't even thanked her for her efforts.{w} Best option is to lower my pride and {i}listen{/i}."
+
+    sr5 "Do you believe in God?"
+
+    "Definitely!{w} In my days here on Earth, how could I have lived not knowing the presence of{w} – I’m smothered.{w} This is where she wants me to be."
+    "As a fellow theist, she’ll question my true belief – whether I’m truly devoted to it.{w} As a fellow rational student, however, she’ll find holes in my reasoning{w} – thus, there’s no way out!"
+    "Silence, what Sayo wanted to hear.{w} I shook my head, acknowledging her words."
+
+    sr5 "See? All knowledge cannot be done away with science.{w} There exists, however, at least {i}one{/i} explanation for everything{w} – under a superset of truths."
+    is4 "This is getting off-hand.{w} Can we return to our previous topic, please?{w} You’re just making my head spin. You always do."
+    sr5 "Forgive me. {i}*giggle*{/i} I tend to get touchy.{w} Philosophy is an intriguing subject, is it not? Hehehehe...{w} That is all I have uncovered; the past is done away with.{w} The question is, what of the present?"
+    is4 "Uncertainty."
+    sr5 "Say, an hour has passed by quickly.{w} It was a pleasure conversing with you tonight. Have your curiosities been quelled?"
+    is4 "Yeah.{w} I honestly found it a healthy discussion.{w} But there are still some details that bother me..."
+    sr5 "Try not to think about it that much. You have other problems to worry about.{w} Do keep in mind tonight’s discussion, though. There are a lot to ponder upon."
+
+    window show
+    nvl clear
+    narr "The next last minute was spent exchanging farewells.{w} After hanging up, I am free to do whatever I wish.{w} What I need is a bed to fall upon."
+    narr "I went upstairs, still thinking about it{w} – no, I shouldn’t let it bother me.{w} You’ve got things to do, Inoue. Focus.{w}"
+    narr "Another hour passed{w} and I drifted off to sleep."
+
+    nvl clear
+    narr "The clock chimed nine times."
+    narr "The sounds of {i}pitter{/i} {i}patter{/i} were still there, albeit more audible.{w} From the outside, Inoue’s face looked peaceful.{w} Internally, it’s a different story."
+    narr "The chiming of the clock{w} – its pattern so hypnotizing it resonated a subconscious voice,{w} that of Sayo."
+
+    nvl clear
+    window hide
+
+    sr5 "Star light, star bright,"
+    sr5 "The first star I see tonight..."
+    sr5 "I wish I may, I wish I might,"
+    sr5 "Have the wish I wish tonight!"
+    sr5 "Sleep tight, Inoue-chan.{w} Ehehehehehehehehe... {i}*giggle* *giggle*{/i}"
+
+    "{b}{i}*beep* *beep* *beep*{/i}{/b}"
     return
 
 label ch01_06_kyou:
     "JUNE 14, 2013 - 1140H"
+    window show
+    nvl clear
+    narr "Lunch time."
+    narr "The pathways are filled with students scurrying about looking for a good place to eat.{w} Most routines are simple{w} – buy from the canteen and return to the classroom."
+    narr "The space around the campus is vast.{w} Maria St. Claire, being a single building,{w} has an open grassfield and trees overshadowing the walkways.{w} In fact, they constitute more than three-quarters of the total space!"
+    narr "It offers a conducive environment for anything, barely having litter in sight.{w} The school is also the spearhead in keeping its surroundings healthy, what with its own organization dedicated to that task."
+
+    nvl clear
+    narr "Plate in hand, Kyou Kirisaki traveled back to his classroom, IV-A,{w} whilst having a chat with Sumiko, a IV-C student.{w} He sat at the third-row aisle, letting his eyes wander as he ate."
+    narr "And he laid his eyes upon the front row.{w} Inoue,{w} uncharacteristically withdrawn and mind wandering aimlessly."
+    narr "She was not a person to bother at her current circumstance.{w} It concerned almost no one.{w} Her friends were somewhere else, probably at the canteen or at the other classroom."
+
+    nvl clear
+    window hide
+
+    kk9 "\"Anxiety in the heart causes burden,{w} but kind words cheer it up.\"{w} - Proverbs 12:25."
+
+    "Slowly,{w} Inoue removed her hand from under her chin.{w} She turned to face the voice behind her."
+    "She was greeted by a smile, the first few she had received that morning.{w} It took her an effort to show one herself{w} – false, nevertheless."
+
+    is4 "I thank you for that,{w} but {i}that{/i} is the exact cause of my worries.{w} {i}*sigh*{/i}"
+    is4 "Religion... is it ever true?{w} I still think it is but{w} they’re all the same."
+    kk9 "You’re confounded.{w} Perhaps something went wrong last evening?"
+    is4 "I’m not one to disclose secrets{w} and you know that, Kirisaki."
+    kk9 "Ah, then I’m correct, I presume.{w} Say, how about I tell you a story, a parable, to ease yourself? Then it’s up to you to trust me or not.{w} Fair game?"
+    is4 "No game.{w} I’m tired of it myself. I might have known every single one by heart – by {i}repetition{/i}."
+
+    "I smiled in full understanding.{w} I gathered my thoughts - what she did for the past few days and anything that was a cause for concern.{w} Nothing, perhaps..."
+    "Oh! I remember now{w} – the conversation nine of us had last week."
+
+    kk9 "Tell me about it, Inoue.{w} You’ve looked it up. I mean,{w} the \"Sacred Heart Curse Killings,\" were they?"
+    is4 "You know of it?{w} Who told you?!"
+    kk9 "I know nothing beyond our gathering last Friday.{w} I see you harvested some new knowledge.{w} Worry not, for I know how to zip my mouth."
+    is4 "To tell you the truth, Kirisaki,{w} the tragedy itself is not my concern.{w} I’ve seen far too many horror movies bearing a similar premise. Is this alright?"
+    kk9 "{i}*chuckle*{/i} What is?"
+    is4 "It’s Sayo.{w} I talked to her{w} – no, she contacted me yesterday evening to talk about it.{w} And she mentioned some... {i}trivial{/i} quotes."
+    is4 "There are a few things I want to consult with you.{w} You’re the pious one, someone wiser than me."
+    kk9 "Hmmmm...{w} Was there anything off in her manner?"
+    is4 "Set that aside for now.{w} I’d like to momentarily clear up some affairs,{w} {i}personal{/i} things."
+
+    window show
+    nvl clear
+    narr "I gave attention to her words and her delivery.{w} Perhaps, not as I had initially thought,{w} there is something deeper behind her anxiety."
+    narr "Only then I knew."
+    narr "She related to me the details of the tragedy, one I know beforehand.{w} I researched it myself. Then came the bits after that{w} – questions about science, theology, and the supernatural."
+    narr "There are times she’d get herself lost in her story,{w} so I demanded she get to the point."
+
+    nvl clear
+    window hide
+
+    kk9 "So, I ask of you,{w} what do you truly believe in?"
+    is4 "That all of these have plausible explanations, however difficult,{w} and none involve the Hand of God whatsoever."
+    kk9 "That’s in your heart,{w} hundred percent?{w} Or a ninety-nine?"
+    is4 "*{i}sigh*{/i} Less.{w} I can’t give you an exact figure."
+    kk9 "Inoue, I may be a religious person, as you say,{w} but there are times where certain explanations hold water and there are those where they do not.{w} The tragedy has more of the former."
+    kk9 "The concept of karma shades some of these, as in the case of Shibuya and Suzumiya.{w} The two died in different ways{w} – every one of them did, correct?{w} Science still holds water."
+    kk9 "The aftermath of each death is definitely subjective.{w} In my view, the souls of the dead undergo judgment, depending on their character.{w} That, however, has little bearing on the motive unless otherwise."
+
+    "Inoue was quite puzzled, no matter how brief an explanation I gave her.{w} A long pause occurred, allowing me to finish my meal.{w} She raised another question."
+
+    is4 "If not religion, then what about quantum theory or the supernatural?{w} I’ve been told that not everything can be touched by science{w} – yet there exists a superset of truths...{w} I don’t know."
+    kk9 "Then it appears you are mistaken."
+    is4 "Mistaken?{w} It is too convoluted!{w} There is only so much for me to comprehend."
+    kk9 "If that’s so, let’s untwist the facts slowly.{w} First, how did you distinguish those that were accidents rather than murders?"
+    is4 "The nature of the deaths themselves."
+    kk9 "Even as a possibility?"
+    is4 "Based on the way they were told.{w} If I judged corrcetly, six to four."
+    kk9 "There’s a minor detail I picked up.{w} You said Suzumiya was {i}killed{/i} when she drowned {i}by accident{/i}{w} – a clear dissonance."
+
+    "Her eyes widened in genuine surprise.{w} Inoue contemplated upon herself whether her version is correct."
+
+    is4 "Kirisaki, are trying to insinuate{w} foul play?"
+    kk9 "Unless you meant the waters killed her, but that would be a morbid personification.{w} If not, then the scores are even.{w} That disproves the idea of an accident."
+    is4 "How? I... I’m lost.{w} The conditions for an accident are favorable around the time of her death."
+    kk9 "Let no accident or intuitions assist the detective,{w} or so it says."
+    is4 "Kirisaki, this isn’t a murder mystery!{w} This is real life – anything could happen.{w} Are you trying to Sherlock me?"
+    kk9 "Hehehehe... Pardon.{w} I may seem to have taken it too far."
+    kk9 "But my point is this{w} – for every effect there is a cause, the evidence present or not.{w} Take my word on Suzumoto-san’s story seriously, but take care not to venture into the unknown excessively."
+    kk9 "That, and pray you keep a rational thought ready.{w} Naivety won’t get you too far,{w} but I’m not saying you are."
+    is4 "I understand.{w} And Kirisaki, I must offer my thanks for suppressing my worries.{w} I’ve been thinking about them since last night."
+    kk9 "My pleasure. {i}*chuckle*{/i}{w} Is there anything else you wish to consult me about?"
+    is4 "Darn! My meal’s gone cold, but that’s fine.{w} Luckily, my seatmates aren’t here yet.{w} About my last point..."
+    kk9 "Ah, yes! It almost slipped my mind.{w} It was my concern anyway, so please continue."
+
+    window show
+    nvl clear
+    narr "Inoue is quite a hospitable and level-headed person,{w} save for situations such as this.{w} Just like the first part of our conversation, she spoke while I listened."
+    narr "Then, in the middle of it, I was struck with concern – with doubt.{w} Sayo and I were classmates during our sophomore years,{w} and I can recall specific instances when we’ve talked."
+    narr "But not in the way Inoue described their conversation to me."
+
+    nvl clear
+    window hide
     return
 
 label ch01_07_countdown:
     "JUNE 15, 2013 - 2300H"
-    
-    "Earlier..."
+    window show
+    nvl clear
+    narr "Pairs of feet shuffled across the function room.{w} Though busy, the Youth Group members eased themselves through friendly chatter.{w} A six-hour prayer vigil is scheduled at midnight."
+    narr "The front-right door creaked, letting in a small figure with spectacles.{w} Sayo Ronoroa approached the chancel, greeted her church mates, and placed the music book on the stand."
+    narr "She opened it a few pages from the middle.{w} Satisfied, she went over to the other members to help."
+
+    nvl clear
+    narr "The banner, already set in front of the room, proclaims -"
+    narr "SQUIRES OF THE HERALD KING YOUTH GROUP"
+    narr "They were a relatively small group, having fifteen registered members.{w} They attend a 3rd Sunday Prayer Vigil as a regular devotion. Attendance is non-compulsory in case of emergency."
+    narr "At the back, Sayo wiped away the sweat from her forehead.{w} She entertained thoughts during her idleness, and to each she smiled dearly."
+
+    nvl clear
+    narr "The conception of the highest seat during the last gathering{w} and this night for the school year’s blessing!{w} How fortunate it is to have been a member of this Youth Group."
+
+    nvl clear
+    narr "It was all thanks to Ikuko Mimori, a classmate one year longer in service.{w} The month after Sophomore year, she invited Sayo to the Youth Group.{w} As a result, their relationship deepened between themselves and the Higher Being."
+    narr "Sayo is forever grateful."
+    narr "As they waited for the bell, they brought up a variety of topics. How they have been, the current events, personal thoughts,{w} anything they could come up with."
+    narr "They left no room for gossip, strictly adhering to their moral code.{w} Sayo mentioned the gathering once more, but no traces of neither the previous tragedy nor her conversation with Inoue.{w} She chose her stories well so as not to gloom the night."
+    narr "Instead, they opted to discuss the vigil’s flow, midnight to dawn.{w} They rehearsed the words in their minds, filling in gaps whenever there is one."
+
+    nvl clear
+    window hide
+
+    sr5 "1 Corinthians 16:9-13...{w} it comes with the Daily Bread.{w} At two in the morning, preferably?"
+    ikuko "Yes. That would be a good placement,{w} though I’d rather have it at five, just before dawn."
+    sr5 "Then five it is if you wish!{w} You’re the one in charge of the overall flow."
+
+    window show
+    nvl clear
+    narr "The Daily Bread Reading is one of their primary segments during a vigil.{w} Unlike other activities, it is spontaneously placed at any timeslot the members prefer, usually within an hour before dawn."
+    narr "Its placement is left to the one in charge of the program, Ikuko at present."
+    narr "As an assignment, each member is asked to give their reflection about the passage used in the reading.{w} This is to deepen their spiritual understanding and to learn from each other."
+
+    nvl clear
+    window hide
+
+    sr5 "Here’s what I make of this{w} – the truth of human nature.{w} To make an effort in concealing what’s underneath is a natural process; it persists against all effort."
+    sr5 "Fear, not courage, is what makes men truly interesting.{w} To exploit those as a weapon is to have him realize the insufferable truth – stigmas that last forevermore."
+    ikuko "And when misfortune befalls one, the mask vanishes and all impression falls apart with it.{w} Empathy bridges the effects as a ripple."
+    sr5 "Correct.{w} Hence the relevance of the vigil’s theme."
+    ikuko "It skirts the wishes of St. Paul; at the same time, you’ve struck the chord.{w} Isn’t that common knowledge though?"
+    sr5 "A safe assumption, if not banal.{w} Only a heartless would be as bold as to fear nothing.{w} Death perhaps,{w} but it bars none!"
+    ikuko "Compose yourself, my friend. Your emotions are driving you away again. {i}*chuckle*{/i}"
+    sr5 "My apologies."
+    ikuko "But surely, you’ll drop some of it in the discussion later?"
+    sr5 "It perturbs most, admittedly.{w} I’d rather discuss it in private and to those with an open mind.{w} Fascinating, isn’t it? {i}*chuckle*{/i}"
+
+    "Their smile drew a mutual air of satisfaction.{w} What could possibly make the night more interesting?"
+
+    "Earlier This Evening..."
+    window show
+    nvl clear
+    narr "Ichirou, as class president of IV-B, made his final announcements online."
+    narr "With books and backpack made up, he called it a night.{w} But not before going for a few rounds of Candy Crush."
+
+    nvl clear
+    narr "In contrast, Miyu retired to bed with his cell phone radio, a perfect opportunity to lose himself in thoughts.{w} Occasionally, he would exchange messages with Sanae Yoshida, a former classmate of his."
+    narr "A healthy friendship they had – a durable link.{w} \"Nothing better than to pass away the dullness!\" he would reason.{w} And when it stops, he would return to his activities."
+    narr "First Law, indeed."
+
+    nvl clear
+    narr "Ever forgetful, Sumiko’s eyes ran through the monitor several times.{w} His mind relaxed upon the sight of his announcement on class IV-C’s FB group."
+    narr "\"Wear your PE uniforms on Tuesday – we have a social dance activity at first period. Just this Tuesday, friends. Good night!\""
+    narr "Akira commented on the post, volunteering to bump it the following day.{w} Sumiko liked this idea, despite realizing it only as a jest."
+
+    nvl clear
+    narr "{b}*BEEP* *BEEP* *BEEP*{/b}"
+    narr "The thermometer read 39.0C."
+    narr "As Inoue suspected, she had symptoms of flu.{w} She took a tablet of paracetamol and her mother advised her to stay in bed for the weekend.{w} Inoue desired to protest, but she could not."
+    narr "It was peculiar, as she traced the cause to none.{w} Thankfully, she was free from dengue – that could have been much worse.{w} It is possible that she will miss Monday’s activity so her mother prepared a letter in case."
+    narr "At present, Inoue relaxed her mind;{w} her body comfortably snuggled under the fluffy blankets.{w} No signs of worry as it might worsen her condition."
+
+    nvl clear
+    narr "Yoshiro decided to look up the Sacred Heart tragedy, finding its \"cursed\" label intriguing.{w} It was, as he thought, as grounded as possible{w} – yet inhuman."
+    narr "He remembered the upperclassman’s story and tried to establish a connection.{w} Zero,{w} apart from the latter’s residency similar to that of the victims."
+    narr "Just then, questions came to him."
+    narr "What if the \"catalyst\" perceived an omen?{w} It made no sense even as an aversion – an inverse example – yet...{w} if it was actually delayed, then..."
+
+    nvl clear
+    narr "Hiroshi placed {i}The Battle of the Labyrinth{/i} down after the last chapter.{w} It had him thinking, given the nature of the book.{w} Its theme blended too well with their topic, triggering some thoughts within him as he read."
+    narr "In the darkness, he laid in silence tuning his mind the same as Yoshiro's is.{w} He considered the possibility of having Suzumoto as a suspect."
+    narr "He laughed at himself, aware of the idea’s absurdity."
+    narr "Suppose it happens again?{w} That is a haunting thought, but it better be fairer than the last.{w} Best case if it doesn’t.{w} Ever."
+
+    nvl clear
+    narr "There was nothing different about Hikaru, spending the weekend on her laptop as usual.{w} She was streaming shows from the US, indulging herself as much as she wished."
+    narr "The props for Tuesday’s activity lay at her bedside.{w} Sumiko gave her a spare key should she ever arrive before six."
+
+    nvl clear
+    narr "Kyou received the same instructions from Inoue.{w} However, the class president was ailing and unsure of her condition come Monday.{w} He possesses one of the keys being the earliest in their class."
+    narr "He heard of Inoue’s condition and wished her health to return.{w} Kyou thought that she was merely stressed out."
+    narr "But as he thought about the previous day, he considered the cause."
+
+    nvl clear
+    narr "There were things out of place, such as Sayo’s behavior during the phone call.{w} He only has Inoue’s word for it, and she could be making it up.{w} But it was genuine – nobody would dare lie to him; he abhors those."
+    narr "But words alone wouldn’t cause an ailment{w} – or rather..."
+    narr "At times like this, he would do some soul-searching to quell himself.{w} He picked up his Bible and began meditating on a few verses."
+    narr "Afterwards, he opened his Daily Bread and marked the entry for June 15.{w} He scanned the next entry for June 16, {i}Strength of a Man{/i}, and reflected upon himself."
+
+    nvl clear
+    window hide
+
+    kk9 "Quite fitting.{w} {i}*sigh*{/i} I’ll save this for tomorrow evening."
+
+    "{b}{i}*RING* *DING* *RING* *DING*{/i}{/b}"
+
+    window show
+    nvl clear
+    narr "The oft familiar tune called everyone’s attention, all fifteen of them.{w} The two girls walked together to the front and took their places at the chancel."
+    narr "Sayo led the small choir by playing the keyboard, with the music book page in full view.{w} Ikuko glanced at her friend, twinkled, and began the vigil."
+    narr "By the twelfth strike, the Youth Group members performed the opening hymn.{w} No hiccups and all went smooth from there.{w} Everything went as planned."
+    narr "Brilliantly executed – one should say."
+
+    nvl clear
+    window hide
     return
 
 label ch01_08_disappearance:
     "JUNE 18, 2013 - 1130H"
-    
+    window show
+    nvl clear
+    narr "Class IV-C was livelier than usual.{w} Topics about the social dance activity buzzed around the students - who looked handsome and lovely, who made the most graceful steps, and whatnot.{w} Some were even considering their prom dates this early."
+    narr "There are a few exceptions, such as Sumiko and Akira."
+    narr "At present, the three – adding Ichirou – discussed the upcoming College Entrance Exam review sessions.{w} The Science Club is one of the event's major facilitators."
+    narr "Miyu handed the signed document to Ichirou, which the latter accepted."
+
+    nvl clear
+    window hide
+
+    mh8 "I shouldn’t be the one doing this.{w} Isn’t she in good health already?"
+    iy1 "Nope.{w} We’d be chewed out if we waited until tomorrow. Today’s the deadline."
+
+    "Miyu acknowledged it and went out to have lunch.{w} Sumiko signed a similar document."
+
+    st3 "So Kyou followed after Shinozaki, huh? Hehehehe. What rain could do to people...{w} I saw him yesterday during the assembly and he looked fine."
+    iy1 "So did I.{w} If only we were given the agreement yesterday, I wouldn’t have come to you.{w} But then again, Shinozaki still has flu."
+    st3 "Flu? Who told you that?"
+    iy1 "Kyou.{w} I exchanged a few words with him yesterday during break time and he mentioned Inoue's condition. Hope she gets better."
+    ai2 "That aside, you’ll send this to Sayo after Nakashima signs?{w} They are in the same class."
+    iy1 "Ayumi? Yeah, I’ll send her copy before giving it to Sayo.{w} The girl’s probably buying some food right now."
+
+    window show
+    nvl clear
+    narr "The conversation went on for a bit until Ichirou noticed Ayumi return.{w} He left the two and thanked them.{w} At the same time, Miyu returned, sitting one row ahead of the two."
+    narr "At exactly noon, Sayo passed by IV-C.{w} It was an unusual sight –{w} the bubbly girl worried about something this early in the year.{w} Her face evidenced her anxiety, but her gait remained the same."
+    narr "When she was no longer in sight, Akira shook his head in sympathy."
+
+    nvl clear
+    window hide
+
+    ai2 "Gosh. Don’t tell me their class didn’t do well in the activity.{w} Poor Sayo looks like she lost some stocks{w} or a pile of chips."
+    st3 "Hahahahahaha! That’s a good one.{w} But I suggest we make no further jokes. It could be worse than we think."
+    ai2 "Or maybe she could be tired. Seriously, it’s the same for us."
+    ai2 "Oh!{w} Here’s the spare key.{w} I might risk losing it."
+
+    "Akira produced a small silver key from his wallet and gave it to Sumiko.{w} The latter hesitated, asking if he will come later than usual.{w} Akira, however, insisted."
+    "Sumiko shrugged and passed it to Akira’s service mate.{w} She glared at Akira whose face contorted with embarrassment.{w} She threw the spare key back to him."
+
+    window show
+    nvl clear
+    narr "{i}The subscriber cannot be reached. Please try again later.{/i}"
+    narr "The same robotic voice returned my call for the third time.{w} I tried to reach Inoue since morning, hoping to check on her, but without luck."
+    narr "That alone was unusual{w} – she never misses calls twice or even thrice during weekdays.{w} I knew that since we were freshmen.{w} If today was Sunday, that’ll be alright."
+    narr "I don’t have Kirisaki’s number so I’ll just have to ask their adviser about it."
+
+    nvl clear
+    narr "I opened the door to the faculty room and looked around.{w} There’s Mrs. Genkai chatting with Ms. Harada."
+    narr "Perfect.{w} I’ll hand these to Mrs. Genkai before I ask Ms. Harada about the two."
+    narr "Before I conducted my business, I gave a polite gesture they received gracefully.{w} I wasted no time."
+    narr "Luckily, Ms. Harada took the initiative by asking me about Inoue and Kirisaki.{w} Having no idea on their condition either, she took out her smart phone and dialed the Shinozaki residence first."
+    narr "We all waited in anticipation."
+
+    nvl clear
+    window hide
+
+    t_gen "You’ve eaten well, Sayo-chan?"
+    sr5 "Yes, but not as well.{w} I’ve been trying to contact Shinozaki since this morning and I couldn’t reach her.{w} Whatever happened to that girl?"
+    t_gen "Well, at least Hirano is present for these papers.{w} Tokubei too.{w} I’ll save the questions until we get through."
+    sr5 "I’ll stay for a while.{w} I too, am worried about them."
+    t_har "Uh, hello? Is this Inoue Shinozaki's mother?{w} This is her adviser, Ms. Harada, speaking."
+
+    "She managed to connect within a minute.{w} The conversation with Mrs. Shinozaki took place in loudspeaker, with Mrs. Genkai and me listening closely."
+    "I gathered the following after the pleasantries."
+
+    t_har "I apologize for calling on such short notice, Mrs. Shinozaki. You might be busy.{w} Tell me, how is Inoue doing?"
+    ms_shi "She’s alright.{w} Her fever went away yesterday morning and she’s her former self, thankfully. {i}*chuckle*{/i}{w} Did she miss anything important, madame?"
+    t_har "Some agreement paper due this afternoon, which is already done away with,{w} and a practical activity.{w} The latter is alright provided she’s in the condition to perform."
+    ms_shi "I’m sorry. When was this? Monday?"
+    t_har "This morning – second period. Eight o’ clock."
+
+    "There was silence.{w} I sensed the confusion from the other end."
+
+    ms_shi "That’s not possible. I saw her off this morning at quarter to six.{w} She didn’t go off anywhere, did she?!"
+    t_har "I refuse to believe that.{w} Unless I'm mistaken, we never saw her this morning.{w} Being in my advisory class, I never forget a student – {i}especially{/i} our class president."
+
+    "What?! How is that...?{w} A crack in Mrs. Shinozaki's voice... and in disbelief.{w} There must be a mistake!"
+
+    window show
+    nvl clear
+    narr "Even without continuing, we shared the same conclusion{w} – Inoue Shinozaki has vanished.{w} No traces of her anywhere,{w} neither in her home nor here at school."
+    narr "As Ms. Harada tried to calm Inoue’s mother down, I settled down to think.{w} However, the shock I received clouded my thoughts.{w} I wanted to cry, but I retained my resolve."
+    narr "Who would want to see the head of the student body cry? That'll shatter the morale of people."
+
+    nvl clear
+    narr "Ms. Harada gave instructions to file a missing person report immediately in case of kidnapping.{w} Then, she cut the line."
+    narr "Seeing her distressed from the facts, I offered my seat and gave her a glass of water."
+    narr "My fears worsened. I even considered alerting the student body to prevent a future case.{w} However, with no knowledge of Inoue’s condition, I refused to take action.{w} It was rash."
+    narr "Mrs. Genkai kept a level head throughout the whole affair, agreeing to keep it among the three of us.{w} No other faculty member was in proximity."
+
+    nvl clear
+    narr "I left the faculty room, requesting to keep in touch with Ms. Harada for any updates.{w} I last saw her feebly picking up her smart phone and dialing another number, most likely the Kirisakis.{w} I felt sorry but I have to zip my mouth."
+    narr "What interest is there, I suppose?{w} Announcing it publicly would cause discord and panic."
+    narr "I returned to IV-E, avoiding to speak to anyone.{w} I needed to think, and take my mind off it."
+
+    nvl clear
+    narr "Ten minutes before the fifth period, a murmur emanated from outside.{w} Normally, a few of my classmates would check it out only to dismiss it immediately.{w} I paid it no attention."
+    narr "This time, more and more people went out.{w} I glanced at the window, noticing a crowd forming from even the other classes.{w} I recognized that sound."
+    narr "An ambulance!"
+    narr "I joined the crowd and saw the source personally.{w} Sprinting towards it, I saw the patient being taken away.{w} Mrs. Genkai stood at the walkway, wiping her sweat. She looked pale."
+
+    nvl clear
+    window hide
+
+    sr5 "Excuse me, madame. What’s the commotion?"
+    t_gen "I had to assist a fellow faculty down after an attack.{w} {i}*sigh* Could this day go any worse? She’s had enough already.{i}"
+    sr5 "She? You mean –"
+    t_gen "Correct.{w} The patient is Ishii-san.{w} She called Kirisaki’s residence immediately after you left.{w} He was the other student absent from her class, if I recall."
+
+    "Oh no. Tell me the worst."
+
+    t_gen "Before she blacked out, I heard the following over the line, though it wasn’t in loudspeaker,"
+    t_gen "'{i}Don’t tell me my son is missing!{i}'"
+
     "JUNE 18, 2013 - 1650H"
+    window show
+    nvl clear
+    narr "{i}Attention to all students.{w} Please remain at your homerooms for the next half hour. Your advisers have an urgent matter to discuss with you.{w} Class IV-A, your co-adviser shall meet you in behalf of Ms. Harada.{w} Thank you for your cooperation.{/i}"
+    narr "The impromptu announcement caused an air of concern among the students.{w} While some of the underclassmen were already dismissed an hour ago, the rest were forbidden from leaving."
+    narr "They all saw it{w} – the image of Ms. Harada out cold on the gurney.{w} A few sulked, with some others discussing.{w} Exactly what happened? Why are they being detained?"
+
+    nvl clear
+    window hide
+
+    "Mrs. Ren Kanako entered IV-C, settling down immediately.{w} Sumiko took second-charge in handling the class."
+
+    t_kan "Hope you’re all well.{w} Let’s see... One, two...{w} 42 heads. Good!"
+    t_kan "You must have witnessed the scene at 12:30 this afternoon and must be concerned for Ms. Harada’s condition.{w} She’s presently stable, if a little somber."
+
+    "Audible sighs of relief were heard, yet they were not satisfied.{w} The teacher proceeded with the announcement, almost cut short by an uproar in the neighboring class."
+
+    t_kan "You heard IV-B –{w} this is no pleasant news.{w} Two of your batch mates from IV-A, Inoue Shinozaki and Kyou Kirisaki...{w} they disappeared this morning."
+
+    window show
+    nvl clear
+    narr "These words induced fear to the students.{w} Someone dared to ask a question{w} but Sumiko shot him down, asking him to wait."
+    narr "She grew stern discussing the details of each disappearance,{w} laying them down fact by fact, disallowing herself to speculate.{w} The cases have been reported to the authorities and an investigation shall commence soon."
+    narr "Until then, the students are urged to head straight home as soon as classes end or when their cleaning duties are over.{w} When it was all done, she entertained Yoshiro, who attempted to ask earlier."
+
+    nvl clear
+    window hide
+
+    ys6 "Pardon the interruption earlier, madame.{w} This is more of a thought than a question in itself, but{w} is kidnap possible?"
+    t_kan "That’s the likely case.{w} In fact, we advised both families not to respond to any ransom until the suspects are identified."
+
+    "Sumiko was no longer able to contain the crowd’s restlessness.{w} Mrs. Kanako soothed her students, unwilling to worsen their emotions."
+    "Minutes passed with seemingly endless queries about the incident –{w} where and when they were last seen and a few personal questions.{w} Then, Miyu stepped forward to speak."
+
+    mh8 "Madame, we may just have enough information mostly from you."
+    mh8 "From what I can surmise, while they may have been abducted between five to six in the morning,{w} I believe the two instances are {i}not{/i} related in any way."
+    "\"WHAT?!\" {b}*GASP*{/b} \"What is he talking about?\""
+    t_kan "Please clarify. I did not catch the last bit."
+    mh8 "What I meant is,{w} despite the similarity in time of Shinozaki and Kirisaki’s disappearance,{w} I doubt the two bumped into each other this morning beforehand."
+    mh8 "How do I know?{w} Simple. I arrive here every 5:45,{w} and most of the time, I see Kirisaki sitting out at the bench – this morning an exception.{w} Shinozaki arrives at around six, latest delay at fifteen minutes."
+    ai2 "He isn’t lying, madame.{w} I’ve only gotten here twice without Miyu already inside.{w} I support his statement as well, but I honestly don’t see how the two didn’t meet this morning."
+    hy10 "Excuse me, madame. If I may,{w} I was temporarily given the second spare key as I needed to arrive at 5:30 for the dance activity preparations.{w} I never saw anyone else inside, up until Akira arrived."
+    hy10 "I never saw Miyu."
+    mh8 "You didn't.{w} I was in the bathroom at the time.{w} When you've got to go, you have to. {i}*giggle*{/i}"
+    hy10 "..."
+
+    window show
+    nvl clear
+    narr "Regardless, Inoue’s case is a dead end.{w} It hinges on everyone thinking she is still unwell.{w} Then again, they only have Mrs. Shinozaki’s word for it."
+    narr "As for Kyou, however, his is a legitimate case.{w} Consequently, Inoue's case becomes one."
+    
+    nvl clear
+    narr "Rather than intensify the situation, nobody chose to speak further.{w} Instead, Mrs. Kanako arranged for a few changes in their activities.{w} She informed them of the stricter curfew time,{w} from 6:30 to 6:00."
+    narr "After forty minutes, the meeting adjourned.{w} She ensured that the students empty the classroom, save for the day’s cleaners.{w} When they were nearly done, she gave her final instructions to Sumiko."
+
+    nvl clear
+    window hide
+
+    t_kan "Sumiko, see to it that none of your classmates go astray.{w} I plead you, we shun another case!{w} Please relay my words to the rest."
+    t_kan "I’ll leave the rest to you."
+    st3 "Understood{w} Keep safe, madame."
+
+    "As the teacher faded from his view, so did the sun.{w} It bore witness to the day’s events – times of order and confusion{w} – similar events repeating themselves too often they can be glossed over safely."
+    "And curiosity?{w} What interest is there, indeed?{w} Hence, no further mention is necessary."
     return
 
 label ch01_09_labkyou1:
     "JUNE 18, 2013 - Time Unknown"
+    window show
+    nvl clear
+    narr "I’ve never arrived this early at the city square.{w} The moon and incandescent lamps as light sources, my brother and I walked across to the wet market.{w} He needed report materials; so did I,{w} but for a different reason."
+    narr "I brought the class’s materials in advance yesterday,{w} but the Creatives Committee ran short late at night, our progress barely satisfactory.{w} As the earliest to arrive, I volunteered myself."
+    narr "Our head told me that the market stalls would be open as early as five.{w} My brother insisted on coming along; I accepted, since we always went to school together."
+    narr "Along the way, we ran into a vagrant sniffing from a plastic bag.{w} With God watching us, no harm may befall us."
+    narr "We exited the market, the sun peering out a bit.{w} The square slightly increased its population, mostly students and employees."
+    
+    nvl clear
+    narr "We wished Onifuchi-san, the gate guard, a blessed day as usual.{w} The same went for the other guard at the front desk."
+    narr "We parted ways, giving each other a fist bump, once we reached the staircase near IV-A.{w} The Senior-Year classrooms were devoid of life{w} – not even Akira, Miyu, Sayo, nor any of my classmates are present."
+    narr "I inserted the key and unlocked the classroom door.{w} The creepy vibe left me once the lights turned on.{w} I neatly arranged the materials – a ball of nylon thread, assorted colored papers, fans, among others."
+    narr "The sky brightened a little,{w} and I settled myself down.{w} Once more, I ran through our list and messaged the committee.{w} With a beep of confirmation, I let myself doze off."
+
+    nvl clear
+    window hide
+
+    kk9 "{b}*COUGH*{/b}"
+
+    window show
+    nvl clear
+    narr "It bothered me since weekend.{w} Just go away... the medicine should off you soon enough.{w} The placebo should quicken the process."
+    narr "Now that’s much better.{w} Praise the Lord."
+    narr "The air is giving me the chills.{w} The radio anchor reported a 24-degree morning, not a ten! What time is it now?"
+
+    nvl clear
+    narr "{i}*clatter* *clatter*{/i}"
+
+    nvl clear
+    narr "Only muddled sounds registered in my ears.{w} I feel detached from my body, much like in a lucid dream.{w} It’s another experience of mine, yet it feels{w} quite peculiar, more than ever."
+    narr "I only felt my head, pounding from a lack of sleep.{w} I could’ve brought the pillow we made in Home Economics class before."
+    narr "My eyes opened, waiting for the image to focus itself."
+    narr "Hang on...{w} the ceiling’s farther than before.{w} Surely, I haven’t –"
+
+    nvl clear
+    narr "{i}*clatter* *clatter* {b}*CLATTER*{/b}{/i}"
+
+    nvl clear
+    narr "Wait...{w} This isn’t our homeroom!{w} Where am I?!"
+    narr "{i}{b}*CLATTER* *CLATTER*{/b}{/i}"
+    narr "A maniac – a demon{w} – is holding me hostage!"
+    narr "I rested myself for an hour, trying to endure the painful bout in my head.{w} It feels worse than being a zombie."
+
+    nvl clear
+    narr "Floor to ceiling, I studied the room’s layout.{w} The room I’m in is at best,{w} depressing,{w} barely any furniture in sight, save for the bed and desk at my side."
+    narr "I cannot go any farther{w} – my feet are shackled tightly at the two foot-side bedposts.{w} The other option, therefore,{w} is to search. Plenty points of interest in sight."
+    narr "There are three drawers –{w} the middle containing a few markers and a rug, the top with a spare light bulb, and the bottom empty."
+    narr "Other points of interest – the lampshade’s underside and the space beneath the bed,{w} nothing."
+    narr "I scrutinized the pillow last, feeling it all over.{w} At the underside, I felt a thin solid rectangle with a bump converging to the middle.{w} My eyes flashed when I found the object."
+
+    nvl clear
+    narr "An envelope!"
+    narr "The devil must’ve inserted this before I was detained.{w} A small key accompanied the letter, which fit the chain's lock perfectly.{w} It gave me a bit of freedom,{w} but there is still that barred door with a weird device beside it."
+    narr "The letter piqued my curiosity,{w} so I sat down and examined its contents.{w} Addressed at the back of the envelope is my full name – no sender or a postage stamp visible."
+    narr "The parchment looks new but creased, courtesy of myself.{w} I didn’t recognize the handwriting, but{w} it does strike some familiarity."
+    narr "What follows is a short message from whom I dub \"Mr. X.\""
+
+    nvl clear
+    narr "{i}You’ve awaken,{w} Kyou Kirisaki.{/i}"
+    narr "{i}No doubt, you lived the past few days on repeat {w}– only to end, sadly, in pain.{w} If not, what is the term again?{w} Apnea – yes, I figured you would cease breathing at some point in limbo.{/i}"
+    narr "{i}It’s a meager, nevertheless.{w} I’ve no desire to waste your time, so I present my terms, \"rules\" you may refer them.{/i}"
+    narr "{i}First,{w} you seek the truth for yourself.{w} I know well enough that you are a man of God and an enthusiast of Science;{w} thus, you can piece the facts scattered around here. Empty your mind...{w} \"Naivety won’t get you too far, but I’m not saying you are.\"{/i}"
+    narr "{i}Second,{w} know that you aren’t alone in this place.{w} It could be me, another soul, or your God, if you prefer.{w} The catch is, you come out of here alone – no companions.{w} Leave everything behind and think for yourself...{w} think as if nobody exists.{w} I don’t either.{/i}"
+    narr "{i}The third applies if{w} I don’t find you as a cadaver the next morning.{w} You’ll tell me everything{w} – how you perceive rationality – they all intrigue me.{w} What is a \"catalyst\" in your sense?{w} Whatever you hold, I'm certainly expecting more than that.{/i}"
+
+    nvl clear
+    narr "{i}Otherwise,{w} you keep your word.{w} I’ll tell you everything in return{w} – about me and why I involved you in this.{w} You best hasten your steps{w} – your dear brother is worked up, with lack of a better word.{w} In fact, you share a mutual feeling.{/i}"
+    narr "{i}I must warn you,{w} no refusals.{w} You MUST play by the rules.{w} The clock is already ahead of you – once it stops, you can never start it again.{w} A fair bargain if you consider my offer carefully.{/i}"
+    narr "{i}Welcome to purgatory.{w} I sincerely hope you find your stay rather... endearing.{w} I shall see you soon.{/i}"
+    narr "{i}Signed,{w}\nL.C.{/i}"
+
+    nvl clear
+    narr "Malice – the letter is peppered with it. Mr. X,{w} or rather, L.C., makes no effort to mask it.{w} He wants my skin, no doubt.{w} It just bugs me why he opted for his theatrics instead of doing away with me immediately."
+    narr "Speaking of, where is my watch{w} and my phone?!{w} He disposed of them, unsurprisingly."
+    narr "No time to waste! I’ve no choice but to play his game if I wish to live.{w} I’ll keep this letter for reference."
+
+    nvl clear
+    narr "What truth is he talking about?{w} He knows more than I am – far too much to be a stalker.{w} Set aside the second reading for later. Getting out is top priority{w} ...if only I can crack this device."
+    narr "An electronic device, Dvorak-styled keyboard and LCD screen, barring my escape.{w} The magnanimous fellow fitted a similarly-sized transparent board which functions as its cover."
+    narr "There are instructions above the device, printed this time."
+    narr "{i}You could just brute-force the passcode, but I’ve removed the bots from your vicinity should it occur to you.{w} Might as well retain the cover where it’s supposed to be than vainly trying to remove it.{/i}"
+
+    nvl clear
+    narr "Nonsense!{w} There must be an inscription in this room or a keyword in this letter.{w} An expected reaction from me, nonetheless. Well-played!{w} I typed several words from the letter, hoping they would come through."
+    narr "The bars did not move an inch.{w} {i}Access Denied{/i} – all of them!{w} At this point, I’m tempted to follow his ridiculous advice.{w} Sadly, I don’t even know the length of the passcode.{w} Let’s try something else, shall we?"
+    narr "Specimen A:{w} the items in the middle drawer.{w} Probably useful for something else that I have no idea at present."
+    narr "Specimen B:{w} the spare bulb in the top drawer.{w} If I replace the lamp’s bulb, what would be different?{w} It looks fine to me, evidently fresh. I only glossed over the former, honestly."
+    narr "The bulb caught my attention. The glass is dark in color.{w} So, this must be a UV light bulb.{w} I switched the one currently installed with it."
+    narr "My eyes confirmed my thoughts."
+
+    nvl clear
+    narr "With this, there are now stray marks visible on the letter,{w} just random scribbles.{w} Flipping it around, a message eventually turned up on the paper’s middle section."
+    narr "{i}Double lens. EASY, does it?{/i}"
+    narr "It’s the word – I am certain of it.{w} Returning to the device, I typed in the word.{w} My heart throbbed wildly from the excitement, and I'm finally getting out of this wretched room."
+
+    nvl clear
+    narr "{i}Access Denied{/i}"
+    narr "Two words alone made my heart sank and my brain nearly collapse in frustration.{w} Even after a double take, it caused no progress.{w} I had two choices:{w} to wallow in self-pity, or to sort this out more carefully."
+    narr "I recall saying that quote he mentioned.{w} It was during the brief discussion with Shinozaki – after her distressful phone conversation with Sayo.{w} There’s a variation of the quote itself,{w} but I don’t recall additional instances where I’ve uttered it."
+    narr "This is too easy, the culprit incriminating himself by this fact?{w} No. His curiosity about a {i}catalyst{/i} – Suzumoto, in point – muddles it. I believe this stems from the discussion the nine of us had, excluding Miyu. Hiroshi skipped a few details when he retold everything."
+
+    nvl clear
+    narr "I prayed to God, losing myself in meditation.{w} The information I gathered swum around my mind.{w} The hidden message, letter, items in the drawer, and the device itself."
+    narr "It came to me...{w} it just!"
+    narr "Taking a blue and red marker with me, I shut the lid and surveyed the device once more.{w} There’s something I overlooked, one I merely suspected at first glance."
+    narr "Of course!{w} Never have I seen a Dvorak keyboard in my lifetime save for those as textbook figures.{w} It isn’t commonly found in schools, contrary to the QWERTY layout."
+    narr "I reconstructed the layout, ensuring no mistakes.{w} It took another failure before I consulted myself once more.{w} Another word popped out of my mind after the deliberation..."
+
+    nvl clear
+    narr "{b}*CLANK* *HUM*{/b}"
+    narr "The bars gave way to me, allowing the metal door to open freely.{w} From beyond is an empty corridor, well-lit unlike this cell.{w} Two doors are visible – one at the other end, the second just near the first at the left side."
+    narr "Sneaky devil – I should be grateful for his invocation.{w} He might be clever, but as long as God is with me, nothing is impossible.{w} That’s the spirit.{w} As Dostoyevsky once said through Rodion Raskolnikov, \"May the Devil take the fool.\""
+    narr "He’ll not lay a finger upon me{w} – never!"
+    narr "{b}*BOOM* *CRACKLE*{/b} {i}*hiss*{/i}"
+
+    nvl clear
+    window hide
     return
 
 label ch01_10_labinoue1:
