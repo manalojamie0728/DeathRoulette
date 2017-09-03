@@ -58,8 +58,8 @@ label start:
     #call ch01_07_countdown
     #call ch01_08_disappearance
     #call ch01_09_labkyou1
-    call ch01_10_labinoue1
-    call ch01_11_labkyou2
+    #call ch01_10_labinoue1
+    #call ch01_11_labkyou2
     call ch01_12_labinoue2
     call ch01_13_facts1
     call ch01_14_labinoue3
@@ -1201,7 +1201,7 @@ label ch01_09_labkyou1:
     nvl clear
     window hide
 
-    kk9 "{b}*COUGH*{/b}"
+    unk "{b}*COUGH*{/b}"
 
     window show
     nvl clear
@@ -1305,10 +1305,341 @@ label ch01_09_labkyou1:
 
 label ch01_10_labinoue1:
     "Date Unknown - Time Unknown"
+    window show
+    nvl clear
+    narr "I feel worse than a caged canary."
+    narr "There’s an unusual hospitality in that voice, but it still creeps me out.{w} What am I even doing here?{w} One minute I’m walking across the city square, then I wake up here the next."
+    narr "The cell is minimalistic: bed, cabinet, and a CD player.{w} The last is of a similar brand to my own, but this isn’t mine. I’m sure of it.{w} In distress, I can only brush the piano keys with my fingers.{w} Damn me for forgetting my piano lessons!"
+    narr "Instead of a working solution, the disembodied voice occupied my mind."
+
+    nvl clear
+    window hide
+
+    unk "Dearest apologies, Inoue Shinozaki."
+    unk "Let me assure that this is the first time I’ve spoken to you.{w} You might say we met, yet I doubt that.{w} Nevertheless, refer to me as{w} L.C.{w} Set the matter of my identity aside for now.{w} I’d like to momentarily clear up some affairs,{w} {i}personal{/i} things."
+    unk "I recognize your perseverance to seek the truth, despite the pressure it causes on you.{w} I admire that, quite frankly, so I’ll give you a head start.{w} Think of it as a gift.{w} I’m a magnanimous person, I am."
+    unk "Know that another soul dwells this place. I am not here somewhere{w} – yet.{w} I guarantee one other person, if that’s enough to quell your curiosity.{w} Pray you do not cross paths{w} – you are set to kill each other.{w} A heartbeat less is enough, if you catch my drift."
+    unk "If you refuse my orders,{w} then {i}I’ll{/i} personally come to end you both.{w} I’ll give you just enough time to decide and escape. I ask of you nothing else."
+    unk "Consider this a closed deal between us.{w} Keep your knowledge to yourself."
+    unk "Thus, I welcome you as a guest,{w} and a guest you’ll {i}no longer be{i}.{w} Godspeed, Shinozaki, and retain your resolve.{w} The facility does not take such matters lightly."
+
+    window show
+    nvl clear
+    narr "I didn’t hear the recording cut itself; I let it run just to be safe.{w} The piano keyboard has 36 keys, starting with C and ending with B.{w} Pressing each once, they worked just fine."
+    narr "A little tune broke through the silence."
+    narr "It’s probably a nursery rhyme, judging from the music box-like arrangement.{w} The music soothed my nerves.{w} I’ve no clue of the next step, so I lied down.{w} I awaited an answer,{w} or better,{w} death."
+
+    nvl clear
+    narr "This is the extent of it all, eh?{w} Secluded in a world not my own, there exists an odd feeling of serenity.{w} The ceiling animated itself,{w} projecting my subconscious thoughts.{w} I can see myself perfectly without a mirror."
+    narr "This is the face I never showed anyone,{w} not even Sayo.{w} I gave a ninety-nine at best, a façade Kirisaki almost saw through.{w} L.C. is a special cookie, making him or her an exception."
+    narr "Images flashed across the ceiling.{w} Memories of the past days manifested on those."
+    narr "{i}Ten{/i} victims from Sacred Heart Academy...{w} and one impacting detail still etched into my mind.{w} Perhaps it was thanks to Sayo that I found the tracks to the truth I’m seeking."
+    narr "What business do I have with them?{w} Ikari is involved somehow{w} in the most minimal way possible.{w} I know her personally – she and big brother were classmates.{w} I asked him about it last Sunday."
+    narr "There’s nothing new initially, yet I convinced him to disclose further."
+
+    nvl clear
+    window hide
+
+    tomonori "This is just a speculation, but Ikari has been off her head for some time after Christmas break."
+    is4 "You’ve heard of the incident in the storage room that February, didn’t you?{w} The one where –"
+    tomonori "She personally told me;{w} I’m among the few, in fact.{w} I thought she was cuckoo, saying that our batchmates’ illnesses were abnormal and that she was next{w} – It was wild!{w} There’s just no truth beyond the books!"
+    is4 "Roll along the next four months..."
+    tomonori "...To the following March, this year.{w} Seeing her on the newsprint, I wanted to retract my judgement.{w} But I never said it to her face, so why would I apologize?"
+    is4 "..."
+    tomonori "Satisfied? Hope so.{w} If you please, do {i}not{/i} transpire our conversation with anyone else.{w} While she may be a familiar face to the public, the details connecting her and the recent tragedy are not."
+    is4 "But I heard it first from Sayo. Does that count?"
+    tomonori "She knows her limits. I can say Suzumoto’s still in the safe zone.{w} Just heed my advice."
+
+    "I kept my promise, didn’t I?{w} So why am I convicted like a criminal?{w} This world has double standards. It makes me laugh."
+
+    window show
+    nvl clear
+    narr "{i}~Va chez la voisine,\n~Je crois qu’elle y est,\n~Car dans sa cuisine\n~On bat le briquet.{/i}"
+    narr "The brief buzz afterwards made me jump.{w} I slapped myself awake from my temporal daze.{w} It degraded to silence once more, before L.C. spoke again."
+
+    nvl clear
+    window hide
+
+    unk "An elementary rhyme, common amongst the French.{w} Tonight, the moon takes the front seat, awaiting your performance.{w} Kindly reproduce it – just this part.{w} Be swift or be driven mad from the endless repetition."
+
+    window show
+    nvl clear
+    narr "The same verse of {i}Au Clair De La Lune{/i} played after the transmission.{w} This time, I listened more closely."
+    narr "Elementary enough, I say,{w} so the notes must be distinct."
+    narr "This is a version different from the one I first played on the piano.{w} If I think about it, it kind of fits.{w} The amount of facts he presented creeps me out."
+
+    nvl clear
+    narr "From the drawer, I retrieved some writing materials.{w} Then, I drew a staff and marked the notes where I thought they should be.{w} Three drawings to check for any discrepancies."
+    narr "I returned to the piano and marked the keys.{w} My strokes matched the tempo of the song as a fail-safe.{w} Most of the time, the notes match save for one or two.{w} They're only an estimation."
+    narr "Nothing happened after three attempts, so I re-checked my paper."
+    narr "This is jarring{w} – it appears that I’ve distorted some notes by mistake.{w} For instance, the G-flat in {i}feu{/i},{w} I transcribed it as a C.{w} The reverse happened in another note.{w} Oddly enough, I happened to get different results with the last note, C."
+    narr "Before the next attempt, I performed some statistical analysis to help my case.{w} Fourth time and counting."
+
+    nvl clear
+    narr "{b}*CLANK* *HUM*{/b}"
+
+    nvl clear
+    narr "The mechanism drowned my breath.{w} As my heart raced in anticipation, I waited as the metal bars reveal the opening.{w} My way out – a step closer, it seems."
+    narr "My ear tingled, and a lava-like sensation rose up my neck.{w} My fever is returning, it seems,{w} and I haven’t any medicine with me.{w} In fact, my personal items aren’t, too{w} – not even my watch!"
+    narr "How much time has passed, no one can tell."
+    narr "There seems to be no alternative to that door.{w} I left the writing materials in the drawer and turned to leave this hellhole."
+
+    nvl clear
+    window hide
+
+    "{i}Impressive. I would have expected more.{\i}"
+    is4 "{b}!{/b}"
+    "{i}You have questions – I am aware of that.{w} Yes, I know you well enough, Shinozaki.{w} The choice of music is plain, if you’d realized.{w} The question now would be, \"is it mutual from your side?\"{w} You answer that for me.{/i}"
+
+    "A sharp pain entered my temples."
+    "Indeed, his voice constantly switched tones like the rhyme earlier.{w} I didn’t catch what he said for a few sentences,{w} but I eventually recovered."
+
+    "{i}I’ll keep you alive for long enough – it interests me how far you’re willing to go.{/i}"
+    "{i}You keep your wits about you, Shinozaki. I love an open prey.{w} As a bonus tip before I leave,{w} do mind your surroundings, will you?{w} You never want to leave a space unattended in this ever-changing world.{/i}"
+    unk "Don't breathe."
+    is4 "{b}*GASP*{/b} Damn it!"
+
+    "I saw something move from my peripheral, and my eyes followed it quickly.{w} Left,{w} right,{w} everywhere I look, I find nothing.{w} That mustn’t be a trick! I know it!"
+
+    "{i}Ku...kuku...kukukuhahahaha...{w} Oh, boy. This is gonna be a long night.{w} Ahahahahahaha!{w} {b}GAHAHAHAHAHAHAHAHA!!!!!!!{/b}{/i}"
+    is4 "SHUT UUUUUUPPP!!!!!"
+
+    "{b}*SLAM*{/b} {i}*hiss*{/i}"
+
+    is4 "Haa... Haa... Haa...{w} {i}*GULP*{/i} Kuh..."
+
+    "{b}*THUD*{/b}"
+
+    window show
+    nvl clear
+    narr "I never want to hear that demonic voice again{w} – especially that mocking laugh!{w} The wild throbbing filled my ears,{w} my face drained of blood.{w} My posture is that of a doll,{w} left by its owner on the bed after playtime."
+    narr "If I were to look through a mirror,{w} perhaps I’d see a monster."
+    narr "But there’s no need{w} – I’m not the only one that changed.{w} Ticking sounds replaced the pulsations.{w} It better be what I think of it – a ninety-nine in my books."
+
+    nvl clear
+    narr "I watched the door.{w} At any minute, a figure might emerge from the dark corridor.{w} He sees me, vulnerable and weak,{w} and does the most horrifying thing imaginable...{w} the end."
+    narr "Nobody came, contrary to my expectation."
+    narr "With what little strength remained, I forced myself up.{w} I held it in, pacing once per second as I made my way to the door."
+    narr "The sides supported my weight.{w} For another minute, I stared into the void.{w} I couldn’t make out a figure, but there are two doors in sight{w} – one across from here, and the second to my left."
+    narr "But which one?"
+
+    nvl clear
+    window hide
     return
 
 label ch01_11_labkyou2:
     "Date Unknown - Time Unknown"
+    window show
+    nvl clear
+    narr "I made the cell as my lantern, walking at the sides of the corridor.{w} Eventually, a door, similar to the previous one, came into contact.{w} It offered little resistance when it opened."
+    narr "The space felt more enclosed.{w} My hand immediately traversed the wall for a switch.{w} There was nothing to be found.{w} Hesitantly, I stomached my way into the void."
+    narr "I shut the door in the off-chance that a stalker is behind me.{w} It wouldn’t make a difference if I close my eyes now, would it?{w} The pressure heightened,{w} no sound permitted itself to emanate from me."
+
+    nvl clear
+    narr "The next minute felt like a dream,{w} a trance.{w} The walls revealed themselves,{w} distanced farther than where I thought they should be.{w} Endless is the ceiling, so is the space beneath.{w} Some things were talking,{w} defying the silence."
+    narr "Were they the walls?{w} Couldn’t be.{w} If it were from an angel, or God Himself,{w} my salvation is guaranteed.{w} If it were from the Devil, then all is fair{w} – I’m damned, maybe from the beginning."
+    narr "I wanted to go up, but gravity is in effect.{w} It sure is a long way down; none can tell what’s at the bottom.{w} Maybe I’ll be stuck in a wormhole if I risk it{w} – a donut-shaped passageway, if I add!{w} But there is always the door."
+
+    nvl clear
+    window hide
+
+    "{i}*RATTLE* *RATTLE*{/i}"
+    "If I could just{w} – tsk. That’s one pesky doorknob.{w} It wouldn’t even let my hand grip it."
+    "Breathe, Kyou.{w} An insignificant object will not defeat you."
+
+    kk9 "Ugh! Come on!"
+
+    "{i}*RATTLE*{/i}"
+
+    kk9 "Phew... You’re putting up quite a fight!{w} Now let me out, if you please?"
+
+    "Pull, pull, pull..."
+    "It won’t budge, and I’m already using all my strength!{w} There must be a superglue applied to this knob.{w} It doesn’t smell like it – I can’t even smell anything!"
+    "{b}*BUGH* *BUGH* *SLAM*{/b}"
+
+    kk9 "I know you’re there! Open up!"
+
+    "{i}*snicker* Hihihihihihi... Nyihihihihihihihi!{/i}"
+
+    window show
+    nvl clear
+    narr "The platform shook.{w} It’s as if the force on the door caused a quake,{w} or was it that...{w} that...{w} whatever that is.{w} My feet numbed from the tremor; I can hardly get up.{w} I rolled over."
+    narr "From beyond, the endless void defined the boundary.{w} There’s no alternative. I may be going to Hell if I jump{w} – yet in this secluded world, I {i}am{/i} in Hell.{w} But I’m very much alive... beyond reasonable doubt."
+    narr "The shaking stopped{w} – a snap underneath."
+    narr "A black line creeped from the door, branching out towards me.{w} I smiled, accepting what’s to come.{w} And the platform felt more unstable, matching that of my own resolve."
+    narr "I closed my eyes. It makes no difference now, would it?{w} If only I could open it to welcome light."
+
+    nvl clear
+    window hide
+
+    kk9 "Father, into Your hands I commend my spirit..."
+
+    window show
+    nvl clear
+    narr "{b}*SNAP*{/b}"
+    narr "I felt no fear throughout, as I believed a cushion at the bottom would come save me.{w} If not, then it’s alright.{w} The moment I fell, the darkness had consumed my entryway.{w} It’s chasing after me, vying against the light to get me in its clutches."
+    narr "More than darkness, sounds of unrest enveloped me.{w} A deep echo emanated from the chasm,{w} which grew louder as time passed by.{w} Eventually, it washed out all other sounds,{w} culminating to a white noise."
+    narr "It feels...{w} serene."
+
+    nvl clear
+    narr "{b}*CRASH*{/b} {i}*SNAP*{/i} {b}*THUD*{/b}"
+
+    nvl clear
+    narr "Silence."
+    narr "Nothing to be heard - not even the crickets, if it ever was nighttime.{w} The passage of time is unrecognized in this place, an eternal repose one would desire.{w} Darkness reigns in this domain, sheltering it from the chaos that pesters men on the outside."
+    narr "And underneath lay a motionless body,{w} that of a human,{w} bloodless at hindsight.{w} It made no attempts to combat the weight over it.{w} Perhaps it was already crushed, its soul on its way to Heaven."
+    narr "{i}......Ngh... K....{/i}"
+    narr "It drew an image – the beginning of life itself, that of a pupa emerging from its cocoon.{w} But it was nowhere near that."
+
+    nvl clear
+    window hide
+
+    kk9 "GAH! {b}*GASP*{/b} Haa... Haa... {i}*sigh*{/i}"
+
+    window show
+    nvl clear
+    narr "This is the aversion of death,{w} and that fall made me realize something.{w} Just how much damage can a mortal take?{w} Is he unbreakable as he is not led to believe?{w} My purpose is clear, and I hope to find a Grail at journey’s end."
+    narr "I felt my head, warm near the crown.{w} The tips of my finger spouted a thick crimson liquid.{w} No signs of nausea, but I should cover the wound with a tourniquet – if there ever is one."
+    narr "Debris scattered all over the floor.{w} Splinters of wood and broken bulbs littered the space where I lied down – a few inches away from a laceration."
+    narr "Have I been that stupefied to even notice?"
+
+    nvl clear
+    narr "Then I remembered why I came here."
+    narr "Next to my feet glinted a tiny object – a metal key.{w} It could fit the other door’s keyhole perfectly, unless there are some special instructions entailed with it."
+    narr "I’m in a closet, looking ransacked from whatever episode I had earlier.{w} I spotted a flashlight on the top-most shelf.{w} As it went with my hand, a small paper came flying.{w} I caught it, running a quick scan of its contents."
+    narr "The room plunged into darkness – a lucky save by the flashlight.{w} Illuminated, the letter gave off a short message."
+
+    nvl clear
+    narr "{i}One does not speak, write, listen, and live forever.{w} He is part of a multitude of cycles, even which the universe is a major component.{w} Eventually, everything shall return the way they should be at the beginning of time.{/i}"
+    narr "{i}For the love of God, would you kindly provide for me a pen to write with?{w} Fetch the torch for me too, please, as I may have forgotten it in a hurry.{w} Only then shall you pave your own path to the truth{w} – to me.{/i}"
+    narr "{i}I shall be waiting,{w} stranger.{/i}"
+
+    nvl clear
+    narr "This is a joke.{w} He refers to my name one minute, regards me as a stranger the next.{w} Ah, well. I’ll be on my way. It’s not like he knows where I am right now.{w} No pens, though."
+    narr "At this point, the torch became my source of light.{w} The cell door apparently shut itself.{w} Nevertheless, I focused on the other unexamined door.{w} The key I found is a perfect fit, but the rust inside the lock made some resistance."
+    narr "{b}*CLICK*{/b}"
+    narr "That mundane sound lifted me up. With a push, a blinding light seeped out of the opening.{w} I shielded my eyes while opening the door to its furthest limit."
+    narr "My whole system stopped as the image registered into my mind."
+
+    nvl clear
+    narr "I’m in a living quarters.{w} Just compare the bleakness of the cell I’ve been into – it’s absent here.{w} No word is sufficient to describe how peculiar to see its kind, especially in this place."
+    narr "There are couches, ornaments, tables, to mention a few.{w} The center table sports a bonsai on top. Lovely as it is, yet unaesthetic at its position."
+    
+    nvl clear
+    narr "Only when I closed the door did its artistic features sink in.{w} Symmetry is present, down to the most minute detail.{w} Each side has a door at the center, save for the one on my left."
+    narr "It has a coffee table, same height as the one on the center.{w} In front of the wooden book display is a book stand and a pair of unlit candles."
+    narr "A painting adorned the wall above it.{w} Moving it is not an option; it’s too heavy and pinned tightly to the wall."
+    narr "It shows a ship bearing {i}Q 1347{/i} on its hull, painted by R. Jeffs.{w} If it were a person instead of a ship, I’d say it was a shrine.{w} His eyes would meet the door across in that case. Doesn’t take a guess to figure out its state."
+
+    nvl clear
+    narr "And should I mention{w} – the one thing that breaks the symmetry?{w} The device makes its return.{w} This time, however, it consists of only an LED screen with no apparent means of input."
+    narr "Our host has resorted to a minimalistic approach.{w} Nothing is off the ordinary...{w} save for that bonsai.{w} Who would dare put one ON A CENTER TABLE?! Come on. The room has four corners!"
+    narr "What about the other door?{w} Locked, as I expected, and hollow when I listened in."
+    narr "I sat on a couch and contemplated my next move."
+
+    nvl clear
+    narr "In my possession are two separate letters.{w} I’m no expert, but I can tell the similarity between handwritings and syntaxes.{w} Believe me, these are written by L.C.,{w} yet it bugs me how he could’ve written the letters differently."
+    narr "Maybe it was intended for the other person?{w} No, I should assume a thing wouldn’t exist without my eyes as witnesses."
+    narr "...Now I know how Shinozaki feels."
+    narr "I mustn’t forget I’m still in L.C.’s game, odds against me.{w} How easy it must have been for us to be in chokehold, a situation he favors above all."
+    narr "Never mind the hospitable atmosphere{w} – I’m still in hostile territory.{w} I need to escape before I’m skinned alive or even worse."
+
+    nvl clear
+    narr "An idea popped out of my mind, suggesting my starting point."
+    narr "I bent down, fishing my hand under the couch.{w} Aha! I feel a bump.{w} Upturning the couch, I revealed an ink bottle strapped by duct tape.{w} It is half-full, but it will do for now."
+    narr "The same procedure was done for the other couches, albeit with nothing strapped underneath."
+    narr "So, by the second letter, I need a{w} – that reminds me.{w} I lost the marker pens, and I refuse to go check that corridor. Time to find a quill or something.{w} But where do I write?"
+    narr "The books, of course...{w} if vandals permit.{w} There are ten, all thick and worn out, all covering various subject matters.{w} I glossed over the titles."
+
+    nvl clear
+    narr "First two books cover Japanese culture, with the first an English-Japanese dictionary."
+    narr "The third is a thick medical book, detailing major diseases and epidemics in mankind’s history."
+    narr "Fourth book deals with quantum mechanics, higher level of science.{w} I’ll recommend Sumiko this – if I get out, that is."
+    narr "The fifth deals with Greek Mythology and Legends."
+    narr "That's a half of the total books;{w} the scope of knowledge L.C. possesses is astounding!{w} However, that does not soften my view of him."
+
+    nvl clear
+    narr "Sixth book is an Agatha Christie novel, {i}The Moving Finger{/i}.{w} I’ve read that, and the letters still send chills down my spine ever since."
+    narr "The seventh and eighth are children’s literature, nursery rhyme collection and {i}Grimms’ Fairy Tales{/i}, respectively."
+    narr "The last two are philosophical books, Wittgenstein and Kant.{w} Shame I couldn’t take these home. They’re worth hours of leisure."
+    narr "Truly interesting.{w} One drawback..."
+
+    nvl clear
+    window hide
+
+    kk9 "{b}{i}*groan*{/i}{/b} Thousands of pages?{w} Bah! I’d rather sit and die if that’s the method.{w} Excuse the antithesis, but let's begin."
+
+    window show
+    nvl clear
+    narr "My hand reached for the first book.{w} Upon opening the first page, a bookmark fell on the table.{w} It piqued my attention, particularly the small letterings near the ribbon:"
+    narr "{i}Numbers – p. 16{/i}"
+    narr "Then I turned the pages to the section indicated.{w} I briefly relived my first moments in Nihongo class.{w} Sensei was firm even at basic topics such as this; everybody was interested mostly on writing, the Kanas and even Kanji!"
+    narr "Before my eyes lay the first steps, like in any language, to count.{w} My recollection continued until I noticed an oddity{w} – {i}go{/i} underlined in blue.{w} That shade is familiar..."
+    narr "Regardless, I scanned the rest of the book, but there were no other markings.{w} Just that one.{w} Perhaps a clue?{w} I’ll have it as a quick reference."
+
+    nvl clear
+    narr "The latter nine books shared similar circumstances, bookmark and highlighted word someplace inside."
+    narr "In the end, I collected the following:{w} nurse,{w} check,{w} table,{w} eye,{w} alone,{w} tree,{w} ankle,{w} don't,{w} reason.{w} Random, aren’t they?"
+    narr "Ten blue words, a nonsensical message if taken whole.{w} I deemed it necessary to inspect the room once more, checking for oversights."
+
+    nvl clear
+    window hide
+
+    "A second view of the painting helped calmed my nerves as I peacefully gathered my thoughts."
+
+    kk9 "So, a boat. A WWII warship, maybe?{w} A string of ten words...{w} What’s the connection?{w} {i}*sigh*{/i} God, help me."
+
+    "My attention altered between the painting and the open books.{w} Each travel puzzled my mind further,{w} but the subconscious is conjuring something bit by bit."
+    "Using the blank pages at the books' ends, I played with the words, rearranging and reading them slowly.{w} Nonsensical messages appeared more often than those which are sensible, unsurprisingly."
+    "{b}*CLAP*{/b}"
+
+    kk9 "Eureka!{w} So that was the message after all. It reads..."
+    kk9 "Straightforward enough, and works for me!"
+    kk9 "You’re telling me to check that bonsai out?!{w} My pleasure. I’d even dispose of it should you desire."
+
+    "A smile flashed on my lips, the same time as my feet began heading towards the plant.{w} Who would’ve thought? It’s in plain sight from the beginning!"
+    "My hands reached for it without hesitation, exploring and digging the soil.{w} It’s all in our dut –"
+
+    kk9 "Ow! That hurt..."
+
+    "The tree or something... pricked my finger!{w} It felt like a needle.{w} A red spot appeared amongst the stains.{w} I rubbed my hands vigorously, despite the absence of any sign of infection."
+    "{b}*CRASH*{/b}"
+
+    kk9 "That’ll teach you."
+
+    "Something was off about that plant. The moment my eyes wandered about the room, it captured them.{w} Now it’s gone, no longer able to bother anyone."
+    "This is{w} catharsis."
+    "Fully tucked into the sofa, I gave myself some breathing space.{w} A minute or two passed before it caught my attention{w} – a scrap of paper from within the soil.{w} I cautiously dug it up and examined its contents."
+
+    kk9 "1-6-6-5.{w} I have no idea what this means or where does this fit into.{w} Oh, what’s the message this time?"
+
+    "And I stood, prepared to give the books a second reading."
+
+    "{b}*THUD*{/b}"
+    "My feet lost balance, giving in to the peculiar sensation in my head.{w} The fever returned and my body slowly succumbed to it.{w} I shut my eyes and prayed.{w} This is worse than worst – I’m losing my hold."
+    "{i}*rattle* *rattle* *rattle*{/i}"
+
+    kk9 "Who goes there?!"
+
+    "Something{w} or someone{w} is trying to break in.{w} It could only be in my head, but..."
+    "{b}{i}*RATTLE* *RATTLE*{/i}{/b}"
+
+    kk9 "Begone, you spawn!{w} By the power of Christ, I shall not allow you to take me.{w} Stay there... go back to whence you came!"
+
+    window show
+    nvl clear
+    narr "The shaking stopped."
+    narr "My legs weakened as much as my breath shortened.{w} Patches of blue and white covered my vision, ever so slowly being invaded by darker shades of grey."
+    narr "But it won’t stop.{w} The rattles continued, louder than ever{w} – to my left, to my right, even in front of me!{w} I can hear somebody laughing behind me,{w} not to my neck, no.{w} Farther than that."
+    narr "{i}Ha... hahaha... hahahahahahaha... gyahahahahahahahaha... Woohahahahahaha!!!{/i}"
+    narr "The warship; rather, its dead crewmen{w} are feasting upon my predicament.{w} Purgatory? Bah!"
+
+    nvl clear
+    window hide
+
+    "{b}*SNAP*{/b}"
+
+    kk9 "Hngh!{w} AAAAAAAAAAAAAAAAAAHHHHHH!!!!!!"
     return
 
 label ch01_12_labinoue2:
