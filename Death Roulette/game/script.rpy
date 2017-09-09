@@ -24,6 +24,9 @@ define t_har = Character("Ms. Harada")
 define t_kan = Character("Mrs. Kanako")
 define prin = Character("Mrs. Sokoguchi")
 define ms_shi = Character("Mrs. Shinozaki")
+define p_serg = Character("Sergeant")
+define p_insp = Character("Inspector") # Same Character as Emmerich
+define p_emm = Character("Insp. Emmerich")
 define guard = Character("Guard")
 define unk = Character("???")
 
@@ -60,13 +63,13 @@ label start:
     #call ch01_09_labkyou1
     #call ch01_10_labinoue1
     #call ch01_11_labkyou2
-    call ch01_12_labinoue2
-    call ch01_13_facts1
-    call ch01_14_labinoue3
-    call ch01_15_labkyou3
-    call ch01_16_death01
-    call ch01_17_facts2
-    call ch01_18_aftermath
+    #call ch01_12_labinoue2
+    #call ch01_13_facts1
+    #call ch01_14_labinoue3
+    #call ch01_15_labkyou3
+    #call ch01_16_death01
+    #call ch01_17_facts2
+    #call ch01_18_aftermath
     call ch01_19_funeral
     call ch01_20_epilogue
     return
@@ -1644,30 +1647,1383 @@ label ch01_11_labkyou2:
 
 label ch01_12_labinoue2:
     "Date Unknown - Time Unknown"
+    window show
+    nvl clear
+    narr "Don't breathe."
+    narr "Though matterless, that scream was enough to paralyze my own body.{w} Around me is no light, save for the cell I was in earlier.{w} Yet even that is darkness, a prison I never wished to be in."
+    narr "That other room?{w} It’s sealed tight.{w} I’m too weak to force it open, what with this pounding in my head.{w} I even searched for a crowbar or a makeshift lock pick – that’s what they do in the movies and books, right?"
+    narr "Alas, I have nowhere to go."
+
+    nvl clear
+    narr "Beyond that door is a monster.{w} I count one... probably two of them inside and one of them is already being slaughtered.{w} Is our time already up? Why the hell isn’t a clock in sight?!"
+    narr "How long have I been lying here? It feels like hours,{w} hours listening to the shuffling behind the door.{w} I loved the white noise more than that – why won’t you just break your way in already?"
+    narr "Then I heard a familiar sound."
+    narr "{b}*CLANK* *HUM*{/b}"
+
+    nvl clear
+    window hide
+
+    "It came from a distance, some ten feet or so,{w} and it certainly wasn’t the door.{w} I’ve stuck an ear onto it{w} and from the other side, an acid voice spoke."
+
+    unk "I've enough of you.{w} {i}*step* *step* *step*{/i} Another down the drain...{w} Goodbye, you spawn. I never liked your face, anyway."
+
+    "Who the devil might that be?{w} It sparks my curiosity to know; at the same time, I don’t want to.{w} I heard a door shut{w} – another mechanism."
+    "{i}*hissssssss*{/i}"
+
+    is4 "{b}*GASP*{/b}!!!!!"
+
+    "I didn’t expect that.{w} The moment that thing left the room, the door swung open by itself; it's kind of like magic.{w} However, I have to shake L.C.'s hands for orchestrating this well. He’d make a great puppet master."
+
+    unk "{i}Point of no return... Point of no return...{/i}"
+
+    "{i}*HISSSSSSS*{/i}"
+    "I’m already waist-up into the new room{w} and the door is already closing by itself!"
+    "{b}{i}*WHOOSH*{/i}{w} *SQUELCH* *SNAP*{/b}"
+
+    is4 "Hgk!{w} .........Gulg!!!"
+
+    "{b}*SPLATTER*{/b}"
+
+    window show
+    nvl clear
+    narr "My head felt like an orange, the air squeezed and the juice sucked out of it.{w} That juice came from my mouth, slowly forming a melted chocolate-like texture at the floor,{w} or was it strawberry mint?"
+    narr "The cords to my legs have been severed – I feel nothing down there.{w} That part that makes me a woman is already gone... vanished.{w} But as long as I keep my head intact, I shall live,{w} right?"
+    narr "Yup. Even my head alone would be alright."
+    narr "Maybe not my mind, but are my eyes starting to betray me?"
+
+    nvl clear
+    window hide
+
+    is4 "{b}*GASP*{/b}{w} WHAT THE FUCK?!"
+
+    window show
+    nvl clear
+    narr "I withdrew my face in a flash."
+    narr "I’m not sure...{w} but that isn’t my blood. It isn’t blood; not even a trace of iron!{w} It’s not just the face, but it snakes down my body as well."
+    narr "My legs are intact, crumpled and barely touching the door.{w} There are red patches at the space where my waist has supposedly been crushed.{w} I don’t know how, but my eyes did the trick."
+    narr "And if so..."
+
+    nvl clear
+    window hide
+
+    is4 "My... God..."
+
+    window show
+    nvl clear
+    narr "I’m in a living quarters{w} – how I’d wish I never went out of my cell."
+    narr "Where shall I begin?{w} There’s the typical furniture set, but it suits a high-class owner.{w} Two coffee tables, with the right one having books on top and a painting overlooking it."
+    narr "That’s not my concern, though.{w} At the couches’ center is a smashed coffee table, a fragment of a plant pot on one side.{w} That fragment has blood stains, small red patches trailing off to –"
+
+    nvl clear
+    window hide
+
+    is4 "Eeeeeeeeeekkk!!!!!!"
+
+    window show
+    nvl clear
+    narr "I’ve found the rest of it."
+    narr "Behind the disheveled couch is a corpse, head crushed with the plant.{w} And if it's fate wasn't enough, its neck is pierced by some twigs,{w} that of a bonsai."
+    narr "It’s in a prone position, and I dare not to roll it over.{w} The fingers show signs of gangrene – apparent from the yellowish nails and blackened tips.{w} There’s a small cut on the left middle finger’s distal."
+    narr "And the stench!{w} It’s as if a day has passed, but I’m certain he was killed a moment ago.{w} The torso’s a young male, a fellow student – his colors I assume are of ours, dark blue and white."
+    narr "Eyes away from the corpse. Everywhere else is macabre at best.{w} A trail of soiled footprints leads to the exit door. The device beside it flashes a message."
+    narr "{i}Access Denied{/i}"
+
+    nvl clear
+    narr "The device itself lacks significant damage, unlike the rest of the room.{w} The doors have handprints all over, especially this one.{w} The middle couch is knocked to its side with a hole punched on its underside."
+    narr "The painting?{w} It depicts two cows in the meadow. Nothing special about it.{w} Finally, the books, if I can obtain another clue in one.{w} I didn’t bother reading them all{w} – there were no bookmarks of any sort."
+    narr "I’ve reached a dead end. And for whatever reason, my interest fell to the corpse.{w} It’s holding a crumpled paper strip in its hand.{w} If it doesn’t mind, I shall have a look."
+    narr "A combination of four numbers – perhaps a code?{w} That’s a given.{w} But where is the device?{w} Not that non-operational one, of course.{w} Just in case, I’ll keep it."
+
+    nvl clear
+    narr "But what greater curiosity can the corpse bring to me,{w} an octave higher?"
+    narr "With my foot, I rolled it over.{w} Because of the disorientation, I’m not certain if the face looked familiar – its shape is.{w} It lacks{w} features."
+    narr "It struck a familiar chord; the heart given a freshly-made haunt.{w} It was greater, evoking even the most distant memory within myself."
+    narr "From the mangled face,{w} I made it out to be..."
+
+    nvl clear
+    window hide
+
+    "...Kirisaki."
+
+    is4 "Kirisaki-kun!{w} Who did this to you?! {i}*EXHALE*{/i} Where is he? Where is he? {i}*EXHALE*{/i}"
+    "{i}I am nowhere. Do not bother trying to find me.{w} He simply knew too much – put it that way, simply.{w} It’s up to you now, what you do from here.{w} Never mind your friend; I’ll see to his honorable leave later.{/i}"
+    "{i}The door is open, and you’re free to go.{w} Say, when was the last time you’ve ever stopped to question your environment,{w} your contacts,{w} and your existence?{/i}"
+
+    window show
+    nvl clear
+    narr "I’ve forgotten how to move."
+    narr "Whatever smack L.C. comes up with next will leave no effect on me – I’ve numbed too much.{w} And the numbness relieved me of fear, draining me of humanity."
+    narr "I gained the desire to kill.{w} An animal deserves an animalistic punishment, the same way he did to my friend.{w} Who knows, the wretched bastard might be preying on the others, too!"
+    narr "\"He simply knew too much...\" Why wasn’t I killed instead?{w} Am I not the nosy girl, the curious cat?{w} If only I knew, I would’ve asked in the first place – leave it all behind!"
+    narr "He’s a liar, a malicious fiend.{w} I deserve nothing – Kirisaki, especially!{w} This is not my idea of atonement."
+
+    nvl clear
+    narr "Then again, maybe I’m just a bit too idealistic...{w} too naïve to think properly."
+    narr "Sayo is right.{w} Thanks for slapping that to my face."
+
+    nvl clear
+    narr "Did he say the door is open? I didn’t notice.{w} Perhaps the low rumble from behind overshadowed the device’s beeps,{w} or the latter made no sound at all.{w} At any rate..."
+    narr "Hang on a minute..."
+    narr "I swear there were two cows in the painting a minute ago. Small and indistinct cattle in the fields, they were.{w} The brushstrokes are the same, albeit the colors much lighter for this one.{w} The cows,{w} one has vanished.{w} And the other?"
+    narr "It’s staring directly at me."
+
+    nvl clear
+    window hide
+
+    "{b}{i}*CHIME*{/i}{/b}"
+
+    window show
+    nvl clear
+    narr "Ugh! My neck...{w} I felt a bee sting.{w} Not literally, but the sharpness made the pain too real and nearly unbearable.{w} The sensation returned to bother me further.{w} My chest welled up with vomit, yet it refuses to leave."
+    narr "My stomach's insides filled with acid,{w} my knees wobbled like jelly,{w} and everything else crashed to the ground.{w} I’ve lost control of my own body, forced to bear the pressure of a thousand unseen forces."
+    narr "The pain was indescribable.{w} Accompanying it, a violent convulsion,{w} teeth biting down my tongue and lips until they bleed,{w} and hands tearing at my hair –"
+    narr "Uguuu......{w} Go away! Just go away!{w} Hnggg... LEAVE ME ALONE!{w} AAAAAAAARRRRGGGGHHHHH!!!!!"
+
+    nvl clear
+    window hide
+
+    "{b}*POP*{/b} {i}*SPARK*{w} *HUM*{/i}"
+    ".........................................."
+
+    window show
+    nvl clear
+    narr "It all ceased.{w} My eyes refused to open.{w} This time I felt nothing...{w} I’m dead.{w} The water all around{w} weighing me down, down, down...{w} into the abyss where I should be.{w} Away from all the pain I was made to suffer."
+    narr "And with the lack of light, everything looks rightfully black...{w} damn everything.{w} But the air keeps coming, circulating the holes at my head."
+    narr "Guess I’m still alive after all."
+
+    nvl clear
+    narr "Little by little, my senses returned.{w} A thick liquid slid down my throat,{w} and it tastes rusty.{w} Tongue tip and lips felt warm, as well as the forehead.{w} I might’ve popped a vein in all this madness."
+    narr "Everything’s much fouler than before,{w} the air polluted with a mold-like scent.{w} Not even a beam of light intruding my eyes either. I won’t even dare to open my eyes and look...{w} but I did."
+    narr "A blur.{w} My eyes took time to adjust to the darker surroundings.{w} I’m sure I haven’t gone anywhere, yet it all feels different.{w} A pair of orange spots caught my attention.{w} Slowly... slowly..."
+    narr "The painting is at the center, and the orange spots are the flames.{w} This is an altar, no doubt. An altar for the sacred cow that {i}was{/i} in the painting.{w} Yes...{w} and I perfectly recognized the subject.{w} It registered immediately."
+
+    nvl clear
+    narr "It’s a bull, covered with fur from tip to collarbone and horns slightly larger than usual.{w} From chest to bottom, the body of a muscular man. Not sure about the lower limbs."
+    narr "Yep, it resembles that of a Minotaur,{w} from the Greek legend of the Labyrinth."
+
+    nvl clear
+    window hide
+
+    is4 "Eh...he...{w} Ehehe...ehehehe...{w} Ahahaha... Ahahahahaha! HAHAHAHAHAHAHA!!! YAHAHAHAHAHAHA!!!{w} Ehe! Heh... {i}*EXHALE* *GASP*{/i}{w} That hurts..."
+
+    window show
+    nvl clear
+    narr "I’m starting to like the fellow.{w} People these days would opt for goats instead; even Lovecraftian monsters tend to be common sight.{w} This – ridiculous as it seems{w} – is a masterpiece!"
+    narr "And how did that happen{w} – two cows down to one then changing genders after every viewing?"
+    narr "Only then I realized why this is the case."
+
+    nvl clear
+    narr "To describe it would sacrifice uniqueness.{w} Let’s have this scene:{w} the interior morphed into an abomination, a sepia touch in every direction{w} – turning me into an unwelcome guest.{w} Everywhere I move, a mix of moans and rings haunts my ears."
+    narr "Somehow, I’ve descended to Hades...{w} No. I’m still on Earth,{w} an Earth warped in an unknown dimension.{w} Dreams and reality have inverted themselves, a possibility I feared long ago. Wishful thinking, indeed."
+    narr "It all came back to me...{w} it all makes sense."
+
+    nvl clear
+    narr "Pick up...{w} pick yourself up."
+    narr "Sooner or later, even the floor might consume me.{w} I dare to avert myself to share Kirisaki’s fate.{w} And the first step is to the rear."
+    narr "Now, the LCD screen displays nothing but black, yet it hums as if electricity is flowing through it.{w} It is not even responsive when the device is given a rap.{w} Just give an {i}Access Granted{/i} message, will you?"
+    narr "{i}*WHOOSH*{/i}"
+
+    nvl clear
+    window hide
+
+    is4 "Ha! Not this time, you fiend!{w} Only a fool is befallen a second time by the same trick."
+
+    window show
+    nvl clear
+    narr "Like before, the door opened without warning;{w} additionally, my knees were shaking at the same rate.{w} Yet the transition is minimal, darkness to darkness."
+    narr "The faint light mapped the way out.{w} At the other side of the boundary lay another set of solid footprints.{w} It was not an average person's;{w} it was smaller than an adult woman’s six."
+    narr "My estimate is a four, that of a small child.{w} And they appear to be heading towards the living quarters.{w} Both sets disappear upon {i}impact{/i}, as there is a midpoint on the doorway."
+    narr "The corridor gave off the same vibe{w} – rusty walls, dirt-filled floors, and a few broken pipes running across the ceiling.{w} This facility has warped itself to a state even worse than before,{w} this as a chasm’s bottom."
+
+    nvl clear
+    window hide
+
+    "I swiped a candle without regard of the sinister subject it’s supposed to illuminate."
+    "{b}*GRUMBLE*{/b}"
+    "That was it,{w} the perfect time to scram.{w} The door shut itself as soon as I went through.{w} With a flat surface behind me, it is safe to breathe..."
+
+    is4 "Phew. Finally."
+
+    "{b}*CRASH*{w} *ROAR*{/b}"
+
+    is4 "Ack, AH!{w} Hands off! Let me go! {i}*hic*{/i}{w} HELP!!!"
+
+    window show
+    nvl clear
+    narr "The painting’s entity materialized itself to attack.{w} For a thief like me, he showed no mercy – something I never expected from itself.{w} Blood ceased flowing to my arms, which its hands crushed to a pulp.{w} The candle fell and almost died out."
+    narr "Its burly hands continually wrapped themselves around me, already creating music with my bones,{w} made even worse by the ivy blocking my air!{w} How long is his damn tail?!"
+    narr "The next moments felt like hours,{w} hours of enduring the torture forced upon me."
+    narr "The ringing grew more intensive and I felt myself colorless, pathetically begging for air.{w} A few drops of saliva forced themselves out, gushing to a drool."
+    narr "Soon, my body grew frail and I’ve lost all willpower."
+
+    nvl clear
+    window hide
+
+    is4 "Mama... Papa... {i}*choke*{/i} brother...{w} Come rescue me......... {b}GAH!{/b}"
+
+    "Somebody help me...{w} please..."
+    "{i}*SNAP* *CRACK*{/i}{w} {b}*THUD*{/b}"
     return
 
 label ch01_13_facts1:
     "JUNE 20, 2013 - 0900H"
+    window show
+    nvl clear
+    narr "Following the announcement, a state of calamity was raised."
+    narr "Students and staff alike grew paranoid with no knowledge if and when a third case might occur.{w} There were initially qualms from some students regarding the tighter policies, but they warmed up after seeing their effectiveness."
+
+    nvl clear
+    narr "To contain the outrage, an agreement was made to not involve the media for a certain period,{w} or until proof of grave malice is presented.{w} Since then, the police handed in zero evidence – an indication of a perfect crime."
+    narr "And as model students, they were civil enough to not point fingers.{w} Theories spawned: stories about the resident ghost resurfaced, and a master criminal with a penchant for magic was conceptualized."
+    narr "None were of substance."
+
+    nvl clear
+    narr "The previous morning saw Inoue and Kyou’s parents to the principal’s office.{w} Tears and pleas best describe the situation, one which Sayo oversaw.{w} Mrs. Genkai attended on behalf of Ms. Harada, the latter still recovering from her shock."
+    narr "Kyou’s brother temporarily stopped attending classes.{w} He is currently undergoing therapy and medication to alleviate the trauma inflicted upon him{w} – even worse that he could’ve been the third victim himself!"
+    narr "Despite her constant reminder to stay collected, Sayo herself lapses, partially hindering her performance."
+    narr "She went out of the classroom to breathe, sitting on a blue bench by the windows.{w} Thoughts and questions overwhelmed Sayo’s mind.{w} She buried her face, bending down in prayer."
+
+    nvl clear
+    window hide
+
+    hy10 "Sayo-chan...?"
+
+    "Somehow, that sweet voice uplifted her spirits a bit.{w} Sayo composed herself and gave a subtle heave of confidence."
+
+    sr5 "Hikaru, good morning!{w} What have we?"
+    hy10 "Errr... not much, really, especially with all of this going on.{w} You alright? You look a bit pale."
+
+    "Sayo understood her intention{w} – Hikaru saw through the facade, reflecting it on her face.{w} The former made no attempts to sugar coat the situation."
+
+    sr5 "I appreciate if you’ll sit down with me; otherwise, I see no point in holding you.{w} Where’s Aria?"
+    hy10 "Went by myself. I just needed to {i}go{/i}. {i}*giggle*{/i}"
+
+    "With all the pleasantries dealt with, their conversation immediately flowed to the mysterious abductions.{w} Sayo handled the matter with care, as it was normally discussed with discretion."
+    "She leaned closer to Hikaru."
+
+    sr5 "You’re aware of our teachers’ advice – not to accuse nor suspect without proof?{w} Let’s just say... there’s no stopping it."
+    hy10 "Mouth zipped. Spill the name, please."
+    sr5 "Not my point, you see. What I meant is...{w} {i}*sigh*{/i} Look, even the police are empty-handed until now.{w} And the gossip? Off the wall and senseless! When will we ever learn...?"
+    hy10 "Don’t stress yourself, Sayo! There are much bigger things to worry about."
+    sr5 "Yes, bigger things{w} of a smaller scale than this one.{w} Who would’ve thought? A crisis. And on the very first month!{w} To think that wasn’t enough to keep our hands full."
+    sr5 "Say a scandal breaks out if this goes on far too long,{w} would the parents still choose to enroll their children here?{w} It'll become even worse if-"
+    hy10 "If someone was to re-enact the Sacred Heart murders, that is."
+    sr5 "Re-enact... copycat murders?{w} And on what motive? The truth never came out!{w} The closest link we’ve got is Suzumoto-san, but even she is a mere connection. What has she to do with it?"
+
+    "Hikaru shrugged.{w} Even after countless times she was mentioned, Sayo always disregarded Suzumoto’s involvement{w} as all they have is the night guard’s horror story."
+    "But the notion of copycat murders intrigues Sayo.{w} To some, it’s just another cozy mystery plot. However, the horror behind those is real."
+    "Actual cases have been documented as of late, with the most deranged men following the likes of Jack the Ripper, H.H. Holmes, and Ted Bundy."
+
+    sr5 "Pardon. I seem to have chosen my words poorly.{w} Even I make mistakes, you see... even the most fatal ones."
+    hy10 "Everyone’s on edge, Sayo. You're not the only one I know that's been acting weird lately.{w} Besides, I’ve got your back. So, why worry? {i}*giggle*{/i}"
+    sr5 "You flatter me. I should be the one to watch yours. Hehehehe.{w} Glad to have friends on their heads most of the time when you're not.{w} Ah, well. What interest is there?"
+    hy10 "..."
+    sr5 "You’ve no intention to snack?"
+    hy10 "No. I’ll hold this off until lunch.{w} Oh! That reminds me.{w} I have to study calculus. Our assignment, I mean."
+    sr5 "But as far as I remember, today you have no–{w} Oh... *chuckle*{w} Is that what I’ve heard?"
+    hy10 "Eh? Heard what?!"
+    sr5 "Hihihihihi..."
+    hy10 "No! No! No no! I genuinely just want some tutoring, nothing more.{w} Sayo... who told you that? Grrrr..."
+    sr5 "Hihihihihi...nyahahaha! {i}*giggle*giggle*{/i}{w} Yeah. Be on your way then. And good luck~. {i}*wink* *wink*{/i}"
+
+    "Flustered, Hikaru pranced back to IV-C.{w} Sayo watched her subtly and amused herself by drawing hearts in the air, all towards Hikaru."
+    "For a while, she enjoyed herself at the bench, greeting people as they passed by."
+
+    window show
+    nvl clear
+    narr "Then she returned to her previous mood."
+    narr "She went to her seat, searching through her backpack.{w} She took out her journal, a maroon hard-covered book fastened with a similarly-colored ribbon.{w} She unfastened it and opened a few pages."
+    narr "Within the most recently written pages, she had written the following:"
+
+    nvl clear
+    narr "{i}June 19, 2013{/i}"
+    narr "{i}It’s been a day since the disappearances of Inoue Shinozaki and Kyou Kirisaki, both of whom were my classmates during my First and Second Years, respectively{w} – at least from what I’ve heard first-hand from Mrs. Genkai and Ms. Harada.{/i}"
+    narr "{i}I inquired of IV-A’s vice president.{w} She mentioned how caring their adviser was, having no children as of late.{w} It impacted them greatly, having potentially lost a sister in a senseless crime.{w} My sympathies.{/i}"
+    narr "{i}The same goes for Kyou’s brother, his mother and his former adviser, Mrs. Genkai.{w} They have agreed to let his brother stay home while the investigations are underway.{w} To describe him as jarred is an understatement – he fears for his life, one we’ve felt gravely after we heard his story.{/i}"
+
+    nvl clear
+    narr "{i}It was half-past five when they arrived at the market to buy materials for their respective activities{w} – Kyou for their activity in PE, and his brother for an oral report in History.{/i}"
+    narr "{i}They entered the school gate 15 minutes later, which Onifuchi-san confirmed,{w} finally parting ways at the first staircase.{/i}"
+    narr "{i}That was the last time they met.{/i}"
+    narr "{i}He remembered no suspicious person inside the classroom nor the storage area under the stairs.{w} He did, however, confirm seeing some other students at the second floor,{w} though he wasn’t able to distinguish which year level they were.{/i}"
+    narr "{i}I recalled that Akira and Miyu usually arrives around that time, so I asked him if he saw them.{/i}"
+    narr "{i}Negative.{/i}"
+
+    nvl clear
+    narr "{i}So, we decided to interview the Shinozakis next.{w} Inoue’s father spoke for her mother, who was too distressed to speak.{/i}"
+    narr "{i}At five o’ clock, Dr. Shinozaki left home to attend to the Operating Room.{w} That leaves two people home as Tomonori-san is currently boarding out of town.{/i}"
+    narr "{i}He repeated Mrs. Shinozaki’s story that morning, 5:45AM when Inoue left for school.{w} That means she would’ve found Kyou in IV-A,{w} but if that’s the case...{w} No. Let’s not be a bunny.{/i}"
+    narr "{i}I personally asked Onifuchi-san if Inoue passed by, describing her features to him{w} – he wasn’t very good with faces.{/i}"
+    narr "{i}\"Hair down or with a bun, no one?\" I added.{w} While he did see some students matching that description, he couldn’t confirm if he saw Inoue yesterday morning.{/i}"
+    narr "{i}One last question, \"And the earliest student or staff, do you recall the time?\"{w} He replied, \"5:20, around the same time he assumed his post.\"{w} And I wondered who, but I couldn’t think of anyone.{w} I arrived ten minutes later than the usual time.{/i}"
+
+    nvl clear
+    narr "{i}These are the facts I gathered, mostly from the meeting this morning.{w} Mrs. Genkai excused me for my third period, coincidentally Ms. Harada’s scheduled time with us.{/i}"
+    narr "{i}It only begs the question, \"Who?\"{w} He mustn’t be who I think he is. Too obvious a target, might I add.{w} Until the police have gained some significant leads or evidence, I shall withhold my tongue.{/i}"
+    narr "{i}But I’ll keep my wits about me.{/i}"
+    narr "{i}'Til I ramble again,{w}\nSayo Ronoroa{/i}"
+
+    nvl clear
+    narr "Having re-read the entry, Sayo replaced the journal in her backpack.{w} Then, she got the English textbook from under her desk, opening it to a random story."
+    narr "All while contemplating what to write later that night."
+
+    nvl clear
+    window hide
+
+    "Miyu glanced at the problem."
+    "They were given a set of questions on Continuities, with functions and graphs as bases.{w} There is one question that baffled Hikaru,{w} a rational function that is discontinuous in hindsight – a type of removable discontinuity."
+
+    mh8 "You need no formal conclusion. Just indicate the x-value that will zero both the numerator and denominator.{w} That’s it. Just solve it normally."
+    hy10 "Ooooh... Nice. Nice.{w} Thanks for the help. You’re the best!"
+    mh8 "Anytime."
+    mh8 "By the way, have you anything new about... {i}that{/i}?"
+
+    "Hikaru looked puzzled, scrutinizing what he meant...{w} then she picked up."
+
+    hy10 "Nothing, still on a roadblock. Tsk.{w} Even Mama is worried for me. She and Papa have agreed to pick me up at 5:30 everyday.{w} What about if there are projects? Such bad timing..."
+    mh8 "Forget them. You know how our teachers value our safety.{w} I’ve heard they were changing their list of activities while the investigations are underway."
+    hy10 "Hmmm..."
+    mh8 "Perhaps Sayo knows something...{w} if she’s willing to disclose even the most minimal details."
+    mh8 "But I find it more convenient to ask you{w} – you two were having a chat earlier, weren’t you?{w} Our council president is bound to slip something out for sure."
+    hy10 "No. She just needed a faucet to rant on.{w} I related to her something from a documentary,{w} about copycat murders, I think she referred to them."
+    mh8 "Bingo. Anything else?"
+    hy10 "I don't think so. She cut herself off after a while, upon realizing her error in {i}wording things{/i}.{w} Suffice to say she looked anxious when I first saw her."
+    mh8 "Then she’s not telling everything..."
+
+    "This took Hikaru aback.{w} She recalled every instance of their brief dialogue,{w} and to her knowledge, Sayo was sincere throughout{w} – unless Miyu’s notion is true."
+    "Sensing her confusion, Miyu shot back a delighted face."
+
+    mh8 "Ahahahahaha! Make no mistake. I mean not to incriminate her.{w} In fact, I can vouch for her innocence.{w} She arrived after me and Akira’s service van – six o’ clock.{w} Still confused?"
+    hy10 "Yeah. Yeah. I get you. I don’t suspect her either.{w} But out of all the people here, why her specifically?{w} It’s absurd enough to think about it."
+    mh8 "Yes. Yes. Absurd. {i}Truly{/i} absurd.{w} But what if this is another paranormal mystery? Yes... now that’s the tender meat..."
+    mh8 "Wait. Don’t you have anything else to do?"
+    hy10 "Nothing more.{w} Hey, thanks for the help! Hahahaha!"
+
+    "Miyu responded by holding up three fingers: thumb, index, and middle."
+    "After Hikaru returned to her seat, Miyu returned to his business earlier.{w} He glanced at his watch and held his arms behind his head."
+    "His mind became clear, ignoring any external presence around him.{w} He lost himself in a sea of thoughts."
+
+    mh8 "I wonder what happened to those two.{w} Are they still breathing?"
+    mh8 "The pieces don’t fit any way I look at them, but I reckon I must try harder.{w} Wish this ends as soon as possible.{w} I don’t even want us to stay like this forever."
+
+    "{b}*RING* *RING* *RING*{/b}"
     return
 
 label ch01_14_labinoue3:
     "Date Unknown - Time Unknown"
+    window show
+    nvl clear
+    narr "Crawl... Crawl...{w} Like a worm, you must."
+    narr "Get away...{w} away from this place you’ve once known as paradise,{w} the place whose fangs desire your suffering.{w} This place is a prison, Purgatory...{w} Death is the sole entryway,{w} and death is the only exit."
+    narr "I’ve been made a sacrifice, true to the facility’s nature.{w} But even then, this place could be worse than the Labyrinth itself,{w} a legend manifesting itself into reality."
+    narr "My soul has been wandering around in this desolate place without any sense of direction{w} endlessly... endlessly...{w} until I realize that exhaustion is an illusion,{w} an illusion that rings true."
+    narr "That constant fear of darkness blanketing the proximity{w} and of a malevolent force tailing you no matter how fast or how far you’ve treaded, seeking to crush your entirety.{w} One never feels much closer to death’s pangs."
+
+    nvl clear
+    narr "The moment I opened my eyes once more – a little before that{w} – death was ascertained.{w} Since then, I’d been a subject of torture, one that's able to break my dignity and had me questioning my beliefs."
+    narr "Everything faded to black,{w} and a force transported me to a dimension contrasting the reality I’ve known since.{w} And I care not if I’ll ever return.{w} Besides, who even managed to resurrect from death?"
+    narr "No one.{w} No man ever did."
+
+    nvl clear
+    narr "The illusion has been shattered."
+    narr "Heavy pressure crushed my body and my legs could propel me forward no longer,{w} but I won’t die.{w} Not if there’s an ounce of hope left."
+    narr "And that ounce lay itself exposed to my delight."
+    
+    nvl clear
+    narr "Among the cracked pieces of ceramic tiles and rusty paint, therein lies a crimson smear.{w} Initially hand-sized patches scattered around, they eventually converged to form a puddle,{w} But it was not just a puddle."
+    narr "Somebody was dragged before me,{w} to the left passageway, I see.{w} Thus, I simply heeded my subconscious.{w} Though struggling, I managed to get on my feet and reached the door at the end."
+    narr "I threw myself inside,{w} and the door forced itself shut, leaving me in the darkness once more.{w} The heavy footsteps echoed louder and louder...{w} then it stopped.{w} The entity reversed direction as its steps gradually became lighter.{w} Lighter... lighter... {i}lighter{/i}..."
+    narr "It’s gone now,{w} probably shifting its interests to something else.{w} What’s that foul smell?"
+
+    nvl clear
+    narr "Then, from across my position{w} appeared a faint light ray.{w} Its color was indistinguishable, making the room’s features more apparent.{w} The blood smear – slushing at every foot contact – led to the center,{w} eventually ending at the larger body of liquid."
+    narr "I managed a peek.{w} Dark-bluish water filled the pool, welling from the two tanks on one end.{w} The light’s reflection presented more detail to its surroundings."
+    narr "The square pool, depth unknown, has straight columns on each corner.{w} It’s missing a ladder, but the surface is about two inches from the floor.{w} There are exposed wires hanging from the columns, two big ones from the ceiling.{w} A death trap in plain sight!"
+    narr "I sat at the nearest left column{w} as my legs are too weary to walk around.{w} I shut my eyes, wishing for all this to end.{w} But I can’t.{w} I’m cursed to live through Hell with no means of escaping...{w} not even sleep will save me."
+
+    nvl clear
+    narr "Half an hour passed{w} and the pain mellowed.{w} I’m able to walk, but only for a few moments, lest I spend another half hour recuperating;{w} worse, it might turn to hours."
+    narr "The water illuminated the wall across me, if only faintly.{w} Near the middle are three valves,{w} each connected to pipes of various widths and has a common pipe perpendicular to them."
+    narr "A valve’s size is proportional to its pipe.{w} Likewise, there are three similarly-sized tanks each fitted with a pressure gauge going up to 100 psi."
+    narr "Farthest to the left are some lockers large enough to fit in a suit.{w} One of them has a broken padlock.{w} Suppose something is there..."
+
+    nvl clear
+    narr "A little later, my legs recovered;{w} thus, I can explore the area freely."
+    narr "Inside the locker is a crowbar, much to my delight.{w} Ah, prepare for the mighty iron, you slobs!{w} And the crowbar mustered its magic."
+    narr "The two lockers on its left were empty, while the remaining one contained a wet suit.{w} I removed it from the hook and unzipped its back.{w} A piece of bond paper is taped on the chest area."
+    narr "I examined its contents.{w} Written in blue ink,"
+    narr "{i}To initiate purification, apply the indicated pressure to all tanks: 70 psi minimum.\nWARNING! Explosion Risk – Do not overload tanks. Limit pressure to 100 psi.{/i}"
+
+    nvl clear
+    narr "I replaced the paper in the locker, shifting my attention to the pool.{w} My legs prohibited themselves to dip, as the color reeks of contamination."
+    narr "The door across the pool, right of my entryway, became another point of interest.{w} Beside it is yet another device, its screen pulsating erratically.{w} There’s a slot on top to slide a keycard into."
+    narr "There are two other doors as well,{w} but their respective devices are currently offline.{w} Thus, one choice remains.{w} Damn hell if I’m going back to that corridor – I’d get gutted."
+
+    nvl clear
+    narr "It may have been a mirage, but something glittered from the pool.{w} Chin on tiles, a submerged piece of plastic came into sight.{w} I skirted the edge, taking care not to fall into the liquid."
+    narr "It’s a plastic container, inside of which is a card.{w} The crowbar is useless at this point{w} – the item is too far into the alcove{w} and the latter itself is too deep to angle the crowbar correctly."
+    narr "And no. The wetsuit won’t save me from any adverse effect the water might have.{w} It’s all on the purification process now."
+
+    nvl clear
+    narr "Eyes on the pressure gauge and hands on the left valve, I gave the latter one full clockwise rotation.{w} The tanks’ pressure rose a certain value.{w} The values returned to initial state upon reversing the action."
+    narr "The two other valves wouldn’t budge no matter how forceful a grip applied to them.{w} Why?{w} The left valve needed a full rotation first. Only then the middle valve would become movable.{w} I returned it to its previous state."
+    narr "Still, the right valve wouldn’t budge.{w} I repeated the trick with the left valve using the middle.{w} This time, it moved."
+    
+    nvl clear
+    narr "Thus, the valves work like this, in principle:{w} One rotation either pressurizes or depressurizes at least one tank."
+    narr "After playing around, I took note of the following pressure changes, in tank order:"
+    narr "{i}Left Valve: +25 psi, +40 psi, +10 psi\nMiddle Valve: +20 psi, -10 psi, +35 psi\nRight Valve: -15 psi, +20 psi, -45 psi{/i}"
+
+    nvl clear
+    narr "Then again, I might risk an explosion if I mess up.{w} Another note,{w} the movements need memorization, as a zero-pressure tank cannot be depressurized further{w} – non-zero pressure on other tanks in this case is possible."
+    narr "Before starting, I made a double-check on the other door."
+    narr "Silence...{w} dead silence..."
+    narr "No time to waste; I’ve already waited enough.{w} Any longer and another bizarre occurrence might pop up.{w} You never know."
+# Potential Puzzle on this Part
+    nvl clear
+    narr "{b}*WHIRR* *HUM*{/b}"
+    narr "Oops...{w} That bellow doesn’t mean well.{w} What was the range again?{w} 70-100 psi,{w} and all movements restricted to a 100-psi maximum pressure."
+    narr "Or is it trauma?{w} It wasn’t confined to the tanks nor the pipes.{w} A low sound came from the pool.{w} I spun around, witnessing the change in the water’s color.{w} In the process, the tanks might have partially drained the pool."
+    narr "Perfect{w} – the alcove is just above the new level!"
+    narr "The crowbar found another use, the last instance, I suppose.{w} All I need to do is bend down near the edge and bring the plastic pouch nearer, enough to grab it by hand.{w} A mediocre task if —"
+
+    nvl clear
+    window hide
+
+    is4 "Is this a joke?!{w} I thought it all ended there...?"
+
+    window show
+    nvl clear
+    narr "From the drain emerged a red cloud, slowly engulfing the liquid until no clear area remained.{w} With it, came the seeds, a rare kind.{w} They are much larger and has a tail on one end."
+    narr "It is a freshly-made watermelon juice – only unappetizing!"
+    narr "With my eyes on the pool, electricity buzzed from above,{w} activating the lights in rapid succession.{w} The top half of the room revealed itself..."
+    narr "And yes, it was all familiar sight.{w} At the ceiling near the hanging wires,{w} a flesh-like fluid plastered itself...{w} with no fluid dripping from it!{w} Once more, the pressure inside the room increased{w} – or is it just me... again?"
+    narr "I stood there, petrified."
+
+    nvl clear
+    window hide
+
+    "{b}{i}*CLANG*{/i}{/b}"
+    "The crowbar fell from my hands, luckily not into the pool itself.{w} Its surface had apparitions swimming all around...{w} dancing... dancing...{w} forming figures once hidden in subconscious thoughts."
+
+    is4 "Gnnnkk... Gah... {i}*SQUEAL*{/i}{w} It hurts... It hurts... It hurts!"
+    "{i}I’d like to clean – {b}SOME AFFAIRS{/b} – momentarily – personal {b}THINGS{/b}...{w} Naivety won’t get you too far. {b}I’M NOT SAYING YOU ARE{/b}...{w} {b}DO YOU{/b} – believe in – {b}GOD{/b}?{/i}"
+    "...\n{w}...\n{w}......"
+    is4 "AAAAAAAAAAAAAAAAHHHHHHHHHH!!!!!!! ENOUGH!!!!!!!"
+
+    "{b}*BUZZ* *STATIC*{/b}"
+
+    "{i}Clutch your head if you like. Scream until your voice dies away.{w} No one here is to help... except for yourself.{w} A naïve little girl you are, easily mended and easily swayed.{w} Swing, swing, swing.{w} Rocking like a hammock with a baby...{/i}"
+    is4 "Shut up! I’m not afraid of you anymore!{w} All these monsters and gauntlets... you molded them out of my mind, didn’t you?!{w} And you dare mock me, Inoue Shinozaki?"
+    "{i}You consented to a simple agreement at the start, didn’t you?{w} You are a guest,{w} and as a guest, you are bound to follow the rules, puku.{w} And as for the other guest, he exists no longer...{w} No longer, puku.{/i}"
+    is4 "And for that I’m grateful?{w} No! Had I been earlier in the living quarters, I would’ve been disgraced the same way as the {i}other guest{/i}{w} – my friend, Kirisaki!{w} What has he done?!"
+    "{i}Who is Kirisaki? Hmmm... Swing, swing, swing...{w} Let me see...{w} I don’t recall.{w} Does a \"Kirisaki\" exist?{w} Ah! He does{w} no longer – neither do you.{/i}"
+    is4 "I’m flesh-and-blood, breathing ably well.{w} The foul smell, the carnage-filled corridors, and the pangs all over me... that doesn’t prove anything outright.{w} But I exist!{w} My friends... my teachers... and my family... to them I exist!"
+    "{i}And where are they, puku?{/i}"
+    is4 "Somewhere... home... outside!{w} I don't know!"
+    "{i}*snicker* *cackle* *cackle*{/i}"
+    is4 "Tsk!{w} {i}*hic* *hic*{/i} You bastard... Uhu...uhuhuhuhuhu..."
+    "{i}Oh... you made her cry.{w} You bad, bad – you gonna get slapped in the butt-butt.{w} Swing, swing, swing... {b}POW{/b}! Naughty –{/i}"
+    "{i}You started it, puku!{/i}"
+
+    "{b}*BUZZ* *RING*{w} *BUZZ*{/b}"
+    "Silence...{w} a relief{w} to never hear those damned voices again."
+    "The tears continued to gush forth, a river sufficient enough to fill.{w} By this time, I had enough. Everything felt unnecessary.{w} Why wouldn’t they let me be?!"
+    "The words resonated to my person, slowly infecting my system.{w} How could I consider something so toxic?{w} Have I... Have I..."
+
+    unk "You would accept my pardons, yes?"
+    is4 "Spare me the impudence.{w} I do not permit you to speak – such words do not flatter me."
+    unk "Hoh?{w} A light beam to a mirror, or a man to his skull?{w} Every so often I wonder, is Inoue Shinozaki a stage actress on the sides?{w} It’s as though you’re able to focus the spotlight on yourself whenever you wish – dahlias within dystopian cosmos makes my heart go yonder."
+    unk "Now you see why I’ve taken a fondness of you, despite the hostility you’ve shown the master.{w} A whip would be too old-fashioned, but the easy way{w} I have taken. {i}*snort* *snicker*{/i}"
+    is4 "I may be born of noble birth, but I know when to bend the rules.{w} Rules are there to enforce authority or to allow abuse.{w} Certainly, rules do not add respect,{w} and respect is what you do not deserve."
+    unk "Is that true? Is it not? No one can tell.{w} To begin with,{w} there is no proper way to begin.{w} And you’re clever enough to realize that, so far,{w} I gave you no rules. Did I?"
+    is4 "You did, you amnesiac.{w} Either you let me out of here immediately or –"
+    unk "Hmmm... I do not recall a single rule.{w} I do recall, however, saying that to you – if you count a few days old message, that is.{w} In fact, that is not a rule nor a restriction, no. {i}*chuckle*{/i}{w} It’s a warning."
+    is4 "{b}!{/b}"
+    is4 "What are you talking about?"
+    unk "If you do not wish to hear my voice, shame.{w} I desired to exchange a few handshakes should you escape.{w} Thus, I remove the privilege from you, you who had treated our friendship a waste."
+    unk "You aren’t a loss, Shinozaki{w} – I’ve got other friends to attend to.{w} {i}*sigh*{/i} The chance that you’ve blown... think about it."
+    is4 "I’ve a lot... {i}*hic*{/i}{w} And {i}one{/i} of those is the same one {i}you{/i} murdered!{w} How cruel could you be to handpick an innocent boy? {i}*hic*{/i}"
+    unk "Who? Murdered? I suggest you abstain from slander.{w} What have you to prove? Do you not see my hands, free from blood?{w} Of course, you don’t.{w} To you, I’m a voice from a location you’ve no knowledge about."
+    unk "Besides, have you even considered doing another take?"
+    is4 "What?!"
+    unk "Your mind’s all mushy now. Sort your own problems out, dear.{w} Better for me to zip up and leave, since you’ve no need of my services.{w} Oh! Should you ever leave, do write a little something and leave it at the door."
+    unk "We’ll still encounter each other again. {i}Ta-ta!{/i}"
+    is4 "Hold it!{w} The children earlier...{w} who are they?!{w} What do they mean by those words?"
+    unk "Again, you are confused.{w} Leave it all behind – it is nothing.{w} Besides, what interest is there to behold?"
+    is4 "{b}*GASP*{/b}{w} Don’t tell me you’re..."
+
+    "{b}*BUZZ* *STATIC*{/b}"
+    "And I never heard from him again."
+    "Partially, I resent the hostile demeanor.{w} That could spell the difference between my end and my survival.{w} Perhaps he does not mind? I don’t either."
+    "I went with my business, sending the crowbar down to its job, before another spell effects on me.{w} I forbade my eyes to raise a single inch, knowing what’s down there."
+
+    "{i}I didn't do it...{/i}"
+
+    "Shut up. Urgh.{w} There it is again... the air... that whistle...{w} Keep going. The claw is nearing the prize.{w} Just to stretch a bit farther..."
+
+    is4 "Alright! That must be it."
+
+    "The card is within reach.{w} I dragged it towards the opening, maintaining full control despite the chaotic atmosphere.{w} Finally, I saw the plastic’s corner{w} and the crowbar served its purpose."
+
+    is4 "Reach for it... {b}{i}*GRUNT*{/i}{/b}{w} Come on, now. Umph... {b}{i}*GRUNT*{/i}{/b}"
+    is4 "Yes!"
+
+    "I removed the card from the plastic pouch and examined it.{w} In my hands, I have the ticket to freedom!"
+    "{b}*BOOM*{/b}"
+
+    is4 "NYAAAAAAAAAHHHHHHHHHH!!!!!!"
+
+    "{b}{i}*SPLASH*{/i}{/b}"
+
+    is4 "Gah! Help me!!!{w} Somebody... please! I can’t swim!"
+    is4 "Wah - {b}{i}*GURGLE* *GURGLE*{/i}{/b}{w} HAH! Anybody... please{w} just get me out of here, quick!{w} {b}*GASP* *GASP*{/b} L.C., still there?!"
+
+    "No answer.{w} Why would he bother? He closed his ears to my pleas{w} – I’ve sent him away.{w} Right when I needed him... No. Actually, anybody! Anybody to fish me out of this hellhole!"
+    "I’m swimming with a bunch of anguished souls, vermin who had rotten for a few days, and...{w} juice! Say not the word.{w} If he could see this image of a damsel flailing her arms around in futility..."
+    "If –"
+    "{b}*SPLASH* {i}*GURGLE* *GURGLE*{/i}{/b}"
+
+    is4 "HMPH! GRK!!! Ng... Ulk! {i}*GURGLE*{/i}"
+
+    "Help..."
+
+    window show
+    nvl clear
+    narr "The chilly waters began devouring my whole body.{w} I can only stay afloat for so long, having barely enough strength to fight my way back up.{w} The only way is down... down where the current is forcing me to go."
+    narr "It all began at my heart, or somewhere within its proximity.{w} The pain radiated to my neck and chest, immobilizing my arms,{w} and acids frenzied inside my stomach.{w} They seem to sympathize with me, yet they are still thorns wearing me out as time passes."
+    narr "By now, probably half of my lungs are submerged.{w} There’s still a pocket of air, at least.{w} Not a minute, I’d last. A damned way to spend your last minute, eh?{w} {i}Dead on the Spot{/i}...{w} I’m seeing it now."
+    narr "Perhaps {i}Dead on Arrival{/i} if I’m lucky...{w} But..."
+
+    nvl clear
+    window hide
+
+    "Somebody...{w} please..."
+
+    "{i}Get her up! Up!{w} Hey you, hang on for a bit.{/i}"
+    "{i}Somebody call the medics, please!{w} ...I’ll handle the CPR. Stay with me...{w} One, two, three. {b}*SUCK* *BREATHE*{/b}{w} One, two, three. {b}*SUCK* *BREATHE*{/b}{/i}"
+    "{i}Get her on the stretcher. She needs oxygen.{/i}"
+
+    window show
+    nvl clear
+    narr "Perhaps... they are already too late."
+    narr "If only I had the chance to say sorry.{w} I never meant to inflict pain towards other people, especially my friends.{w} Do they still resent me?{w} That's a thought haunting enough to tether my soul to Earth at my passing."
+    narr "But I am never guilty of anything. I never let blood stain my hands!{w} Absolve me, please!{w} That was just an accident. I had no hand in it!"
+    narr "{b}*RUMBLE* *BUZZ*{/b}"
+
+    nvl clear
+    narr "Torn between two worlds, my body continued to sink.{w} Yet my soul began to ascend,{w} away from me, away from the humiliation its body shall suffer.{w} Never it was meant to be like this..."
+    narr "That’s the price I have to pay for being snoopy, isn’t it?{w} When one acts without thinking{w} – rather, swallowing continually without delay...{w} I’m out of ways to describe this feeling."
+
+    nvl clear
+    window hide
+
+    "{b}{i}*SIREN*{/i}{/b}"
+
+    "{i}We’re here. Hold on...{w} Move! Move! Hurry!{/i}"
+
+    window show
+    nvl clear
+    narr "Everything happened in total darkness."
+    narr "The gurney flew through the double doors, a pair on each side to guide the head and foot.{w} Then came another,{w} and the ride ran faster."
+    narr "Onwards, all words became a murmur.{w} High and low tones mixed in the air, ears too numb to even distinguish which.{w} My body continued to fall, supported by a cushion to soften the blow."
+    narr "And it came to a halt{w} – body suspended in the air, stuck to that same cushion.{w} It has no grip on me... so..."
+    narr "Now, only an unfamiliar pair remained.{w} Both were in a rush, flying past me at an incomprehensible pace."
+    narr "More shouting...{w} all just a murmur.{w} At last, someone stopped,{w} standing right beside me."
+
+    nvl clear
+    window hide
+
+    "{b}*SPARK* *CRACKLE* {i}*HUM*{/i}{/b}"
+
+    "{i}CLEAR!!!{/i}"
+
+    "A blow towards the device.{w} and another...{w} and another...{w} each time, my blood depletes gradually."
+    "Have I any left?"
+
+    "{i}CLEAR!!!{/i}"
+
+    "{b}*BEEEEEEEEEEEEEEEEEEEEP*{/b}"
+    "............................................."
+
+    "{i}Dead on arrival.{w} Transfer her to the morgue immediately.{w} You, kindly prepare the certificate for this one.{/i}"
+
+    "{b}*CRACKLE* *CRACKLE* {i}*SUCK*{/i}{/b}"
     return
 
 label ch01_15_labkyou3:
     "Date Unknown - Time Unknown"
+    window show
+    nvl clear
+    narr "Show me a glimmer of hope, a sign of salvation.{w} Let me be in this domain no longer{w} If I were to be crushed, then so be it.{w} Let me come to You... pray heed my calls.{w} I need to confess..."
+    narr "Whatever my sins are, please...{w} I beg for repentance.{w} Whether they’re still in memory or not, I ask them to be erased.{w} What worth is becoming Your man if the beginning is a failure, isn’t it?"
+    narr "Lastly,{w} please tell me...{w} what have I done to deserve this?"
+
+    nvl clear
+    window hide
+
+    "{b}*THUNDER*{/b}"
+
+    unk "{i}*GASP*{/i}"
+
+    "{i}*THUD*{/i}"
+
+    window show
+    nvl clear
+    narr "So this is it...{w} one step closer to freedom – if I am sure of it, that is."
+    narr "Still, everything I’ve witnessed is still an enigma.{w} The more I think about them, the more clouded the answers become, a fitting match to their master’s personality."
+    narr "This is the heart of this world.{w} In the context of our own dimension, this is the generator room. No further analogy needed.{w} Still, I must thank Yoshiro for his knowledge in electricity.{w} Were it not for him, I’d be trapped in here."
+    narr "Imagine if I went the other way.{w} Hmmm... I’m better off here.{w} Who knows, the passageway might’ve led to a slaughterhouse.{w} As if the path going here was any different."
+
+    nvl clear
+    narr "Aside from the running electricity and the occasional sparks in the room, everything is dead silent.{w} It’s one thing if the atmosphere gives off a serene feeling,{w} but rarely does it become dissonant to the eyes."
+    narr "Black and orange, two colors that describe absolutely everything."
+    narr "There’s not a soul anywhere since the living room.{w} If I composed myself then, I’d have known the other person’s identity.{w} Then again, if the odds were ill, I would’ve wished otherwise."
+    narr "Another dilemma.{w} If I only know where this adds up to."
+
+    nvl clear
+    narr "{b}*HUM*{/b}"
+    narr "This time, the wall is barely visible within a few meters.{w} A light fixture illuminates the area, revealing a forked path upon closer inspection.{w} Which way to take this time, left or right?"
+    narr "I haven’t drawn a mental image of the place, but is it truly worth it?{w} The facility defies perception in an unnatural manner,{w} and the evidence have already manifested themselves for quite some time."
+    narr "For every step I take, the air becomes thicker.{w} Never mind the rust wafting around. I’ve been to meat shops and have already performed surgeries on animals, for goodness’ sake.{w} This is just another day."
+    narr "However, I can’t shake that feeling...{w} the one when you’ve no control over your own body.{w} It might happen again, and at that time, I may no longer return.{w} No, not like a skin-walker,{w} but {i}something else{/i}."
+
+    nvl clear
+    narr "I’m at the center of the T-road.{w} Now where should I go, I wonder?{w} At the first fork, I took the right path.{w} It was a fifty-fifty, but it didn’t bother me that much.{w} Yet it left me curious."
+    narr "{i}This{/i} leaves me curious too."
+    narr "I can’t remember the exact details of the first fork.{w} Did it have a fixture over it?{w} No. I used my flashlight the whole time.{w} Even the floor looked different."
+
+    nvl clear
+    narr "But to be sure, I might as well invert my uniform.{w} Nothing in the breast pocket but the flashlight, anyway."
+    narr "Wish anyone else wasn’t seeing me{w} – this is equivalent to blasphemy and is enough to kick me out.{w} Ah well, that takes care of the dirt."
+    narr "{i}Invert{/i} it, not {i}reverse{/i} it, if I remember correctly."
+    narr "Our uniform’s practically uncomfortable having the back side at the front, which makes it impossible to fasten the buttons behind.{w} If I am wrong, then the devil be damned.{w} {i}*sigh*{/i} If only I have a map of this place."
+
+    nvl clear
+    narr "Thus, I’ve decided...{w} Let’s go left!{w} After a few steps, I shone my flashlight forward, its angle a little higher."
+    narr "My feet stopped as I saw something obstructing the path."
+    narr "{b}*STATIC* *STATIC*{/b}"
+    narr "There it is again.{w} How can this be more spontaneous than it already is?{w} Slowly... slowly... the beam raised its angle...{w} and it stopped."
+    narr "The figure wasn’t staying put{w} – it made an effort to advance even one step.{w} Behind it is a trail, a liquid I cannot distinguish, coming from its legs.{w} No, the torso is wetter, but its hair is the worst.{w} It’s a mop."
+    narr "Tattered clothes covering its body, a large stature and that darkened face...{w} those horns curved towards me.{w} {i}That{/i} I cannot mistake...{w} But!"
+
+    nvl clear
+    window hide
+
+    unk "Who are you?!{w} What... what are... Did you...?"
+
+    "It stopped in its tracks, returning a deathly glare at me.{w} Just like seeing a basilisk eye to eye, it petrified my whole body.{w} What must I do?!"
+
+    "{i}Friend – Now’s not the time for questions.{w} I suggest you {b}RUN{/b}!!!{/i}"
+
+    "Without hesitation, I dashed towards the other direction.{w} My left ankle nearly snapped, but I maintained my balance.{w} There was no time to point the flashlight forward...{w} just keep going!"
+    "My senses became numb. The thirst faded, replaced with the urge to run away.{w} What’s the point if I am to be mauled, anyway?{w} The buzzing returned,{w} becoming more intense as the creature closed the distance between us."
+    "I don’t know how long this path is or where it will wind up, but I must get away.{w} Looking back, my efforts seem useless!"
+    "Unless..."
+
+    unk "Away with you!{w} Go find another prey to feed your appetite!"
+    "{i}No...{w} wait... Stop! Come back!{/i}"
+    "{i}No, keep moving! You’re almost there!{/i}"
+
+    "It’s wishful thinking, but I doubt the flashlight is able to delay it.{w} To think that I used my only light source as a weapon..."
+    "But then, I’ve lost all rationality already. What does it matter now?{w} Eh... Ehehehe... Ehehehehehehehehe..."
+    "{b}{i}*CLANG*{/i}{/b}"
+
+    unk "OW!!!"
+
+    "The resisting force shook my whole body and almost broke my nose.{w} No need for a second inspection{w} – a door!{w} The device beside it is now a proper keypad, with the buttons illuminating red."
+
+    "{i}That hurt...{/i}"
+
+    "Judging from the screen’s width, the lock requires a four-digit combination.{w} If I cannot recall one, I won’t even have time to brute force ten thousand numbers!{w} It’s closing in!"
+
+    "{i}Wait up... {b}*GROAN*{/b} I’m not gonna hurt you{w} – I SAID!!!{/i}"
+    unk "The numbers on the painting!"
+    unk "How did the string go again?{w} 1{w}-3-4-7? Is that it?"
+
+    "I had to give it a shot.{w} It must be!"
+    "{i}Access Denied{/i}"
+    "Blast it! It’s only a one-time use.{w} There has to be a second combination somewhere. In the generator room?{w} Ah! Why did I even throw the flashlight away?!"
+    "If I just turn around..."
+
+    unk "Ah!{w} You foul beast, stay away from me! By the power of Christ, begone from my sight! Back to the depths of Hell with you!"
+    "{i}No... you don’t understand{w} – SUCH IMPUDENCE! {b}*GROWL*{/b}{w}{/i}"
+    "{i}MORTALS LIKE YOU DESERVE TO DIE A CRUEL DEATH!{w} FOR THAT YOU’VE BEEN MADE A SACRIFICE,{w} A FACT YOU CHOSE TO IGNORE FROM THE START!{/i}"
+    unk "What is that number?{w} Grrrr... Come on..."
+    "{i}Come closer...{w} I know...{/i}"
+
+    "If ever that poisonous voice would just shut up!{w} Wait! The code is at arm's reach now...{w} That’s it!"
+    "With one last attempt, my fingers tapped in frantically,"
+    "{i}1-6-6-5{/i}"
+    "I’m not certain if the input is correct. I just wish...{w} Say the magic words, please..."
+    "{i}*BEEP*{w} {b}*CLANK* *HUM*{/b}{/i}"
+    "Only about eight feet between us."
+    "The metal doors opened faster than those I encountered before,{w} and even faster how I squeezed through it.{w} A hard slam on the other device was enough to force the door closed once more!"
+    "And without changing positions, I looked around for any viable weapon."
+    "This is a fairly large room,{w} a Chemistry Laboratory to be accurate.{w} Four workstations, a wall lined with shelves, a fire cabinet, and a wardrobe for the lab coats."
+    "{b}*BUMP*{/b}"
+
+    "{i}Let me in! – YOU OPEN THIS DOOR RIGHT NOW!{w} – He’s coming... He’s coming... He’s coming...{/i}"
+
+    window show
+    nvl clear
+    narr "Ignoring its pleas, I immediately armed myself with the fire axe.{w} The next moments felt like an eternity{w} – each pounding became more violent and the creature grew in desperation."
+    narr "There’s an unbolted door on the right.{w} It is the perfect escape route,{w} but what’s beyond it is unknown.{w} After all, there could be a malicious snare on the other side."
+    narr "I will not take kindly to such things any longer!"
+    narr "................................................"
+
+    nvl clear
+    narr "Finally, the disturbances ceased.{w} However, that’s no reason for me to lower my guard.{w} It could be waiting,{w} or rather, presently planning a fierce siege to this room.{w} In either case, I must hurry."
+    narr "If the other door leads to the exit, then{w} it would be wise to bring some of these chemicals with me.{w} They can be used as evidence to track down my abductor's identity."
+    narr "Never mind the other person{w} – somebody is after my skin.{w} Better get the authorities involved first."
+
+    nvl clear
+    narr "{i}The third applies if I don’t find you as a cadaver the next morning...{/i}"
+    narr "Hang on. That’s the problem.{w} How {i}long{/i} have I been here?{w} Who in the world would operate a facility without having a {i}single{/i} clock in sight?{w} I can’t even estimate how much time has passed with all these bizarre occurrences."
+    narr "{i}He’s coming... He’s coming... He’s coming...{/i}"
+    narr "Then that means..."
+
+    nvl clear
+    window hide
+
+    unk "At most twenty-four hours have passed, or at least daybreak has already happened!{w} That creature must not be lying then!{w} No, I mustn’t be swayed."
+
+    window show
+    nvl clear
+    narr "Whatever the case, it’s needless to panic.{w} No way of telling if L.C. is serious or not.{w} Besides, what kind of drinks is he brewing here?{w} I propose a small supply of bottles to witches around the country – those of a shady variety."
+    narr "I jest,{w} but the substances themselves are not so.{w} Random workstation – what do we have here?{w} Sumiko would be delighted to play with these{w} if he was present..."
+    narr "There are various chemicals on the table; to name the common ones,{w} acetone, bicarbonate, salt, alcohol, and a few more.{w} Inside the drawers, I found a few more of interest,{w} or not."
+    narr "First thing that came into sight is an ampoule of water{w} – clear, and opening it gave off a strong odor.{w} Chlorine-like but seems synthetic, not even close to that of a vitamin pill.{w} As for the taste..."
+
+    nvl clear
+    window hide
+
+    unk "Hmmm... {i}*smack* *smack*{/i}{w} Ugh... Chlorine.{w} But why in a small container?{w} Ah, well. Not for swimming, I guess. {i}*chuckle*{/i}"
+
+    window show
+    nvl clear
+    narr "Setting down the ampoule and continuing my search, I had found nothing else of interest{w} – no incriminating evidence against L.C.{w} There’s plenty of interesting points left to check."
+    narr "...And I didn’t even bother to reinforce the door."
+    narr "My heart sank, unable to think of anything...{w} except maybe to charge at it and off its head!"
+
+    nvl clear
+    window hide
+
+    "{i}Wait!{w} You...{/i}"
+
+    "The words almost escaped my tongue, \"Have you come to execute me?\"{w} Somehow, I felt the shadow as familiar. The hostility from the monster earlier was absent."
+    "Slowly... slowly... it exposed itself."
+
+    unk "Kirisaki,{w} You're alive!{w} But... how...?"
+
+    "Inoue Shinozaki, our class president.{w} She is the other person L.C. mentioned in his letter{w} – which means he has yet to arrive at this facility himself!{w} But the monster,{w} how come?"
+    "She was dripping wet and leaving footprints on her path.{w} Poor girl was shivering...{w} If only I can find a cold medicine and a towel to comfort her."
+
+    kk9 "I’m just as surprised as you are, maybe even more.{w} Ah! Inoue, come inside quickly.{w} It might still be there."
+
+    "Without question, she closed the door behind her.{w} This time, we spent a minute reinforcing the door.{w} The wardrobe should be enough to seal the entrance."
+    "We sat down and savored our little reunion."
+
+    is4 "Perhaps you understand... What the hell even is this place?"
+    kk9 "There are things I've witnessed beyond my comprehension,{w} things that aren’t even humanly possible."
+    kk9 "Whoever’s responsible for this clearly knows us well{w} – trying to shatter our faith and ego at our most vulnerable state.{w} {i}*sigh*{/i} This is no ordinary psychopath we’re dealing with."
+    is4 "Only now you share my sentiments.{w} {i}This{/i} is the extent of our understanding.{w} Even with a superset of truths cannot do these away – otherworldly affairs.{w} Those aren’t even in the books!"
+
+    "Amidst her speech, I pondered on what she said earlier.{w} It almost slipped my mind."
+
+    kk9 "By the way, the first thing you’ve uttered is, \"You’re alive!\"{w} Did you happen to encounter a corpse resembling me?"
+    is4 "In the living quarters, or that’s what it seems to be.{w} Your face was smashed almost beyond recognition and neck pierced with twigs, if I recall correctly."
+
+    "When I regained consciousness, I did feel a few stings around my neck,{w} with the most painful one at the back."
+    "The poison must have taken its effect on me,{w} or maybe no longer.{w} It’s one thing to land face-first to a pot soil.{w} I’ve suffered but a scratch on my forehead, and it still stings."
+
+    kk9 "You were the one knocking violently from the other end, weren’t you?{w} Why didn’t you answer?"
+
+    "Her eyes dropped, not knowing whether to feel shame or fear."
+
+    is4 "I hesitated, feared that there might something worse waiting on the other side.{w} Back in my cell, I felt like I was attacked.{w} It might’ve been all made up, but I clearly heard the words."
+    is4 "{i}Don't breathe...{/i}"
+    is4 "And those sniggers!{w} My God, how could I even forget those? Who the hell brings their children in a place like this?!"
+    kk9 "Children!{w} Could you elaborate?"
+    is4 "I’ve heard three distinct voices in my cell,{w} maybe more if you count everything.{w} One of them was definitely L.C., as I first heard his voice through a recording."
+    is4 "The remaining two sounded childish, one male and the other female.{w} Believe me, there’s no way I’m making it up!"
+    kk9 "No worries.{w} We’ll try to distinguish between the real and the illusions later.{w} For now, let’s just lay everything together while we're here.{w} Escaping this facility is another priority."
+
+    window show
+    nvl clear
+    narr "To my perception, approximately half an hour should have passed during our information exchange.{w} The circumstances surrounding our abduction sound similar and are downright chilling...{w} And both on the same day!"
+    narr "The hellish experiences were nearly the same, too,{w} with both of us recall getting {i}killed{/i} at some point.{w} The thing is, has L.C. already executed us and this dimension is already Purgatory?{w} {i}THE{/i} Purgatory my Catholic friends occasionally mention?"
+    narr "I would like to believe that, but{w} it would crush our hopes of getting out of here."
+
+    nvl clear
+    window hide
+
+    is4 "My family must be worried. {i}*hic*{/i} I just want to go home..."
+    kk9 "I do, too.{w} And it appears our criminal will go after someone else.{w} For that, I feel that he’ll pick one of us – our batchmates, I mean."
+    is4 "Kirisaki!"
+
+    "I clenched my fists in contempt, the first time I’ve done so in a long time.{w} L.C.... he better not lay a finger upon my brother.{w} He hasn’t done anything wrong."
+
+    is4 "The folks outside are in a commotion as we speak.{w} We can rely on their efforts, especially that of our friends.{w} If only we have a means to connect outside."
+
+    "And so I thought, dropping my gaze to our feet."
+
+    kk9 "Inoue,{w} may I ask you a favor?"
+    is4 "What is it?"
+    kk9 "If I don’t come out of here alive – {i}that’s what he said, anyway{/i} – kindly check on my brother, will you?{w} I hate to say this, but rules are rules. {i}*sigh*{/i}"
+    kk9 "You? Anything you wish to deliver?"
+
+    "Without glancing, I knew my words worried her.{w} I must’ve been rash, but it must be said."
+
+    is4 "I’ve nothing to think about.{w} My older brother is already on his way."
+    kk9 "..."
+    is4 "Look, we received essentially the same message from L.C.{w} And from what we know, that bastard is coaxing us to murder each other.{w} We haven’t even seen the exit yet."
+    is4 "And damn the rules! He’s not even playing things fairly either, so why should we?{w} I know you respect the rules, Kirisaki, but this is one instance where we need to let loose.{w} You must realize that."
+
+    "I didn’t answer her.{w} Out of confusion or loss of words, I cannot tell."
+
+    is4 "Proverbs 12:25."
+    kk9 "Pft...{w} He he... hehehe...{w} Ahahahahahahahaha!"
+
+    "She caught wind of my emotions, returning the unneeded favor I once gave her.{w} Inoue shared my laughter, removing some of my burden.{w} \"Kind words cheer the heart up.\""
+    "The conversation provided enough room for relaxation."
+    "I amused myself by learning to whistle which I, after a few lousy attempts, eventually resorted to humming.{w} Inoue sneaked in a few snorts.{w} It lightened up the mood even further."
+
+    is4 "Have you checked that door already?"
+
+    "Her eyes were fixated on the unenforced door."
+
+    kk9 "I have{w} for assurance.{w} I figured I needed to bring a few chemicals with me before going through...{w} For evidence."
+    is4 "But he can’t afford to leave a mark, can he?"
+    is4 "Besides, what knowledge do we have on the chemicals here?{w} Those of the common household variety, yes, but the Alkanes and other complicated substances we studied about in Chemistry?{w} We have yet to see their physical forms."
+    kk9 "That didn’t cross my mind, honestly.{w} Besides, the only oddball among those I found was{w} an ampoule containing water."
+
+    "She turned towards me."
+
+    is4 "An ampoule, you say? Funny...{w} I saw some empty plastic bottles on the shelves.{w} Inside the drawer you were searching earlier?"
+
+    "I affirmed, and she searched the said drawer.{w} She thoroughly examined the lone ampoule's contents."
+
+    is4 "Unlabeled. {i}*sniff* *sniff*{/i}{w} Smells like chlorine.{w} A sample of pool water, I think.{w} Nothing off about it."
+
+    "Thereby confirming my observations. One more thing..."
+
+    kk9 "Speaking of, the pool is at the opposite end of the corridor, isn’t it?{w} Do you, by any chance, have happened to encounter a creature?{w} Well-built and has curved horns on both sides of its head?"
+
+    "She didn’t answer,{w} keeping her lips tight as she hid away the liquid in her skirt’s pocket.{w} She searched the shelves by herself,{w} herself noticeably indifferent to the task."
+
+    kk9 "Forget about it. {i}*sigh*{/i} No, it is then."
+    is4 "How did you know?"
+    kk9 "Know what?"
+    is4 "{i}That{/i}.{w} Don’t tell me you didn’t recognize it.{w} I never told you such a thing."
+
+    "Something about her threw me off.{w} The chills she must’ve been feeling from being wet has transferred themselves to me,{w} albeit in a much lower temperature."
+    "By this time, I had gotten used to the compressions in my head.{w} It looks as though the room itself contracted along with the sensations."
+
+    is4 "I’m just glad it didn’t follow us inside.{w} Otherwise...{w} imagine the consequences.{w} That’s how the legend goes."
+
+    "She stopped her search, probably the mere mentioning of it bothered her.{w} I wouldn’t dare ask{w} – she might snap if I do."
+
+    kk9 "Hey. I haven’t asked you this yet.{w} The door we just came in through requires a keypad combination to unlock itself, right?{w} How did you figure out the combination?"
+    kk9 "The paper must’ve been destroyed when –"
+    is4 "Here."
+
+    "Without another word, she produced the paper strip,{w} soiled and soaked beyond writability."
+    "Indeed, this is the same paper I found within the bonsai’s soil."
+
+    is4 "I’ll be the one asking this time.{w} Short answers, no frills, please."
+    kk9 "Uh... sure..."
+    is4 "Do you exist?"
+    kk9 "What's that for?"
+    is4 "Do you {i}still{/i} exist?"
+
+    "Of course, I do! What is the meaning of all this?!"
+
+    kk9 "Definitely. Flesh, soul, and spirit.{w} If I were to return the question, do you?"
+    is4 "I do...{w} I don’t."
+    kk9 "You’re not certain..."
+
+    "She spun around wildly, facing me eye-to-eye.{w} Her face sparkled with delight, her teeth glinted despite their near-concealment, and head cocked to the right."
+    "Inoue defied all restraints, expressing herself in a manner I couldn’t fathom what or how.{w} She never even went this far."
+
+    is4 "I am Inoue Shinozaki, fifteen, and a student of Maria St. Claire Institute!{w} I could disclose a lot more details, but that would mean blabber to anyone who denies my existence."
+    is4 "What more proof do I need?! Tell me!!!"
+    kk9 "Inoue...{w} I’m standing here in front of you, and you in front of me.{w} What do you mean by that?"
+
+    "Retaining that grin, she lowered her eyes...{w} dead, cold eyes,{w} piercing enough to melt my heart’s barrier.{w} It managed to shorten my breath and hinder my thought process."
+
+    kk9 "How did you find the time to read those books in the living quarters?{w} I’m amazed at your thinking prowess. Aren't you aware of the time limit?"
+    is4 "What {i}time limit{/i}?{w} You're making things up, Kirisaki..."
+    kk9 "I'm not.{w} Maybe you missed the detail?{w} Regardless, he could come at any time...{w} or maybe he has already arrived."
+    is4 "You don’t suppose?"
+    kk9 "Just a hunch. Anything else?"
+
+    "Satisfied, she flashed a grin before facing away from me,{w} towards the other door.{w} I couldn’t help but be wary at her sudden change in demeanor – jumping far too quickly within a short time span."
+
+    is4 "Darn. My meal’s gone cold.{w} But that’s fine... I guess..."
+    kk9 "Hm? You were saying?"
+
+    "Just as she turned the door knob, she took a long glance back..."
+    "...to find a bladed weapon two feet away pointing at her face.{w} It fueled her amusement, giggling as if it was a lollipop."
+
+    kk9 "What’s so funny?"
+    is4 "{i}Hm. Hm. Hm.{/i} I’ve no need of that, Kirisaki.{w} I just took your words as they are; in fact, I’ve proven them {i}just{/i} now."
+
+    "She shrugged it off, unaware that she entirely missed the point."
+
+    is4 "You’re the one who doesn’t comprehend."
+
+    "What?!{w} But... but... how did she?"
+
+    is4 "Listen to yourself.{w} What is presently running your thoughts is a toxin,{w} something even you cannot fight.{w} Trust me – we went through the same ordeal.{w} Hehehehe... Isn’t that right?"
+    kk9 "Tch!"
+    is4 "Come on, Kirisaki...{w} embrace a bit of oddity for your own sake. Hehehehehehehe...{w} The outside is much weirder than we thought it was. How deranged can it get?"
+
+    "................................................"
+
+    is4 "Lower that thing. It’s unbecoming of you.{w} You’re already starting to look like a maniac, you know.{w} Slowly... slowly..."
+    kk9 "On one condition.{w} Are {i}you{/i}{w} truly Inoue Shinozaki?{w} If not, then I've no reason to lower my weapon. You could be a mole for all I know."
+
+    "Though speck-like in size, my own glare reflected in her eyes.{w} But she didn’t falter, leaving us both in a gridlock,{w} lasting long enough to have me realize how awkward this is."
+    "No one{w} was willing to move."
+
+    is4 "Believe in whatever you wish to believe. I’ve made my point already."
+
+    "{b}{i}*THUD*{/i}{/b}"
+    "No use being paranoid at this moment.{w} This is all according to the battle plan, one to keep us in the dark.{w} For now, I’ll trust everything as they are."
+    "For now."
+
+    is4 "Back off!"
+    kk9 "Humph!"
+
+    window show
+    nvl clear
+    narr "{i}{b}*CRASH*{/b} *CLINK* *CLINK*{/i}"
+    narr "The force was enough to slam myself to the wall... hard!{w} My head barely touched the shelves,{w} but the force sent glassware and other apparatus into a furious hailstorm to my head."
+    narr "If I remember, some of the flasks contained chemicals{w} bearing a foul smell, sharp enough to damage my nose.{w} One of them felt like acid!"
+
+    nvl clear
+    window hide
+
+    kk9 "{b}*WHEEZE*{/b} AAAAAAAAAHHHH!!!{w} It burns! Haa... Haa... It burns! Gah...! {i}*whimper* *whimper*{/i}"
+
+    window show
+    nvl clear
+    narr "My face is covered with a hot blanket,{w} dripping liquid akin to a newly-cooked broth.{w} It damaged my nerves and probably derailed my mind to a state beyond repair."
+    narr "Somebody...{w} anybody!{w} Wipe this off me...!"
+
+    nvl clear
+    narr "{i}You made a fateful mistake.{/i}"
+    narr "{i}That’s what you get for doubting a truth that’s blatantly exposing itself to you.{w} Like sheep, you follow your God as if you’ve truly seen him in person!{w} And yet...{w} this?!{/i}"
+    narr "{i}You believe more in the things that YOU CANNOT SEE yet ONLY FEEL?{w} Eat your words, Kirisaki.{w} \"A man ought not to remove a speck on another’s eye when he himself has a slab on his own.\"{/i}"
+    narr "{i}What’s the problem, fanatic? Regret having a blind faith?{w} You disgust me.{/i}"
+    narr "The disembodied voice came out of nowhere, rubbing the pain into me...{w} {b}{i}*Ack!*{/i}{/b}"
+    narr "So what if I did?{w} This punishment has gone too far!"
+
+    nvl clear
+    narr "I’ve been dragged by the feet...{w} to someplace I’m unsure of.{w} The acid forced my eyes shut and my ears rang indefinitely.{w} Everything else became limp..."
+    narr "...and the only thing active is my own consciousness."
+    narr "A door opening...{w} and another...{w} The sound of metal clanking amongst themselves...{w} Glass toppled to the ground...{w} A bump on my side, with someone rolling me over and posturing my body straight."
+    narr "The same person ran everywhere,{w} breathing ceaselessly as she opened cupboards, looking for supplies to aid my injury.{w} Every bump she caused synced well with the loud throbs of my heart."
+    narr "My vision slowly recovered from the blur,{w} drawing the figure of Inoue near the bed.{w} She was crying."
+
+    nvl clear
+    window hide
+
+    is4 "Don’t speak! It’ll take just another minute."
+
+    window show
+    nvl clear
+    narr "She laid the apparatus on the small counter and brought my head carefully to the sink.{w} Clearly, she was trying to maintain her cool,{w} all while struggling to rotate the handle."
+    narr "And then I saw{w} from inside the spout,{w} a black tube occupying the whole interior.{w} My eyes widened in shock."
+
+    nvl clear
+    window hide
+
+    kk9 "Inoue...{w} wait..."
+
+    "She had already turned the handle."
+    "{b}*WHOOSH*{/b}"
+    "{i}{b}GAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHH!!!!!!!{/b}{/i}"
+    "{i}{b}IT BURNS!!! IT BURNS!!! HAAAAAAAA!!!!{/b}{/i}"
+
+    window show
+    nvl clear
+    narr "{i}Ring around the rosie...{w}\nPocket full of posies...{w}\nAshes...{w} ashes...{w}\nWe all fall down...{/i}"
+    narr "Circling... circling... vision circling...{w} The chaotic blaze let a thousand tongues lick my face, down to my feet.{w} Not long, it engulfed my whole body."
+    narr "The rhyme went on and on, repeating itself endlessly...{w} The sound of children laughing,{w} mocking my misery."
+
+    nvl clear
+    narr "{i}Ring around the rosie... *giggle* *giggle*{w}\nPocket full of posies...{/i}"
+    narr "{i}A’tishoo! {b}*hiss*{/b}{w} A’tishoo! {b}*hiss*{/b}{w}\nWe all...{w} fall...{w} down...{w} *giggle* *giggle* {b}*cackle* *cackle*{/b}{/i}"
+    narr "{i}Hahahahahahahahahahaha!{/i}"
+    narr "................................................"
+    narr "{i}Hush! Hush!{w} Hush! Hush!{w}\nAnd all...{w} fell down...{/i}"
+
+    nvl clear
+    window hide
     return
 
 label ch01_16_death01:
     "Date Unknown - Time Unknown"
+    "Kirisaki!{w} No!{w} What have I...{w} what have I done...?"
+    "I was only trying to help.{w} How has it come to this?{w} If it weren’t for..."
+
+    kk9 "Ugh... AAAAAAAHHHH!!! {b}*EXHALE*{/b} AAAAAAAAAAHHHHH!!!!!!!"
+
+    window show
+    nvl clear
+    narr "The blast almost sent me flying{w} and one of the marble counters nearly impacted my spine.{w} Not just that, but my right ankle was sprained badly.{w} Had the glassware come crashing down, I would’ve suffered even greater damage."
+    narr "Those alone are excessive."
+    narr "Back home, we used to watch people getting slaughtered{w} – regardless of the genre – in ways only a camera and a skillful director can deliver."
+    narr "But right now, the scene isn't inside the TV nor projected onto a theater screen.{w} What’s in front of me is live, no camera tricks.{w} No one to say, \"Cut!\" and extinguish the flames, with the actor getting up afterwards like it was nothing."
+    narr "And I’m not seeing things either."
+
+    nvl clear
+    narr "My lip nearly bled from my teeth's pressure;{w} if it were my tongue instead, it could have been worse.{w} This is not even comparable to the moments that led up to this.{w} Even death was an illusion,{w} or perhaps not?"
+    narr "This is the reality I became accustomed to,{w} the one where we all linger in.{w} I have to accept it – this is{w} a waking nightmare."
+    narr "And as helpless as the victim is, {i}I{/i} am too.{w} Soon, the bellowing tongues would reach my position and consume me wholly with Kirisaki.{w} Such an ingenious way to open Hell’s portal,{w} within a dimension of Hell itself!"
+    narr "The blaze and agonized screams filled the air, thick smoke blackening the field of vision.{w} I’ve no intention to get up;{w} I lost my will’s totality.{w} Someone is dying in front of me – because of me{w} – and all I have to do is wait..."
+    narr "Just... wait..."
+
+    nvl clear
+    narr "{i}Then all your suffering shall be pointless.{/i}"
+    narr "Damn you...{w} You could’ve spared us the torture and offed our heads instead, you freak!{w} My brain can no longer feel, numb to everything perceivable around me."
+    narr "You{w} and your stupid little brats..."
+
+    nvl clear
+    narr "{i}He dies for nothing;{w} you shall die for nothing.{w} It will just make things harder for everyone.{/i}"
+    narr "{i}And what about YOUR family?{w} Today, they weep, and they’ll weep even harder when they find your corpse the next evening.{w} Can you stomach that?{/i}"
+    narr "{i}Kyou Kirisaki has already been done with,{w} which means he loses, plain and simple.{w} Rules are rules, young lady.{w} I need not reiterate our deal in the beginning. You remember them well, I suppose,{w} especially the conditions for your escape.{/i}"
+    narr "{i}I’ll be waiting outside – that is, if you don’t decide to end your life there.{w} Death by fire is agonizingly slow, so take the second option.{w} There's a gun in the next room, thought I let you know.{/i}"
+    narr "{i}Until then...{w} This won’t be our last meeting,{w} Inoue Shinozaki.{/i}"
+
+    nvl clear
+    window hide
+
+    "{i}*RATTLE* *RATTLE*{w} {b}*WHOOSH*{/b}{/i}"
+
+    is4 "Haa... Haa... Haa...{w} {i}*gulp*{/i} Haa..."
+
+    window show
+    nvl clear
+    narr "In the entire duration of his monologue, I managed to limp to the lab door."
+    narr "One of these cabinets might be hiding an explosive.{w} Kirisaki would be displeased if his body is blown to pieces.{w} Imagine the trauma it would inflict upon his family,{w} especially his poor brother."
+    narr "The flames have already consumed him whole.{w} His body ceased convulsing and can only utter moans at best.{w} Kirisaki’s anguish is at end,{w} but the flames are not{w} – I am not yet safe."
+    narr "Inside the fire cabinet is a water hose, a fire blanket, and an empty extinguisher.{w} The water isn’t running – I checked beforehand.{w} Fire blanket in hand, I returned to the clinic."
+
+    nvl clear
+    narr "The closer I move to Kirisaki’s bed, the more my eyes redden due to the violent smoke.{w} I stopped just a few feet away from the flames."
+    narr "Pull the strings...{w} cover the body tight.{w} Wrap it tightly enough, leaving no flame astray.{w} Get back."
+
+    nvl clear
+    narr "A long time has passed."
+    narr "Kirisaki remains motionless.{w} A pulse check is unnecessary – the damage is too extensive for him to survive.{w} When the blanket matched his body temperature, I removed it and examined him."
+
+    nvl clear
+    narr "Kirisaki has suffered third-degree burns; most of his upper body has been charred.{w} His glasses have melted on his eyes,{w} and the eyeballs themselves oozed down the tear ducts.{w} It turned to {i}condensed milk{/i}."
+    narr "His head gave off a sulfurous, or rotten, smell,{w} having only a few strands of hair left.{w} Some of his bones stung my skin, fresh off of burning.{w} Only little of his uniform remained, with the pants and the leather shoes especially intact."
+    narr "This is my first corpse,{w} long before I conceive my medical degree.{w} Even Papa would praise me for braving it.{w} A charred corpse is not a daily case he would sometimes bring home to share with us."
+    narr "I covered him once again,{w} bearing no longer to see him like this..."
+
+    nvl clear
+    window hide
+
+    "{i}{b}*THUD*{/b}{/i}"
+
+    is4 "{i}*SOB*{/i} ...Uhu...{w} {b}*EXHALE*{/b} Uhuhuhuhuhuhu......"
+
+    window show
+    nvl clear
+    narr "I lay at the bedside, letting it all flow.{w} Once everyone finds out about this, what are they going to think of?{w} The reputation of our institution...{w} {i}tarnished{/i}!"
+    narr "However, what do I care about reputation?{w} The police will eventually track him down, right?{w} Hehehehe... Simply not elementary, dear girl!{w} Remember Sacred Heart? It was a dead-end case!"
+    narr "But I, Inoue Shinozaki,{w} have {i}lived{/i} to tell the tale...{w} the tale of a maniac who forced upon us a deadly game,{w} and I’ve won!{w} Hehehehehehehehe. What luck!"
+    narr "It doesn’t end there.{w} All this chaos led me to forget my hunger and thirst.{w} What am I to vomit? Air?"
+
+    nvl clear
+    narr "From within the blur, I managed to glimpse a tiny glimmer.{w} A key!{w} It could well fit into that other door."
+    narr "I picked myself up, having partially healed from my injuries earlier."
+    narr "Yet would I leave a friend behind?"
+
+    nvl clear
+    window hide
+
+    is4 "Goodbye... Kyou..."
+
+    "We shall see each other again...{w} or maybe not."
+
+    window show
+    nvl clear
+    narr "As I walk this empty corridor, I could think of nothing.{w} My feet heaved my body towards the other end.{w} My whole being transformed itself to that of a robot, utterly devoid of any human emotion."
+    narr "Footsteps and gasps echoed around the walls.{w} Nothing special about it."
+
+    nvl clear
+    narr "Without regard, I shut the door behind me,{w} and looked around the new environment."
+    narr "Across the reception desk is another enforced door with a device.{w} The LCD screen grabbed my attention."
+    narr "{i}1...{w} 1...{w} 1...{/i}"
+    narr "The number displayed itself endlessly."
+
+    nvl clear
+    narr "With the last remnant of curiosity, I approached the door.{w} The synthetic female voice spoke the magic words once I'm within three feet."
+    narr "{i}Access Granted.{/i}"
+    narr "Without effort, I walked through another puzzle – one that I find nonsensical.{w} The metal bars slowly lowered and the mechanical locks undid themselves."
+
+    nvl clear
+    window hide
+
+    "{b}*CLANK*{w} *HUM*{/b}"
+    "Only this time, at the other end..."
+    "Daylight..."
+
+    "{i}{b}*STEP* *STEP* *STEP*{/b}{/i}"
+    "............................................."
+    "{i}{b}*step* *step*{/b} *step* *step* *step*{/i}"
+    "............................................."
+    "{b}*THUD*{/b}"
     return
 
 label ch01_17_facts2:
     "JUNE 24, 2013 - 1645H"
+    "Six days{w} – the amount of time passed since Kyou Kirisaki and Inoue Shinozaki’s disappearance.{w} Six days of anxious waiting,{w} even a call or letter for ransom would have sufficed."
+    "Alas, none of those surfaced."
+    "As she left, Sayo gave instructions to Ayumi not to let the cleaners surpass 5:30PM.{w} The students were issued a new order, reducing the curfew time by thirty minutes."
+    "She passed by Akira, who was chatting with Hiroshi at IV-B’s bench.{w} Just then, Miyu exited his classroom, exhausted as usual."
+
+    sr5 "Do you have a minute?"
+    mh8 "Eh, what?{w} Me?"
+
+    "Sayo turned her head, confirming his question silently.{w} Unable to refuse, he looked at her and slightly grinned."
+
+    mh8 "Anything of concern, Sayo?"
+
+    "She motioned him to the stairs across IV-A.{w} They sat down at the fourth step and engaged in a discreet conversation."
+
+    sr5 "You’re familiar with Tomonori Shinozaki, right? Inoue’s brother two batches up?"
+    mh8 "I remember the fellow. He was part of the honor roll and the Top 10.{w} Wait,{w} did he speak of any developments about the case?"
+    sr5 "You could say that,{w} but this is more of a mere {i}concern{/i} than anything...{w} something that disturbs me to this day."
+
+    "Thoughts raced to his mind, trying to deduce what she meant."
+
+    sr5 "He rang me up last Saturday.{w} I found it odd if it was about Inoue{w} – I mean, they are the primary contacts for the case, after all.{w} Instead, he talked to me briefly and asked me..."
+    sr5 "...if I was the one who set her up."
+    mh8 "Absurd! Why would he make such an accusation?{w} Don’t tell me he’s resorted to random finger-pointing."
+    sr5 "Of course, I got ticked off. Initially, at least."
+    sr5 "On June 13, the Shinozakis received a call intended for Inoue.{w} He knew because Inoue confided the details of the exchange to him two days after."
+    mh8 "Let me guess...{w} You’re the caller?"
+    sr5 "Yes, and I was being accused of blackmail.{w} I wanted to forgo my manners and explode on him!{w} {i}*sniffle*{/i} I’m sorry, Miyu..."
+
+    "She fished inside her backpack for a tissue, wiping her tears in frustration.{w} Miyu wanted to pat her back, but he stopped himself, thinking it would look awkward."
+
+    sr5 "Here we go. {i}{b}*BREATHE*{/b}{/i}"
+    sr5 "You know, Inoue did mention something about the incident at Sacred Heart.{w} I told her to forget about it – she was visibly anxious.{w} It's her curiosity that's been giving her the edge."
+    sr5 "Supposedly, {i}I{/i} called her that night, {i}Thursday night{/i}, to give the complete details of the incident.{w} Additionally, {i}I{/i} made her head spin by some philosophical terms even I can’t comprehend."
+    mh8 "To be fair, you do have a penchant of speaking in riddles."
+    sr5 "{i}Formal language{/i}, not riddled speech. Those are of two different levels, Miyu."
+    mh8 "No offense, Sayo. I genuinely appreciate being a faucet for your concerns, but{w} why me?{w} Have you already to spoke to Mrs. Genkai about this?"
+    sr5 "Oh, I did,{w} just in case anything against me comes up.{w} For your first question...{w} Well, let’s just say you’ve got this \"particular set of skills\" and whatnot..."
+    mh8 "{i}{b}*SNORT*{/b}{/i} I’m no spy!"
+    sr5 "No. No. You misunderstand.{w} She meant something else."
+    mh8 "She?{w} Wait a minute...{w} {i}*GASP*{/i}{w} What did Hikaru tell you about me?!"
+    sr5 "You have an affinity for the supernatural, haven’t you?{w} Or, let’s be more grounded.{w} Detective work, perhaps?"
+    mh8 "What? Ahahahahaha!{w} I’m in no position for that, Sayo.{w} This isn’t a random flash game on the internet, we’re dealing with real crime here."
+
+    "Ikuko and Ayumi passed by, the latter giving Sayo a thumbs up."
+    "They continued their conversation up until the sun was beginning to set."
+    "Miyu glanced at his watch,{w} noting the time to be 5:20PM."
+
+    sr5 "Oh! My apologies for delaying you."
+    mh8 "Nah, don’t worry about it.{w} I found the exchange rather informative, and I do find your case {i}intriguing{/i}."
+    mh8 "Well, I better get going, then.{w} Hope to see you tomorrow, Sayo."
+    sr5 "If ever, shall we discuss this over at break time?"
+    mh8 "Hmmm... I’ll see what I can do with my schedule.{w} And if ever, you know where to find me."
+
+    "His figure disappeared around the corner.{w} Sayo silently contemplated for a while, before rising to go home herself."
+
+    ikuko "{i}Hey, Miyu! Someone’s looking for Sayo in the office.{w} Is she still there?{/i}"
+
+    "He promptly peeked around the corner of the staircase.{w} Miyu silently motioned her to the principal’s office, which she acknowledged with an O.K. sign."
+    "She hastened her steps, entering the office in a practiced manner.{w} The secretary guided her to the principal’s room, its interior visible through the glass door."
+    "Accompanying Mrs. Sokoguchi, the principal, are two men of authority."
+    "The middle-aged man is a police sergeant.{w} He currently handles the case, one he considers a higher caliber than those he handled before.{w} With him, a much younger protégé.{w} Meek, as he would look from the surface."
+
+    p_serg "And to complement my age, I have with me an aide, younger and more robust than I am.{w} Isn’t that right, rookie? Gahahahahahaha..."
+    p_insp "Please,{w} refer to me as Emmerich...{w} not that I don’t mind, Sarge."
+    p_serg "A diamond in the rough, I tell ‘ya.{w} He may be brusque, but he’s got the right mindset. Saw myself in ‘im.{w} Figured I might as well tag him along instead of being cooped up in that lab."
+    p_insp "Ah, yes. My first case in the field, this,{w} and a pretty bad apple for –"
+
+    "{i}{b}*knock* *knock* *knock*{/b}{/i}"
+    "Seeing who is behind the door, the principal motioned Sayo to come inside.{w} The two men turned their attention to her, who slowly entered the room."
+    "The council president showcased her dignity, making her presence well-known before the two gentlemen.{w} Hand in heart, Sayo bowed down to an almost-right angle."
+    "Sayo exchanged handshakes with the guests and settled down to the empty seat across them."
+
+    prin "Then if we may, let us formally start our meeting."
+    prin "Ms. Ronoroa is the incumbent council president, dear gentlemen.{w} Sayo, these are the two men I’ve told you and Mrs. Genkai about."
+    sr5 "I see.{w} How are things, Sergeant?"
+    p_serg "We’ve traced the call to the Shinozakis.{w} If witness accounts are accurate, the estimated duration is one hour starting at 1900H.{w} Source is a phone booth at the north end of the market."
+    sr5 "Market?{w} I was already away from Kutsutochi by seven."
+    p_emm "We’ve not confirmed anything yet, Ms. Ronoroa –"
+    sr5 "Sayo, Inspector. I prefer it.{w} No need to worry. You haven't caused any offense."
+    p_emm "Right.{w} As to that extent, we only have the witness’ word for it.{w} Same goes for you – circumstantial evidence at best."
+    sr5 "Then I am at ease.{w} What about the Kirisakis?"
+    p_emm "Zero."
+    prin "I shall answer that.{w} Kyou Kirisaki’s brother is still ordered to stay home until we find out his current condition.{w} Unlike the other family, they do not fault you nor do they suspect any one of his friends."
+    sr5 "Kyou has no enemies to my knowledge.{w} That kid is an optimist and genuinely cares for his schoolmates."
+    sr5 "And his presence is required, especially with the upcoming activities.{w} Without the Science Club’s head, the members are falling into confusion."
+    p_serg "So he’s the club president, you say.{w} Could the motive be political?"
+    sr5 "Dear, no!{w} The acting president, Tokubei, is a legitimate leader.{w} He actually didn’t want to accept the position because he's already holding similar duties at his homeroom."
+    sr5 "We have yet to make formal arrangements should anything arise.{w} It seems that the most viable option is to wait."
+    p_emm "With lack of physical evidence, then, we arrive at another dead end.{w} How exciting for a field entry..."
+
+    "The sergeant pat the young inspector's back, sympathizing with him."
+    "The discussion continued until six,{w} at which the principal allowed Sayo to leave five minutes early.{w} The sergeant spoke for them both, promising an update within 24 hours{w} – if there ever will be."
     return
 
 label ch01_18_aftermath:
     "JUNE 25, 2013 - 1800H"
+    window show
+    nvl clear
+    narr "But the twenty-four hours passed without another lead."
+    narr "The sun’s rim is the only part visible on the horizon, giving way to the night.{w} Just as peaceful as the crickets were making it seem,{w} everyone at Maria St. Claire has agreed to be coy about the abductions, with parents joining in.{w} Thus, it was considered an {i}isolated case{/i}."
+    narr "With the appearance of Emmerich and Sergeant Deitch – two from the regional police{w} – this was no longer the case.{w} Police visibility increased throughout Kutsutochi and its surrounding municipalities and cities."
+    narr "Newsflashes broadcasted the case’s details despite efforts to bar the media’s involvement.{w} But the school officials switched sides after receiving no significant updates from the local authorities.{w} They deemed the move necessary lest they get detracted upon by mindless keyboard-wielding zombies."
+
+    nvl clear
+    narr "Yoshiro escorted his girlfriend home as usual, passing by the wet market on the way.{w} Blue-uniformed men were occasionally seen patrolling the streets,{w} asking for information or keeping an eye around the area."
+    narr "Somehow, it still did not feel safe.{w} His girlfriend held tightly, watching for any intruder they might come across.{w} They made it past the market,{w} through the small park at the North,{w} and finally to her home."
+    narr "They exchanged hugs as they parted ways, urging Yoshiro to take care and to keep his mind sharp.{w} She locked the gate, and he scurried off the way they came."
+
+    nvl clear
+    narr "Yoshiro passed by a narrow street resembling that of another in Vigan.{w} One of the houses resides an old comedian, with his image proudly plastered on the banner on his front door."
+    narr "Before turning the corner is an art studio,{w} decrepit on the surface but still a popular entrepreneurial establishment."
+    narr "People are fascinated by the artist, the one sitting on a stool in front,{w} and his unconventional style.{w} His style and eccentricity combined rings a familiar tune,{w} a homage to Van Gogh or even Francis Bacon to some."
+    narr "Nevertheless, Yoshiro finds his appearance weird and quickens his pace whenever he passes by the shop.{w} The sight of it gets on his nerves easily,{w} especially the artist."
+    narr "As he emerged from the alley, he saw a familiar face on one of the eateries on his left."
+
+    nvl clear
+    window hide
+
+    p_emm "Oi! You’re a familiar chap.{w} Would you come sit with me for a moment?"
+
+    "Yoshiro felt an odd sense of security, immediately taking a seat beside the inspector.{w} The latter ordered some refreshments, which Yoshiro accepted."
+
+    ys6 "You must be one of the primary investigators of the case.{w} Sayo mentioned you this morning. Sayo Ronoroa, I mean."
+    p_emm "Ms. Ronoroa did?{w} Delightful. {i}*chuckle*{/i}{w} Old Man Deitch is with the other squad, somewhere at the boundary as we speak..."
+
+    "The soft drinks arrived and the inspector paid his bill to the waitress."
+
+    p_emm "My mistake!{w} Emmerich, Harold Emmerich."
+
+    "Emmerich reached out his hand, and Yoshiro answered.{w} The two men pumped their hands warmly, solidifying their trust."
+
+    ys6 "Yoshiro Suzuki.{w} You don’t seem to match her description, do you?{w} I expected a firmer guy."
+    p_emm "You speak of my senior, the one I mentioned earlier.{w} Sergeant Deitch and I might need a formal introduction to you students. Hahahahahaha.{w} But you know..."
+    p_emm "It’s all part of the trade.{w} ‘Ya sometimes gotta learn to be an actor to gain your respect, as my mentor puts it. {i}*wink*{/i}"
+    p_emm "This is my first case, Mr. Suzuki.{w} Don't be surprised if I'm referred to as \"rookie\"."
+    ys6 "Oh, I see.{w} I dare not protest then...{w} {i}rookie{/i}."
+    p_emm "Hahahahaha! That’s enough, you.{w} I can see potential, how far your wit can bring you, Mr. Suzuki."
+    ys6 "Right, right.{w} Then I’ll just refer to you and your classmates on a first-name basis. A tradition or a friendly habit, perhaps?"
+    p_emm "Anyway, my squad mates are conducting a search elsewhere,{w} while I excused myself to think.{w} I first worked in the lab, analysis mainly, so that gives me a valid excuse."
+
+    "He showed his little notebook to Yoshiro{w} and explained the clues and witness statements he gathered, including the connections he derived from them."
+
+    p_emm "Do you notice a pattern?"
+    ys6 "Zero evidence equals zero leads, including any traces of the crime itself.{w} If there ever was, the perpetrator must’ve surfaced by now."
+
+    "Emmerich nodded,{w} suggesting to Yoshiro a certain point."
+
+    ys6 "You mean any search attempts were purposefully made useless{w} and that you were meant to be called on purpose?"
+    p_emm "Exactly."
+    ys6 "Odd.{w} And I thought criminals prefer to lay low.{w} Unless..."
+    p_emm "Unless he is willing to show himself or he's showing off his work {i}purposely{/i}.{w} You know how these types work.{w} Is there anyone you know who might be of concern?"
+
+    "Yoshiro pondered for a moment, remembering the details involving Kyou and Inoue:{w} anyone who had a previous conflict with the two,{w} and other detail."
+    "He only shook his head."
+
+    ys6 "Have you checked any outside contacts?{w} Relatives, old friends?{w} Personally, I find no fault in Kirisaki{w} – it’s hard to imagine him in a fight."
+    ys6 "Inoue?{w} I admit she has this{w} arrogant attitude that turns people off,{w} but it has never become a serious problem.{w} No one has ever come close to –"
+
+    "{i}{b}*BUZZ*{/b}{/i}"
+
+    p_serg "Harold, you there?{w} You’ve got to hear this!"
+    p_emm "Excuse me for a moment, Yoshiro."
+
+    "The young inspector turned away from him."
+    "From the other end, his senior officer sounded distressed,{w} made more evident by Emmerich’s tone shift.{w} Yoshiro pretended not listening to the conversation."
+
+    p_emm "You found the girl?!"
+
+    "This immediately caught the teenager’s attention.{w} As he listened, he picked up on some of the details."
+    "When the transmission ended, Emmerich returned to face Yoshiro, now piqued with curiosity.{w} However, the inspector saw through this."
+
+    p_emm "That’s the Sergeant.{w} And they have already found Shinozaki."
+    ys6 "Where?"
+    p_emm "Somewhere near the marketplace."
+    ys6 "..."
+    p_emm "Look, I know what you’re thinking,{w} but please, head home immediately.{w} I didn’t particularly like what I just heard."
+    p_emm "A pleasant evening to you,{w} and I apologize for your delay.{w} Now if you’ll excuse me..."
+
+    window show
+    nvl clear
+    narr "The inspector replaced his notebook in his jacket’s breast pocket and ran off."
+    narr "Having not realized the danger it might pose him, Yoshiro tailed the inspector.{w} He stopped a block away,{w} when he saw Emmerich meet up with the Sergeant outside an alley to the market’s East."
+    narr "Some of the stalls were closing, the time at quarter past six.{w} Once the two officers disappeared, he went to an adjacent shop to buy a gift.{w} Because of the silence, he heard some inaudible voices from the other side of the wall."
+
+    nvl clear
+    narr "{i}GAHAHAHAHAHAHAHAHAHAHA!!!{w} {b}*EXHALE*{/b} Hahahahahaha... *BREATHE*{w} Hahaha... Hu...{w} *whimper* *whimper*{/i}"
+    narr "However, it was not what he expected to hear."
+    narr "Furthermore, Inoue had never laughed as heartily as that.{w} No, it is not even the correct term.{w} He made his purchase and spied on the cops."
+    narr "His eyes widened upon witnessing the scene."
+
+    nvl clear
+    window hide
+
+    p_emm "Miss Shinozaki, you’re safe now.{w} {i}{b}*GRUNT*{/b}{/i} Please, pull yourself together!"
+    is4 "I don’t believe you! {i}*whimper*{/i} Uhuhuhu...{w} I’m already... broken... {i}*hic*{/i} Uhuhuhuhuhuhuhuhu... {i}*hic*{/i}"
+    p_emm "She seems to be abused."
+    p_serg "I hope it’s negative.{w} Poor girl’s been delirious when we found her.{w} Medical services are inbound – where the hell are they?!"
+
+    "Yoshiro felt a vibration in his pocket.{w} It was his smartphone,{w} with a new message from Ichirou."
+
+    iy1 "{i}Have you found anything about Inoue yet???{w} This is TERRIBLE!{/i}"
+
+    "Amidst the frenzied cries from within the alley, he typed in his reply."
+
+    ys6 "{i}I’m currently undercover,{w} trying not to catch Inspector E.'s attention.{w} Inoue’s alive, but she seems... off...{w} I don’t know!{w} I can’t understand it!{/i}"
+    iy1 "{i}That's good.{w} We, however, have a different story to tell.{/i}"
+    ys6 "{i}Who's with you?{/i}"
+    iy1 "{i}Miyu.{w} We were just going home together, and...{/i}"
+    ys6 "{i}AND???{/i}"
+    iy1 "{i}You might want to hold off dinner for tonight.{/i}"
+
+    "An image immediately followed."
+
+    ys6 "{i}WHAT THE HELL IS THAT???{w} If this is a joke, Ichirou...”{/i}"
+
+    "Ichirou responded with more images,{w} each revealing more about the scene{w} and the corpse’s identity."
+    "A burnt corpse on a gurney – none other than Kyou Kirisaki himself!"
+    "His body is well into decomposition{w} – his temperature has dropped, the blood has dried, and maggots have already housed within his crevices."
+    "But something else caught Yoshiro’s eye."
+
+    is4 "I won... didn’t I?{w} He wasn’t so clever... after all...{w} Heh. Hehehehehe..."
+
+    "Kyou had his palms open,{w} and within the mosaic-like mix of red and black{w} etched a number on each.{w} Barely visible, but if examined close enough..."
+    "Number 9 on the left,{w} number 7 on the right."
+
+    is4 "AHAHAHAHAHAHAHAHA!!!{w} I won! He doesn’t! Would you believe it?!"
+
+    "Petrified while viewing the images, Yoshiro did not notice an ambulance stopping across the alleyway.{w} A gurney was brought down and the policemen struggled to carry Inoue."
+
+    p_emm "Yoshiro?!{w} I gave you an order, didn’t I?"
+
+    window show
+    nvl clear
+    narr "The inspector caught his attention.{w} Though embarrassed, he meekly attempted to justify his presence,{w} ultimately gaining the former’s disapproval."
+    narr "Both men watched Inoue as she was being taken away...{w} All while crooning a little tune."
+    narr "{i}Ring around... the rosie...{w}\nPocket full of posies...{/i}"
+    narr "Inoue she was{w} no longer..."
+
+    nvl clear
+    window hide
     return
 
 label ch01_19_funeral:
