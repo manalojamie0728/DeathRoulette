@@ -24,6 +24,7 @@ define t_har = Character("Ms. Harada")
 define t_kan = Character("Mrs. Kanako")
 define prin = Character("Mrs. Sokoguchi")
 define ms_shi = Character("Mrs. Shinozaki")
+define ms_kir = Character("Mrs. Kirisaki")
 define p_serg = Character("Sergeant")
 define p_insp = Character("Inspector") # Same Character as Emmerich
 define p_emm = Character("Insp. Emmerich")
@@ -38,38 +39,30 @@ init python:
 
 label start:
 
+    scene black with fade
+
+    centered "{i}{b}Illusions abound; darkness on the inside and chaos on the outside.{w}\nHow is truth able to fit in both places?{w}\nWe may never know for sure, yet someone has already found the answer.{/b}{/i}"
+
     scene bg room with fade
 
-    "Introducing..."
-    iy1 "The name's Ichirou Yokohama."
-    ai2 "Akira Ichibana."
-    st3 "Sumiko Tokubei."
-    is4 "Inoue Shinozaki."
-    sr5 "Sayo Ronoroa."
-    ys6 "Yoshiro Suzuki."
-    hk7 "Hiroshi Kano."
-    mh8 "Miyu Hirano."
-    kk9 "Kyou Kirisaki."
-    hy10 "Hikaru Yamamoto."
-
-    #call ch01_01_prologue1
-    #call ch01_02_prologue2
-    #call ch01_03_clubday
-    #call ch01_04_tenvictims
-    #call ch01_05_sacredheart
-    #call ch01_06_kyou
-    #call ch01_07_countdown
-    #call ch01_08_disappearance
-    #call ch01_09_labkyou1
-    #call ch01_10_labinoue1
-    #call ch01_11_labkyou2
-    #call ch01_12_labinoue2
-    #call ch01_13_facts1
-    #call ch01_14_labinoue3
-    #call ch01_15_labkyou3
-    #call ch01_16_death01
-    #call ch01_17_facts2
-    #call ch01_18_aftermath
+    call ch01_01_prologue1
+    call ch01_02_prologue2
+    call ch01_03_clubday
+    call ch01_04_tenvictims
+    call ch01_05_sacredheart
+    call ch01_06_kyou
+    call ch01_07_countdown
+    call ch01_08_disappearance
+    call ch01_09_labkyou1
+    call ch01_10_labinoue1
+    call ch01_11_labkyou2
+    call ch01_12_labinoue2
+    call ch01_13_facts1
+    call ch01_14_labinoue3
+    call ch01_15_labkyou3
+    call ch01_16_death01
+    call ch01_17_facts2
+    call ch01_18_aftermath
     call ch01_19_funeral
     call ch01_20_epilogue
     return
@@ -3028,10 +3021,190 @@ label ch01_18_aftermath:
 
 label ch01_19_funeral:
     "JUNE 30, 2013 - 0730H"
+    window show
+    nvl clear
+    narr "The news broke out the following morning."
+    narr "There was outrage,{w} with fingers pointing towards the administration and the authorities.{w} Had they taken appropriate measures immediately, it could have been prevented."
+    narr "But who’s to say the culprit has not foreseen this?"
+
+    nvl clear
+    narr "Two students out of over nine-hundred{w} – small but significant in damage.{w} The Kirisakis mourned the loss of their son, Kyou,{w} and the Shinozakis were no different.{w} Inoue may have survived the crime, yet..."
+    narr "Ms. Harada felt no different.{w} She filed a temporary leave to alleviate her pain. For only two weeks, it was approved,{w} and she would be paid without deduction provided she prepare a module."
+    narr "And we saw her go, burdened with the tragedy of losing two children."
+    narr "The close of the flag retreat felt like a funeral procession.{w} Students and teachers offered prayers.{w} It wasn’t just for Kyou and for Inoue’s recovery – it was for everyone."
+    narr "We knew that it hasn’t stopped there yet.{w} Knock on the table, we might be under the killer’s watchful eye,{w} and he had already claimed his first victim.{w} Perhaps I’m wrong. I hope so."
+
+    nvl clear
+    narr "On political matters, the following changes are effective:{w} Sumiko is to succeed Kyou in the Science Club’s headship while I remain as Secretary,{w} and Inoue’s duties are temporarily upheld by her Vice officers."
+    narr "Any complications the change would cause are yet to be resolved{w} – there may be one."
+    narr "Miyu and I gave our statements to the investigating officer,{w} Emmerich, it seems.{w} Business-like and frank, unlike how Yoshiro described him to us."
+
+    nvl clear
+    window hide
+
+    p_emm "Have you any relatives that were admitted at the hospital on the 25th?"
+    iy1 "No,{w} but I have a scheduled check-up every last Tuesday of the month.{w} It was only a two-minute walk to our houses so I had Miyu tag along."
+    p_emm "And how did you discover Kirisaki’s corpse?"
+    iy1 "Not us, but the hospital staff.{w} In one of the hallways, Miyu caught a glimpse of someone being taken to the ER.{w} \"Wait! Isn’t that...?\" he said before following the gurney.{w} The rest is history."
+
+    window show
+    nvl clear
+    narr "As brief as that, and Miyu repeated everything I’ve said.{w} There was really nothing suspicious about it.{w} I even showed him prescriptions dated {i}June 25th, 2013{/i} as proof."
+    narr "We went out of the office,{w} encountering Sayo at the door.{w} She handed us a small scroll, spoke no words and abruptly left.{w} Its contents are short, only that of a notice."
+    
+    nvl clear
+    narr "{i}Greetings!{/i}"
+    narr "{i}Please join us in celebrating the life of Kyou Kirisaki, who passed away this 25th of June, 2013,{w} at the Kirisaki family residence:{w} 82 Kasshoku St, Yama Province, Region IV-A.{/i}"
+    narr "{i}Meet-up for the Funeral Procession at 10:00AM on Sunday, June 30th.{w}\nWe welcome those who would join us in commemoration of the departed until 3:00PM.{/i}"
+    narr "{i}Lunch and snacks will be accommodated.{/i}"
+
+    nvl clear
+    narr "And at the bottom, a handwritten note:"
+    narr "{i}Please do come.{w} Let us, who remain, pay our respects to Kyou and give him justice.{w} Notify me if you’ve decided – we’ll have a transport ready.{w} And do tell your parents of this, we might be staying for a while after.{/i}"
+    narr "{i}Sayo{/i}"
+
+    nvl clear
+    narr "She went around handing papers to our batchmates."
+    narr "It may not amount to much, but I’ll go.{w} I messaged her that night after my parents approved of my trip."
+    narr "Miyu will be tagging along, too.{w} That way, we can ensure each other’s safety, especially on the way home."
+    narr "Those who went finished their responsibilities the day before;{w} Likewise, I’ve posted all announcements before leaving.{w} We might not have a Wi-Fi connection there."
+
+    nvl clear
+    narr "Miyu and I joined the others at the city square;{w} that is, Akira, Sumiko, Hiroshi, Yoshiro, Ikuko, and Ayumi.{w} Sayo arrived at 8AM,{w} telling us that Hikaru will be going with her parents."
+    narr "We made small talk during the ride, mostly on random topics.{w} But if it would lead to something too disturbing, especially about the recent events,{w} someone would try to divert the issue.{w} At best, silence would befall us."
+    narr "We are all shaken,{w} the imprint was still upon us.{w} Someone close to us{w} murdered in a way beyond forgiveness.{w} Heck, I don’t even want to know what exactly happened to Inoue!"
+    narr "Maybe...{w} Maybe when she’s better...{w} Maybe if she’s willing to talk."
+
+    nvl clear
+    narr "At 10:30AM, all of Kyou’s friends and relatives gathered in the front garden.{w} After a short prayer, we all set out to the nearby church, where a mass was held.{w} The priest kept the casket closed while he sprinkled holy water{w} – kids would find the sight unpleasant."
+    narr "We relayed back to the van and followed the funeral coach.{w} It played sorrowful songs,{w} particularly those of Gary V., Martin Nievera, Phil Collins, and Josh Groban.{w} Mourners of black and white walked around us carrying balloons and umbrellas."
+    narr "It brought us all back to the flag retreat.{w} Those thirty minutes sapped our energy coming to the weekend,{w} particularly, Ms. Harada’s heartfelt speech.{w} And Sayo, on behalf of the council..."
+
+    nvl clear
+    narr "{i}He may be a speck of dust compared to our numbers,{w} but the fact stands{w} – we’ve lost a brother.{w} May he pass on peacefully to the afterlife.{w} Let us offer a minute of prayer, and another of silence.{/i}"
+    narr "After which, she looked towards our direction."
+    narr "{i}I leave it all to you.{w} Thank you very much.{/i}"
+    narr "Her pace that afternoon matched that of the mourners outside.{w} At the front seat, Sayo wrapped herself firmly and bit down on her lips.{w} There’s a lump in my throat, invoking me to tear up,{w} and I'm sure the others felt the same."
+    narr "I resisted."
+
+    nvl clear
+    narr "When we reached the cemetery, the girls drew their handkerchiefs out, wiping away any tear they felt."
+    narr "The men carrying the casket went first.{w} We followed, climbing up a set of slopes before we reached the burial site.{w} The priest from the Mass led the committal."
+    narr "All of those present spoke a few words to Kyou.{w} He responded with brief gusts, something only Miyu and Ikuko noticed.{w} The small children were passed over the casket, crying,{w} even though the faces were familiar to them."
+    narr "As Kyou was being sealed in, the priest gave his final blessings and everyone threw roses and ribbons.{w} Wailing and sniffles were prevalent;{w} even my companions shared their grief."
+
+    nvl clear
+    narr "The reception, though the dishes hearty,{w} was clouded in a somber atmosphere.{w} Sure, the attendants laughed while commemorating Kyou’s halcyon days,{w} but the joy stayed there."
+    narr "And they realized how worse it became."
+    narr "Pancit,{w} a noodle believed to lengthen one’s life.{w} How ironic{w} – the main dish enjoyed by those who survived the dead{w} – they’ll all join him no matter how much they consume."
+    narr "And that includes me...{w} Forget about it."
+
+    nvl clear
+    narr "At three o’ clock, most of the guests have gone home.{w} Hikaru’s parents talked with the Kirisakis, while Sayo rounded us up to assist with the cleaning.{w} The activity relieved our minds of the grief even if partially."
+    narr "Hiroshi and I helped with the dishwashing."
+
+    nvl clear
+    window hide
+
+    hk7 "Funny how the birds sound like chicks, don’t they?"
+    iy1 "Aw, spare me the image!{w} The wake has long passed, and you might want to move on, Hiroshi."
+    hk7 "Hahahahahaha! Your heart, Ichirou. Keep it calm."
+    iy1 "{i}*sigh*{/i} But now that you mentioned it, does it really have an effect?"
+    hk7 "Yes, I’m sure.{w} After all, this isn’t a husk we’re dealing with.{w} What man is born devoid of emotion?"
+    iy1 "Yeah... let’s mellow out of that prose.{w} You’re starting to sound like those YA novels you read."
+    hk7 "What a spoilsport. Can’t you let me be?"
+    "\"\"Hahahahahahahahaha!\"\""
+
+    window show
+    nvl clear
+    narr "But he has a point."
+    narr "Surely, the killer’s conscience must be upsetting him,{w} especially due to the extent of the damage he caused.{w} I would love to see that fearful look on his face."
+    narr "We gathered in the dining room save for Hikaru.{w} There, we rested for a while.{w} A few minutes later, Mrs. Kirisaki emerged from the door,{w} her tone delightful."
+
+    nvl clear
+    window hide
+
+    ms_kir "How are you doing, kids?{w} Join us in the living room, please, if you're already well-rested. We have a lot to discuss.{w} Oh, and calm yourselves. No pressure. {i}*chuckle*{/i}"
+
+    window show
+    nvl clear
+    narr "With a nod, we followed her.{w} Inside the parlor, her husband and Mr. Yamamoto were already seated; Mrs. Yamamoto and Hikaru arrived shortly after we did.{w} Mr. Kirisaki exchanged hands with us and asked a few general questions."
+    narr "And where was Kyou’s brother?{w} Upstairs in his room, studying.{w} He would be returning to school tomorrow, or so his parents told us."
+
+    nvl clear
+    window hide
     return
 
 label ch01_20_epilogue:
     "JUNE 30, 2013 - 2000H"
-    
-    "To be continued..."
+    "{i}*RING* *RING*{/i}"
+
+    mh8 "Excuse me. My parents are calling."
+
+    window show
+    nvl clear
+    narr "Dinner had ended,{w} and Sayo already called the van driver to shuttle us back to Kutsutochi.{w} My eyes are hurting, and everyone else is tired, too."
+    narr "Only six of us are in the parlor:{w} Ayumi, Hikaru, Sumiko, Yoshiro, Hiroshi, and myself.{w} Everyone’s eyes are glued to their phones and tablets.{w} I didn’t bother to bring a charger for my low-battery phone, so I’m excepted."
+    narr "I needed some fresh air.{w} The wind outside breezed through the open window, a good excuse to stay inside.{w} No. I prefer being outside.{w} The dim lights are dazing me, and I don’t want to drift off in the middle of the final prayer."
+
+    nvl clear
+    window hide
+
+    iy1 "I'm gonna go outside for a while.{w} Give me a ring if we're all needed - I may not be able to hear an SMS tune."
+    ai2 "Yeah, whatever. Be on your way, then."
+
+    nvl clear
+    narr "A single light bulb illuminated the front porch.{w} It is mostly silent, occasionally broken by the bug zapper over the door.{w} Looking past the few buildings, the setting alone is fresh air for a city dweller like me."
+    narr "Walks are perfect at night,{w} with the assurance of security so long as one doesn’t stray off the road.{w} Aside from the winds chilling your whole body, you’d be treated to a concert of the crickets.{w} It relieves tension, soothing the nerves so much they’ll absorb you wholly."
+    narr "At the end of the wet season, cicadas would sometimes hang around a few trees.{w} There’s one buzzing on the right, two blocks from the Kirisaki residence."
+    narr "{i}{b}*SNIFF*{/b}{/i} Aaaaaaahhhh..."
+    narr "The roadside flowers are fragrant, too.{w} Only thing missing is the fruits, which are staples of the province."
+
+    nvl clear
+    window hide
+
+    "{i}*RING* *RING*{/i}"
+    "I snapped out of my daydream.{w} Who could that be?"
+
+    iy1 "Hello?"
+    mh8 "Where are you?"
+    iy1 "Just went out to catch some air.{w} Do you need me?"
+    "..."
+    iy1 "Hey, Miyu?"
+    mh8 "Sorry. I can’t see you from here.{w} The prayer won’t start without you, ‘ya know?"
+    iy1 "That so?!{w} OK! I’ll be back in a jiffy."
+
+    "{i}*BEEP*{/i}"
+    "And so ends my little journey.{w} I doubled the pace, making sure not to trouble the others."
+    "They're probably itching to go home and sleep.{w} Even I miss my bed."
+
+    "{i}Slow down...{/i}"
+
+    window show
+    nvl clear
+    narr "Time halted after those two words."
+    narr "Obstructing my path is a figure,{w} shadowy enough to conceal his identity.{w} He seems like a town drunkard or a junkie, something like that."
+    narr "In any case, he’s not my problem.{w} But he’s not moving,{w} only facing towards me."
+
+    nvl clear
+    window hide
+
+    iy1 "Are you talking to me?"
+
+    "He took the hint.{w} Placing his hands in his coat, he turned the other way."
+    "This time, the figure spoke a little louder."
+
+    "{i}Condolence!{w} And I’m sorry to see your friend go...{/i}"
+
+    "Condolence...? Friend...?{w} Hold on. This man is no stranger!"
+
+    iy1 "Hold it!{w} What are you talking about?"
+
+    "Without a word, he quickened his pace and started running.{w} What does he know?!"
+
+    iy1 "Wait up! Hey!"
+
+    "And thus, the night became peaceful no longer.{w}\nWho's next, I wonder?"
+
+    "{b}***END OF JUNE CHAPTER***\n\nTO BE CONTINUED{/b}"
     return
