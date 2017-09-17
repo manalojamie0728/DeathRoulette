@@ -1,19 +1,27 @@
 -- CHARACTERS --
 
-* Ichirou Yokohama - The Upholder of Justice
-* Akira Ichibana - The Comic Relief
-* Sumiko Tokubei - The Intelligent Yet Forgetful
-* Inoue Shinozaki - The Curious Cat
-* Sayo Ronoroa - The Leader and Most Responsible; the student council president and suspected to be the culprit for the killings. Graduates as a Top 5 student in their batch. "Besides, what interest is there?"
-* Yoshiro Suzuki - The Puzzle Geek
-* Hiroshi Kano - The Silent Entertainer
-* Miyu Hirano - The Cynical-Optimistic Detective/The Chessmaster; one of the students from IV-C and shows a lot of interest in mathematics and mystery-solving. He is actually the main antagonist and the origin of "Let". Graduates as a Top 8 student in their batch.
-* Kyou Kirisaki - The Pious
-* Hikaru Yamamoto - The Resident Prankster
+* Ichirou Yokohama (Red Motif) - The Upholder of Justice
+* Akira Ichibana (Black Motif) - The Comic Relief
+* Sumiko Tokubei (Grey Motif) - The Intelligent Yet Forgetful
+* Inoue Shinozaki (Pink Motif) - The Curious Cat
+* Sayo Ronoroa (Purple Motif) - The Leader and Most Responsible; the student council president and suspected to be the culprit for the killings. Graduates as a Top 5 student in their batch. "Besides, what interest is there?"
+* Yoshiro Suzuki (Yellow Motif) - The Puzzle Geek
+* Hiroshi Kano (Brown Motif) - The Silent Entertainer
+* Miyu Hirano (Violet/Green Motif) - The Cynical-Optimistic Detective/The Chessmaster; one of the students from IV-C and shows a lot of interest in mathematics and mystery-solving. He is actually the main antagonist and the origin of "Let". Graduates as a Top 8 student in their batch.
+* Kyou Kirisaki (Orange Motif) - The Pious
+* Hikaru Yamamoto (Blue Motif) - The Resident Prankster
 * Lilith/ Lawlet "Let" Carnegie - a manifestation of the culprit of the Death Roulette Curse Killings. Ambiguously male or female, because his/her gender is subject to whoever sees him/her. Is fond of nursery rhymes and violent games. The Death Roulette is his/her favorite, hence the moniker.
 * Ikuko Mimori - Sayo's classmate and fellow churchmate at the Youth Group. She occasionally gives Sayo useful advice which plays a vital role in the latter's subplot in the October chapter.
 * Sanae Yoshida - Miyu's close friend and love interest. They met each other at a high school before Miyu transferred to Maria St. Claire.
 * Aria Utada - Hikaru's best friend and one of the most popular singers in their batch.
+
+* Textbox Character Color Codes
+- Light Blue = Safe/Side Character
+- Green = Fine
+- Yellow = Caution
+- Orange = Danger
+- Red = Critical
+- Gray = Dead/Unknown
 
 * RANDOM: Higurashi Equivalents
 - Ichirou = Keiichi Maebara
@@ -21,6 +29,18 @@
 - Sayo = Mion Sonozaki
 - Miyu = Rika Furude/Miyo Takano
 - Hikaru = Satoko Houjou
+
+* RANDOM: Design Expies
+- Ichirou = Tomoe Minai (Higurashi No Naku Koro Ni)
+- Akira = Satoko Hojo (Higurashi No Naku Koro Ni)
+- Sumiko = Kasai Tatsuyoshi (Higurashi No Naku Koro Ni)
+- Inoue = Mion Sonozaki/ Natsumi Kimiyoshi (Higurashi No Naku Koro Ni)
+- Sayo = Hanyuu Furude (Higurashi No Naku Koro Ni)/ Eva Ushiromiya (Umineko No Naku Koro Ni)
+- Yoshiro = Mamoru Akasaka (Higurashi No Naku Koro Ni)/ Willard H. Wright (Umineko No Naku Koro Ni)
+- Hiroshi = Chie Rumiko (Higurashi No Naku Koro Ni)/ Shannon/Kanon (Umineko No Naku Koro Ni)
+- Miyu = Rika Furude/ Miyo Takano (Higurashi No Naku Koro Ni)
+- Kyou = Keiichi Maebara (Higurashi No Naku Koro Ni)
+- Hikaru = Rena Ryuugu (Higurashi No Naku Koro Ni)
 
 * TIMES OF DEATH (Death Roulette, Death Roulette: Unending Demise)
 - June:	Kyou Kirisaki (Original), Sayo Ronoroa (Correct Order, Unending Demise)
@@ -37,3 +57,6 @@
 * QUOTES
 - "Naivety won't get you too far, but I'm not saying you are." (Kyou Kirisaki, June Chapter)
 - "Fear, not courage, is what makes men truly interesting. To exploit those as a weapon is to have him realize the insufferable truth -- stigmas that last forevermore." (Sayo Ronoroa, June Chapter)
+- "Even I make mistakes, you see... even the most fatal ones." (Sayo Ronoroa, June Chapter)
+- "There are things I've witnessed beyond my comprehension, things that aren’t even humanly possible." (Kyou Kirisaki, June Chapter)
+- "After all, this isn't a husk we're dealing with. What man is born devoid of emotion?" (Hiroshi Kano, June Chapter)
