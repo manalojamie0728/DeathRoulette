@@ -61,24 +61,27 @@ label start:
 
     scene bg test1 with fade
 
+    # - Done for now
+    ## - Skipped
+
     #call ch01_01_prologue1
     #call ch01_02_prologue2
     #call ch01_03_clubday
-    call ch01_04_tenvictims
-    call ch01_05_sacredheart
-    call ch01_06_kyou
-    call ch01_07_countdown
-    call ch01_08_disappearance
-    call ch01_09_labkyou1
-    call ch01_10_labinoue1
-    call ch01_11_labkyou2
-    call ch01_12_labinoue2
-    call ch01_13_facts1
-    call ch01_14_labinoue3
-    call ch01_15_labkyou3
-    call ch01_16_death01
-    call ch01_17_facts2
-    call ch01_18_aftermath
+    #call ch01_04_tenvictims
+    #call ch01_05_sacredheart
+    #call ch01_06_kyou
+    #call ch01_07_countdown
+    #call ch01_08_disappearance
+    #call ch01_09_labkyou1
+    #call ch01_10_labinoue1
+    #call ch01_11_labkyou2
+    #call ch01_12_labinoue2
+    #call ch01_13_facts1
+    #call ch01_14_labinoue3
+    #call ch01_15_labkyou3
+    #call ch01_16_death01
+    #call ch01_17_facts2
+    #call ch01_18_aftermath
     call ch01_19_funeral
     call ch01_20_epilogue
     return
@@ -1025,6 +1028,9 @@ label ch01_05_sacredheart:
     narr "A peaceful night almost devoid of sound, save for the light tapping made by the raindrops - not enough to suspend classes the following day."
     narr "And cutlery! They accompanied the aroma of the sumptuous meal that the Shinozakis enjoyed.{w} Elegant candelabra in the middle to match the aesthetics.{w} It had class, though they were not that wealthy at all."
     narr "Dinner talk was the usual: how did school go, what trips and appointments to attend to at work and where to go for the weekend – ordinary family matters.{w} Once they had their fill, they tidied themselves up, as no maid is in their employ."
+    window hide
+    show inoue casual smile at RS with Dissolve(0.2)
+    window show
     narr "While their parents headed straight up to the master bedroom, Inoue and her brother stayed behind in the living room. They tuned in to their favorite channel after watching the primetime news."
 
     nvl clear
@@ -1032,27 +1038,35 @@ label ch01_05_sacredheart:
 
     "{b}*RING* *RING*{/b}"
 
+    show inoue casual confused at RS with Dissolve(0.2)
     "Who could be calling us tonight? I am expecting nobody.{w} Probably for big brother again... not my business."
 
     tomonori "Inoue, this call's for you."
 
     "He handed the receiver to me, moving away and lowering the volume. A polite chap, he is."
 
+    show inoue casual confusedtalk at RS with Dissolve(0.2)
     is4 "Hello? Inoue Shinozaki speaking."
     unk "Good evening!{w} Sayo Ronoroa here. How are you?"
+    show inoue casual determined at RS with Dissolve(0.2)
     is4 "Pleasant. You must feel the same.{w} I didn’t expect you to call tonight, so what brings you to?"
     sr5 "I was hoping for a quick chat with you. The evening weather probably will become worse by midnight.{w} But I want you to hold on for... an hour or so, I think. Am I not a bother?"
 
+    show inoue casual confused at RS with Dissolve(0.2)
     "I sat down, preparing the couch pillow. Involuntarily, I looked around even though I didn’t need to.{w} Brother is there – enjoying the TV show by himself."
 
+    show inoue casual serious at RS with Dissolve(0.2)
     is4 "This is about last week, isn’t it? When we were heading back home?"
     sr5 "Yes, yes. In fact, I wanted to come to you earlier during lunch break.{w} I just didn’t know how to put it in a {i}pleasant{/i} way then. I feared I might ruin your day."
+    show inoue casual serioustalk at RS with Dissolve(0.2)
     is4 "It’s alright. We’re on the line now – just the two of us. What did you find?"
     sr5 "Lots.{w} Besides the facts I’ve researched a few months ago, there have been quite some developments.{w} I noticed a pattern – the time frames at which the victims were killed."
     sr5 "There was exactly one victim per month – starting from June 2012 until March 2013."
+    show inoue casual serioustalk2 at RS with Dissolve(0.2)
     is4 "Ten months, ten victims.{w} A grand-scale murder if it ever was one. But what was the motive?{w} It seems all random and disconnected to me – yet, somehow they all connect!"
     sr5 "Not motive... {i}motives{/i}.{w}. There is no single method in each of the killings – those who knew the victims related the manner of their death to... some aspect of their life."
     sr5 "There must exist a mastermind, then, {i}if{/i} the deaths were orchestrated.{w} Who were the accomplices? None proven, hence why this case is still open."
+    show inoue casual seriouspose at RS with Dissolve(0.2)
     is4 "Can you give me the names?"
     sr5 "They are as follows:"
 
@@ -1067,18 +1081,23 @@ label ch01_05_sacredheart:
     nvl clear
     window hide
 
+    show inoue casual surprised at RS with Dissolve(0.2)
     is4 "Hold up!"
 
     "Did I just hear that right? A direct assault!{w} But... how come is the October victim’s death part of the ten? Unless..."
 
+    show inoue casual serioustalk2 at RS with Dissolve(0.2)
     is4 "If not direct assault, then the drill must be faulty or rigged."
     sr5 "Correct. Bad luck on his part.{w} With the previous deaths occurring, those who witnessed it saw it a part of the Curse Killings, dismissing any rational explanation.{w} Home Economics classes were suspended for a month to make room for investigations."
     sr5 "They had one suspect, Rika Suzumiya, whose fingerprints were found on the drill.{w} She and Shibuya shared a long-time argument regarding a botched group project, even taking it personally."
     sr5 "However, she was proven innocent by reliable witness statements.{w} Another dead end was created."
+    show inoue casual serioustalk3 at RS with Dissolve(0.2)
     is4 "That’s horrible! Even in school they weren’t safe.{w} What caused all this?{w} This phenomenon is beyond science – supernatural! I’d be a believer if I ever saw it with my own eyes."
     sr5 "Noted."
+    show inoue casual sighpose at RS with Dissolve(0.2)
     is4 "You may proceed.{w} Excuse the hysteria."
 
+    show inoue casual seriouspose at RS with Dissolve(0.2)
     window show
     nvl clear
     narr "The sixth is Eiko Shikata, council president{w} - victim of a gunshot wound to the heart, November 23rd.{w} The weapon was triggered by a device planted on her chair."
@@ -1091,7 +1110,9 @@ label ch01_05_sacredheart:
     window hide
 
     sr5 "All in all, that’s ten.{w} What are your thoughts, Inoue? I want your input."
-    is4 "Hmmm... One of them is the student council president, am I correct?{w} That sounds someone like you. Hehehehe..."
+    is4 "Hmmm... One of them is the student council president, am I correct?"
+    show inoue casual determined at RS with Dissolve(0.2)
+    is4 "Hmmm... One of them is the student council president, am I correct?{fast} That sounds someone like you. Hehehehe..."
     sr5 "A haunting thought, I must admit. {i}*chuckle*{/i}{w} But it is all finished. What interest is there if no harm is expected?{w} Anything else?"
 
     "Let me enumerate each cause of death again."
@@ -1100,13 +1121,17 @@ label ch01_05_sacredheart:
     "Sayo seems to agree with me."
 
     sr5 "Yes... We are on the same track so far."
+    show inoue casual sigh at RS with Dissolve(0.2)
     is4 "Brutal – what lack of a better word to describe it all."
     sr5 "Hmph. Lame.{w} I have {i}better{/i} ideas."
+    show inoue casual serioustalk2 at RS with Dissolve(0.2)
     is4 "Excuse me?"
     sr5 "That reminds me. There is one other detail I nearly forgot to bring up –{w} the story of Ikari Suzumoto."
 
+    show inoue casual troubled at RS with Dissolve(0.2)
     "My attention was replenished and I changed my seating position.{w} I might as well catch another outburst from her."
 
+    show inoue casual troubledtalk at RS with Dissolve(0.2)
     is4 "The upperclassman? Tomonori-kun's batchmate?{w} Did you find any link between her and the crimes?"
     sr5 "I love how you label them as {i}crimes{/i}.{w} Actually, that's true. Our girl is a Sacred Heart Village resident herself."
     sr5 "There’s even a corresponding news article of her interview, published at the aftermath of Oizumi’s death."
@@ -1116,25 +1141,37 @@ label ch01_05_sacredheart:
 
     sr5 "It’s doubtful, but all roads lead there.{w} The passage of time enforces the belief.{w} What interest is there in fighting the unknown?"
     sr5 "We, the firm believers of the scientific method,{w} have no ground against this{w} – an established supernatural phenomenon.{w} Quantum mechanics is the closest weapon, yes, but not enough. What’s to prove that dark matter truly exists?"
+    show inoue casual serioustalk at RS with Dissolve(0.2)
     is4 "You must be joking. The absence of evidence does not imply the work of demonic forces!{w} It is clear that the law has simply given up!{w} Such a gullible superstitious society we live in..."
     sr5 "{i}*sigh*{/i}"
 
+    show inoue casual troubled at RS with Dissolve(0.2)
     "I might have offended Sayo.{w} I haven't even thanked her for her efforts.{w} Best option is to lower my pride and {i}listen{/i}."
 
     sr5 "Do you believe in God?"
 
-    "Definitely!{w} In my days here on Earth, how could I have lived not knowing the presence of{w} – I’m smothered.{w} This is where she wants me to be."
+    show inoue casual determined at RS with Dissolve(0.2)
+    "Definitely!{w} In my days here on Earth, how could I have lived not knowing the presence of"
+    show inoue casual troubledtalk at RS with Dissolve(0.2)
+    "Definitely!{w} In my days here on Earth, how could I have lived not knowing the presence of{fast} – I’m smothered.{w} This is where she wants me to be."
     "As a fellow theist, she’ll question my true belief – whether I’m truly devoted to it.{w} As a fellow rational student, however, she’ll find holes in my reasoning{w} – thus, there’s no way out!"
+    show inoue casual sighpose at RS with Dissolve(0.2)
     "Silence, what Sayo wanted to hear.{w} I shook my head, acknowledging her words."
 
     sr5 "See? All knowledge cannot be done away with science.{w} There exists, however, at least {i}one{/i} explanation for everything{w} – under a superset of truths."
+    show inoue casual sigh at RS with Dissolve(0.2)
     is4 "This is getting off-hand.{w} Can we return to our previous topic, please?{w} You’re just making my head spin. You always do."
     sr5 "Forgive me. {i}*giggle*{/i} I tend to get touchy.{w} Philosophy is an intriguing subject, is it not? Hehehehe...{w} That is all I have uncovered; the past is done away with.{w} The question is, what of the present?"
+    show inoue casual troubledtalk at RS with Dissolve(0.2)
     is4 "Uncertainty."
     sr5 "Say, an hour has passed by quickly.{w} It was a pleasure conversing with you tonight. Have your curiosities been quelled?"
-    is4 "Yeah.{w} I honestly found it a healthy discussion.{w} But there are still some details that bother me..."
+    show inoue casual smile at RS with Dissolve(0.2)
+    is4 "Yeah.{w} I honestly found it a healthy discussion."
+    show inoue casual troubled at RS with Dissolve(0.2)
+    is4 "Yeah.{w} I honestly found it a healthy discussion.{fast} But there are still some details that bother me..."
     sr5 "Try not to think about it that much. You have other problems to worry about.{w} Do keep in mind tonight’s discussion, though. There are a lot to ponder upon."
 
+    hide inoue with Dissolve(0.2)
     window show
     nvl clear
     narr "The next last minute was spent exchanging farewells.{w} After hanging up, I am free to do whatever I wish.{w} What I need is a bed to fall upon."
@@ -1167,91 +1204,166 @@ label ch01_06_kyou:
     narr "The space around the campus is vast.{w} Maria St. Claire, being a single building,{w} has an open grassfield and trees overshadowing the walkways.{w} In fact, they constitute more than three-quarters of the total space!"
     narr "It offers a conducive environment for anything, barely having litter in sight.{w} The school is also the spearhead in keeping its surroundings healthy, what with its own organization dedicated to that task."
 
+    window hide
+    show kyou smile at Three3 with Dissolve(0.2)
+    show sumiko surprisedtalk at Three2 with Dissolve(0.2)
+    window show
     nvl clear
-    narr "Plate in hand, Kyou Kirisaki traveled back to his classroom, IV-A,{w} whilst having a chat with Sumiko, a IV-C student.{w} He sat at the third-row aisle, letting his eyes wander as he ate."
-    narr "And he laid his eyes upon the front row.{w} Inoue,{w} uncharacteristically withdrawn and mind wandering aimlessly."
+    narr "Plate in hand, Kyou Kirisaki traveled back to his classroom, IV-A,{w} whilst having a chat with Sumiko, a IV-C student."
+    window hide
+    hide sumiko with Dissolve(0.2)
+    show kyou smile at LS with Dissolve(0.2)
+    window show
+    narr "He sat at the third-row aisle, letting his eyes wander as he ate.{w} And he laid his eyes upon the front row."
+    window hide
+    show inoue blank at RS with Dissolve(0.2)
+    window show
+    narr "Inoue,{w} uncharacteristically withdrawn and mind wandering aimlessly."
     narr "She was not a person to bother at her current circumstance.{w} It concerned almost no one.{w} Her friends were somewhere else, probably at the canteen or at the other classroom."
 
     nvl clear
     window hide
 
+    show kyou calmleft at Three2 with Dissolve(0.2)
     kk9 "\"Anxiety in the heart causes burden,{w} but kind words cheer it up.\"{w} - Proverbs 12:25."
 
+    show inoue serious at RS with Dissolve(0.2)
     "Slowly,{w} Inoue removed her hand from under her chin.{w} She turned to face the voice behind her."
+    show kyou smile at Three2 with Dissolve(0.2)
     "She was greeted by a smile, the first few she had received that morning.{w} It took her an effort to show one herself{w} – false, nevertheless."
 
-    is4 "I thank you for that,{w} but {i}that{/i} is the exact cause of my worries.{w} {i}*sigh*{/i}"
+    show inoue smile at RS with Dissolve(0.2)
+    is4 "I thank you for that,"
+    show inoue worried at RS with Dissolve(0.2)
+    is4 "I thank you for that,{fast} but {i}that{/i} is the exact cause of my worries.{w} {i}*sigh*{/i}"
+    show inoue sigh at RS with Dissolve(0.2)
     is4 "Religion... is it ever true?{w} I still think it is but{w} they’re all the same."
+    show kyou surprised2 at Three2 with Dissolve(0.2)
     kk9 "You’re confounded.{w} Perhaps something went wrong last evening?"
+    show inoue seriousleft at RS with Dissolve(0.2)
     is4 "I’m not one to disclose secrets{w} and you know that, Kirisaki."
+    show kyou smileleft at Three2 with Dissolve(0.2)
     kk9 "Ah, then I’m correct, I presume.{w} Say, how about I tell you a story, a parable, to ease yourself? Then it’s up to you to trust me or not.{w} Fair game?"
+    show inoue dullsurprise at RS with Dissolve(0.2)
     is4 "No game.{w} I’m tired of it myself. I might have known every single one by heart – by {i}repetition{/i}."
 
     "I smiled in full understanding.{w} I gathered my thoughts - what she did for the past few days and anything that was a cause for concern.{w} Nothing, perhaps..."
     "Oh! I remember now{w} – the conversation nine of us had last week."
 
+    show kyou serious smileclosedpose at Three2 with Dissolve(0.2)
     kk9 "Tell me about it, Inoue.{w} You’ve looked it up. I mean,{w} the \"Sacred Heart Curse Killings,\" were they?"
+    show inoue serioustalk2 at RS with Dissolve(0.2)
     is4 "You know of it?{w} Who told you?!"
+    show kyou serious smilepose at Three2 with Dissolve(0.2)
     kk9 "I know nothing beyond our gathering last Friday.{w} I see you harvested some new knowledge.{w} Worry not, for I know how to zip my mouth."
+    show inoue worriedpose at RS with Dissolve(0.2)
     is4 "To tell you the truth, Kirisaki,{w} the tragedy itself is not my concern.{w} I’ve seen far too many horror movies bearing a similar premise. Is this alright?"
+    show kyou happyclosed at Three2 with Dissolve(0.2)
     kk9 "{i}*chuckle*{/i} What is?"
+    show inoue sigh at RS with Dissolve(0.2)
     is4 "It’s Sayo.{w} I talked to her{w} – no, she contacted me yesterday evening to talk about it.{w} And she mentioned some... {i}trivial{/i} quotes."
-    is4 "There are a few things I want to consult with you.{w} You’re the pious one, someone wiser than me."
+    is4 "There are a few things I want to consult with you.{w} You’re the pious one, and someone wiser than me."
+    show kyou focusleft at Three2 with Dissolve(0.2)
     kk9 "Hmmmm...{w} Was there anything off in her manner?"
+    show inoue serious at RS with Dissolve(0.2)
     is4 "Set that aside for now.{w} I’d like to momentarily clear up some affairs,{w} {i}personal{/i} things."
 
     window show
     nvl clear
-    narr "I gave attention to her words and her delivery.{w} Perhaps, not as I had initially thought,{w} there is something deeper behind her anxiety."
+    narr "I gave attention to her words and her delivery.{w} Perhaps not as I had initially thought,{w} as there is something deeper behind her anxiety."
+    window hide
+    show kyou confused at Three2 with Dissolve(0.2)
+    window show
     narr "Only then I knew."
+    show inoue seriouspose at RS with Dissolve(0.2)
     narr "She related to me the details of the tragedy, one I know beforehand.{w} I researched it myself. Then came the bits after that{w} – questions about science, theology, and the supernatural."
     narr "There are times she’d get herself lost in her story,{w} so I demanded she get to the point."
 
     nvl clear
     window hide
 
+    show kyou confused at Three2 with Dissolve(0.2)
     kk9 "So, I ask of you,{w} what do you truly believe in?"
+    show inoue serioustalk at RS with Dissolve(0.2)
     is4 "That all of these have plausible explanations, however difficult,{w} and none involve the Hand of God whatsoever."
+    show kyou confusedtalk at Three2 with Dissolve(0.2)
     kk9 "That’s in your heart,{w} hundred percent?{w} Or a ninety-nine?"
+    show inoue seriousleft at RS with Dissolve(0.2)
     is4 "*{i}sigh*{/i} Less.{w} I can’t give you an exact figure."
+    show kyou serious talk at Three2 with Dissolve(0.2)
     kk9 "Inoue, I may be a religious person, as you say,{w} but there are times where certain explanations hold water and there are those where they do not.{w} The tragedy has more of the former."
+    show kyou serious leftpose at Three2 with Dissolve(0.2)
     kk9 "The concept of karma shades some of these, as in the case of Shibuya and Suzumiya.{w} The two died in different ways{w} – every one of them did, correct?{w} Science still holds water."
+    show kyou serious pose at Three2 with Dissolve(0.2)
     kk9 "The aftermath of each death is definitely subjective.{w} In my view, the souls of the dead undergo judgment, depending on their character.{w} That, however, has little bearing on the motive unless otherwise."
 
+    show inoue worried at RS with Dissolve(0.2)
     "Inoue was quite puzzled, no matter how brief an explanation I gave her.{w} A long pause occurred, allowing me to finish my meal.{w} She raised another question."
 
+    show inoue worriedpose at RS with Dissolve(0.2)
     is4 "If not religion, then what about quantum theory or the supernatural?{w} I’ve been told that not everything can be touched by science{w} – yet there exists a superset of truths...{w} I don’t know."
+    show kyou surprisedleft2 at Three2 with Dissolve(0.2)
     kk9 "Then it appears you are mistaken."
-    is4 "Mistaken?{w} It is too convoluted!{w} There is only so much for me to comprehend."
+    show inoue serioustalk at RS with Dissolve(0.2)
+    is4 "Mistaken?"
+    show inoue serioustalk2 at RS with Dissolve(0.2)
+    is4 "Mistaken?{fast} It is too convoluted!{w} There is only so much for me to comprehend."
+    show kyou surprisedleft at Three2 with Dissolve(0.2)
     kk9 "If that’s so, let’s untwist the facts slowly.{w} First, how did you distinguish those that were accidents rather than murders?"
+    show inoue serious at RS with Dissolve(0.2)
     is4 "The nature of the deaths themselves."
+    show kyou surprisedtalk at Three2 with Dissolve(0.2)
     kk9 "Even as a possibility?"
+    show inoue seriousleft at RS with Dissolve(0.2)
     is4 "Based on the way they were told.{w} If I judged corrcetly, six to four."
+    show kyou serious2 at Three2 with Dissolve(0.2)
     kk9 "There’s a minor detail I picked up.{w} You said Suzumiya was {i}killed{/i} when she drowned {i}by accident{/i}{w} – a clear dissonance."
 
+    show inoue surprised at RS with Dissolve(0.2)
     "Her eyes widened in genuine surprise.{w} Inoue contemplated upon herself whether her version is correct."
 
     is4 "Kirisaki, are trying to insinuate{w} foul play?"
+    show kyou confused at Three2 with Dissolve(0.2)
     kk9 "Unless you meant the waters killed her, but that would be a morbid personification.{w} If not, then the scores are even.{w} That disproves the idea of an accident."
+    show inoue worried at RS with Dissolve(0.2)
     is4 "How? I... I’m lost.{w} The conditions for an accident are favorable around the time of her death."
+    show kyou serious smilepose at Three2 with Dissolve(0.2)
     kk9 "Let no accident or intuitions assist the detective,{w} or so it says."
+    show inoue serioustalk2 at RS with Dissolve(0.2)
     is4 "Kirisaki, this isn’t a murder mystery!{w} This is real life – anything could happen.{w} Are you trying to Sherlock me?"
+    show kyou serious smileclosedpose at Three2 with Dissolve(0.2)
     kk9 "Hehehehe... Pardon.{w} I may seem to have taken it too far."
-    kk9 "But my point is this{w} – for every effect there is a cause, the evidence present or not.{w} Take my word on Suzumoto-san’s story seriously, but take care not to venture into the unknown excessively."
+    show kyou serious leftpose at Three2 with Dissolve(0.2)
+    kk9 "But my point is this{w} – for every effect there is a cause, the evidence present or not."
+    kk9 "Take my word on Suzumoto-san’s story seriously, but take care not to venture into the unknown excessively."
+    show kyou serious pose at Three2 with Dissolve(0.2)
     kk9 "That, and pray you keep a rational thought ready.{w} Naivety won’t get you too far,{w} but I’m not saying you are."
-    is4 "I understand.{w} And Kirisaki, I must offer my thanks for suppressing my worries.{w} I’ve been thinking about them since last night."
+    show inoue sighclosed at RS with Dissolve(0.2)
+    is4 "I understand."
+    show inoue smile at RS with Dissolve(0.2)
+    is4 "I understand.{fast} And Kirisaki, I must offer my thanks for suppressing my worries.{w} I’ve been thinking about them since last night."
+    show kyou smirk at Three2 with Dissolve(0.2)
     kk9 "My pleasure. {i}*chuckle*{/i}{w} Is there anything else you wish to consult me about?"
-    is4 "Darn! My meal’s gone cold, but that’s fine.{w} Luckily, my seatmates aren’t here yet.{w} About my last point..."
+    show inoue seriousleft at RS with Dissolve(0.2)
+    is4 "Darn! My meal’s gone cold, but that’s fine.{w} Luckily, my seatmates aren’t here yet."
+    show inoue talk at RS with Dissolve(0.2)
+    is4 "Darn! My meal’s gone cold, but that’s fine.{w} Luckily, my seatmates aren’t here yet.{fast} About my last point..."
+    show kyou happy at Three2 with Dissolve(0.2)
     kk9 "Ah, yes! It almost slipped my mind.{w} It was my concern anyway, so please continue."
 
+    show kyou smile at Three2 with Dissolve(0.2)
     window show
     nvl clear
     narr "Inoue is quite a hospitable and level-headed person,{w} save for situations such as this.{w} Just like the first part of our conversation, she spoke while I listened."
+    show kyou confused at Three2 with Dissolve(0.2)
     narr "Then, in the middle of it, I was struck with concern – with doubt.{w} Sayo and I were classmates during our sophomore years,{w} and I can recall specific instances when we’ve talked."
+    show kyou serious2 at Three2 with Dissolve(0.2)
     narr "But not in the way Inoue described their conversation to me."
 
     nvl clear
     window hide
+    hide kyou at Dissolve(0.2)
+    hide inoue at Dissolve(0.2)
     return
 
 label ch01_07_countdown:
@@ -1259,7 +1371,11 @@ label ch01_07_countdown:
     window show
     nvl clear
     narr "Pairs of feet shuffled across the function room.{w} Though busy, the Youth Group members eased themselves through friendly chatter.{w} A six-hour prayer vigil is scheduled at midnight."
-    narr "The front-right door creaked, letting in a small figure with spectacles.{w} Sayo Ronoroa approached the chancel, greeted her church mates, and placed the music book on the stand."
+    narr "The front-right door creaked, letting in a small figure with spectacles."
+    window hide
+    show sayo casual glass smile at Three2 with Dissolve(0.2)
+    window show
+    narr "The front-right door creaked, letting in a small figure with spectacles.{fast} Sayo Ronoroa approached the chancel, greeted her church mates, and placed the music book on the stand."
     narr "She opened it a few pages from the middle.{w} Satisfied, she went over to the other members to help."
 
     nvl clear
@@ -1269,11 +1385,21 @@ label ch01_07_countdown:
     narr "At the back, Sayo wiped away the sweat from her forehead.{w} She entertained thoughts during her idleness, and to each she smiled dearly."
 
     nvl clear
+    window hide
+    show sayo casual glass smileclosed at RS with Dissolve(0.2)
+    window show
     narr "The conception of the highest seat during the last gathering{w} and this night for the school year’s blessing!{w} How fortunate it is to have been a member of this Youth Group."
 
+    window hide
+    show ikuko casual smirk at LS with Dissolve(0.2)
+    window show
     nvl clear
     narr "It was all thanks to Ikuko Mimori, a classmate one year longer in service.{w} The month after Sophomore year, she invited Sayo to the Youth Group.{w} As a result, their relationship deepened between themselves and the Higher Being."
     narr "Sayo is forever grateful."
+    window hide
+    show sayo casual glass smiletalk at RS with Dissolve(0.2)
+    show ikuko casual smile at LS with Dissolve(0.2)
+    window show
     narr "As they waited for the bell, they brought up a variety of topics. How they have been, the current events, personal thoughts,{w} anything they could come up with."
     narr "They left no room for gossip, strictly adhering to their moral code.{w} Sayo mentioned the gathering once more, but no traces of neither the previous tragedy nor her conversation with Inoue.{w} She chose her stories well so as not to gloom the night."
     narr "Instead, they opted to discuss the vigil’s flow, midnight to dawn.{w} They rehearsed the words in their minds, filling in gaps whenever there is one."
@@ -1281,8 +1407,11 @@ label ch01_07_countdown:
     nvl clear
     window hide
 
+    show sayo casual glass normaltalkleft at RS with Dissolve(0.2)
     sr5 "1 Corinthians 16:9-13...{w} it comes with the Daily Bread.{w} At two in the morning, preferably?"
+    show ikuko casual smiletalk at LS with Dissolve(0.2)
     ikuko "Yes. That would be a good placement,{w} though I’d rather have it at five, just before dawn."
+    show sayo casual glass smiletalk at RS with Dissolve(0.2)
     sr5 "Then five it is if you wish!{w} You’re the one in charge of the overall flow."
 
     window show
@@ -1294,80 +1423,131 @@ label ch01_07_countdown:
     nvl clear
     window hide
 
+    show sayo casual glass seriousleft at RS with Dissolve(0.2)
     sr5 "Here’s what I make of this{w} – the truth of human nature.{w} To make an effort in concealing what’s underneath is a natural process; it persists against all effort."
+    show sayo casual glass serious at RS with Dissolve(0.2)
     sr5 "Fear, not courage, is what makes men truly interesting.{w} To exploit those as a weapon is to have him realize the insufferable truth – stigmas that last forevermore."
+    show ikuko casual talk at LS with Dissolve(0.2)
     ikuko "And when misfortune befalls one, the mask vanishes and all impression falls apart with it.{w} Empathy bridges the effects as a ripple."
+    show sayo casual glass serioustalk at RS with Dissolve(0.2)
     sr5 "Correct.{w} Hence the relevance of the vigil’s theme."
+    show ikuko casual blank at LS with Dissolve(0.2)
     ikuko "It skirts the wishes of St. Paul; at the same time, you’ve struck the chord.{w} Isn’t that common knowledge though?"
+    show sayo casual glass serioustalkleft at RS with Dissolve(0.2)
     sr5 "A safe assumption, if not banal.{w} Only a heartless would be as bold as to fear nothing.{w} Death perhaps,{w} but it bars none!"
+    show ikuko casual smiletalk at LS with Dissolve(0.2)
     ikuko "Compose yourself, my friend. Your emotions are driving you away again. {i}*chuckle*{/i}"
+    show sayo casual glass smile2 at RS with Dissolve(0.2)
     sr5 "My apologies."
+    show ikuko casual talk at LS with Dissolve(0.2)
     ikuko "But surely, you’ll drop some of it in the discussion later?"
-    sr5 "It perturbs most, admittedly.{w} I’d rather discuss it in private and to those with an open mind.{w} Fascinating, isn’t it? {i}*chuckle*{/i}"
+    show sayo casual glass normaltalk at RS with Dissolve(0.2)
+    sr5 "It perturbs most, admittedly.{w} I’d rather discuss it in private, especially to those with an open mind."
+    show sayo casual glass smiletalk at RS with Dissolve(0.2)
+    sr5 "It perturbs most, admittedly.{w} I’d rather discuss it in private, especially to those with an open mind.{fast} Fascinating, isn’t it? {i}*chuckle*{/i}"
 
+    show sayo casual glass smile at RS with Dissolve(0.2)
+    show ikuko casual happy at LS with Dissolve(0.2)
     "Their smile drew a mutual air of satisfaction.{w} What could possibly make the night more interesting?"
+    hide ikuko with Dissolve(0.2)
+    hide sayo with Dissolve(0.2)
 
     "Earlier This Evening..."
     window show
     nvl clear
+    show ichirou smile at LS with Dissolve(0.2)
     narr "Ichirou, as class president of IV-B, made his final announcements online."
+    show ichirou proud at LS with Dissolve(0.2)
     narr "With books and backpack made up, he called it a night.{w} But not before going for a few rounds of Candy Crush."
+    hide ichirou with Dissolve(0.2)
 
     nvl clear
+    show miyu proudclosed at RS with Dissolve(0.2)
     narr "In contrast, Miyu retired to bed with his cell phone radio, a perfect opportunity to lose himself in thoughts.{w} Occasionally, he would exchange messages with Sanae Yoshida, a former classmate of his."
     narr "A healthy friendship they had – a durable link.{w} \"Nothing better than to pass away the dullness!\" he would reason.{w} And when it stops, he would return to his activities."
     narr "First Law, indeed."
+    hide miyu with Dissolve(0.2)
 
     nvl clear
+    show sumiko seriousleft at RS with Dissolve(0.2)
     narr "Ever forgetful, Sumiko’s eyes ran through the monitor several times.{w} His mind relaxed upon the sight of his announcement on class IV-C’s FB group."
     narr "\"Wear your PE uniforms on Tuesday – we have a social dance activity at first period. Just this Tuesday, friends. Good night!\""
-    narr "Akira commented on the post, volunteering to bump it the following day.{w} Sumiko liked this idea, despite realizing it only as a jest."
+    narr "Akira commented on the post, volunteering to bump it the following day.{w} Sumiko liked this idea."
+    narr "As if he would buy it, that is."
+    hide sumiko with Dissolve(0.2)
 
     nvl clear
     narr "{b}*BEEP* *BEEP* *BEEP*{/b}"
     narr "The thermometer read 39.0C."
-    narr "As Inoue suspected, she had symptoms of flu.{w} She took a tablet of paracetamol and her mother advised her to stay in bed for the weekend.{w} Inoue desired to protest, but she could not."
-    narr "It was peculiar, as she traced the cause to none.{w} Thankfully, she was free from dengue – that could have been much worse.{w} It is possible that she will miss Monday’s activity so her mother prepared a letter in case."
-    narr "At present, Inoue relaxed her mind;{w} her body comfortably snuggled under the fluffy blankets.{w} No signs of worry as it might worsen her condition."
+    show inoue casual troubledtalk at LS with Dissolve(0.2)
+    narr "As Inoue suspected, she had symptoms of flu.{w} She took a tablet of paracetamol and her mother advised her to stay in bed for a few more days.{w} Inoue desired to protest, but she could not."
+    narr "It was peculiar, as she traced the cause to none.{w} Thankfully, she was free from dengue – that could have been much worse.{w} Faced with the possibility of missing Monday's activity, her mother prepared a letter in case."
+    show inoue casual troubled at LS with Dissolve(0.2)
+    narr "Presently, Inoue relaxed her mind;{w} her body comfortably snuggled under the fluffy blankets.{w} Any signs of worry might worsen her condition."
+    hide inoue with Dissolve(0.2)
 
     nvl clear
+    show yoshiro serious at RS with Dissolve(0.2)
     narr "Yoshiro decided to look up the Sacred Heart tragedy, finding its \"cursed\" label intriguing.{w} It was, as he thought, as grounded as possible{w} – yet inhuman."
     narr "He remembered the upperclassman’s story and tried to establish a connection.{w} Zero,{w} apart from the latter’s residency similar to that of the victims."
+    show yoshiro serious2 at RS with Dissolve(0.2)
     narr "Just then, questions came to him."
     narr "What if the \"catalyst\" perceived an omen?{w} It made no sense even as an aversion – an inverse example – yet...{w} if it was actually delayed, then..."
+    hide yoshiro with Dissolve(0.2)
 
     nvl clear
+    show hiroshi worried at LS with Dissolve(0.2)
     narr "Hiroshi placed {i}The Battle of the Labyrinth{/i} down after the last chapter.{w} It had him thinking, given the nature of the book.{w} Its theme blended too well with their topic, triggering some thoughts within him as he read."
+    show hiroshi worriedleft at LS with Dissolve(0.2)
     narr "In the darkness, he laid in silence tuning his mind the same as Yoshiro's is.{w} He considered the possibility of having Suzumoto as a suspect."
+    show hiroshi determined at LS with Dissolve(0.2)
     narr "He laughed at himself, aware of the idea’s absurdity."
     narr "Suppose it happens again?{w} That is a haunting thought, but it better be fairer than the last.{w} Best case if it doesn’t.{w} Ever."
+    hide hiroshi with Dissolve(0.2)
 
     nvl clear
+    show hikaru smile at LS with Dissolve(0.2)
     narr "There was nothing different about Hikaru, spending the weekend on her laptop as usual.{w} She was streaming shows from the US, indulging herself as much as she wished."
     narr "The props for Tuesday’s activity lay at her bedside.{w} Sumiko gave her a spare key should she ever arrive before six."
+    hide hikaru with Dissolve(0.2)
 
     nvl clear
+    show kyou surprisedleft2 at RS with Dissolve(0.2)
     narr "Kyou received the same instructions from Inoue.{w} However, the class president was ailing and unsure of her condition come Monday.{w} He possesses one of the keys being the earliest in their class."
     narr "He heard of Inoue’s condition and wished her health to return.{w} Kyou thought that she was merely stressed out."
+    show kyou serious leftpose at RS with Dissolve(0.2)
     narr "But as he thought about the previous day, he considered the cause."
 
     nvl clear
     narr "There were things out of place, such as Sayo’s behavior during the phone call.{w} He only has Inoue’s word for it, and she could be making it up.{w} But it was genuine – nobody would dare lie to him; he abhors those."
     narr "But words alone wouldn’t cause an ailment{w} – or rather..."
+    show kyou serious2 at RS with Dissolve(0.2)
     narr "At times like this, he would do some soul-searching to quell himself.{w} He picked up his Bible and began meditating on a few verses."
     narr "Afterwards, he opened his Daily Bread and marked the entry for June 15.{w} He scanned the next entry for June 16, {i}Strength of a Man{/i}, and reflected upon himself."
 
     nvl clear
     window hide
 
+    show kyou serious smile2 at RS with Dissolve(0.2)
     kk9 "Quite fitting.{w} {i}*sigh*{/i} I’ll save this for tomorrow evening."
+    hide kyou with Dissolve(0.2)
 
     "{b}{i}*RING* *DING* *RING* *DING*{/i}{/b}"
 
     window show
     nvl clear
-    narr "The oft familiar tune called everyone’s attention, all fifteen of them.{w} The two girls walked together to the front and took their places at the chancel."
-    narr "Sayo led the small choir by playing the keyboard, with the music book page in full view.{w} Ikuko glanced at her friend, twinkled, and began the vigil."
+    narr "The oft familiar tune called everyone’s attention, all fifteen of them."
+    show sayo casual glass smile at RS with Dissolve(0.2)
+    show ikuko casual smile at LS with Dissolve(0.2)
+    narr "The two girls walked together to the front and took their places at the chancel."
+    hide ikuko with Dissolve(0.2)
+    hide sayo with Dissolve(0.2)
+    show sayo casual glass smile at LS with Dissolve(0.2)
+    narr "Sayo led the small choir by playing the keyboard, with the music book at the opening hymns."
+    hide sayo with Dissolve(0.2)
+    show ikuko casual smirk at RS with Dissolve(0.2)
+    narr "Ikuko glanced at her friend, twinkled, and began the vigil."
+    hide ikuko with Dissolve(0.2)
     narr "By the twelfth strike, the Youth Group members performed the opening hymn.{w} No hiccups and all went smooth from there.{w} Everything went as planned."
     narr "Brilliantly executed – one should say."
 
@@ -1381,52 +1561,97 @@ label ch01_08_disappearance:
     nvl clear
     narr "Class IV-C was livelier than usual.{w} Topics about the social dance activity buzzed around the students - who looked handsome and lovely, who made the most graceful steps, and whatnot.{w} Some were even considering their prom dates this early."
     narr "There are a few exceptions, such as Sumiko and Akira."
+    window hide
+    show akira proud at Eight2 with Dissolve(0.2)
+    show sumiko serious at Eight3 with Dissolve(0.2)
+    show ichirou worried at Eight7 with Dissolve(0.2)
+    window show
     narr "At present, the three – adding Ichirou – discussed the upcoming College Entrance Exam review sessions.{w} The Science Club is one of the event's major facilitators."
+    window hide
+    show miyu bored at Eight6 with Dissolve(0.2)
+    window show
     narr "Miyu handed the signed document to Ichirou, which the latter accepted."
 
     nvl clear
     window hide
 
+    show miyu serious at Eight6 with Dissolve(0.2)
     mh8 "I shouldn’t be the one doing this.{w} Isn’t she in good health already?"
+    show ichirou serious at Eight7 with Dissolve(0.2)
     iy1 "Nope.{w} We’d be chewed out if we waited until tomorrow. Today’s the deadline."
 
+    hide miyu with Dissolve(0.2)
     "Miyu acknowledged it and went out to have lunch.{w} Sumiko signed a similar document."
 
+    show sumiko smirkclosed at Eight3 with Dissolve(0.2)
+    show ichirou confused at Eight5 with Dissolve(0.2)
     st3 "So Kyou followed after Shinozaki, huh? Hehehehe. What rain could do to people...{w} I saw him yesterday during the assembly and he looked fine."
     iy1 "So did I.{w} If only we were given the agreement yesterday, I wouldn’t have come to you.{w} But then again, Shinozaki still has flu."
+    show sumiko surprisedtalk at Eight3 with Dissolve(0.2)
     st3 "Flu? Who told you that?"
+    show ichirou serious at Eight5 with Dissolve(0.2)
     iy1 "Kyou.{w} I exchanged a few words with him yesterday during break time and he mentioned Inoue's condition. Hope she gets better."
+    show akira proud2 at Eight2 with Dissolve(0.2)
     ai2 "That aside, you’ll send this to Sayo after Nakashima signs?{w} They are in the same class."
+    show ichirou smile at Eight5 with Dissolve(0.2)
     iy1 "Ayumi? Yeah, I’ll send her copy before giving it to Sayo.{w} The girl’s probably buying some food right now."
 
     window show
     nvl clear
-    narr "The conversation went on for a bit until Ichirou noticed Ayumi return.{w} He left the two and thanked them.{w} At the same time, Miyu returned, sitting one row ahead of the two."
-    narr "At exactly noon, Sayo passed by IV-C.{w} It was an unusual sight –{w} the bubbly girl worried about something this early in the year.{w} Her face evidenced her anxiety, but her gait remained the same."
+    narr "The conversation went on for a bit until Ichirou noticed Ayumi return.{w} He left the two and thanked them."
+    hide ichirou with Dissolve(0.2)
+    show miyu naughty smile at Eight5 with Dissolve(0.2)
+    narr "Miyu returned not a minute after Ichirou left, sitting one row ahead of the two."
+    hide miyu with Dissolve(0.2)
+    narr "At exactly noon, Sayo passed by IV-C."
+    show sayo worried at Eight8 with Dissolve(0.2)
+    narr "It was an unusual sight –{w} the bubbly girl worried about something this early in the year.{w} Her face evidenced her anxiety, but her gait remained the same."
+    window hide
+    show sayo worriedtalkclosed at Eight8 with Dissolve(0.2)
+    hide sayo with Dissolve(1.0)
+    window show
     narr "When she was no longer in sight, Akira shook his head in sympathy."
 
     nvl clear
     window hide
 
+    show sumiko surprised at Eight5 with Dissolve(0.2)
+    show akira worried at Eight3 with Dissolve(0.2)
     ai2 "Gosh. Don’t tell me their class didn’t do well in the activity.{w} Poor Sayo looks like she lost some stocks{w} or a pile of chips."
-    st3 "Hahahahahaha! That’s a good one.{w} But I suggest we make no further jokes. It could be worse than we think."
+    show sumiko smirkclosed at Eight5 with Dissolve(0.2)
+    st3 "Hehehehehe. That’s a good one."
+    show sumiko seriousleft at Eight5 with Dissolve(0.2)
+    st3 "Hehehehehe. That’s a good one.{fast} But I suggest we make no further jokes. It could be worse than we think."
+    show akira worriedleft at Eight3 with Dissolve(0.2)
     ai2 "Or maybe she could be tired. Seriously, it’s the same for us."
+    show akira surprised at Eight3 with Dissolve(0.2)
     ai2 "Oh!{w} Here’s the spare key.{w} I might risk losing it."
 
+    show sumiko angry at Eight5 with Dissolve(0.2)
     "Akira produced a small silver key from his wallet and gave it to Sumiko.{w} The latter hesitated, asking if he will come later than usual.{w} Akira, however, insisted."
-    "Sumiko shrugged and passed it to Akira’s service mate.{w} She glared at Akira whose face contorted with embarrassment.{w} She threw the spare key back to him."
+    show sumiko sighclosed at Eight1 with Dissolve(0.2)
+    "Sumiko shrugged and passed it to Akira’s service mate."
+    show sumiko smile at Eight1 with Dissolve(0.2)
+    show akira fangblush at Eight3 with Dissolve(0.2)
+    "Sumiko shrugged and passed it to Akira’s service mate.{fast} She glared at Akira whose face contorted with embarrassment.{w} She threw the spare key back to him."
+    hide akira with Dissolve(0.2)
+    hide sumiko with Dissolve(0.2)
 
     window show
     nvl clear
     narr "{i}The subscriber cannot be reached. Please try again later.{/i}"
+    show sayo worried at LS with Dissolve(0.2)
     narr "The same robotic voice returned my call for the third time.{w} I tried to reach Inoue since morning, hoping to check on her, but without luck."
     narr "That alone was unusual{w} – she never misses calls twice or even thrice during weekdays.{w} I knew that since we were freshmen.{w} If today was Sunday, that’ll be alright."
     narr "I don’t have Kirisaki’s number so I’ll just have to ask their adviser about it."
+    hide sayo with Dissolve(0.2)
 
     nvl clear
     narr "I opened the door to the faculty room and looked around.{w} There’s Mrs. Genkai chatting with Ms. Harada."
     narr "Perfect.{w} I’ll hand these to Mrs. Genkai before I ask Ms. Harada about the two."
+    show sayo smileopen at Three2 with Dissolve(0.2)
     narr "Before I conducted my business, I gave a polite gesture they received gracefully.{w} I wasted no time."
+    show sayo seriousserious at Three2 with Dissolve(0.2)
     narr "Luckily, Ms. Harada took the initiative by asking me about Inoue and Kirisaki.{w} Having no idea on their condition either, she took out her smart phone and dialed the Shinozaki residence first."
     narr "We all waited in anticipation."
 
@@ -1434,13 +1659,18 @@ label ch01_08_disappearance:
     window hide
 
     t_gen "You’ve eaten well, Sayo-chan?"
-    sr5 "Yes, but not as well.{w} I’ve been trying to contact Shinozaki since this morning and I couldn’t reach her.{w} Whatever happened to that girl?"
+    show sayo serioustalk at Three2 with Dissolve(0.2)
+    sr5 "Yes, but not as well.{w} I’ve been trying to contact Shinozaki since this morning and I couldn’t reach her."
+    show sayo worried at Three2 with Dissolve(0.2)
+    sr5 "Yes, but not as well.{w} I’ve been trying to contact Shinozaki since this morning and I couldn’t reach her.{fast} Whatever happened to that girl?"
     t_gen "Well, at least Hirano is present for these papers.{w} Tokubei too.{w} I’ll save the questions until we get through."
+    show sayo seriousnormal at Three2 with Dissolve(0.2)
     sr5 "I’ll stay for a while.{w} I too, am worried about them."
     t_har "Uh, hello? Is this Inoue Shinozaki's mother?{w} This is her adviser, Ms. Harada, speaking."
 
     "She managed to connect within a minute.{w} The conversation with Mrs. Shinozaki took place in loudspeaker, with Mrs. Genkai and me listening closely."
     "I gathered the following after the pleasantries."
+    hide sayo with Dissolve(0.2)
 
     t_har "I apologize for calling on such short notice, Mrs. Shinozaki. You might be busy.{w} Tell me, how is Inoue doing?"
     ms_shi "She’s alright.{w} Her fever went away yesterday morning and she’s her former self, thankfully. {i}*chuckle*{/i}{w} Did she miss anything important, madame?"
@@ -1453,6 +1683,7 @@ label ch01_08_disappearance:
     ms_shi "That’s not possible. I saw her off this morning at quarter to six.{w} She didn’t go off anywhere, did she?!"
     t_har "I refuse to believe that.{w} Unless I'm mistaken, we never saw her this morning.{w} Being in my advisory class, I never forget a student – {i}especially{/i} our class president."
 
+    show sayo worriedtalk at Three2 with Dissolve(0.2)
     "What?! How is that...?{w} A crack in Mrs. Shinozaki's voice... and in disbelief.{w} There must be a mistake!"
 
     window show
@@ -1462,14 +1693,18 @@ label ch01_08_disappearance:
     narr "Who would want to see the head of the student body cry? That'll shatter the morale of people."
 
     nvl clear
+    show sayo worried at Three2 with Dissolve(0.2)
     narr "Ms. Harada gave instructions to file a missing person report immediately in case of kidnapping.{w} Then, she cut the line."
     narr "Seeing her distressed from the facts, I offered my seat and gave her a glass of water."
     narr "My fears worsened. I even considered alerting the student body to prevent a future case.{w} However, with no knowledge of Inoue’s condition, I refused to take action.{w} It was rash."
     narr "Mrs. Genkai kept a level head throughout the whole affair, agreeing to keep it among the three of us.{w} No other faculty member was in proximity."
 
     nvl clear
-    narr "I left the faculty room, requesting to keep in touch with Ms. Harada for any updates.{w} I last saw her feebly picking up her smart phone and dialing another number, most likely the Kirisakis.{w} I felt sorry but I have to zip my mouth."
+    narr "I left the faculty room, requesting to keep in touch with Ms. Harada for any updates.{w} I last saw her feebly picking up her smart phone and dialing another number, most likely the Kirisakis."
+    show sayo worriedtalkclosed at Three2 with Dissolve(0.2)
+    narr "I felt sorry but I have to zip my mouth."
     narr "What interest is there, I suppose?{w} Announcing it publicly would cause discord and panic."
+    hide sayo with Dissolve(0.2)
     narr "I returned to IV-E, avoiding to speak to anyone.{w} I needed to think, and take my mind off it."
 
     nvl clear
@@ -1481,15 +1716,19 @@ label ch01_08_disappearance:
     nvl clear
     window hide
 
+    show sayo normaltalk at Three3 with Dissolve(0.2)
     sr5 "Excuse me, madame. What’s the commotion?"
     t_gen "I had to assist a fellow faculty down after an attack.{w} {i}*sigh* Could this day go any worse? She’s had enough already.{i}"
+    show sayo worriedtalk at Three3 with Dissolve(0.2)
     sr5 "She? You mean –"
     t_gen "Correct.{w} The patient is Ishii-san.{w} She called Kirisaki’s residence immediately after you left.{w} He was the other student absent from her class, if I recall."
 
+    show sayo seriousnormal at Three3 with Dissolve(0.2)
     "Oh no. Tell me the worst."
 
     t_gen "Before she blacked out, I heard the following over the line, though it wasn’t in loudspeaker,"
-    t_gen "'{i}Don’t tell me my son is missing!{i}'"
+    t_gen "\"{i}Don’t tell me my son is missing!{i}\""
+    hide sayo with Dissolve(0.2)
 
     "JUNE 18, 2013 - 1650H"
     window show
@@ -1501,6 +1740,7 @@ label ch01_08_disappearance:
     nvl clear
     window hide
 
+    show sumiko serious at RS with Dissolve(0.2)
     "Mrs. Ren Kanako entered IV-C, settling down immediately.{w} Sumiko took second-charge in handling the class."
 
     t_kan "Hope you’re all well.{w} Let’s see... One, two...{w} 42 heads. Good!"
@@ -1512,30 +1752,51 @@ label ch01_08_disappearance:
 
     window show
     nvl clear
-    narr "These words induced fear to the students.{w} Someone dared to ask a question{w} but Sumiko shot him down, asking him to wait."
+    narr "These words induced fear to the students."
+    show yoshiro serious2 at LS with Dissolve(0.2)
+    narr "Someone dared to ask a question{w} but Sumiko shot him down, asking him to wait."
+    hide yoshiro with Dissolve(0.2)
     narr "She grew stern discussing the details of each disappearance,{w} laying them down fact by fact, disallowing herself to speculate.{w} The cases have been reported to the authorities and an investigation shall commence soon."
     narr "Until then, the students are urged to head straight home as soon as classes end or when their cleaning duties are over.{w} When it was all done, she entertained Yoshiro, who attempted to ask earlier."
 
     nvl clear
     window hide
 
+    show yoshiro serious2 at LS with Dissolve(0.2)
     ys6 "Pardon the interruption earlier, madame.{w} This is more of a thought than a question in itself, but{w} is kidnap possible?"
     t_kan "That’s the likely case.{w} In fact, we advised both families not to respond to any ransom until the suspects are identified."
 
+    show sumiko serioustalk at RS with Dissolve(0.2)
     "Sumiko was no longer able to contain the crowd’s restlessness.{w} Mrs. Kanako soothed her students, unwilling to worsen their emotions."
+    hide yoshiro with Dissolve(0.2)
+    show sumiko serious at RS with Dissolve(0.2)
     "Minutes passed with seemingly endless queries about the incident –{w} where and when they were last seen and a few personal questions.{w} Then, Miyu stepped forward to speak."
 
+    show miyu bored at Eight3 with Dissolve(0.2)
     mh8 "Madame, we may just have enough information mostly from you."
+    show miyu focusedpose at Eight3 with Dissolve(0.2)
     mh8 "From what I can surmise, while they may have been abducted between five to six in the morning,{w} I believe the two instances are {i}not{/i} related in any way."
     "\"WHAT?!\" {b}*GASP*{/b} \"What is he talking about?\""
     t_kan "Please clarify. I did not catch the last bit."
+    show miyu naughty focuspose at Eight3 with Dissolve(0.2)
     mh8 "What I meant is,{w} despite the similarity in time of Shinozaki and Kirisaki’s disappearance,{w} I doubt the two bumped into each other this morning beforehand."
+    show miyu naughty focuspose2 at Eight3 with Dissolve(0.2)
     mh8 "How do I know?{w} Simple. I arrive here every 5:45,{w} and most of the time, I see Kirisaki sitting out at the bench – this morning an exception.{w} Shinozaki arrives at around six, latest delay at fifteen minutes."
+    show akira serious at Eight1 with Dissolve(0.2)
     ai2 "He isn’t lying, madame.{w} I’ve only gotten here twice without Miyu already inside.{w} I support his statement as well, but I honestly don’t see how the two didn’t meet this morning."
+    hide akira with Dissolve(0.2)
+    show hikaru angry at Eight1 with Dissolve(0.2)
     hy10 "Excuse me, madame. If I may,{w} I was temporarily given the second spare key as I needed to arrive at 5:30 for the dance activity preparations.{w} I never saw anyone else inside, up until Akira arrived."
+    show hikaru serious at Eight1 with Dissolve(0.2)
     hy10 "I never saw Miyu."
+    show miyu naughty smirkpose at Eight3 with Dissolve(0.2)
     mh8 "You didn't.{w} I was in the bathroom at the time.{w} When you've got to go, you have to. {i}*giggle*{/i}"
+    show hikaru focusright at Eight1 with Dissolve(0.5)
+    show hikaru focusleft at Eight1 with Dissolve(0.5)
     hy10 "..."
+    hide hikaru with Dissolve(0.2)
+    hide miyu with Dissolve(0.2)
+    hide sumiko with Dissolve(0.2)
 
     window show
     nvl clear
@@ -1549,9 +1810,12 @@ label ch01_08_disappearance:
     nvl clear
     window hide
 
+    show sumiko surprised at LS with Dissolve(0.2)
     t_kan "Sumiko, see to it that none of your classmates go astray.{w} I plead you, we shun another case!{w} Please relay my words to the rest."
     t_kan "I’ll leave the rest to you."
+    show sumiko serioustalk at LS with Dissolve(0.2)
     st3 "Understood{w} Keep safe, madame."
+    hide sumiko with Dissolve(0.2)
 
     "As the teacher faded from his view, so did the sun.{w} It bore witness to the day’s events – times of order and confusion{w} – similar events repeating themselves too often they can be glossed over safely."
     "And curiosity?{w} What interest is there, indeed?{w} Hence, no further mention is necessary."
@@ -1559,18 +1823,27 @@ label ch01_08_disappearance:
 
 label ch01_09_labkyou1:
     "JUNE 18, 2013 - Time Unknown"
+    show kyou calmleft at RS with Dissolve(0.2)
     window show
     nvl clear
     narr "I’ve never arrived this early at the city square.{w} The moon and incandescent lamps as light sources, my brother and I walked across to the wet market.{w} He needed report materials; so did I,{w} but for a different reason."
     narr "I brought the class’s materials in advance yesterday,{w} but the Creatives Committee ran short late at night, our progress barely satisfactory.{w} As the earliest to arrive, I volunteered myself."
+    show kyou smile at RS with Dissolve(0.2)
     narr "Our head told me that the market stalls would be open as early as five.{w} My brother insisted on coming along; I accepted, since we always went to school together."
+    show kyou surprisedleft2 at RS with Dissolve(0.2)
     narr "Along the way, we ran into a vagrant sniffing from a plastic bag.{w} With God watching us, no harm may befall us."
+    hide kyou with Dissolve(0.2)
     narr "We exited the market, the sun peering out a bit.{w} The square slightly increased its population, mostly students and employees."
     
     nvl clear
+    show kyou happy at LS with Dissolve(0.2)
     narr "We wished Onifuchi-san, the gate guard, a blessed day as usual.{w} The same went for the other guard at the front desk."
+    show kyou smirk at Three2 with Dissolve(0.2)
     narr "We parted ways, giving each other a fist bump, once we reached the staircase near IV-A.{w} The Senior-Year classrooms were devoid of life{w} – not even Akira, Miyu, Sayo, nor any of my classmates are present."
-    narr "I inserted the key and unlocked the classroom door.{w} The creepy vibe left me once the lights turned on.{w} I neatly arranged the materials – a ball of nylon thread, assorted colored papers, fans, among others."
+    show kyou proud at RS with Dissolve(0.2)
+    narr "I inserted the key and unlocked the classroom door."
+    hide kyou with Dissolve(0.2)
+    narr "The creepy vibe left me once the lights turned on.{w} I neatly arranged the materials – a ball of nylon thread, assorted colored papers, fans, among others."
     narr "The sky brightened a little,{w} and I settled myself down.{w} Once more, I ran through our list and messaged the committee.{w} With a beep of confirmation, I let myself doze off."
 
     nvl clear
@@ -1710,18 +1983,23 @@ label ch01_10_labinoue1:
     narr "Images flashed across the ceiling.{w} Memories of the past days manifested on those."
     narr "{i}Ten{/i} victims from Sacred Heart Academy...{w} and one impacting detail still etched into my mind.{w} Perhaps it was thanks to Sayo that I found the tracks to the truth I’m seeking."
     narr "What business do I have with them?{w} Ikari is involved somehow{w} in the most minimal way possible.{w} I know her personally – she and big brother were classmates.{w} I asked him about it last Sunday."
+    show inoue casual troubled at Three2 with Dissolve(0.2)
     narr "There’s nothing new initially, yet I convinced him to disclose further."
 
     nvl clear
     window hide
 
     tomonori "This is just a speculation, but Ikari has been off her head for some time after Christmas break."
+    show inoue casual serioustalk2 at Three2 with Dissolve(0.2)
     is4 "You’ve heard of the incident in the storage room that February, didn’t you?{w} The one where –"
     tomonori "She personally told me;{w} I’m among the few, in fact.{w} I thought she was cuckoo, saying that our batchmates’ illnesses were abnormal and that she was next{w} – It was wild!{w} There’s just no truth beyond the books!"
+    show inoue casual troubledtalk at Three2 with Dissolve(0.2)
     is4 "Roll along the next four months..."
     tomonori "...To the following March, this year.{w} Seeing her on the newsprint, I wanted to retract my judgement.{w} But I never said it to her face, so why would I apologize?"
+    show inoue casual troubled at Three2 with Dissolve(0.2)
     is4 "..."
     tomonori "Satisfied? Hope so.{w} If you please, do {i}not{/i} transpire our conversation with anyone else.{w} While she may be a familiar face to the public, the details connecting her and the recent tragedy are not."
+    show inoue casual worriedpose at Three2 with Dissolve(0.2)
     is4 "But I heard it first from Sayo. Does that count?"
     tomonori "She knows her limits. I can say Suzumoto’s still in the safe zone.{w} Just heed my advice."
 
@@ -2283,10 +2561,10 @@ label ch01_13_facts1:
     "With all the pleasantries dealt with, their conversation immediately flowed to the mysterious abductions.{w} Sayo handled the matter with care, as it was normally discussed with discretion."
     "She leaned closer to Hikaru."
 
-    show sayo normaltalk at LS with Dissolve(0.2)
+    show sayo normaltalk at Three2 with Dissolve(0.2)
     sr5 "You’re aware of our teachers’ advice – not to accuse nor suspect without proof?{w} Let’s just say... there’s no stopping it."
     hy10 "Mouth zipped. Spill the name, please."
-    show sayo seriousnormal at LS with Dissolve(0.2)
+    show sayo seriousnormal at Three2 with Dissolve(0.2)
     sr5 "Not my point, you see. What I meant is...{w} {i}*sigh*{/i} Look, even the police are empty-handed until now.{w} And the gossip? Off the wall and senseless! When will we ever learn...?"
     show hikaru focusright at RS with Dissolve(0.2)
     hy10 "Don’t stress yourself, Sayo! There are much bigger things to worry about."
@@ -2294,36 +2572,38 @@ label ch01_13_facts1:
     sr5 "Say a scandal breaks out if this goes on far too long,{w} would the parents still choose to enroll their children here?{w} It'll become even worse if-"
     show hikaru focusleft at RS with Dissolve(0.2)
     hy10 "If someone was to re-enact the Sacred Heart murders, that is."
-    show sayo serioustalk at LS with Dissolve(0.2)
+    show sayo serioustalk at Three2 with Dissolve(0.2)
     sr5 "Re-enact... copycat murders?{w} And on what motive? The truth never came out!{w} The closest link we’ve got is Suzumoto-san, but even she is a mere connection. What has she to do with it?"
 
     "Hikaru shrugged.{w} Even after countless times she was mentioned, Sayo always disregarded Suzumoto’s involvement{w} as all they have is the night guard’s horror story."
     "But the notion of copycat murders intrigues Sayo.{w} To some, it’s just another cozy mystery plot. However, the horror behind those is real."
     "Actual cases have been documented as of late, with the most deranged men following the likes of Jack the Ripper, H.H. Holmes, and Ted Bundy."
 
-    show sayo seriousserious at LS with Dissolve(0.2)
+    show sayo seriousserious at Three2 with Dissolve(0.2)
     sr5 "Pardon. I seem to have chosen my words poorly.{w} Even I make mistakes, you see... even the most fatal ones."
     show hikaru talk at RS with Dissolve(0.2)
     hy10 "Everyone’s on edge, Sayo. You're not the only one I know that's been acting weird lately.{w} Besides, I’ve got your back. So, why worry? {i}*giggle*{/i}"
-    show sayo smileopen at LS with Dissolve(0.2)
+    show sayo smileopen at Three2 with Dissolve(0.2)
     sr5 "You flatter me. I should be the one to watch yours. Hehehehe.{w} Glad to have friends on their heads most of the time when you're not.{w} Ah, well. What interest is there?"
+    show hikaru smile at RS with Dissolve(0.2)
     hy10 "..."
     sr5 "You’ve no intention to snack?"
-    show hikaru smile at RS with Dissolve(0.2)
     hy10 "No. I’ll hold this off until lunch.{w} Oh! That reminds me.{w} I have to study calculus. Our assignment, I mean."
-    show sayo normaltalk at LS with Dissolve(0.2)
+    show sayo normaltalk at Three2 with Dissolve(0.2)
     sr5 "But as far as I remember, today you have no–"
-    show sayo smirknormal at LS with Dissolve(0.2)
+    show sayo smirknormal at Three2 with Dissolve(0.2)
     sr5 "Oh... *chuckle*{w} Is that what I’ve heard?"
     show hikaru blush at RS with Dissolve(0.2)
     hy10 "Eh? Heard what?!"
-    show sayo smirkblush at LS with Dissolve(0.2)
+    show sayo smirkblush at Three2 with Dissolve(0.2)
     sr5 "Hihihihihi..."
     hy10 "No! No! No no! I genuinely just want some tutoring, nothing more.{w} Sayo... who told you that? Grrrr..."
-    show sayo happyclosed at LS with Dissolve(0.2)
-    sr5 "Hihihihihi...nyahahaha! {i}*giggle*giggle*{/i}{w} Yeah. Be on your way then. And good luck~. {i}*wink* *wink*{/i}"
+    sr5 "Hihihihihi...{nw}"
+    show sayo happyclosed at Three2
+    sr5 "Hihihihihi...{fast}nyahahaha! {i}*giggle*giggle*{/i}{w} Yeah. Be on your way then. And good luck~. {i}*wink* *wink*{/i}"
 
     hide hikaru with Dissolve(0.2)
+    show sayo smileopen at LS with Dissolve(0.2)
     "Flustered, Hikaru pranced back to IV-C.{w} Sayo watched her subtly and amused herself by drawing hearts in the air, all towards Hikaru."
     "For a while, she enjoyed herself at the bench, greeting people as they passed by."
 
@@ -2333,6 +2613,7 @@ label ch01_13_facts1:
     narr "Then she returned to her previous mood."
     narr "She went to her seat, searching through her backpack.{w} She took out her journal, a maroon hard-covered book fastened with a similarly-colored ribbon.{w} She unfastened it and opened a few pages."
     narr "Within the most recently written pages, she had written the following:"
+    hide sayo with Dissolve(0.2)
 
     nvl clear
     narr "{i}June 19, 2013{/i}"
@@ -2369,41 +2650,68 @@ label ch01_13_facts1:
     nvl clear
     window hide
 
+    show miyu naughty focuspose at Three2 with Dissolve(0.2)
+    show hikaru focusright at Three1 with Dissolve(0.2)
     "Miyu glanced at the problem."
     "They were given a set of questions on Continuities, with functions and graphs as bases.{w} There is one question that baffled Hikaru,{w} a rational function that is discontinuous in hindsight – a type of removable discontinuity."
 
+    show miyu naughty closepose at Three2 with Dissolve(0.2)
     mh8 "You need no formal conclusion. Just indicate the x-value that will zero both the numerator and denominator.{w} That’s it. Just solve it normally."
+    show hikaru naughty at Three1 with Dissolve(0.2)
     hy10 "Ooooh... Nice. Nice.{w} Thanks for the help. You’re the best!"
+    show miyu naughty closepose2 at Three2 with Dissolve(0.2)
     mh8 "Anytime."
+    show miyu naughty focuspose2 at Three2 with Dissolve(0.2)
     mh8 "By the way, have you anything new about... {i}that{/i}?"
 
-    "Hikaru looked puzzled, scrutinizing what he meant...{w} then she picked up."
+    show hikaru serious at Three1 with Dissolve(0.2)
+    "Hikaru looked puzzled, scrutinizing what he meant..."
+    show hikaru worried at Three1 with Dissolve(0.2)
+    "Hikaru looked puzzled, scrutinizing what he meant...{fast} then she picked up."
 
     hy10 "Nothing, still on a roadblock. Tsk.{w} Even Mama is worried for me. She and Papa have agreed to pick me up at 5:30 everyday.{w} What about if there are projects? Such bad timing..."
+    show miyu pissedclosed at Three2 with Dissolve(0.2)
     mh8 "Forget them. You know how our teachers value our safety.{w} I’ve heard they were changing their list of activities while the investigations are underway."
+    show hikaru focusleft at Three1 with Dissolve(0.2)
     hy10 "Hmmm..."
+    show miyu naughty focuspose2 at Three2 with Dissolve(0.2)
     mh8 "Perhaps Sayo knows something...{w} if she’s willing to disclose even the most minimal details."
     mh8 "But I find it more convenient to ask you{w} – you two were having a chat earlier, weren’t you?{w} Our council president is bound to slip something out for sure."
+    show hikaru focusright at Three1 with Dissolve(0.2)
     hy10 "No. She just needed a faucet to rant on.{w} I related to her something from a documentary,{w} about copycat murders, I think she referred to them."
+    show miyu naughty focuspose at Three2 with Dissolve(0.2)
     mh8 "Bingo. Anything else?"
     hy10 "I don't think so. She cut herself off after a while, upon realizing her error in {i}wording things{/i}.{w} Suffice to say she looked anxious when I first saw her."
+    show miyu naughty closepose at Three2 with Dissolve(0.2)
     mh8 "Then she’s not telling everything..."
 
+    show hikaru angry at Three1 with Dissolve(0.2)
     "This took Hikaru aback.{w} She recalled every instance of their brief dialogue,{w} and to her knowledge, Sayo was sincere throughout{w} – unless Miyu’s notion is true."
+    show miyu naughty smirkpose at Three2 with Dissolve(0.2)
     "Sensing her confusion, Miyu shot back a delighted face."
 
     mh8 "Ahahahahaha! Make no mistake. I mean not to incriminate her.{w} In fact, I can vouch for her innocence.{w} She arrived after me and Akira’s service van – six o’ clock.{w} Still confused?"
+    show hikaru serious at Three1 with Dissolve(0.2)
     hy10 "Yeah. Yeah. I get you. I don’t suspect her either.{w} But out of all the people here, why her specifically?{w} It’s absurd enough to think about it."
+    show miyu naughty closepose2 at Three2 with Dissolve(0.2)
     mh8 "Yes. Yes. Absurd. {i}Truly{/i} absurd.{w} But what if this is another paranormal mystery? Yes... now that’s the tender meat..."
+    show miyu bored at Three2 with Dissolve(0.2)
     mh8 "Wait. Don’t you have anything else to do?"
-    hy10 "Nothing more.{w} Hey, thanks for the help! Hahahaha!"
+    show hikaru smile at Three1 with Dissolve(0.2)
+    hy10 "Nothing more."
+    show hikaru naughty at Three1 with Dissolve(0.2)
+    hy10 "Nothing more.{fast} Hey, thanks for the help! Hahahaha!"
+    hide hikaru with Dissolve(0.2)
 
     "Miyu responded by holding up three fingers: thumb, index, and middle."
+    show miyu confused at Three2 with Dissolve(0.2)
     "After Hikaru returned to her seat, Miyu returned to his business earlier.{w} He glanced at his watch and held his arms behind his head."
     "His mind became clear, ignoring any external presence around him.{w} He lost himself in a sea of thoughts."
 
+    show miyu pissed at Three2 with Dissolve(0.2)
     mh8 "I wonder what happened to those two.{w} Are they still breathing?"
     mh8 "The pieces don’t fit any way I look at them, but I reckon I must try harder.{w} Wish this ends as soon as possible.{w} I don’t even want us to stay like this forever."
+    hide miyu with Dissolve(0.2)
 
     "{b}*RING* *RING* *RING*{/b}"
     return
@@ -2815,37 +3123,58 @@ label ch01_15_labkyou3:
 
     unk "Kirisaki,{w} You're alive!{w} But... how...?"
 
+    show inoue noglass cry at Three2 with Dissolve(0.2)
     "Inoue Shinozaki, our class president.{w} She is the other person L.C. mentioned in his letter{w} – which means he has yet to arrive at this facility himself!{w} But the monster,{w} how come?"
     "She was dripping wet and leaving footprints on her path.{w} Poor girl was shivering...{w} If only I can find a cold medicine and a towel to comfort her."
 
     kk9 "I’m just as surprised as you are, maybe even more.{w} Ah! Inoue, come inside quickly.{w} It might still be there."
+    hide inoue with Dissolve(0.2)
 
     "Without question, she closed the door behind her.{w} This time, we spent a minute reinforcing the door.{w} The wardrobe should be enough to seal the entrance."
     "We sat down and savored our little reunion."
 
+    show kyou sad2 at Three1 with Dissolve(0.2)
+    show inoue noglass sad at Three3 with Dissolve(0.2)
     is4 "Perhaps you understand... What the hell even is this place?"
     kk9 "There are things I've witnessed beyond my comprehension,{w} things that aren’t even humanly possible."
     kk9 "Whoever’s responsible for this clearly knows us well{w} – trying to shatter our faith and ego at our most vulnerable state.{w} {i}*sigh*{/i} This is no ordinary psychopath we’re dealing with."
+    show inoue noglass worried at Three3 with Dissolve(0.2)
     is4 "Only now you share my sentiments.{w} {i}This{/i} is the extent of our understanding.{w} Even with a superset of truths cannot do these away – otherworldly affairs.{w} Those aren’t even in the books!"
 
+    show kyou serious2 at Three1 with Dissolve(0.2)
     "Amidst her speech, I pondered on what she said earlier.{w} It almost slipped my mind."
 
+    show kyou serious talk at Three1 with Dissolve(0.2)
     kk9 "By the way, the first thing you’ve uttered is, \"You’re alive!\"{w} Did you happen to encounter a corpse resembling me?"
+    show inoue noglass serious2 at Three3 with Dissolve(0.2)
     is4 "In the living quarters, or that’s what it seems to be.{w} Your face was smashed almost beyond recognition and neck pierced with twigs, if I recall correctly."
 
+    hide kyou with Dissolve(0.2)
+    hide inoue with Dissolve(0.2)
     "When I regained consciousness, I did feel a few stings around my neck,{w} with the most painful one at the back."
     "The poison must have taken its effect on me,{w} or maybe no longer.{w} It’s one thing to land face-first to a pot soil.{w} I’ve suffered but a scratch on my forehead, and it still stings."
 
+    show kyou serious2 at Three1 with Dissolve(0.2)
     kk9 "You were the one knocking violently from the other end, weren’t you?{w} Why didn’t you answer?"
 
+    show inoue noglass sadleft at Three3 with Dissolve(0.2)
     "Her eyes dropped, not knowing whether to feel shame or fear."
 
+    show inoue noglass worried at Three3 with Dissolve(0.2)
     is4 "I hesitated, feared that there might something worse waiting on the other side.{w} Back in my cell, I felt like I was attacked.{w} It might’ve been all made up, but I clearly heard the words."
+    show inoue noglass pissed at Three3 with Dissolve(0.2)
     is4 "{i}Don't breathe...{/i}"
+    show inoue noglass angry at Three3 with Dissolve(0.2)
     is4 "And those sniggers!{w} My God, how could I even forget those? Who the hell brings their children in a place like this?!"
+    show kyou worried at Three1 with Dissolve(0.2)
     kk9 "Children!{w} Could you elaborate?"
+    show inoue noglass talk2 at Three3 with Dissolve(0.2)
     is4 "I’ve heard three distinct voices in my cell,{w} maybe more if you count everything.{w} One of them was definitely L.C., as I first heard his voice through a recording."
-    is4 "The remaining two sounded childish, one male and the other female.{w} Believe me, there’s no way I’m making it up!"
+    show inoue noglass talk at Three3 with Dissolve(0.2)
+    is4 "The remaining two sounded childish, one male and the other female."
+    show inoue noglass cry at Three3 with Dissolve(0.2)
+    is4 "The remaining two sounded childish, one male and the other female.{fast} Believe me, there’s no way I’m making it up!"
+    show kyou confused2 at Three1 with Dissolve(0.2)
     kk9 "No worries.{w} We’ll try to distinguish between the real and the illusions later.{w} For now, let’s just lay everything together while we're here.{w} Escaping this facility is another priority."
 
     window show
@@ -2857,62 +3186,88 @@ label ch01_15_labkyou3:
     nvl clear
     window hide
 
+    show inoue noglass sadleft at Three3 with Dissolve(0.2)
     is4 "My family must be worried. {i}*hic*{/i} I just want to go home..."
+    show kyou focusleft at Three1 with Dissolve(0.2)
     kk9 "I do, too.{w} And it appears our criminal will go after someone else.{w} For that, I feel that he’ll pick one of us – our batchmates, I mean."
+    show inoue noglass angry at Three3 with Dissolve(0.2)
     is4 "Kirisaki!"
 
+    show kyou confused at Three1 with Dissolve(0.2)
     "I clenched my fists in contempt, the first time I’ve done so in a long time.{w} L.C.... he better not lay a finger upon my brother.{w} He hasn’t done anything wrong."
 
-    is4 "The folks outside are in a commotion as we speak.{w} We can rely on their efforts, especially that of our friends.{w} If only we have a means to connect outside."
+    show inoue noglass serious2 at Three3 with Dissolve(0.2)
+    is4 "The folks outside are in a commotion as we speak.{w} We can rely on their efforts, especially that of our friends.{w} If only we have a means to connect to the outside."
 
+    show kyou confusedtalk at Three1 with Dissolve(0.2)
     "And so I thought, dropping my gaze to our feet."
 
     kk9 "Inoue,{w} may I ask you a favor?"
+    show inoue noglass serious2 at Three3 with Dissolve(0.2)
     is4 "What is it?"
+    show kyou sad2 at Three1 with Dissolve(0.2)
     kk9 "If I don’t come out of here alive – {i}that’s what he said, anyway{/i} – kindly check on my brother, will you?{w} I hate to say this, but rules are rules. {i}*sigh*{/i}"
     kk9 "You? Anything you wish to deliver?"
 
+    show inoue noglass sadleft at Three3 with Dissolve(0.2)
     "Without glancing, I knew my words worried her.{w} I must’ve been rash, but it must be said."
 
+    show inoue noglass sadcry2 at Three3 with Dissolve(0.2)
     is4 "I’ve nothing to think about.{w} My older brother is already on his way."
     kk9 "..."
+    show inoue noglass sadcry at Three3 with Dissolve(0.2)
     is4 "Look, we received essentially the same message from L.C.{w} And from what we know, that bastard is coaxing us to murder each other.{w} We haven’t even seen the exit yet."
+    show inoue noglass angrycry at Three3 with Dissolve(0.2)
     is4 "And damn the rules! He’s not even playing things fairly either, so why should we?{w} I know you respect the rules, Kirisaki, but this is one instance where we need to let loose.{w} You must realize that."
 
     "I didn’t answer her.{w} Out of confusion or loss of words, I cannot tell."
 
+    show inoue noglass smilecry at Three3 with Dissolve(0.2)
     is4 "Proverbs 12:25."
+    show kyou happyclosed at Three1 with Dissolve(0.2)
     kk9 "Pft...{w} He he... hehehe...{w} Ahahahahahahahaha!"
 
+    show inoue noglass laughcry at Three3 with Dissolve(0.2)
     "She caught wind of my emotions, returning the unneeded favor I once gave her.{w} Inoue shared my laughter, removing some of my burden.{w} \"Kind words cheer the heart up.\""
+    show inoue noglass proud at Three3 with Dissolve(0.2)
+    show kyou calmleft at Three1 with Dissolve(0.2)
     "The conversation provided enough room for relaxation."
     "I amused myself by learning to whistle which I, after a few lousy attempts, eventually resorted to humming.{w} Inoue sneaked in a few snorts.{w} It lightened up the mood even further."
 
+    show inoue noglass talk2 at Three3 with Dissolve(0.2)
     is4 "Have you checked that door already?"
 
     "Her eyes were fixated on the unenforced door."
 
+    show kyou serious smile at Three1 with Dissolve(0.2)
     kk9 "I have{w} for assurance.{w} I figured I needed to bring a few chemicals with me before going through...{w} For evidence."
     is4 "But he can’t afford to leave a mark, can he?"
     is4 "Besides, what knowledge do we have on the chemicals here?{w} Those of the common household variety, yes, but the Alkanes and other complicated substances we studied about in Chemistry?{w} We have yet to see their physical forms."
+    show kyou serious surprisedtalk at Three1 with Dissolve(0.2)
     kk9 "That didn’t cross my mind, honestly.{w} Besides, the only oddball among those I found was{w} an ampoule containing water."
 
+    show inoue noglass talk at Three3 with Dissolve(0.2)
     "She turned towards me."
 
     is4 "An ampoule, you say? Funny...{w} I saw some empty plastic bottles on the shelves.{w} Inside the drawer you were searching earlier?"
 
+    show kyou surprised2 at Three1 with Dissolve(0.2)
+    hide inoue with Dissolve(0.2)
     "I affirmed, and she searched the said drawer.{w} She thoroughly examined the lone ampoule's contents."
 
     is4 "Unlabeled. {i}*sniff* *sniff*{/i}{w} Smells like chlorine.{w} A sample of pool water, I think.{w} Nothing off about it."
 
     "Thereby confirming my observations. One more thing..."
 
+    show kyou surprisedleft at Three1 with Dissolve(0.2)
     kk9 "Speaking of, the pool is at the opposite end of the corridor, isn’t it?{w} Do you, by any chance, have happened to encounter a creature?{w} Well-built and has curved horns on both sides of its head?"
 
     "She didn’t answer,{w} keeping her lips tight as she hid away the liquid in her skirt’s pocket.{w} She searched the shelves by herself,{w} herself noticeably indifferent to the task."
 
+    show kyou worriedclosed at Three1 with Dissolve(0.2)
     kk9 "Forget about it. {i}*sigh*{/i} No, it is then."
     is4 "How did you know?"
+    show kyou worried at Three1 with Dissolve(0.2)
     kk9 "Know what?"
     is4 "{i}That{/i}.{w} Don’t tell me you didn’t recognize it.{w} I never told you such a thing."
 
@@ -2921,17 +3276,26 @@ label ch01_15_labkyou3:
 
     is4 "I’m just glad it didn’t follow us inside.{w} Otherwise...{w} imagine the consequences.{w} That’s how the legend goes."
 
-    "She stopped her search, probably the mere mentioning of it bothered her.{w} I wouldn’t dare ask{w} – she might snap if I do."
+    show inoue noglass serious2 at Three3 with Dissolve(0.2)
+    "She stopped her search. Probably the mere mention of it bothered her.{w} I wouldn’t dare ask{w} – she might snap if I do."
 
+    show kyou confusedtalk at Three1 with Dissolve(0.2)
     kk9 "Hey. I haven’t asked you this yet.{w} The door we just came in through requires a keypad combination to unlock itself, right?{w} How did you figure out the combination?"
-    kk9 "The paper must’ve been destroyed when –"
+    kk9 "The paper must’ve been destroyed when –{nw}"
+    show inoue noglass serious at Three2 with Dissolve(0.2)
     is4 "Here."
 
     "Without another word, she produced the paper strip,{w} soiled and soaked beyond writability."
     "Indeed, this is the same paper I found within the bonsai’s soil."
 
+    show inoue noglass pissed at Three3 with Dissolve(0.2)
     is4 "I’ll be the one asking this time.{w} Short answers, no frills, please."
+    show kyou confused2 at Three1 with Dissolve(0.2)
     kk9 "Uh... sure..."
+    hide kyou with Dissolve(0.2)
+    hide inoue with Dissolve(0.2)
+    show inoue noglass pissed at Three2 with Dissolve(1.0)
+    show inoue creepy serious at Three2 with Dissolve(0.2)
     is4 "Do you exist?"
     kk9 "What's that for?"
     is4 "Do you {i}still{/i} exist?"
@@ -2939,61 +3303,80 @@ label ch01_15_labkyou3:
     "Of course, I do! What is the meaning of all this?!"
 
     kk9 "Definitely. Flesh, soul, and spirit.{w} If I were to return the question, do you?"
+    show inoue creepy smile2 at Three2 with Dissolve(0.2)
     is4 "I do...{w} I don’t."
     kk9 "You’re not certain..."
 
+    show inoue creepy smirk at Three2 with Dissolve(0.2)
     "She spun around wildly, facing me eye-to-eye.{w} Her face sparkled with delight, her teeth glinted despite their near-concealment, and head cocked to the right."
     "Inoue defied all restraints, expressing herself in a manner I couldn’t fathom what or how.{w} She never even went this far."
 
     is4 "I am Inoue Shinozaki, fifteen, and a student of Maria St. Claire Institute!{w} I could disclose a lot more details, but that would mean blabber to anyone who denies my existence."
+    show inoue creepy smile at Three2 with Dissolve(0.2)
     is4 "What more proof do I need?! Tell me!!!"
     kk9 "Inoue...{w} I’m standing here in front of you, and you in front of me.{w} What do you mean by that?"
 
     "Retaining that grin, she lowered her eyes...{w} dead, cold eyes,{w} piercing enough to melt my heart’s barrier.{w} It managed to shorten my breath and hinder my thought process."
 
     kk9 "How did you find the time to read those books in the living quarters?{w} I’m amazed at your thinking prowess. Aren't you aware of the time limit?"
+    show inoue creepy focusedpose at Three2 with Dissolve(0.2)
     is4 "What {i}time limit{/i}?{w} You're making things up, Kirisaki..."
     kk9 "I'm not.{w} Maybe you missed the detail?{w} Regardless, he could come at any time...{w} or maybe he has already arrived."
+    show inoue creepy focused at Three2 with Dissolve(0.2)
     is4 "You don’t suppose?"
     kk9 "Just a hunch. Anything else?"
 
+    show inoue creepy smirk at Three2 with Dissolve(0.5)
+    hide inoue with Dissolve(0.5)
     "Satisfied, she flashed a grin before facing away from me,{w} towards the other door.{w} I couldn’t help but be wary at her sudden change in demeanor – jumping far too quickly within a short time span."
 
     is4 "Darn. My meal’s gone cold.{w} But that’s fine... I guess..."
     kk9 "Hm? You were saying?"
 
     "Just as she turned the door knob, she took a long glance back..."
-    "...to find a bladed weapon two feet away pointing at her face.{w} It fueled her amusement, giggling as if it was a lollipop."
+    "...to find a bladed weapon two feet away pointing at her face."
+    show inoue creepy smirk at Three2 with Dissolve(0.5)
+    "...to find a bladed weapon two feet away pointing at her face.{fast} It fueled her amusement, giggling as if it was a lollipop."
 
     kk9 "What’s so funny?"
+    show inoue creepy smile2 at Three2 with Dissolve(0.2)
     is4 "{i}Hm. Hm. Hm.{/i} I’ve no need of that, Kirisaki.{w} I just took your words as they are; in fact, I’ve proven them {i}just{/i} now."
 
     "She shrugged it off, unaware that she entirely missed the point."
 
+    show inoue creepy serious at Three2 with Dissolve(0.2)
     is4 "You’re the one who doesn’t comprehend."
 
     "What?!{w} But... but... how did she?"
 
-    is4 "Listen to yourself.{w} What is presently running your thoughts is a toxin,{w} something even you cannot fight.{w} Trust me – we went through the same ordeal.{w} Hehehehe... Isn’t that right?"
+    is4 "Listen to yourself.{w} What is presently running your thoughts is a toxin,{w} something even you cannot fight.{w} Trust me – we went through the same ordeal."
+    show inoue creepy smirk at Three2 with Dissolve(0.2)
+    is4 "Listen to yourself.{w} What is presently running your thoughts is a toxin,{w} something even you cannot fight.{w} Trust me – we went through the same ordeal.{fast} Hehehehe... Isn’t that right?"
     kk9 "Tch!"
+    show inoue creepy focused at Three2 with Dissolve(0.2)
     is4 "Come on, Kirisaki...{w} embrace a bit of oddity for your own sake. Hehehehehehehe...{w} The outside is much weirder than we thought it was. How deranged can it get?"
 
     "................................................"
 
+    show inoue creepy smile2 at Three2 with Dissolve(0.2)
     is4 "Lower that thing. It’s unbecoming of you.{w} You’re already starting to look like a maniac, you know.{w} Slowly... slowly..."
     kk9 "On one condition.{w} Are {i}you{/i}{w} truly Inoue Shinozaki?{w} If not, then I've no reason to lower my weapon. You could be a mole for all I know."
 
     "Though speck-like in size, my own glare reflected in her eyes.{w} But she didn’t falter, leaving us both in a gridlock,{w} lasting long enough to have me realize how awkward this is."
     "No one{w} was willing to move."
 
+    show inoue creepy serious at Three2 with Dissolve(0.2)
     is4 "Believe in whatever you wish to believe. I’ve made my point already."
+    hide inoue with Dissolve(0.2)
 
     "{b}{i}*THUD*{/i}{/b}"
     "No use being paranoid at this moment.{w} This is all according to the battle plan, one to keep us in the dark.{w} For now, I’ll trust everything as they are."
     "For now."
 
+    show inoue creepy smile3 at Three2 with Dissolve(0.2)
     is4 "Back off!"
     kk9 "Humph!"
+    hide inoue with Dissolve(0.2)
 
     window show
     nvl clear
@@ -3012,10 +3395,12 @@ label ch01_15_labkyou3:
     narr "Somebody...{w} anybody!{w} Wipe this off me...!"
 
     nvl clear
+    show inoue creepy blank at Three2 with Dissolve(0.2)
     narr "{i}You made a fateful mistake.{/i}"
     narr "{i}That’s what you get for doubting a truth that’s blatantly exposing itself to you.{w} Like sheep, you follow your God as if you’ve truly seen him in person!{w} And yet...{w} this?!{/i}"
     narr "{i}You believe more in the things that YOU CANNOT SEE yet ONLY FEEL?{w} Eat your words, Kirisaki.{w} \"A man ought not to remove a speck on another’s eye when he himself has a slab on his own.\"{/i}"
     narr "{i}What’s the problem, fanatic? Regret having a blind faith?{w} You disgust me.{/i}"
+    hide inoue with Dissolve(0.2)
     narr "The disembodied voice came out of nowhere, rubbing the pain into me...{w} {b}{i}*Ack!*{/i}{/b}"
     narr "So what if I did?{w} This punishment has gone too far!"
 
@@ -3025,11 +3410,13 @@ label ch01_15_labkyou3:
     narr "A door opening...{w} and another...{w} The sound of metal clanking amongst themselves...{w} Glass toppled to the ground...{w} A bump on my side, with someone rolling me over and posturing my body straight."
     narr "The same person ran everywhere,{w} breathing ceaselessly as she opened cupboards, looking for supplies to aid my injury.{w} Every bump she caused synced well with the loud throbs of my heart."
     narr "My vision slowly recovered from the blur,{w} drawing the figure of Inoue near the bed.{w} She was crying."
+    show inoue noglass cry at Three2 with Dissolve(0.2)
 
     nvl clear
     window hide
 
     is4 "Don’t speak! It’ll take just another minute."
+    hide inoue with Dissolve(0.2)
 
     window show
     nvl clear
@@ -3122,6 +3509,7 @@ label ch01_16_death01:
     nvl clear
     narr "Kirisaki has suffered third-degree burns; most of his upper body has been charred.{w} His glasses have melted on his eyes,{w} and the eyeballs themselves oozed down the tear ducts.{w} It turned to {i}condensed milk{/i}."
     narr "His head gave off a sulfurous, or rotten, smell,{w} having only a few strands of hair left.{w} Some of his bones stung my skin, fresh off of burning.{w} Only little of his uniform remained, with the pants and the leather shoes especially intact."
+    show inoue noglass blood sad at LS with Dissolve(0.2)
     narr "This is my first corpse,{w} long before I conceive my medical degree.{w} Even Papa would praise me for braving it.{w} A charred corpse is not a daily case he would sometimes bring home to share with us."
     narr "I covered him once again,{w} bearing no longer to see him like this..."
 
@@ -3130,6 +3518,7 @@ label ch01_16_death01:
 
     "{i}{b}*THUD*{/b}{/i}"
 
+    show inoue noglass blood cry at LS with Dissolve(0.2)
     is4 "{i}*SOB*{/i} ...Uhu...{w} {b}*EXHALE*{/b} Uhuhuhuhuhuhu......"
 
     window show
@@ -3147,9 +3536,11 @@ label ch01_16_death01:
     nvl clear
     window hide
 
+    show inoue noglass blood sad at LS with Dissolve(0.2)
     is4 "Goodbye... Kyou..."
 
     "We shall see each other again...{w} or maybe not."
+    hide inoue with Dissolve(0.2)
 
     window show
     nvl clear
@@ -3185,96 +3576,165 @@ label ch01_17_facts2:
     "JUNE 24, 2013 - 1645H"
     "Six days{w} – the amount of time passed since Kyou Kirisaki and Inoue Shinozaki’s disappearance.{w} Six days of anxious waiting,{w} even a call or letter for ransom would have sufficed."
     "Alas, none of those surfaced."
+    show sayo seriousnormal at Eight3 with Dissolve(0.2)
     "As she left, Sayo gave instructions to Ayumi not to let the cleaners surpass 5:30PM.{w} The students were issued a new order, reducing the curfew time by thirty minutes."
-    "She passed by Akira, who was chatting with Hiroshi at IV-B’s bench.{w} Just then, Miyu exited his classroom, exhausted as usual."
+    show akira proud2 at Eight6 with Dissolve(0.2)
+    show hiroshi smile at Eight7 with Dissolve(0.2)
+    "She passed by Akira, who was chatting with Hiroshi at IV-B’s bench."
+    hide akira with Dissolve(0.2)
+    hide hiroshi with Dissolve(0.2)
+    show miyu pissedclosed at Eight5 with Dissolve(0.2)
+    "She passed by Akira, who was chatting with Hiroshi at IV-B’s bench.{fast} Just then, Miyu exited his classroom, exhausted as usual."
 
+    show sayo serioustalk at Eight3 with Dissolve(0.2)
     sr5 "Do you have a minute?"
+    show miyu talk at Eight5 with Dissolve(0.2)
     mh8 "Eh, what?{w} Me?"
 
     "Sayo turned her head, confirming his question silently.{w} Unable to refuse, he looked at her and slightly grinned."
 
     mh8 "Anything of concern, Sayo?"
 
-    "She motioned him to the stairs across IV-A.{w} They sat down at the fourth step and engaged in a discreet conversation."
+    "She motioned him to the stairs across IV-A."
+    hide sayo with Dissolve(0.2)
+    hide miyu with Dissolve(0.2)
+    show sayo seriousnormal at Three3 with Dissolve(0.2)
+    show miyu bored at Three2 with Dissolve(0.2)
+    "She motioned him to the stairs across IV-A.{fast} They sat down at the fourth step and engaged in a discreet conversation."
 
+    show sayo normaltalkleft at Three3 with Dissolve(0.2)
     sr5 "You’re familiar with Tomonori Shinozaki, right? Inoue’s brother two batches up?"
-    mh8 "I remember the fellow. He was part of the honor roll and the Top 10.{w} Wait,{w} did he speak of any developments about the case?"
+    show miyu confused at Three2 with Dissolve(0.2)
+    mh8 "I remember the fellow. He was part of the honor roll and the Top 10."
+    show miyu serious at Three2 with Dissolve(0.2)
+    mh8 "I remember the fellow. He was part of the honor roll and the Top 10.{fast} Wait,{w} did he speak of any developments about the case?"
+    show sayo normaltalk at Three3 with Dissolve(0.2)
     sr5 "You could say that,{w} but this is more of a mere {i}concern{/i} than anything...{w} something that disturbs me to this day."
 
     "Thoughts raced to his mind, trying to deduce what she meant."
 
+    show sayo serioustalkleft at Three3 with Dissolve(0.2)
     sr5 "He rang me up last Saturday.{w} I found it odd if it was about Inoue{w} – I mean, they are the primary contacts for the case, after all.{w} Instead, he talked to me briefly and asked me..."
+    show sayo serioustalk2 at Three3 with Dissolve(0.2)
     sr5 "...if I was the one who set her up."
+    show miyu happytalk at Three2 with Dissolve(0.2)
     mh8 "Absurd! Why would he make such an accusation?{w} Don’t tell me he’s resorted to random finger-pointing."
+    show sayo upset at Three3 with Dissolve(0.2)
     sr5 "Of course, I got ticked off. Initially, at least."
     sr5 "On June 13, the Shinozakis received a call intended for Inoue.{w} He knew because Inoue confided the details of the exchange to him two days after."
+    show miyu bored at Three2 with Dissolve(0.2)
     mh8 "Let me guess...{w} You’re the caller?"
-    sr5 "Yes, and I was being accused of blackmail.{w} I wanted to forgo my manners and explode on him!{w} {i}*sniffle*{/i} I’m sorry, Miyu..."
+    show sayo upsetcry at Three3 with Dissolve(0.2)
+    sr5 "Yes, and I was being accused of blackmail.{w} I wanted to forgo my manners and explode on him!"
+    show sayo worriedtalkcry at Three3 with Dissolve(0.2)
+    sr5 "Yes, and I was being accused of blackmail.{w} I wanted to forgo my manners and explode on him!{fast} {i}*sniffle*{/i} I’m sorry, Miyu..."
 
+    hide sayo with Dissolve(0.2)
     "She fished inside her backpack for a tissue, wiping her tears in frustration.{w} Miyu wanted to pat her back, but he stopped himself, thinking it would look awkward."
 
+    show sayo normaltalk at Three3 with Dissolve(0.2)
     sr5 "Here we go. {i}{b}*BREATHE*{/b}{/i}"
+    show sayo seriousnormal at Three3 with Dissolve(0.2)
     sr5 "You know, Inoue did mention something about the incident at Sacred Heart.{w} I told her to forget about it – she was visibly anxious.{w} It's her curiosity that's been giving her the edge."
     sr5 "Supposedly, {i}I{/i} called her that night, {i}Thursday night{/i}, to give the complete details of the incident.{w} Additionally, {i}I{/i} made her head spin by some philosophical terms even I can’t comprehend."
     mh8 "To be fair, you do have a penchant of speaking in riddles."
+    show sayo seriousclosed at Three3 with Dissolve(0.2)
     sr5 "{i}Formal language{/i}, not riddled speech. Those are of two different levels, Miyu."
-    mh8 "No offense, Sayo. I genuinely appreciate being a faucet for your concerns, but{w} why me?{w} Have you already to spoke to Mrs. Genkai about this?"
-    sr5 "Oh, I did,{w} just in case anything against me comes up.{w} For your first question...{w} Well, let’s just say you’ve got this \"particular set of skills\" and whatnot..."
+    show miyu worried at Three2 with Dissolve(0.2)
+    mh8 "No offense, Sayo. I genuinely appreciate being a faucet for your concerns, but{w} why me?{w} Have you already spoken to Mrs. Genkai about this?"
+    show sayo seriousnormal at Three3 with Dissolve(0.2)
+    sr5 "Oh, I did,{w} just in case anything against me comes up.{w} For your first question..."
+    show sayo smileopen2 at Three3 with Dissolve(0.2)
+    sr5 "Oh, I did,{w} just in case anything against me comes up.{w} For your first question...{fast} Well, let’s just say you’ve got this \"particular set of skills\" and whatnot..."
+    show miyu naughty blush at Three2 with Dissolve(0.2)
     mh8 "{i}{b}*SNORT*{/b}{/i} I’m no spy!"
+    show sayo smiletalk at Three3 with Dissolve(0.2)
     sr5 "No. No. You misunderstand.{w} She meant something else."
-    mh8 "She?{w} Wait a minute...{w} {i}*GASP*{/i}{w} What did Hikaru tell you about me?!"
+    show miyu focusedpose at Three2 with Dissolve(0.2)
+    mh8 "She?{w} Wait a minute..."
+    show miyu happytalk at Three2 with Dissolve(0.2)
+    mh8 "She?{w} Wait a minute...{fast} {i}*GASP*{/i}{w} What did Hikaru tell you about me?!"
+    show sayo smileopen at Three3 with Dissolve(0.2)
     sr5 "You have an affinity for the supernatural, haven’t you?{w} Or, let’s be more grounded.{w} Detective work, perhaps?"
+    show miyu embarassed at Three2 with Dissolve(0.2)
     mh8 "What? Ahahahahaha!{w} I’m in no position for that, Sayo.{w} This isn’t a random flash game on the internet, we’re dealing with real crime here."
 
     "Ikuko and Ayumi passed by, the latter giving Sayo a thumbs up."
+    show sayo smiletalk at Three3 with Dissolve(0.2)
+    show miyu naughty smile at Three2 with Dissolve(0.2)
     "They continued their conversation up until the sun was beginning to set."
     "Miyu glanced at his watch,{w} noting the time to be 5:20PM."
 
+    show sayo normaltalk at Three3 with Dissolve(0.2)
     sr5 "Oh! My apologies for delaying you."
+    show miyu naughty smirk at Three2 with Dissolve(0.2)
     mh8 "Nah, don’t worry about it.{w} I found the exchange rather informative, and I do find your case {i}intriguing{/i}."
+    show miyu naughty talk at Three2 with Dissolve(0.2)
     mh8 "Well, I better get going, then.{w} Hope to see you tomorrow, Sayo."
     sr5 "If ever, shall we discuss this over at break time?"
+    show miyu smile at Three2 with Dissolve(0.2)
     mh8 "Hmmm... I’ll see what I can do with my schedule.{w} And if ever, you know where to find me."
 
+    hide miyu with Dissolve(1.0)
+    show sayo blankface at Three3 with Dissolve(0.2)
     "His figure disappeared around the corner.{w} Sayo silently contemplated for a while, before rising to go home herself."
 
     ikuko "{i}Hey, Miyu! Someone’s looking for Sayo in the office.{w} Is she still there?{/i}"
 
+    show miyu naughty smile at Three2 with Dissolve(0.5)
     "He promptly peeked around the corner of the staircase.{w} Miyu silently motioned her to the principal’s office, which she acknowledged with an O.K. sign."
+    hide miyu with Dissolve(0.5)
+    hide sayo with Dissolve(0.2)
     "She hastened her steps, entering the office in a practiced manner.{w} The secretary guided her to the principal’s room, its interior visible through the glass door."
     "Accompanying Mrs. Sokoguchi, the principal, are two men of authority."
+    show emmerich serious at RS with Dissolve(0.2)
     "The middle-aged man is a police sergeant.{w} He currently handles the case, one he considers a higher caliber than those he handled before.{w} With him, a much younger protégé.{w} Meek, as he would look from the surface."
 
     p_serg "And to complement my age, I have with me an aide, younger and more robust than I am.{w} Isn’t that right, rookie? Gahahahahahaha..."
+    show emmerich seriousclosed at RS with Dissolve(0.2)
     p_insp "Please,{w} refer to me as Emmerich...{w} not that I don’t mind, Sarge."
     p_serg "A diamond in the rough, I tell ‘ya.{w} He may be brusque, but he’s got the right mindset. Saw myself in ‘im.{w} Figured I might as well tag him along instead of being cooped up in that lab."
+    show emmerich serious at RS with Dissolve(0.2)
     p_insp "Ah, yes. My first case in the field, this,{w} and a pretty bad apple for –"
 
     "{i}{b}*knock* *knock* *knock*{/b}{/i}"
     "Seeing who is behind the door, the principal motioned Sayo to come inside.{w} The two men turned their attention to her, who slowly entered the room."
+    show sayo smileclosed at LS with Dissolve(1.0)
     "The council president showcased her dignity, making her presence well-known before the two gentlemen.{w} Hand in heart, Sayo bowed down to an almost-right angle."
+    show sayo smileopen at LS with Dissolve(0.2)
     "Sayo exchanged handshakes with the guests and settled down to the empty seat across them."
 
     prin "Then if we may, let us formally start our meeting."
     prin "Ms. Ronoroa is the incumbent council president, dear gentlemen.{w} Sayo, these are the two men I’ve told you and Mrs. Genkai about."
     sr5 "I see.{w} How are things, Sergeant?"
     p_serg "We’ve traced the call to the Shinozakis.{w} If witness accounts are accurate, the estimated duration is one hour starting at 1900H.{w} Source is a phone booth at the north end of the market."
+    show sayo serioustalk2 at LS with Dissolve(0.2)
     sr5 "Market?{w} I was already away from Kutsutochi by seven."
+    show emmerich talk at RS with Dissolve(0.2)
     p_emm "We’ve not confirmed anything yet, Ms. Ronoroa –"
+    show sayo seriousnormal at LS with Dissolve(0.2)
     sr5 "Sayo, Inspector. I prefer it.{w} No need to worry. You haven't caused any offense."
     p_emm "Right.{w} As to that extent, we only have the witness’ word for it.{w} Same goes for you – circumstantial evidence at best."
+    show sayo seriousnormalleft at LS with Dissolve(0.2)
     sr5 "Then I am at ease.{w} What about the Kirisakis?"
+    show emmerich serious at RS with Dissolve(0.2)
     p_emm "Zero."
     prin "I shall answer that.{w} Kyou Kirisaki’s brother is still ordered to stay home until we find out his current condition.{w} Unlike the other family, they do not fault you nor do they suspect any one of his friends."
+    show sayo serioustalkleft at LS with Dissolve(0.2)
     sr5 "Kyou has no enemies to my knowledge.{w} That kid is an optimist and genuinely cares for his schoolmates."
+    show sayo serioustalk2 at LS with Dissolve(0.2)
     sr5 "And his presence is required, especially with the upcoming activities.{w} Without the Science Club’s head, the members are falling into confusion."
     p_serg "So he’s the club president, you say.{w} Could the motive be political?"
+    show sayo worriedtalk at LS with Dissolve(0.2)
     sr5 "Dear, no!{w} The acting president, Tokubei, is a legitimate leader.{w} He actually didn’t want to accept the position because he's already holding similar duties at his homeroom."
     sr5 "We have yet to make formal arrangements should anything arise.{w} It seems that the most viable option is to wait."
+    show emmerich seriousclosed at RS with Dissolve(0.2)
     p_emm "With lack of physical evidence, then, we arrive at another dead end.{w} How exciting for a field entry..."
 
     "The sergeant pat the young inspector's back, sympathizing with him."
     "The discussion continued until six,{w} at which the principal allowed Sayo to leave five minutes early.{w} The sergeant spoke for them both, promising an update within 24 hours{w} – if there ever will be."
+    hide sayo with Dissolve(0.2)
+    hide emmerich with Dissolve(0.2)
     return
 
 label ch01_18_aftermath:
@@ -3301,69 +3761,102 @@ label ch01_18_aftermath:
     nvl clear
     window hide
 
+    show emmerich smile at Three2 with Dissolve(0.2)
     p_emm "Oi! You’re a familiar chap.{w} Would you come sit with me for a moment?"
+    hide emmerich with Dissolve(0.2)
 
+    show emmerich smile at Three1 with Dissolve(0.2)
+    show yoshiro serious at Three2 with Dissolve(0.2)
     "Yoshiro felt an odd sense of security, immediately taking a seat beside the inspector.{w} The latter ordered some refreshments, which Yoshiro accepted."
 
+    show yoshiro serious2 at Three2 with Dissolve(0.2)
     ys6 "You must be one of the primary investigators of the case.{w} Sayo mentioned you this morning. Sayo Ronoroa, I mean."
+    show emmerich smirk2 at Three1 with Dissolve(0.2)
     p_emm "Ms. Ronoroa did?{w} Delightful. {i}*chuckle*{/i}{w} Old Man Deitch is with the other squad, somewhere at the boundary as we speak..."
 
     "The soft drinks arrived and the inspector paid his bill to the waitress."
 
+    show emmerich smileteeth at Three1 with Dissolve(0.2)
     p_emm "My mistake!{w} Emmerich, Harold Emmerich."
 
+    show yoshiro smile at Three2 with Dissolve(0.2)
     "Emmerich reached out his hand, and Yoshiro answered.{w} The two men pumped their hands warmly, solidifying their trust."
 
+    show yoshiro surprised2 at Three2 with Dissolve(0.2)
     ys6 "Yoshiro Suzuki.{w} You don’t seem to match her description, do you?{w} I expected a firmer guy."
+    show emmerich smirkleft at Three1 with Dissolve(0.2)
     p_emm "You speak of my senior, the one I mentioned earlier.{w} Sergeant Deitch and I might need a formal introduction to you students. Hahahahahaha.{w} But you know..."
+    show emmerich smile2 at Three1 with Dissolve(0.2)
     p_emm "It’s all part of the trade.{w} ‘Ya sometimes gotta learn to be an actor to gain your respect, as my mentor puts it. {i}*wink*{/i}"
     p_emm "This is my first case, Mr. Suzuki.{w} Don't be surprised if I'm referred to as \"rookie\"."
+    show yoshiro smirk at Three2 with Dissolve(0.2)
     ys6 "Oh, I see.{w} I dare not protest then...{w} {i}rookie{/i}."
+    show emmerich smirk at Three1 with Dissolve(0.2)
     p_emm "Hahahahaha! That’s enough, you.{w} I can see potential, how far your wit can bring you, Mr. Suzuki."
-    ys6 "Right, right.{w} Then I’ll just refer to you and your classmates on a first-name basis. A tradition or a friendly habit, perhaps?"
+    ys6 "Just Yoshiro. It’s amusingly mouthful for you. Hm. Hm. Hm."
+    show emmerich smile at Three1 with Dissolve(0.2)
+    p_emm "Right, right.{w} Then I’ll just refer to you and your classmates on a first-name basis. A tradition or a friendly habit, perhaps?"
     p_emm "Anyway, my squad mates are conducting a search elsewhere,{w} while I excused myself to think.{w} I first worked in the lab, analysis mainly, so that gives me a valid excuse."
 
+    show emmerich serious at Three1 with Dissolve(0.2)
+    show yoshiro serious at Three2 with Dissolve(0.2)
     "He showed his little notebook to Yoshiro{w} and explained the clues and witness statements he gathered, including the connections he derived from them."
 
+    show emmerich talk at Three1 with Dissolve(0.2)
     p_emm "Do you notice a pattern?"
     ys6 "Zero evidence equals zero leads, including any traces of the crime itself.{w} If there ever was, the perpetrator must’ve surfaced by now."
 
     "Emmerich nodded,{w} suggesting to Yoshiro a certain point."
 
+    show yoshiro worried at Three2 with Dissolve(0.2)
     ys6 "You mean any search attempts were purposefully made useless{w} and that you were meant to be called on purpose?"
+    show emmerich serious at Three1 with Dissolve(0.2)
     p_emm "Exactly."
+    show yoshiro worriedleft at Three2 with Dissolve(0.2)
     ys6 "Odd.{w} And I thought criminals prefer to lay low.{w} Unless..."
     p_emm "Unless he is willing to show himself or he's showing off his work {i}purposely{/i}.{w} You know how these types work.{w} Is there anyone you know who might be of concern?"
 
-    "Yoshiro pondered for a moment, remembering the details involving Kyou and Inoue:{w} anyone who had a previous conflict with the two,{w} and other detail."
+    "Yoshiro pondered for a moment, remembering the details involving Kyou and Inoue:{w} anyone who had a previous conflict with the two,{w} what their daily schedules are, and all."
     "He only shook his head."
 
+    show yoshiro surprised2 at Three2 with Dissolve(0.2)
     ys6 "Have you checked any outside contacts?{w} Relatives, old friends?{w} Personally, I find no fault in Kirisaki{w} – it’s hard to imagine him in a fight."
+    show yoshiro talkleft at Three2 with Dissolve(0.2)
     ys6 "Inoue?{w} I admit she has this{w} arrogant attitude that turns people off,{w} but it has never become a serious problem.{w} No one has ever come close to –"
 
     "{i}{b}*BUZZ*{/b}{/i}"
 
     p_serg "Harold, you there?{w} You’ve got to hear this!"
+    show emmerich talk at Three1 with Dissolve(0.2)
     p_emm "Excuse me for a moment, Yoshiro."
+    hide emmerich with Dissolve(0.2)
 
     "The young inspector turned away from him."
-    "From the other end, his senior officer sounded distressed,{w} made more evident by Emmerich’s tone shift.{w} Yoshiro pretended not listening to the conversation."
+    "From the other end, his senior officer sounded distressed,{w} made more evident by Emmerich’s tone shift.{w} Yoshiro pretended to close ears."
 
     p_emm "You found the girl?!"
 
+    show yoshiro surprised at Three2 with Dissolve(0.2)
     "This immediately caught the teenager’s attention.{w} As he listened, he picked up on some of the details."
+    show yoshiro surprised2 at Three2 with Dissolve(0.2)
     "When the transmission ended, Emmerich returned to face Yoshiro, now piqued with curiosity.{w} However, the inspector saw through this."
 
+    show emmerich talk at Three1 with Dissolve(0.2)
     p_emm "That’s the Sergeant.{w} And they have already found Shinozaki."
     ys6 "Where?"
     p_emm "Somewhere near the marketplace."
+    show yoshiro angry at Three2 with Dissolve(0.2)
     ys6 "..."
-    p_emm "Look, I know what you’re thinking,{w} but please, head home immediately.{w} I didn’t particularly like what I just heard."
-    p_emm "A pleasant evening to you,{w} and I apologize for your delay.{w} Now if you’ll excuse me..."
+    show emmerich worried at Three1 with Dissolve(0.2)
+    p_emm "Look, I know what you’re thinking,{w} but please, head home immediately.{w} I didn’t like what I just heard, particularly..."
+    show emmerich serious at Three1 with Dissolve(0.2)
+    p_emm "{i}*sigh*{/i} You get my point? Good.{w} A pleasant evening to you,{w} and I apologize for your delay.{w} Now if you’ll excuse me..."
+    hide emmerich with Dissolve(0.2)
 
     window show
     nvl clear
     narr "The inspector replaced his notebook in his jacket’s breast pocket and ran off."
+    hide yoshiro with Dissolve(0.2)
     narr "Having not realized the danger it might pose him, Yoshiro tailed the inspector.{w} He stopped a block away,{w} when he saw Emmerich meet up with the Sergeant outside an alley to the market’s East."
     narr "Some of the stalls were closing, the time at quarter past six.{w} Once the two officers disappeared, he went to an adjacent shop to buy a gift.{w} Because of the silence, he heard some inaudible voices from the other side of the wall."
 
@@ -3376,10 +3869,17 @@ label ch01_18_aftermath:
     nvl clear
     window hide
 
+    show emmerich worried at RS with Dissolve(0.2)
     p_emm "Miss Shinozaki, you’re safe now.{w} {i}{b}*GRUNT*{/b}{/i} Please, pull yourself together!"
-    is4 "I don’t believe you! {i}*whimper*{/i} Uhuhuhu...{w} I’m already... broken... {i}*hic*{/i} Uhuhuhuhuhuhuhuhu... {i}*hic*{/i}"
+    show inoue creepy blood angry at LS
+    is4 "I don’t believe you! {i}*whimper*{/i} Uhuhuhu..."
+    show inoue noglass blood cry2 at LS with Dissolve(0.2)
+    is4 "I don’t believe you! {i}*whimper*{/i} Uhuhuhu...{fast} I’m already... broken... {i}*hic*{/i} Uhuhuhuhuhuhuhuhu... {i}*hic*{/i}"
+    show emmerich talk at RS with Dissolve(0.2)
     p_emm "She seems to be abused."
     p_serg "I hope it’s negative.{w} Poor girl’s been delirious when we found her.{w} Medical services are inbound – where the hell are they?!"
+    hide emmerich with Dissolve(0.2)
+    hide inoue with Dissolve(0.2)
 
     "Yoshiro felt a vibration in his pocket.{w} It was his smartphone,{w} with a new message from Ichirou."
 
@@ -3403,26 +3903,39 @@ label ch01_18_aftermath:
     "His body is well into decomposition{w} – his temperature has dropped, the blood has dried, and maggots have already housed within his crevices."
     "But something else caught Yoshiro’s eye."
 
+    show inoue creepy blood snap at LS with Dissolve(0.2)
     is4 "I won... didn’t I?{w} He wasn’t so clever... after all...{w} Heh. Hehehehehe..."
 
     "Kyou had his palms open,{w} and within the mosaic-like mix of red and black{w} etched a number on each.{w} Barely visible, but if examined close enough..."
-    "Number 9 on the left,{w} number 7 on the right."
+    "Number 9 on the left,{w} number 7 on the right.{nw}"
 
-    is4 "AHAHAHAHAHAHAHAHA!!!{w} I won! He doesn’t! Would you believe it?!"
+    show inoue creepy blood snap2 at LS
+    is4 "AHAHAHAHAHAHAHAHAHAHAHAHAHA!!!!!!!!! I won! He doesn’t! Would you believe it?!"
+    hide inoue with Dissolve(0.2)
 
     "Petrified while viewing the images, Yoshiro did not notice an ambulance stopping across the alleyway.{w} A gurney was brought down and the policemen struggled to carry Inoue."
 
+    show emmerich angry at Three2 with Dissolve(0.2)
     p_emm "Yoshiro?!{w} I gave you an order, didn’t I?"
+    hide emmerich with Dissolve(0.2)
 
     window show
     nvl clear
     narr "The inspector caught his attention.{w} Though embarrassed, he meekly attempted to justify his presence,{w} ultimately gaining the former’s disapproval."
     narr "Both men watched Inoue as she was being taken away...{w} All while crooning a little tune."
     narr "{i}Ring around... the rosie...{w}\nPocket full of posies...{/i}"
+    window hide
+    show inoue noglass blood sad at Three2 with Dissolve(0.2)
+    show inoue noglass blood cry at Three2 with Dissolve(0.5)
+    show inoue noglass blood cry2 at Three2 with Dissolve(0.5)
+    show inoue creepy blood snap at Three2 with Dissolve(0.5)
+    show inoue creepy blood snap2 at Three2
+    window show
     narr "Inoue she was{w} no longer..."
 
     nvl clear
     window hide
+    hide inoue with Dissolve(1.0)
     return
 
 label ch01_19_funeral:
@@ -3443,6 +3956,9 @@ label ch01_19_funeral:
     nvl clear
     narr "On political matters, the following changes are effective:{w} Sumiko is to succeed Kyou in the Science Club’s headship while I remain as Secretary,{w} and Inoue’s duties are temporarily upheld by her Vice officers."
     narr "Any complications the change would cause are yet to be resolved{w} – there may be one."
+    window hide
+    show emmerich serious at Three2 with Dissolve(0.2)
+    window show
     narr "Miyu and I gave our statements to the investigating officer,{w} Emmerich, it seems.{w} Business-like and frank, unlike how Yoshiro described him to us."
 
     nvl clear
@@ -3450,13 +3966,24 @@ label ch01_19_funeral:
 
     p_emm "Have you any relatives that were admitted at the hospital on the 25th?"
     iy1 "No,{w} but I have a scheduled check-up every last Tuesday of the month.{w} It was only a two-minute walk to our houses so I had Miyu tag along."
+    show emmerich talk at Three2 with Dissolve(0.2)
     p_emm "And how did you discover Kirisaki’s corpse?"
     iy1 "Not us, but the hospital staff.{w} In one of the hallways, Miyu caught a glimpse of someone being taken to the ER.{w} \"Wait! Isn’t that...?\" he said before following the gurney.{w} The rest is history."
 
     window show
     nvl clear
     narr "As brief as that, and Miyu repeated everything I’ve said.{w} There was really nothing suspicious about it.{w} I even showed him prescriptions dated {i}June 25th, 2013{/i} as proof."
-    narr "We went out of the office,{w} encountering Sayo at the door.{w} She handed us a small scroll, spoke no words and abruptly left.{w} Its contents are short, only that of a notice."
+    window hide
+    hide emmerich with Dissolve(0.2)
+    show ichirou worried at Three2 with Dissolve(0.2)
+    show miyu pissedclosed at Three3 with Dissolve(0.2)
+    show sayo worried at Three1 with Dissolve(0.2)
+    window show
+    narr "We went out of the office,{w} encountering Sayo at the door.{w} She handed us a small scroll, spoke no words and abruptly left."
+    hide sayo with Dissolve(0.2)
+    narr "Its contents are short, only that of a notice."
+    hide ichirou with Dissolve(0.2)
+    hide miyu with Dissolve(0.2)
     
     nvl clear
     narr "{i}Greetings!{/i}"
@@ -3476,7 +4003,22 @@ label ch01_19_funeral:
     narr "Those who went finished their responsibilities the day before;{w} Likewise, I’ve posted all announcements before leaving.{w} We might not have a Wi-Fi connection there."
 
     nvl clear
-    narr "Miyu and I joined the others at the city square;{w} that is, Akira, Sumiko, Hiroshi, Yoshiro, Ikuko, and Ayumi.{w} Sayo arrived at 8AM,{w} telling us that Hikaru will be going with her parents."
+    window hide
+    show akira serious at Eight2 with Dissolve(0.2)
+    show sumiko seriousleft at Eight3 with Dissolve(0.2)
+    show hiroshi worried at Eight5 with Dissolve(0.2)
+    show yoshiro worriedleft at Eight6 with Dissolve(0.2)
+    window show
+    narr "Miyu and I joined the others at the city square;{w} that is, Akira, Sumiko, Hiroshi, and Yoshiro."
+    window hide
+    hide akira with Dissolve(0.2)
+    hide sumiko with Dissolve(0.2)
+    hide hiroshi with Dissolve(0.2)
+    hide yoshiro with Dissolve(0.2)
+    show sayo casual glass serious at Three3 with Dissolve(0.2)
+    window show
+    narr "Sayo arrived at 8AM along with Ikuko and Ayumi,{w} telling us that Hikaru will be going with her parents."
+    hide sayo with Dissolve(0.2)
     narr "We made small talk during the ride, mostly on random topics.{w} But if it would lead to something too disturbing, especially about the recent events,{w} someone would try to divert the issue.{w} At best, silence would befall us."
     narr "We are all shaken,{w} the imprint was still upon us.{w} Someone close to us{w} murdered in a way beyond forgiveness.{w} Heck, I don’t even want to know what exactly happened to Inoue!"
     narr "Maybe...{w} Maybe when she’s better...{w} Maybe if she’s willing to talk."
@@ -3512,14 +4054,26 @@ label ch01_19_funeral:
     nvl clear
     window hide
 
+    show hiroshi smileleft at LS with Dissolve(0.2)
+    show ichirou focusleft at RS with Dissolve(0.2)
     hk7 "Funny how the birds sound like chicks, don’t they?"
+    show ichirou surprised at RS with Dissolve(0.2)
     iy1 "Aw, spare me the image!{w} The wake has long passed, and you might want to move on, Hiroshi."
+    show hiroshi smileleft at LS with Dissolve(0.2)
     hk7 "Hahahahahaha! Your heart, Ichirou. Keep it calm."
+    show ichirou worried at RS with Dissolve(0.2)
     iy1 "{i}*sigh*{/i} But now that you mentioned it, does it really have an effect?"
+    show hiroshi boredleft at LS with Dissolve(0.2)
     hk7 "Yes, I’m sure.{w} After all, this isn’t a husk we’re dealing with.{w} What man is born devoid of emotion?"
+    show ichirou confused at RS with Dissolve(0.2)
     iy1 "Yeah... let’s mellow out of that prose.{w} You’re starting to sound like those YA novels you read."
+    show hiroshi determined2 at LS with Dissolve(0.2)
     hk7 "What a spoilsport. Can’t you let me be?"
+    show ichirou happy2 at RS with Dissolve(0.2)
+    show hiroshi happyblush at LS with Dissolve(0.2)
     "\"\"Hahahahahahahahaha!\"\""
+    hide hiroshi with Dissolve(0.2)
+    hide ichirou with Dissolve(0.2)
 
     window show
     nvl clear
@@ -3545,7 +4099,9 @@ label ch01_20_epilogue:
     "JUNE 30, 2013 - 2000H"
     "{i}*RING* *RING*{/i}"
 
+    show miyu pissed at Three3 with Dissolve(0.2)
     mh8 "Excuse me. My parents are calling."
+    hide miyu with Dissolve(0.2)
 
     window show
     nvl clear
@@ -3556,8 +4112,13 @@ label ch01_20_epilogue:
     nvl clear
     window hide
 
+    show akira smile at RS with Dissolve(0.2)
+    show ichirou focus at LS with Dissolve(0.2)
     iy1 "I'm gonna go outside for a while.{w} Give me a ring if we're all needed - I may not be able to hear an SMS tune."
+    show akira proud2 at RS with Dissolve(0.2)
     ai2 "Yeah, whatever. Be on your way, then."
+    hide ichirou with Dissolve(0.5)
+    hide akira with Dissolve(0.2)
 
     nvl clear
     narr "A single light bulb illuminated the front porch.{w} It is mostly silent, occasionally broken by the bug zapper over the door.{w} Looking past the few buildings, the setting alone is fresh air for a city dweller like me."
@@ -3610,7 +4171,8 @@ label ch01_20_epilogue:
 
     iy1 "Wait up! Hey!"
 
-    "And thus, the night became peaceful no longer.{w}\nWho's next, I wonder?"
+    scene black with fade
+    centered "{i}{b}And thus, the night became peaceful no longer.{w}\nWho's next, I wonder?{/i}{/b}"
 
-    "{b}***END OF JUNE CHAPTER***\n\nTO BE CONTINUED{/b}"
+    centered "{b}***END OF JUNE CHAPTER***\n\n{i}TO BE CONTINUED...{/i}{/b}"
     return
