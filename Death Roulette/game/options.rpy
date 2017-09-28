@@ -61,6 +61,7 @@ define config.has_voice = True
 ## game, until it is stopped or another file is played.
 
 # define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "music/Kevin MacLeod - Echoes of Time.mp3"
 
 
 ## Transitions #################################################################
@@ -143,8 +144,8 @@ define config.save_directory = "DeathRoulette-1497117121"
 ##
 ## The icon displayed on the taskbar or dock.
 
-define config.window_icon = "gui/window_icon.png"
-
+#define config.window_icon = "gui/window_icon.png"
+define config.window_icon = "gui/dr_window_icon.png"
 
 ## Build configuration #########################################################
 ##

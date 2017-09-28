@@ -1,35 +1,35 @@
-Tue Sep 26 12:27:06 2017
+Thu Sep 28 12:42:22 2017
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.12.4.2187
  
 
-Bootstrap to the start of init.init took 0.16s
-Early init took 0.04s
+Bootstrap to the start of init.init took 0.14s
+Early init took 0.02s
 Loader init took 0.07s
 Loading error handling took 0.04s
-Loading script took 3.01s
-Loading persistent took 0.09s
+Loading script took 2.94s
+Loading persistent took 0.11s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.20s
-Loading analysis data took 0.02s
+Running init code took 0.29s
+Loading analysis data took 0.06s
 Analyze and compile ATL took 0.01s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\pc\\AppData\\Roaming/RenPy/backups\\Death Roulette':
-Dump and make backups. took 0.14s
+Dump and make backups. took 0.18s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.000000
-Creating interface object took 0.13s
+Creating interface object took 0.06s
 Cleaning stores took 0.00s
 Init translation took 0.08s
 Build styles took 0.01s
 Load screen analysis took 0.00s
 Analyze screens took 0.02s
 Save screen analysis took 0.09s
-Prepare screens took 0.14s
+Prepare screens took 0.15s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.06s
-Running _start took 0.00s
+Save bytecode. took 0.13s
+Running _start took 0.01s
 Interface start took 0.05s
 
 primary display bounds: (0, 0, 1280, 800)
@@ -88,11 +88,11 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 5.58999991417s
+Total time until interface ready: 5.46600008011s
 Cleaning stores took 0.00s
-Init translation took 0.27s
+Init translation took 0.33s
 Build styles took 0.02s
-Load screen analysis took 0.08s
+Load screen analysis took 0.02s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s

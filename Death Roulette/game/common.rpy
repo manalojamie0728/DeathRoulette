@@ -2,6 +2,27 @@
 
 # BACKGROUND
 image bg test1 = "bg_test1.png"
+image bg alley = "BG - Alley.jpg"
+image bg apartment night = "BG - Apartment (Night).jpg"
+image bg classroom1 = "BG - Classroom1.jpg"
+image bg classroom2 = "BG - Classroom2.jpg"
+image bg cowpainting = "BG - Cow Painting.jpg"
+image bg diningroom = "BG - Dining Room.jpg"
+image bg eatery = "BG - Eatery.jpg"
+image bg eyesdark = "BG - Eyes Dark.jpg"
+image bg freedompark = "BG - Freedom Park.jpg"
+image bg livingroom = "BG - Living Room.jpg"
+image bg meadow = "BG - Meadow.jpg"
+image bg ministryroom = "BG - Ministry Room.jpg"
+image bg moon = "BG - Moon.jpg"
+image bg msci = "BG - MSCI.jpg"
+image bg school fields = "BG - School Fields.jpg"
+image bg school gate = "BG - School Gate.jpg"
+image bg school hallway = "BG - School Hallway.jpg"
+image bg street night = "BG - Street (Night).jpg"
+image bg street rain = "BG - Street (Rain).jpg"
+image bg tvstatic = "BG - TV Static.jpg"
+image bg wetmarket = "BG - Wet Market.jpg"
 
 ###=========###
 # MAIN
@@ -300,3 +321,56 @@ image emmerich smirkleft = "emmerich_smirk_left.png"
 image emmerich smirk2 = "emmerich_smirk2.png"
 image emmerich talk = "emmerich_talk.png"
 image emmerich worried = "emmerich_worried.png"
+
+# MUSIC
+
+###=========###
+# BGM
+###=========###
+
+define audio.bg_calmertimes = "music/Eric Matyas - Calmer Times.mp3"
+define audio.bg_hazydisorientation = "music/Eric Matyas - Hazy Disorientation.mp3"
+define audio.bg_onthingstocome = "music/Eric Matyas - On Things to Come.mp3"
+define audio.bg_theanthillganggoeswest = "music/Eric Matyas - The Ant Hill Gang Goes West.mp3"
+define audio.bg_autumnday = "music/Kevin MacLeod - Autumn Day.mp3"
+define audio.bg_awkwardmeeting = "music/Kevin MacLeod - Awkward Meeting.mp3"
+define audio.bg_corruption = "music/Kevin MacLeod - Corruption.mp3"
+define audio.bg_echoesoftime = "music/Kevin MacLeod - Echoes of Time.mp3"
+define audio.bg_ghoststory = "music/Kevin MacLeod - Ghost Story.mp3"
+define audio.bg_merrygo = "music/Kevin MacLeod - Merry Go.mp3"
+define audio.bg_nightofchaos = "music/Kevin MacLeod - Night of Chaos.mp3"
+define audio.bg_porchswingdays = "music/Kevin MacLeod - Porch Swing Days.mp3"
+define audio.bg_roadtohell = "music/Kevin MacLeod - Road To Hell.mp3"
+define audio.bg_satiate = "music/Kevin MacLeod - Satiate.mp3"
+define audio.bg_twotogether = "music/Kevin MacLeod - Two Together.mp3"
+define audio.bg_undaunted = "music/Kevin MacLeod - Undaunted.mp3"
+define audio.bg_vulcan = "music/Kevin MacLeod - Vulcan.mp3"
+
+###=========###
+# SFX
+###=========###
+
+define audio.sfx_applause = "music/applause.wav"
+define audio.sfx_breathing = "music/breathing.wav"
+define audio.sfx_crickets = "music/crickets.wav"
+define audio.sfx_click = "music/Eric Matyas - UI_Quirky18.mp3"
+define audio.sfx_footsteps = "music/footsteps.wav"
+define audio.sfx_giggle = "music/giggle.wav"
+define audio.sfx_heartbeat = "music/heartbeat.wav"
+define audio.sfx_pageturn = "music/pageturn.wav"
+define audio.sfx_phonering = "music/phonering.wav"
+define audio.sfx_rain = "music/rain.wav"
+define audio.sfx_revolver = "music/revolver.wav"
+define audio.sfx_roulette = "music/roulette.wav"
+define audio.sfx_rubikscube = "music/rubikscube.wav"
+define audio.sfx_splash = "music/splash.wav"
+define audio.sfx_ticktock = "music/ticktock.wav"
+define audio.sfx_wind = "music/wind.wav"
+
+###=========###
+# GUEST (COPYRIGHTED) - From other games/anime; Exclusive Copies ONLY! 
+###=========###
+
+define audio.guest_chikai = "music/Guest - Chikai.mp3"
+define audio.guest_corpseparty = "music/Guest - Corpse Party.mp3"
+define audio.guest_whyorwhynot = "music/Guest - Why or Why Not.mp3"
