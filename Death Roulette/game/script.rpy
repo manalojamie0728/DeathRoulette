@@ -32,68 +32,133 @@ define guard = Character("Guard")
 define unk = Character("???")
 
 init:
-    $ LS = Position(xpos=0.2, xanchor=0.2, ypos=0.5, yanchor=0.5, yoffset=100)
-    $ RS = Position(xpos=0.75, xanchor=0.8, ypos=0.5, yanchor=0.5, yoffset=100)
-    $ Three1 =Position(xpos=0.25, xanchor=0.25, ypos=0.5, yanchor=0.5, yoffset=100)
-    $ Three2 =Position(xpos=0.5, xanchor=0.5, ypos=0.5, yanchor=0.5, yoffset=100)
-    $ Three3 =Position(xpos=0.75, xanchor=0.75, ypos=0.5, yanchor=0.5, yoffset=100)
-    $ EightM = Position(xpos=-0.1, xanchor=-0.1, ypos=0.5, yanchor=0.5, yoffset=100)
-    $ Eight1 = Position(xpos=0.0, xanchor=0.0, ypos=0.5, yanchor=0.5, yoffset=100)
-    $ Eight2 = Position(xpos=0.14, xanchor=0.14, ypos=0.5, yanchor=0.5, yoffset=100)
-    $ Eight3 = Position(xpos=0.29, xanchor=0.29, ypos=0.5, yanchor=0.5, yoffset=100)
-    $ Eight4 = Position(xpos=0.43, xanchor=0.43, ypos=0.5, yanchor=0.5, yoffset=100)
-    $ Eight5 = Position(xpos=0.56, xanchor=0.56, ypos=0.5, yanchor=0.5, yoffset=100)
-    $ Eight6 = Position(xpos=0.71, xanchor=0.71, ypos=0.5, yanchor=0.5, yoffset=100)
-    $ Eight7 = Position(xpos=0.86, xanchor=0.86, ypos=0.5, yanchor=0.5, yoffset=100)
-    $ Eight8 = Position(xpos=1.0, xanchor=1.0, ypos=0.5, yanchor=0.5, yoffset=100)
+    $ LS = Position(xpos=0.2, xanchor=0.2, ypos=0.55, yanchor=0.5, yoffset=100)
+    $ RS = Position(xpos=0.75, xanchor=0.8, ypos=0.55, yanchor=0.5, yoffset=100)
+    $ Three1 = Position(xpos=0.25, xanchor=0.25, ypos=0.55, yanchor=0.5, yoffset=100)
+    $ Three2 = Position(xpos=0.5, xanchor=0.5, ypos=0.55, yanchor=0.5, yoffset=100)
+    $ Three3 = Position(xpos=0.75, xanchor=0.75, ypos=0.55, yanchor=0.5, yoffset=100)
+    $ EightM = Position(xpos=-0.1, xanchor=-0.1, ypos=0.55, yanchor=0.5, yoffset=100)
+    $ Eight1 = Position(xpos=0.0, xanchor=0.0, ypos=0.55, yanchor=0.5, yoffset=100)
+    $ Eight2 = Position(xpos=0.14, xanchor=0.14, ypos=0.55, yanchor=0.5, yoffset=100)
+    $ Eight3 = Position(xpos=0.29, xanchor=0.29, ypos=0.55, yanchor=0.5, yoffset=100)
+    $ Eight4 = Position(xpos=0.43, xanchor=0.43, ypos=0.55, yanchor=0.5, yoffset=100)
+    $ Eight5 = Position(xpos=0.56, xanchor=0.56, ypos=0.55, yanchor=0.5, yoffset=100)
+    $ Eight6 = Position(xpos=0.71, xanchor=0.71, ypos=0.55, yanchor=0.5, yoffset=100)
+    $ Eight7 = Position(xpos=0.86, xanchor=0.86, ypos=0.55, yanchor=0.5, yoffset=100)
+    $ Eight8 = Position(xpos=1.0, xanchor=1.0, ypos=0.55, yanchor=0.5, yoffset=100)
+    transform slide_left:
+        zoom 2.0
+        xpos 0.9 xanchor 0.9 ypos 0.85 yanchor 0.5
+        linear 35.0 xpos 0.0
+        pause 2.0
+        linear 5.0 alpha 0.0
+    transform slide_right:
+        zoom 2.0
+        xpos 0.1 xanchor 0.1 ypos 0.85 yanchor 0.5
+        linear 35.0 xpos 1.0
+        pause 2.0
+        linear 5.0 alpha 0.0
 
 # The game starts here.
 init python:
-    #config.empty_window = nvl_show_core
     config.window_hide_transition = dissolve
     config.window_show_transition = dissolve
+    config.debug_sound = True
+    # Writing, Programming, Background, Sprites, GUI, Music
+    credits = ('WRITING', 'Jamie D.W.'), ('GUI', 'Jamie D.W.'), ('SPRITES', 'Made Using: IICharacterAlpha (nantoka.main.jp), 2011-2013'), ('BACKGROUNDS', 'mugenjohncel'), ('BACKGROUNDS', 'konnett'), ('BACKGROUNDS', 'Google Images'), ('BACKGROUNDS', 'Processed By: Jamie D.W.'), ('SOUND EFFECTS', 'https://freesound.org'), ('OTHER SOUND EFFECTS', '')
+    credits += ('Eric Matyas (SFX)\nwww.soundimage.org', 'Street Ambience 5'), ('Eric Matyas (SFX)\nwww.soundimage.org', 'UI_Quirky18')
+    credits += ('MUSIC', 'Licensed under CC Attr. 3.0 and 4.0')
+    credits += ('Eric Matyas (Music)\nwww.soundimage.org', 'Calmer Times'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Hazy Disorientation'), ('Eric Matyas (Music)\nwww.soundimage.org', 'On Things to Come'), ('Eric Matyas (Music)\nwww.soundimage.org', 'The Ant Hill Gang Goes West')
+    credits += ('Kevin MacLeod (Music)\nincompetech.com', 'Autumn Day'), ('Kevin MacLeod (Music)\nincompetech.com', 'Awkward Meeting'), ('Kevin MacLeod (Music)\nincompetech.com', 'Corruption'), ('Kevin MacLeod (Music)\nincompetech.com', 'Controlled Chaos'), ('Kevin MacLeod (Music)\nincompetech.com', 'Decline'), ('Kevin MacLeod (Music)\nincompetech.com', 'Echoes of Time')
+    credits += ('Kevin MacLeod (Music)\nincompetech.com', 'Ghost Story'), ('Kevin MacLeod (Music)\nincompetech.com', 'Merry Go'), ('Kevin MacLeod (Music)\nincompetech.com', 'Night of Chaos'), ('Kevin MacLeod (Music)\nincompetech.com', 'Porch Swing Days'), ('Kevin MacLeod (Music)\nincompetech.com', 'Road To Hell'), ('Kevin MacLeod (Music)\nincompetech.com', 'Satiate')
+    credits += ('Kevin MacLeod (Music)\nincompetech.com', 'Two Together'), ('Kevin MacLeod (Music)\nincompetech.com', 'Undaunted'), ('Kevin MacLeod (Music)\nincompetech.com', 'Vulcan')
+    credits += ('Robert Austin (Music)', 'Chloe\'s Lullaby'), ('Marc Steene and Wray Burgess', 'Ring Around The Rosie (Slender Elementary Version)'), ('Marioverehrer (Original: Claude Debussy)', 'Au Clair De La Lune - Synthesia')
+    credits += ('COPYRIGHTED MUSIC', 'Exclusive Copies Only!'), ('Eiko Shimamiya', 'Chikai (Higurashi No Naku Koro Ni Chikai)'), ('tia koudelika (Original: Eiko Shimamiya)', 'Why or Why Not - Cover (Higurashi No Naku Koro Ni)'), ('Mao Hamamoto', 'Chapter1 MainBGM PSP-Original BGM11 (Corpse Party: Blood Covered Repeated Fear)')
+    credits += ('SPECIAL THANKS TO', 'Lizeth Baldelomar - Stay Awesome! ;)')
+    credits_s = "{size=50}CREDITS\n\n"
+    c1 = ''
+    for c in credits:
+        if not c1==c[0]:
+            credits_s += "\n{size=40}" + c[0] + "\n"
+        credits_s += "{size=35}" + c[1] + "\n"
+        c1=c[0]
+    credits_s += "\n{size=40}Engine\n{size=40}" + renpy.version() #Don't forget to set this to your Ren'py version
+
+init:
+#    image cred = Text(credits_s, font="myfont.ttf", text_align=0.5) #use this if you want to use special fonts
+    image cred = Text(credits_s, text_align=0.5)
+    image opening = Text("{size=60}A GAME BY\nJamie D.W.", text_align=0.5)
+    image opening2 = Text("{size=60}A REN\'PY VISUAL NOVEL", text_align=0.5)
+    image opening3 = Text("{size=60}JAMIE D.W.\nPRESENTS", text_align=0.5)
+    image opening4 = Text("{size=20}Chikai - Eiko Shimamiya\nHigurashi No Naku Koro Ni Chikai OST\nCopyright, 2009", text_align=0.5)
+    image opening5 = Text("{size=40}STORY\n{size=30}Jamie D.W.", text_align=0.5)
+    image opening6 = Text("{size=40}GRAPHICS DESIGN\n{size=30}Jamie D.W.", text_align=0.5)
+    image opening7 = Text("{size=40}SPRITES DESIGN\n{size=30}Jamie D.W.\nUsing: IICharacterAlpha (nantoko.main.jp), 2011-2013", text_align=0.5)
+    image opening8 = Text("{size=40}BACKGROUNDS\n{size=30}mugenjohncel\nkonnett", text_align=0.5)
+    image opening9 = Text("{size=40}MUSIC AND SFX\n{size=30}Eric Matyas\nKevin MacLeod\nRobert Austin", text_align=0.5)
+    image opening10 = Text("{size=40}FEATURING SONGS FROM\n{size=30}Higurashi No Naku Koro Ni\nCorpse Party: Blood Covered Repeated Fear", text_align=0.5)
+    image opening11 = Text("{size=40}DIRECTED BY\n{size=30}Jamie D.W.", text_align=0.5)
+    image openingname1 = Text("{size=40}Sayo Ronoroa", text_align=0.5)
+    image openingname2 = Text("{size=40}Hikaru Yamamoto", text_align=0.5)
+    image openingname3 = Text("{size=40}Kyou Kirisaki", text_align=0.5)
+    image openingname4 = Text("{size=40}Inoue Shinozaki", text_align=0.5)
+    image openingname5 = Text("{size=40}Miyu Hirano", text_align=0.5)
+    image openingname6 = Text("{size=40}Ichirou Yokohama", text_align=0.5)
+    image openingname7 = Text("{size=40}Sumiko Tokubei", text_align=0.5)
+    image openingname8 = Text("{size=40}Akira Ichibana", text_align=0.5)
+    image openingname9 = Text("{size=40}Yoshiro Suzuki", text_align=0.5)
+    image openingname10 = Text("{size=40}Hiroshi Kano", text_align=0.5)
+    image splash1 = Text("{size=60}{color=#f00}WARNING{/color}", text_align=0.5)
+    image splash2 = Text("{size=50}{color=#f00}The following contains acts of violence and other content that may be disturbing to some players.\nPlay at your own risk.{/color}", text_align=0.5)
+    image theend = Text("{size=80}CREATED BY:\nJamie D.W.", text_align=0.5)
+    image thanks = Text("{size=80}DEATH ROULETTE\nSEE YOU NEXT TIME!", text_align=0.5)
 
 label start:
-
     stop music
     scene black with fade
 
     centered "{i}{b}Illusions abound; darkness on the inside and chaos on the outside.{w}\nHow is truth able to fit in both places?{w}\nWe may never know for sure,{w} yet someone has already found the answer.{/b}{/i}"
 
-    scene bg test1 with fade
-
     # - Done for now
     ## - Skipped
 
-    call ch01_01_prologue1
-    call ch01_02_prologue2
-    call ch01_03_clubday
-    call ch01_04_tenvictims
-    call ch01_05_sacredheart
-    call ch01_06_kyou
-    call ch01_07_countdown
-    call ch01_08_disappearance
-    call ch01_09_labkyou1
-    call ch01_10_labinoue1
-    call ch01_11_labkyou2
-    call ch01_12_labinoue2
-    call ch01_13_facts1
-    call ch01_14_labinoue3
-    call ch01_15_labkyou3
-    call ch01_16_death01
-    call ch01_17_facts2
-    call ch01_18_aftermath
-    call ch01_19_funeral
-    call ch01_20_epilogue
+    call ch01_01_prologue1 from _call_ch01_01_prologue1
+    call ch01_02_prologue2 from _call_ch01_02_prologue2
+    call ch01_03_clubday from _call_ch01_03_clubday
+    call ch01_04_tenvictims from _call_ch01_04_tenvictims
+    call ch01_05_sacredheart from _call_ch01_05_sacredheart
+    call ch01_06_kyou from _call_ch01_06_kyou
+    call ch01_07_countdown from _call_ch01_07_countdown
+    call ch01_08_disappearance from _call_ch01_08_disappearance
+    call ch01_09_labkyou1 from _call_ch01_09_labkyou1
+    call ch01_10_labinoue1 from _call_ch01_10_labinoue1
+    call ch01_11_labkyou2 from _call_ch01_11_labkyou2
+    call ch01_12_labinoue2 from _call_ch01_12_labinoue2
+    call ch01_13_facts1 from _call_ch01_13_facts1
+    call ch01_14_labinoue3 from _call_ch01_14_labinoue3
+    call ch01_15_labkyou3 from _call_ch01_15_labkyou3
+    call ch01_16_death01 from _call_ch01_16_death01
+    call ch01_17_facts2 from _call_ch01_17_facts2
+    call ch01_18_aftermath from _call_ch01_18_aftermath
+    call ch01_19_funeral from _call_ch01_19_funeral
+    call ch01_20_epilogue from _call_ch01_20_epilogue
+    call credits from _call_credits
     return
 
 label ch01_01_prologue1:
+    scene black with fade
     "MARCH 17, 2012 - 2100H"
+    scene bg moon with fade
+    play sound sfx_crickets loop
+
     window show
     nvl clear
     narr "Night.{w} The crickets filling in the silence that blankets the area.{w} No one to be seen nor heard as all have went home to rest, ready for the day to come."
     narr "Except it was Saturday, three hours before the Sabbatical Day sets in."
 
+    window hide
+    scene bg msci night with dissolve
+    window show
     nvl clear
     narr "A small beam of light cuts through the darkness.{w} From one end, the sound of footsteps and metal jingling can be heard."
     narr "It was the night guard, making his last rounds before he returns to his post to rest."
@@ -110,6 +175,9 @@ label ch01_01_prologue1:
     narr "His companion is already at his post by the school gate, which had been locked an hour ago.{w} What remains is the school auditorium, across the small street separating it and the main building."
     narr "At a shrug and desire for coffee, the guard set foot towards the small structure."
 
+    window hide
+    scene bg school fields night with dissolve
+    window show
     nvl clear
     narr "The sidewalk at the auditorium’s side resembled that of a waiting shed, about twenty times as long."
     narr "He walked up the stone steps, towards the increasingly darkening area.{w} He knew of the stories that surrounded the auditorium yet he continued to fulfill his duties."
@@ -125,6 +193,8 @@ label ch01_01_prologue1:
     nvl clear
     window hide
 
+    scene black with fade
+    stop sound
     "{i}*whisper* *whisper* *whisper*{/i}"
     "{i}What was that?{/i}"
     "His hand stopped.{w} The guard scratched his head for a bit and leaned a bit towards the dark room."
@@ -132,6 +202,7 @@ label ch01_01_prologue1:
     guard "I can’t be imagining things, can I?"
 
     "It could be some leaves rustling or a cat making its own rounds searching for food,{w} yet the whispers did not fall under these two categories."
+    play sound sfx_girlcry
     "{b}*WHIMPER*{/b} {i}*whisper*{/i} {b}*WHIMPER*{/b}"
     "His eyes widened and his heart skipped a strong beat."
 
@@ -160,18 +231,24 @@ label ch01_01_prologue1:
 
     unk "!{w} {b}*WHIMPER*{/b} No! No! No!{w} Please, I beg of you... Uhuhuhuhu..."
 
+    play sound sfx_dooropen
     "The door swung hard and the guard shone his flashlight inside the room."
 
     guard "Alright! Playtime’s over. If you may p--"
 
-    "There was a girl at the center, wearing a dark sweater.{w} She is a student, the guard recognized as she turned towards him."
+    play sound sfx_girlcry
+    "There was a girl at the center, wearing a dark sweater.{w} She is a student, and the guard recognized her as she turned towards him."
+    stop sound
+    play sound sfx_metaldrop
     "She was crying, and she dropped an object at her side.{w} The guard saw this and he was mortified."
 
     guard "What... the... hell...?{w} What have you done?!"
     unk "I won... didn't I?"
 
     "For a split second, her palms were exposed.{w} A number was carved on each of her hands. She might have severed an artery in the process."
+    scene bg hands suzumoto with dissolve
     "The numbers 2 and 7{w} etched on her left and right, respectively."
+    scene black with dissolve
     "A circle of ten candles surrounded the female student, one of which was extinguished by her left hand."
 
     unk "Mu...huhuhu..."
@@ -180,24 +257,28 @@ label ch01_01_prologue1:
 
     unk "I am so lucky. They weren’t...{w} mu...huhu...{w} fuhahahaha... HAHAHAHAHA!!! AHAHAHAHAHAHAHAHAHA!!!!!!!!!!"
 
+    play sound sfx_thud
     "The guard tackled the girl, knocking over a few candles in the process.{w} She didn’t resist, too busy attending to her own amusement. He looked up, finally getting what she meant."
     "Pinned to the wall were graduation pictures of her and nine other students, all of whom he recognized immediately.{w} They were her batch mates."
-    "While definitely not a marking, she had arranged it in a way that it formed a circle.{w} She drew the guiding lines beforehand."
+    "While definitely not a marking, she had arranged them in a way that they formed a circle.{w} She drew the guiding lines beforehand."
     "It looked like a clock, with one of the hands pointing towards the picture opposite hers."
     "But it wasn’t a clock."
 
     unk "I win... They don’t... Ehehehe... hehehehehehe..."
 
+    scene bg roulette with dissolve
     "It was the image of a roulette wheel."
     stop music fadeout 1.0
-
     return
 
 label ch01_02_prologue2:
+    scene black with fade
     "One Year Later"
     "MARCH 28, 2013 - 1900H"
+    scene bg street night with dissolve
     "Dinner was underway.{w} The northbound road of a major highway is congested with vehicles, flashing red from the view of the TV screen.{w} It was not long before a news report followed that short scene."
 
+    scene bg apartment night with dissolve
     window show
     nvl clear
     narr "{i}Sacred Heart Village, the centre of the infamous curse killings reported since June of 2012, has witnessed its tenth victim this early morning.{/i}"
@@ -205,6 +286,8 @@ label ch01_02_prologue2:
     narr "{i}According to her mother, she was about to ready her daughter for the graduation ceremony this afternoon when she found Oizumi hanging from her room’s ceiling fan.{w} Her head was laterally sliced in half.{/i}"
     narr "{i}In addition, she noticed her daughter distressed the previous evening after they had an argument regarding her college education.{w} Denied of any scholarship and support from her parents, this may have played a role in her alleged suicide.{/i}"
     narr "{i}While her mother and their neighbours deny any foul play in Oizumi’s death, authorities are investigating from that angle.{/i}"
+    scene bg tvstatic with dissolve
+    play sound sfx_static loop
     narr "{i}This is Akane Yuuichi,{w} Channel 27 News Tonite.{/i}"
 
     nvl clear
@@ -220,7 +303,8 @@ label ch01_02_prologue2:
     nvl clear
     window hide
 
-    play music bg_hazydisorientation loop
+    stop sound
+    play music bg_chloeslullaby loop
     "Those eyes, cold {i}dead{/i} eyes. She had never been the same.{w} What could the specter of death want to stop its rampage? Has it been satisfied?"
 
     unk "{i}Swing{/i}, {i}swing{/i}, {i}swing{/i}. Nevertheless, it was a foolish mistake to play with spiritual games, little girl."
@@ -240,17 +324,26 @@ label ch01_02_prologue2:
 
     unk "{i}Puku{/i}, the thoughts have reached my mind. Pu... ku..."
 
+    play sound sfx_ticktock
     "Just then, the clock at the hallway sounded to tell the house’s tenants of the time.{w} Twelve times, to be exact. One more day has begun anew."
-
+    
+    scene black with fade
     unk "{i}Time's up!{/i}"
     unk "Game over... puku."
+    play sound sfx_giggle
+    play sound sfx_giggle
     unk "Hihihihihihihi! {b}{i}*cackle*{/i}{/b} {b}{i}*cackle*{/i}{/b}"
-    stop music fadeout 1.0
+    stop music
+    call opening from _call_opening
 
     return
 
 label ch01_03_clubday:
+    scene black with fade
     "JUNE 7, 2013 - 1430H"
+    scene bg msci with dissolve
+
+    play music bg_autumnday loop fadeout 1.0
     window show
     nvl clear
     narr "Maria St. Claire Institute."
@@ -258,7 +351,7 @@ label ch01_03_clubday:
     narr "And as per tradition, it was Club and Org Day today!{w} New circle of friends to get along with or the same ones all over again. The former holds mostly true for the freshmen all of whom were guided by an authority figure."
 
     window hide
-    show sayo smileopen with Dissolve(0.2)
+    show sayo smileopen at Three2 with Dissolve(0.2)
     window show
     narr "That authority figure is Sayo Ronoroa.{w} She is the current student council president, always ready whenever her service is needed."
     narr "The one with the highest honors so far; thus, she was always looked high upon by her colleagues and her teachers.{w} She has an aura much more different than those of her peers."
@@ -267,26 +360,28 @@ label ch01_03_clubday:
     nvl clear
     window hide
 
-    show sayo smiletalk with Dissolve(0.2)
+    show sayo smiletalk at Three2 with Dissolve(0.2)
     sr5 "Would you like to join the Science Club or the Journalism Org?{w} I was a member of both once. You’ll learn a lot, I promise!"
 
     "She would flash that smile.{w} The same charming smile she gave everyone. Well, those who are not bothering her, at least.{w} It captured the hearts of the freshmen;{w} hence, they followed her suggestion."
 
-    show sayo happyclosed with Dissolve(0.2)
+    show sayo happyclosed at Three2 with Dissolve(0.2)
     sr5 "One at a time, children. Know how difficult it is to row two boats at once! {i}*giggle*{/i}"
 
-    show sayo smileopen with Dissolve(0.2)
+    show sayo smileopen at Three2 with Dissolve(0.2)
     window show
     nvl clear
 
+    scene bg school hallway with dissolve
     narr "She was always like that. After seeing the students off, she turned around her heels and headed to the council room."
     hide sayo with Dissolve(0.2)
     narr "Sayo passed by the room neighbouring the Science Club.{w} Being the \"Queen of Science,\" this is where the Mathematics Club is being held.{w} Inside were a few officers busy with their preparations."
-    narr "Like the others, they were relatively chill.{w} One of the officers, the Vice Preident, was going over the program guide a few times to check for any mistakes.{w} He snorts and fixes his glasses randomly."
+    scene bg classroom1 with dissolve
+    narr "Like the others, they were relatively chill.{w} One of the officers, the Vice President, was going over the program guide a few times to check for any mistakes.{w} He snorts and fixes his glasses randomly."
     window hide
-    show miyu confused with Dissolve(0.2)
+    show miyu confused at Three2 with Dissolve(0.2)
     window show
-    narr "Miyu Hirano,{w} a transferee student during his Sophomore years and one of the youngest in their batch.{w} He was particularly skilled at Math and one of his true passions.{w} Hence, he had been here for quite a long time."
+    narr "Miyu Hirano,{w} a transferee student during his Sophomore year and one of the youngest in their batch.{w} He was particularly skilled at Math, one of his true passions since Elementary."
     narr "A symbol of pride and excellence, he fulfills his duties as best as he could."
 
     nvl clear
@@ -307,7 +402,7 @@ label ch01_03_clubday:
 
     hide miyu with Dissolve(0.2)
     hide hikaru with Dissolve(0.2)
-    show hikaru smile with Dissolve(0.2)
+    show hikaru smile at Three2 with Dissolve(0.2)
     window show
     nvl clear
     narr "Her name is Hikaru Yamamoto, Miyu’s long-time friend and classmate.{w} She holds the position of Treasurer in their club."
@@ -318,16 +413,22 @@ label ch01_03_clubday:
     window hide
 
     hide hikaru with Dissolve(0.2)
+    stop music fadeout 1.0
     "{i}Pssst... Pssst...{/i}"
 
     "Someone was calling out from the window. It caught one of the officers’ attention and called for Miyu."
 
     show ichirou happy at LS with Dissolve(0.2)
     iy1 "You guys still busy? I want to talk for a minute or two."
+    hide ichirou with Dissolve(0.2)
 
-    show miyu smile at RS with Dissolve(0.2)
     "He put down the program guide and went out of the classroom as prompted. Miyu placed his hands in his pockets."
 
+    scene bg school hallway with dissolve
+    play music bg_theanthillganggoeswest loop fadein 1.0
+
+    show ichirou happy at LS with Dissolve(0.2)
+    show miyu smile at RS with Dissolve(0.2)
     mh8 "Ichirou, you’ve dropped by! I see you guys haven’t started yet as well.{w} What up?"
     show ichirou smile at LS with Dissolve(0.2)
     iy1 "I’ve already talked to the others about this. You coming?"
@@ -341,11 +442,12 @@ label ch01_03_clubday:
     window hide
     hide miyu with Dissolve(0.2)
     hide ichirou
-    show ichirou smile with Dissolve(0.2)
+    show ichirou smile at Three2 with Dissolve(0.2)
     window show
     narr "Speaking of, his full name is Ichirou Yokohama, the projected valedictorian of the batch.{w} He has quite a humble nature, but he drops the act once the view of his teachers leaves him."
     narr "Like Miyu, Ichirou is very skilled in Mathematics and has gone on to join a few contests even having Miyu as a teammate.{w} Still, because of the fair match in their skill level, they are considered as rivals to each other."
     narr "That doesn’t stop them from being close friends, however."
+    hide ichirou with Dissolve(0.2)
 
     nvl clear
     window hide
@@ -381,8 +483,11 @@ label ch01_03_clubday:
     "With a snap of a finger, the two parted ways and returned to their duties."
 
     hide miyu with Dissolve(0.2)
+    stop music fadeout 2.0
+    scene bg classroom1 with dissolve
 
     "JUNE 7, 2013 - 1600H"
+    play music bg_merrygo loop fadein 1.0
     window show
     nvl clear
     narr "After over an hour of club-related activities, the students went around to find their desired organization.{w} This time, the preparations were bigger and the number of choices reduced."
@@ -399,56 +504,66 @@ label ch01_03_clubday:
     nvl clear
     window hide
 
-    show sumiko serioustalk with Dissolve(0.2)
+    show sumiko serioustalk at Three2 with Dissolve(0.2)
     st3 "Settle down, everyone. We would like to begin our first meeting at EO.{w} The {b}Environmental Organization{/b}, not the eye care center."
-    show sumiko smirk with Dissolve(0.2)
+    show sumiko smirk at Three2 with Dissolve(0.2)
+    play sound sfx_applause
     "HAHAHAHAHAHAHAHA!!! Woo... WOO!!!! {b}*APPLAUSE*{/b}"
+    stop sound
     
     "Sumiko gave his opening remarks as the presiding officer and their scheduled activities followed."
     hide sumiko with Dissolve(0.2)
-    show yoshiro smile with Dissolve(0.2)
+    show yoshiro smile at Three2 with Dissolve(0.2)
+    stop music fadeout 1.0
+    play sound sfx_rubikscube loop
     "Yoshiro Suzuki, the resident puzzle geek, solved a 3x3x3 Rubik’s Cube in hand while he discussed the details of their organization."
     "Those who were listening to him were in awe, attention divided between his message and his puzzle-solving skills.{w} More than puzzles, though, he is quite a fan of riddles and whodunit mysteries."
     "That would come in handy whenever necessary."
 
     ys6 "So, to sum it up..."
     "{i}*crank*{/i} {i}*crank*{/i} {i}*crank*{/i}"
-    show yoshiro smirkclosed with Dissolve(0.2)
+    show yoshiro smirkclosed at Three2 with Dissolve(0.2)
     ys6 "What you’re in for is basically adventure, tree-planting, waste segregation, and more! What else could you ask for?"
 
-    "At that instant, his hands stopped.{w}"
+    stop sound
+    "At that instant, his hands stopped."
     "He raised both eyebrows to everyone in the room.{w} He gave the cube a spin, showing all of its sides solved and free of any imperfections. A fine work at that."
 
-    show yoshiro smirk with Dissolve(0.2)
+    show yoshiro smirk at Three2 with Dissolve(0.2)
     ys6 "Any questions?"
 
-    show yoshiro smirkclosed with Dissolve(0.2)
+    show yoshiro smirkclosed at Three2 with Dissolve(0.2)
     "No answer, as expected."
+    play sound sfx_applause
     "Besides, the audience was left in awe, giving him the same treatment as Sumiko."
     hide yoshiro with Dissolve(0.2)
-    show hiroshi bored with Dissolve(0.2)
+    stop sound
+    show hiroshi bored at Three2 with Dissolve(0.2)
     "Afterwards, the ball moved to Hiroshi Kano, the Secretary of the organization."
 
-    show hiroshi boredtalk with Dissolve(0.2)
+    show hiroshi boredtalk at Three2 with Dissolve(0.2)
     hk7 "Now that you’ve been introduced to our organization and what our goals are, let us have a short intermission."
-    show hiroshi bored with Dissolve(0.2)
+    show hiroshi bored at Three2 with Dissolve(0.2)
     hk7 "..."
-    show hiroshi happyblush with Dissolve(0.2)
+    show hiroshi happyblush at Three2 with Dissolve(0.2)
     hk7 "IIIIITTT'S... GAME TIME!!!"
+    play music bg_merrygo loop fadein 1.0
 
-    show hiroshi smile with Dissolve(0.2)
+    show hiroshi smile at Three2 with Dissolve(0.2)
     window show
     nvl clear
     narr "Hiroshi gave it his all.{w} The sourpusses became active, the monotonous room became livelier, jokes were made left and right...{w} It was all part of a package."
     narr "At the end of the intermission, the crowd pleaded for more. A pair of sly eyes responded, silent but manipulative."
     window hide
-    show hiroshi smile2 with Dissolve(0.2)
+    show hiroshi smile2 at Three2 with Dissolve(0.2)
     window show
     narr "An upright thumb shot high in the air."
     narr "The students went wild, one of them whistled merrily at Hiroshi’s approval. An impromptu intermission later for fanservice, no doubt."
 
     window hide
     hide hiroshi with Dissolve(0.2)
+    stop music fadeout 1.0
+    scene bg classroom2 with dissolve
     window show
     nvl clear
     narr "In contrast to the cheerful atmosphere of the classrooms around the school, the council’s office is different.{w} The officers held a four o’ clock meeting after the children were ushered to their desired organizations."
@@ -456,7 +571,7 @@ label ch01_03_clubday:
     narr "All eyes upon Sayo Ronoroa, the President and the head of the meeting.{w} Twelve seats in the manner of the Round Table, save for the three highest officials who were seated together: the President and her Vice,{w} and the Secretary who was taking down the minutes."
 
     window hide
-    show sayo seriousserious with Dissolve(0.2)
+    show sayo seriousserious at Three2 with Dissolve(0.2)
     window show
     nvl clear
     narr "All of them were given an equal chance to speak, addressing each of their plans and concerns for the current academic year.{w} Of course, today’s activities were also part of their agenda, considering it a success."
@@ -491,21 +606,21 @@ label ch01_03_clubday:
     narr "The bell has already rung."
     narr "Their first week of classes is over and so did the council’s meeting. Everyone tidied themselves up."
     window hide
-    show sayo seriousserious with Dissolve(0.2)
+    show sayo seriousserious at Three2 with Dissolve(0.2)
     window show
     narr "In behalf of their adviser, Sayo took charge of the adjournment."
 
     nvl clear
     window hide
 
-    show sayo smiletalk with Dissolve(0.2)
+    show sayo smiletalk at Three2 with Dissolve(0.2)
     sr5 "I would like to thank you all for being present at this meeting."
-    show sayo normaltalk with Dissolve(0.2)
+    show sayo normaltalk at Three2 with Dissolve(0.2)
     sr5 "Frankly, I expected less for all of us.{w} All of our visions align towards a single direction, but we should always keep in mind the responsibilities we have at hand."
     sr5 "We accepted this job; thus, we must know how to balance it.{w} That is all. Have a safe trip home everyone and I wish you all a pleasant Saturday."
-    show sayo normaltalkleft with Dissolve(0.2)
+    show sayo normaltalkleft at Three2 with Dissolve(0.2)
     sr5 "Watanabe, kindly remind everyone about the PTC tomorrow. I might be seeing some of you here, then."
-    show sayo smileopen with Dissolve(0.2)
+    show sayo smileopen at Three2 with Dissolve(0.2)
     sr5 "Off you go! Meeting adjourned."
 
     "Slowly, the officers got up and left the small conference room."
@@ -552,6 +667,7 @@ label ch01_03_clubday:
     hide akira with Dissolve(0.2)
     "After ensuring all appliances were turned off, they locked the council’s office behind them.{w} IV-A’s room is their direct neighbour. They only took a few steps to the west staircase, which is directly across the room."
 
+    scene bg school hallway with dissolve
     show sayo blankface at LS with Dissolve(0.2)
     show akira smile2 at RS with Dissolve(0.2)
     sr5 "And what will we do exactly when we get there?"
@@ -597,11 +713,14 @@ label ch01_03_clubday:
 label ch01_04_tenvictims:
     "JUNE 7, 2013 - 1730H"
 
+    scene bg school fields evening with fade
+    play music bg_calmertimes loop fadein 1.0
     "At the side of the auditorium near the backstage entrance sat a circle of eight."
     show ichirou proud at Eight3 with Dissolve(0.2)
     show kyou smile at Eight4 with Dissolve(0.2)
     show hiroshi bored at Eight5 with Dissolve(0.2)
     show miyu focusedpose at Eight6 with Dissolve(0.2)
+    play sound sfx_rubikscube loop
     "At the side of the auditorium near the backstage entrance sat a circle of eight.{fast} Clockwise from Ichirou were Kyou, Hiroshi, Miyu,"
     show inoue smile at Eight7 with Dissolve(0.2)
     show hikaru naughty at Eight8 with Dissolve(0.2)
@@ -648,8 +767,11 @@ label ch01_04_tenvictims:
     hide miyu with Dissolve(0.2)
     hide inoue with Dissolve(0.2)
     hide sumiko with Dissolve(0.2)
+    stop sound
+    play sound sfx_footsteps2 loop
     "After the second one-minute solve by Yoshiro, footsteps –{w} a pair sounded from behind Miyu’s side.{w} Looking up, Ichirou and Hiroshi acknowledged the tenth participant."
 
+    stop sound
     show akira happy at LS with Dissolve(0.2)
     show sayo happyclosed at RS with Dissolve(0.2)
     sr5 "Hey, everyone!"
@@ -683,6 +805,8 @@ label ch01_04_tenvictims:
     show sayo smiletalk at RS with Dissolve(0.2)
     sr5 "I feel the same. I was about to go home until Akira told me about it.{w} A one in a thousand chance, so why not? I might as well squeeze in some fun time while I’m at it."
 
+    stop music fadeout 1.0
+    play music bg_merrygo loop fadein 1.0
     "The conversation was cut short by Sumiko, who was already dealing cards to the players - five a hand, as per usual rules.{w} He placed the deck in the middle and dealt a card as a start."
     hide ichirou with Dissolve(0.2)
     hide sayo with Dissolve(0.2)
@@ -697,7 +821,7 @@ label ch01_04_tenvictims:
     nvl clear
     narr "To further add strategy and suspense to the game, there are special cards available.{w} When a player drops one of these, the next player has to drop a card with the specified color."
     narr "First are the {i}Wild Cards{/i}.{w} It can follow any card dropped by a player;{w} anyone who drops one specifies the next color to drop."
-    narr "Second are the {i}Draw Cards{/i} which add cards to the next player’s hand.{w} Two types: the {i}+2 cards{/i}, which are colored and can be stacked;{w} the {i}+4 cards{/i}, also stackable but is also a {i}Draw Card{/i} hybrid.{w} These cards cannot be mixed in subsequent moves."
+    narr "Second are the {i}Draw Cards{/i} which add cards to the next player’s hand.{w} Two types: the {i}+2 cards{/i}, which are colored and can be stacked;{w} the {i}+4 cards{/i}, also stackable but is also a {i}Wild Card{/i} hybrid.{w} These cards cannot be mixed in subsequent moves."
     narr "Third are the {i}Turn Manipulation Cards{/i}, a collective category containing the {i}Reverse{/i} and {i}Skip Turn{/i} cards. The former does exactly as its name, the latter skips the next player’s turn."
 
     nvl clear
@@ -718,8 +842,11 @@ label ch01_04_tenvictims:
     hide inoue with Dissolve(0.2)
     hide miyu with Dissolve(0.2)
 
-    call ch01_04A_uno # To Be Added
+    #call ch01_04A_uno # To Be Added
 
+    stop music fadeout 1.0
+    play music bg_porchswingdays loop fadein 1.0
+    scene bg school fields evening with fade
     window show
     nvl clear
     narr "It is a little before six o’ clock, with the sun setting down. Its beautiful colors of red and orange reflected all over the open field.{w} While not a reflection, these colors are on everybody’s arms as well."
@@ -764,6 +891,7 @@ label ch01_04_tenvictims:
     hide hikaru with Dissolve(0.2)
     "A quarter of an hour passed."
     show sayo worried at Eight7 with Dissolve(0.2)
+    stop music
     "A quarter of an hour passed.{fast} Sayo fumbled through her backpack, long enough for someone to take notice."
 
     show sumiko surprisedtalk at Eight1 with Dissolve(0.2)
@@ -833,6 +961,7 @@ label ch01_04_tenvictims:
     sr5 "Frankly, I wouldn’t touch the latter, but I guess they’d make a good topic."
 
     "From her backpack, Sayo took out a small notepad."
+    play sound sfx_pageturn
     "She opened it to a page containing bullet points of the theories she researched.{w} She recited each point, not yet filtering the factual from the trivial."
     hide inoue with Dissolve(0.2)
     hide kyou with Dissolve(0.2)
@@ -944,9 +1073,13 @@ label ch01_04_tenvictims:
     "Miyu emerged from the door, a small book under his left arm.{w} He approached Sayo and gave it to her."
     hide inoue with Dissolve(0.2)
     hide hikaru with Dissolve(0.2)
-    show sayo happytalkblush at RS with Dissolve(0.2)
+    show sayo happytalk at RS with Dissolve(0.2)
     show miyu smile at LS with Dissolve(0.2)
-    "With a smile on her face, she scanned the pages for any missing sheets.{w} They were all complete."
+    play sound sfx_pageturn loop
+    "With a smile on her face, she scanned the pages for any missing sheets."
+    stop sound
+    show sayo happytalkblush at RS with Dissolve(0.2)
+    "With a smile on her face, she scanned the pages for any missing sheets.{fast} They were all complete."
 
     sr5 "Oh, Miyu.{w} Thank you! Thank you! Thank you!"
     show miyu naughty smile at LS with Dissolve(0.2)
@@ -987,6 +1120,8 @@ label ch01_04_tenvictims:
     hide sayo with Dissolve(0.2)
     hide ichirou with Dissolve(0.2)
 
+    scene bg school gate evening with dissolve
+    play sound sfx_wind loop
     "Exactly when the group tidied up, the guard motioned them to leave.{w} The sun was nowhere in sight, coloring the sky a dark shade of blue.{w} A few casual conversations were made along the way."
     show inoue worried at RS with Dissolve(0.2)
     show sayo smileopen at LS with Dissolve(0.2)    
@@ -1006,7 +1141,7 @@ label ch01_04_tenvictims:
     show inoue sighclosed at RS with Dissolve(0.2)
     is4 "Both.{w} I’ve thought about it, compared the two events, and I seem to have found a link.{w} What if –"
     show sayo upset at LS with Dissolve(0.2)
-    sr5 "I get it.{w} That’s why you counted how many we were earlier, isn't it?{w} It’s not going to happen, I assure you. A majority of us have already agreed on that."
+    sr5 "I get it.{w} That’s why you counted how many we were earlier, didn't you?{w} It’s not going to happen, I assure you. A majority of us have already agreed on that."
     show inoue sighclosed at RS with Dissolve(0.2)
     is4 "Alright, but I just want my curiosities cleared.{w} I need someone rational enough to delve deeper into the subject.{w} That’s why I came to you."
     show sayo normaltalkleft at LS with Dissolve(0.2)
@@ -1017,6 +1152,7 @@ label ch01_04_tenvictims:
     sr5 "Get a good night’s sleep, Inoue - chase away whatever hex is lingering in your brain.{fast} Besides, we have two days to unwind."
     show inoue dullsurprise at RS with Dissolve(0.2)
     is4 "I suppose you’re right.{w} I probably should stop thinking about it..."
+    stop sound
     "They were nearly overtaken by the group of Sumiko, Akira, Yoshiro, and Miyu."
     "What interest is there, indeed?"
     hide inoue with Dissolve(0.2)
@@ -1028,13 +1164,19 @@ label ch01_04A_uno:
     return
 
 label ch01_05_sacredheart:
+    scene black with fade
     "JUNE 13, 2013 - 1900H"
+    scene bg street rain with fade
+    play sound sfx_rain
     window show
     nvl clear
     narr "Thursday night."
     narr "A peaceful night almost devoid of sound, save for the light tapping made by the raindrops - not enough to suspend classes the following day."
+    scene bg diningroom with dissolve
     narr "And cutlery! They accompanied the aroma of the sumptuous meal that the Shinozakis enjoyed.{w} Elegant candelabra in the middle to match the aesthetics.{w} It had class, though they were not that wealthy at all."
     narr "Dinner talk was the usual: how did school go, what trips and appointments to attend to at work and where to go for the weekend – ordinary family matters.{w} Once they had their fill, they tidied themselves up, as no maid is in their employ."
+    scene bg livingroom with dissolve
+    stop sound
     window hide
     show inoue casual smile at RS with Dissolve(0.2)
     window show
@@ -1043,7 +1185,9 @@ label ch01_05_sacredheart:
     nvl clear
     window hide
 
+    play sound sfx_phonering
     "{b}*RING* *RING*{/b}"
+    stop sound
 
     show inoue casual confused at RS with Dissolve(0.2)
     "Who could be calling us tonight? I am expecting nobody.{w} Probably for big brother again... not my business."
@@ -1096,7 +1240,7 @@ label ch01_05_sacredheart:
 
     show inoue casual serioustalk2 at RS with Dissolve(0.2)
     is4 "If not direct assault, then the drill must be faulty or rigged."
-    sr5 "Correct. Bad luck on his part.{w} With the previous deaths occurring, those who witnessed it saw it a part of the Curse Killings, dismissing any rational explanation.{w} Home Economics classes were suspended for a month to make room for investigations."
+    sr5 "Correct. Bad luck on her part.{w} With the previous deaths occurring, those who witnessed it saw it a part of the Curse Killings, dismissing any rational explanation.{w} Home Economics classes were suspended for a month to make room for investigations."
     sr5 "They had one suspect, Rika Suzumiya, whose fingerprints were found on the drill.{w} She and Shibuya shared a long-time argument regarding a botched group project, even taking it personally."
     sr5 "However, she was proven innocent by reliable witness statements.{w} Another dead end was created."
     show inoue casual serioustalk3 at RS with Dissolve(0.2)
@@ -1135,7 +1279,9 @@ label ch01_05_sacredheart:
     sr5 "Hmph. Lame.{w} I have {i}better{/i} ideas."
     show inoue casual serioustalk2 at RS with Dissolve(0.2)
     is4 "Excuse me?"
-    sr5 "That reminds me. There is one other detail I nearly forgot to bring up –{w} the story of Ikari Suzumoto."
+    sr5 "That reminds me. There is one other detail I nearly forgot to bring up –"
+    play music bg_vulcan loop
+    sr5 "That reminds me. There is one other detail I nearly forgot to bring up –{fast} the story of Ikari Suzumoto."
 
     show inoue casual troubled at RS with Dissolve(0.2)
     "My attention was replenished and I changed my seating position.{w} I might as well catch another outburst from her."
@@ -1153,6 +1299,7 @@ label ch01_05_sacredheart:
     show inoue casual serioustalk at RS with Dissolve(0.2)
     is4 "You must be joking. The absence of evidence does not imply the work of demonic forces!{w} It is clear that the law has simply given up!{w} Such a gullible superstitious society we live in..."
     sr5 "{i}*sigh*{/i}"
+    stop music fadeout 2.0
 
     show inoue casual troubled at RS with Dissolve(0.2)
     "I might have offended Sayo.{w} I haven't even thanked her for her efforts.{w} Best option is to lower my pride and {i}listen{/i}."
@@ -1181,16 +1328,21 @@ label ch01_05_sacredheart:
     sr5 "Try not to think about it that much. You have other problems to worry about.{w} Do keep in mind tonight’s discussion, though. There are a lot to ponder upon."
 
     hide inoue with Dissolve(0.2)
+    play sound sfx_ticktock
     window show
     nvl clear
     narr "The next last minute was spent exchanging farewells.{w} After hanging up, I am free to do whatever I wish.{w} What I need is a bed to fall upon."
     narr "I went upstairs, still thinking about it{w} – no, I shouldn’t let it bother me.{w} You’ve got things to do, Inoue. Focus.{w}"
     narr "Another hour passed{w} and I drifted off to sleep."
 
+    scene black with fade
+    play voice sfx_rain
     nvl clear
     narr "The clock chimed nine times."
     narr "The sounds of {i}pitter{/i} {i}patter{/i} were still there, albeit more audible.{w} From the outside, Inoue’s face looked peaceful.{w} Internally, it’s a different story."
     narr "The chiming of the clock{w} – its pattern so hypnotizing it resonated a subconscious voice,{w} that of Sayo."
+    stop sound
+    stop voice
 
     nvl clear
     window hide
@@ -1199,13 +1351,21 @@ label ch01_05_sacredheart:
     sr5 "The first star I see tonight..."
     sr5 "I wish I may, I wish I might,"
     sr5 "Have the wish I wish tonight!"
-    sr5 "Sleep tight, Inoue-chan.{w} Ehehehehehehehehe... {i}*giggle* *giggle*{/i}"
+    sr5 "Sleep tight, Inoue-chan."
+    play sound sfx_giggle
+    sr5 "Sleep tight, Inoue-chan.{fast} Ehehehehehehehehe... {i}*giggle* *giggle*{/i}"
 
+    play sound sfx_hangup
     "{b}{i}*beep* *beep* *beep*{/i}{/b}"
+    stop sound
     return
 
 label ch01_06_kyou:
+    scene black with fade
     "JUNE 14, 2013 - 1140H"
+    scene bg school outside with fade
+    play music bg_twotogether loop fadein 1.0
+
     window show
     nvl clear
     narr "Lunch time."
@@ -1213,6 +1373,7 @@ label ch01_06_kyou:
     narr "The space around the campus is vast.{w} Maria St. Claire, being a single building,{w} has an open grassfield and trees overshadowing the walkways.{w} In fact, they constitute more than three-quarters of the total space!"
     narr "It offers a conducive environment for anything, barely having litter in sight.{w} The school is also the spearhead in keeping its surroundings healthy, what with its own organization dedicated to that task."
 
+    scene bg msci with dissolve
     window hide
     show kyou smile at Three3 with Dissolve(0.2)
     show sumiko surprisedtalk at Three2 with Dissolve(0.2)
@@ -1221,6 +1382,7 @@ label ch01_06_kyou:
     narr "Plate in hand, Kyou Kirisaki traveled back to his classroom, IV-A,{w} whilst having a chat with Sumiko, a IV-C student."
     window hide
     hide sumiko with Dissolve(0.2)
+    scene bg classroom1 with dissolve
     show kyou smile at LS with Dissolve(0.2)
     window show
     narr "He sat at the third-row aisle, letting his eyes wander as he ate.{w} And he laid his eyes upon the front row."
@@ -1233,6 +1395,7 @@ label ch01_06_kyou:
     nvl clear
     window hide
 
+    stop music fadeout 1.0
     show kyou calmleft at Three2 with Dissolve(0.2)
     kk9 "\"Anxiety in the heart causes burden,{w} but kind words cheer it up.\"{w} - Proverbs 12:25."
 
@@ -1261,6 +1424,7 @@ label ch01_06_kyou:
 
     show kyou serious smileclosedpose at Three2 with Dissolve(0.2)
     kk9 "Tell me about it, Inoue.{w} You’ve looked it up. I mean,{w} the \"Sacred Heart Curse Killings,\" were they?"
+    play music bg_undaunted loop fadein 1.0
     show inoue serioustalk2 at RS with Dissolve(0.2)
     is4 "You know of it?{w} Who told you?!"
     show kyou serious smilepose at Three2 with Dissolve(0.2)
@@ -1318,7 +1482,7 @@ label ch01_06_kyou:
     show inoue serioustalk2 at RS with Dissolve(0.2)
     is4 "Mistaken?{fast} It is too convoluted!{w} There is only so much for me to comprehend."
     show kyou surprisedleft at Three2 with Dissolve(0.2)
-    kk9 "If that’s so, let’s untwist the facts slowly.{w} First, how did you distinguish those that were accidents rather than murders?"
+    kk9 "If that’s so, let’s untwist the facts slowly.{w} First, how did you distinguish those that were accidents from those that were actual murders?"
     show inoue serious at RS with Dissolve(0.2)
     is4 "The nature of the deaths themselves."
     show kyou surprisedtalk at Three2 with Dissolve(0.2)
@@ -1331,6 +1495,7 @@ label ch01_06_kyou:
     show inoue surprised at RS with Dissolve(0.2)
     "Her eyes widened in genuine surprise.{w} Inoue contemplated upon herself whether her version is correct."
 
+    stop music fadeout 1.0
     is4 "Kirisaki, are trying to insinuate{w} foul play?"
     show kyou confused at Three2 with Dissolve(0.2)
     kk9 "Unless you meant the waters killed her, but that would be a morbid personification.{w} If not, then the scores are even.{w} That disproves the idea of an accident."
@@ -1356,9 +1521,9 @@ label ch01_06_kyou:
     show inoue seriousleft at RS with Dissolve(0.2)
     is4 "Darn! My meal’s gone cold, but that’s fine.{w} Luckily, my seatmates aren’t here yet."
     show inoue talk at RS with Dissolve(0.2)
-    is4 "Darn! My meal’s gone cold, but that’s fine.{w} Luckily, my seatmates aren’t here yet.{fast} About my last point..."
+    is4 "Darn! My meal’s gone cold, but that’s fine.{w} Luckily, my seatmates aren’t here yet.{fast} Now, about my last point..."
     show kyou happy at Three2 with Dissolve(0.2)
-    kk9 "Ah, yes! It almost slipped my mind.{w} It was my concern anyway, so please continue."
+    kk9 "Ah, yes! It almost slipped off my mind.{w} It was my concern anyway, so please continue."
 
     show kyou smile at Three2 with Dissolve(0.2)
     window show
@@ -1376,16 +1541,22 @@ label ch01_06_kyou:
     return
 
 label ch01_07_countdown:
+    scene black with fade
     "JUNE 15, 2013 - 2300H"
+    scene bg ministryroom with fade
+    play sound sfx_footsteps2 loop
+
     window show
     nvl clear
     narr "Pairs of feet shuffled across the function room.{w} Though busy, the Youth Group members eased themselves through friendly chatter.{w} A six-hour prayer vigil is scheduled at midnight."
     narr "The front-right door creaked, letting in a small figure with spectacles."
     window hide
     show sayo casual glass smile at Three2 with Dissolve(0.2)
+    play music bg_twotogether loop
     window show
-    narr "The front-right door creaked, letting in a small figure with spectacles.{fast} Sayo Ronoroa approached the chancel, greeted her church mates, and placed the music book on the stand."
+    narr "Sayo Ronoroa approached the chancel, greeted her church mates, and placed the music book on the stand."
     narr "She opened it a few pages from the middle.{w} Satisfied, she went over to the other members to help."
+    stop sound
 
     nvl clear
     narr "The banner, already set in front of the room, proclaims -"
@@ -1397,7 +1568,7 @@ label ch01_07_countdown:
     window hide
     show sayo casual glass smileclosed at RS with Dissolve(0.2)
     window show
-    narr "The conception of the highest seat during the last gathering{w} and this night for the school year’s blessing!{w} How fortunate it is to have been a member of this Youth Group."
+    narr "The conception of the highest seat during the last gathering{w} and the blessing of the school year for tonight!{w} How fortunate it is to have been a member of this Youth Group."
 
     window hide
     show ikuko casual smirk at LS with Dissolve(0.2)
@@ -1431,6 +1602,7 @@ label ch01_07_countdown:
 
     nvl clear
     window hide
+    stop music
 
     show sayo casual glass seriousleft at RS with Dissolve(0.2)
     sr5 "Here’s what I make of this{w} – the truth of human nature.{w} To make an effort in concealing what’s underneath is a natural process; it persists against all effort."
@@ -1460,8 +1632,11 @@ label ch01_07_countdown:
     "Their smile drew a mutual air of satisfaction.{w} What could possibly make the night more interesting?"
     hide ikuko with Dissolve(0.2)
     hide sayo with Dissolve(0.2)
+    scene black with fade
 
     "Earlier This Evening..."
+    scene bg bedroom with fade
+    play sound sfx_ticktock loop
     window show
     nvl clear
     show ichirou smile at LS with Dissolve(0.2)
@@ -1484,7 +1659,9 @@ label ch01_07_countdown:
     narr "Akira commented on the post, volunteering to bump it the following day.{w} Sumiko liked this idea."
     narr "As if he would buy it, that is."
     hide sumiko with Dissolve(0.2)
+    stop sound
 
+    play sound sfx_beep
     nvl clear
     narr "{b}*BEEP* *BEEP* *BEEP*{/b}"
     narr "The thermometer read 39.0C."
@@ -1495,25 +1672,30 @@ label ch01_07_countdown:
     narr "Presently, Inoue relaxed her mind;{w} her body comfortably snuggled under the fluffy blankets.{w} Any signs of worry might worsen her condition."
     hide inoue with Dissolve(0.2)
 
+    play sound sfx_ticktock loop
     nvl clear
     show yoshiro serious at RS with Dissolve(0.2)
-    narr "Yoshiro decided to look up the Sacred Heart tragedy, finding its \"cursed\" label intriguing.{w} It was, as he thought, as grounded as possible{w} – yet inhuman."
-    narr "He remembered the upperclassman’s story and tried to establish a connection.{w} Zero,{w} apart from the latter’s residency similar to that of the victims."
+    narr "Yoshiro decided to look up the Sacred Heart tragedy, finding its \"cursed\" label intriguing.{w} It was, as he thought, as grounded as possible{w} – yet the actions inhuman."
+    narr "He remembered the upperclassman’s story and tried to establish a connection.{w} Zero,{w} apart from the latter’s residency being similar to that of the victims."
     show yoshiro serious2 at RS with Dissolve(0.2)
     narr "Just then, questions came to him."
     narr "What if the \"catalyst\" perceived an omen?{w} It made no sense even as an aversion – an inverse example – yet...{w} if it was actually delayed, then..."
     hide yoshiro with Dissolve(0.2)
 
+    stop sound
+    play sound sfx_pageturn
     nvl clear
     show hiroshi worried at LS with Dissolve(0.2)
     narr "Hiroshi placed {i}The Battle of the Labyrinth{/i} down after the last chapter.{w} It had him thinking, given the nature of the book.{w} Its theme blended too well with their topic, triggering some thoughts within him as he read."
     show hiroshi worriedleft at LS with Dissolve(0.2)
-    narr "In the darkness, he laid in silence tuning his mind the same as Yoshiro's is.{w} He considered the possibility of having Suzumoto as a suspect."
+    play sound sfx_ticktock loop
+    narr "In the darkness, he laid in silence tuning his mind in the same way Yoshiro's is.{w} He considered the possibility of having Suzumoto as a suspect."
     show hiroshi determined at LS with Dissolve(0.2)
     narr "He laughed at himself, aware of the idea’s absurdity."
     narr "Suppose it happens again?{w} That is a haunting thought, but it better be fairer than the last.{w} Best case if it doesn’t.{w} Ever."
     hide hiroshi with Dissolve(0.2)
 
+    play sound sfx_ticktock loop
     nvl clear
     show hikaru smile at LS with Dissolve(0.2)
     narr "There was nothing different about Hikaru, spending the weekend on her laptop as usual.{w} She was streaming shows from the US, indulging herself as much as she wished."
@@ -1529,7 +1711,7 @@ label ch01_07_countdown:
 
     nvl clear
     narr "There were things out of place, such as Sayo’s behavior during the phone call.{w} He only has Inoue’s word for it, and she could be making it up.{w} But it was genuine – nobody would dare lie to him; he abhors those."
-    narr "But words alone wouldn’t cause an ailment{w} – or rather..."
+    narr "Words alone would not cause an ailment{w} – or rather..."
     show kyou serious2 at RS with Dissolve(0.2)
     narr "At times like this, he would do some soul-searching to quell himself.{w} He picked up his Bible and began meditating on a few verses."
     narr "Afterwards, he opened his Daily Bread and marked the entry for June 15.{w} He scanned the next entry for June 16, {i}Strength of a Man{/i}, and reflected upon himself."
@@ -1540,9 +1722,13 @@ label ch01_07_countdown:
     show kyou serious smile2 at RS with Dissolve(0.2)
     kk9 "Quite fitting.{w} {i}*sigh*{/i} I’ll save this for tomorrow evening."
     hide kyou with Dissolve(0.2)
+    stop sound
 
+    scene bg ministryroom with dissolve
+    play sound sfx_handbell
     "{b}{i}*RING* *DING* *RING* *DING*{/i}{/b}"
 
+    play sound sfx_roulette loop
     window show
     nvl clear
     narr "The oft familiar tune called everyone’s attention, all fifteen of them."
@@ -1557,7 +1743,10 @@ label ch01_07_countdown:
     show ikuko casual smirk at RS with Dissolve(0.2)
     narr "Ikuko glanced at her friend, twinkled, and began the vigil."
     hide ikuko with Dissolve(0.2)
+    stop sound
+    play sound sfx_clockbell
     narr "By the twelfth strike, the Youth Group members performed the opening hymn.{w} No hiccups and all went smooth from there.{w} Everything went as planned."
+    play sound sfx_revolver
     narr "Brilliantly executed – one should say."
 
     nvl clear
@@ -1565,12 +1754,16 @@ label ch01_07_countdown:
     return
 
 label ch01_08_disappearance:
+    scene black with fade
     "JUNE 18, 2013 - 1130H"
+    scene bg classroom2 with fade
+
     window show
     nvl clear
     narr "Class IV-C was livelier than usual.{w} Topics about the social dance activity buzzed around the students - who looked handsome and lovely, who made the most graceful steps, and whatnot.{w} Some were even considering their prom dates this early."
     narr "There are a few exceptions, such as Sumiko and Akira."
     window hide
+    scene bg classroom1 with fade
     show akira proud at Eight2 with Dissolve(0.2)
     show sumiko serious at Eight3 with Dissolve(0.2)
     show ichirou worried at Eight7 with Dissolve(0.2)
@@ -1612,12 +1805,14 @@ label ch01_08_disappearance:
     show miyu naughty smile at Eight5 with Dissolve(0.2)
     narr "Miyu returned not a minute after Ichirou left, sitting one row ahead of the two."
     hide miyu with Dissolve(0.2)
+    scene bg msci with dissolve
     narr "At exactly noon, Sayo passed by IV-C."
     show sayo worried at Eight8 with Dissolve(0.2)
     narr "It was an unusual sight –{w} the bubbly girl worried about something this early in the year.{w} Her face evidenced her anxiety, but her gait remained the same."
     window hide
     show sayo worriedtalkclosed at Eight8 with Dissolve(0.2)
     hide sayo with Dissolve(1.0)
+    scene bg classroom1 with dissolve
     window show
     narr "When she was no longer in sight, Akira shook his head in sympathy."
 
@@ -1646,9 +1841,11 @@ label ch01_08_disappearance:
     hide akira with Dissolve(0.2)
     hide sumiko with Dissolve(0.2)
 
+    scene black with fade
     window show
     nvl clear
     narr "{i}The subscriber cannot be reached. Please try again later.{/i}"
+    scene bg school hallway with fade
     show sayo worried at LS with Dissolve(0.2)
     narr "The same robotic voice returned my call for the third time.{w} I tried to reach Inoue since morning, hoping to check on her, but without luck."
     narr "That alone was unusual{w} – she never misses calls twice or even thrice during weekdays.{w} I knew that since we were freshmen.{w} If today was Sunday, that’ll be alright."
@@ -1656,6 +1853,8 @@ label ch01_08_disappearance:
     hide sayo with Dissolve(0.2)
 
     nvl clear
+    scene bg facultyroom with dissolve
+    play sound sfx_dooropen
     narr "I opened the door to the faculty room and looked around.{w} There’s Mrs. Genkai chatting with Ms. Harada."
     narr "Perfect.{w} I’ll hand these to Mrs. Genkai before I ask Ms. Harada about the two."
     show sayo smileopen at Three2 with Dissolve(0.2)
@@ -1690,8 +1889,9 @@ label ch01_08_disappearance:
     "There was silence.{w} I sensed the confusion from the other end."
 
     ms_shi "That’s not possible. I saw her off this morning at quarter to six.{w} She didn’t go off anywhere, did she?!"
-    t_har "I refuse to believe that.{w} Unless I'm mistaken, we never saw her this morning.{w} Being in my advisory class, I never forget a student – {i}especially{/i} our class president."
+    t_har "I refuse to believe that.{w} Unless I'm mistaken, I never saw her this morning - none of her classmates did.{w} Being in my advisory class, I never forget a student – {i}especially{/i} our class president."
 
+    play sound sfx_waterdrip loop
     show sayo worriedtalk at Three2 with Dissolve(0.2)
     "What?! How is that...?{w} A crack in Mrs. Shinozaki's voice... and in disbelief.{w} There must be a mistake!"
 
@@ -1701,26 +1901,32 @@ label ch01_08_disappearance:
     narr "As Ms. Harada tried to calm Inoue’s mother down, I settled down to think.{w} However, the shock I received clouded my thoughts.{w} I wanted to cry, but I retained my resolve."
     narr "Who would want to see the head of the student body cry? That'll shatter the morale of people."
 
+    stop sound
     nvl clear
     show sayo worried at Three2 with Dissolve(0.2)
-    narr "Ms. Harada gave instructions to file a missing person report immediately in case of kidnapping.{w} Then, she cut the line."
-    narr "Seeing her distressed from the facts, I offered my seat and gave her a glass of water."
+    narr "Ms. Harada gave her instructions to file a missing person report immediately in case of kidnapping.{w} Then, she cut the line."
+    narr "Seeing her distressed from the call, I offered my seat and a glass of water."
     narr "My fears worsened. I even considered alerting the student body to prevent a future case.{w} However, with no knowledge of Inoue’s condition, I refused to take action.{w} It was rash."
     narr "Mrs. Genkai kept a level head throughout the whole affair, agreeing to keep it among the three of us.{w} No other faculty member was in proximity."
 
+    scene bg school hallway with dissolve
     nvl clear
     narr "I left the faculty room, requesting to keep in touch with Ms. Harada for any updates.{w} I last saw her feebly picking up her smart phone and dialing another number, most likely the Kirisakis."
     show sayo worriedtalkclosed at Three2 with Dissolve(0.2)
     narr "I felt sorry but I have to zip my mouth."
     narr "What interest is there, I suppose?{w} Announcing it publicly would cause discord and panic."
     hide sayo with Dissolve(0.2)
+    scene bg classroom2 with dissolve
     narr "I returned to IV-E, avoiding to speak to anyone.{w} I needed to think, and take my mind off it."
 
     nvl clear
     narr "Ten minutes before the fifth period, a murmur emanated from outside.{w} Normally, a few of my classmates would check it out only to dismiss it immediately.{w} I paid it no attention."
+    play sound sfx_ambulance1 loop
     narr "This time, more and more people went out.{w} I glanced at the window, noticing a crowd forming from even the other classes.{w} I recognized that sound."
     play music bg_undaunted loop fadein 1.0
     narr "An ambulance!"
+    scene bg school outside with dissolve
+    play sound sfx_ambulance2 loop
     narr "I joined the crowd and saw the source personally.{w} Sprinting towards it, I saw the patient being taken away.{w} Mrs. Genkai stood at the walkway, wiping her sweat. She looked pale."
 
     nvl clear
@@ -1734,23 +1940,26 @@ label ch01_08_disappearance:
     t_gen "Correct.{w} The patient is Ishii-san.{w} She called Kirisaki’s residence immediately after you left.{w} He was the other student absent from her class, if I recall."
 
     show sayo seriousnormal at Three3 with Dissolve(0.2)
+    stop sound
+    stop music fadeout 1.0
     "Oh no. Tell me the worst."
 
     t_gen "Before she blacked out, I heard the following over the line, though it wasn’t in loudspeaker,"
     t_gen "\"{i}Don’t tell me my son is missing!{i}\""
     hide sayo with Dissolve(0.2)
-    stop music fadeout 1.0
+    scene black with fade
 
     "JUNE 18, 2013 - 1650H"
     window show
     nvl clear
     narr "{i}Attention to all students.{w} Please remain at your homerooms for the next half hour. Your advisers have an urgent matter to discuss with you.{w} Class IV-A, your co-adviser shall meet you in behalf of Ms. Harada.{w} Thank you for your cooperation.{/i}"
-    narr "The impromptu announcement caused an air of concern among the students.{w} While some of the underclassmen were already dismissed an hour ago, the rest were forbidden from leaving."
+    narr "The impromptu announcement stirred an air of concern among the students.{w} While some of the underclassmen were already dismissed an hour ago, the rest were forbidden from leaving."
     narr "They all saw it{w} – the image of Ms. Harada out cold on the gurney.{w} A few sulked, with some others discussing.{w} Exactly what happened? Why are they being detained?"
 
     nvl clear
     window hide
 
+    scene bg classroom1 with fade
     show sumiko serious at RS with Dissolve(0.2)
     "Mrs. Ren Kanako entered IV-C, settling down immediately.{w} Sumiko took second-charge in handling the class."
 
@@ -1759,6 +1968,7 @@ label ch01_08_disappearance:
 
     "Audible sighs of relief were heard, yet they were not satisfied.{w} The teacher proceeded with the announcement, almost cut short by an uproar in the neighboring class."
 
+    play music bg_hazydisorientation loop
     t_kan "You heard IV-B –{w} this is no pleasant news.{w} Two of your batch mates from IV-A, Inoue Shinozaki and Kyou Kirisaki...{w} they disappeared this morning."
 
     window show
@@ -1786,7 +1996,7 @@ label ch01_08_disappearance:
     show miyu bored at Eight3 with Dissolve(0.2)
     mh8 "Madame, we may just have enough information mostly from you."
     show miyu focusedpose at Eight3 with Dissolve(0.2)
-    mh8 "From what I can surmise, while they may have been abducted between five to six in the morning,{w} I believe the two instances are {i}not{/i} related in any way."
+    mh8 "From what I can surmise, while they may have been abducted between five to six in the morning,{w} I believe the two incidences are {i}not{/i} related in any way."
     "\"WHAT?!\" {b}*GASP*{/b} \"What is he talking about?\""
     t_kan "Please clarify. I did not catch the last bit."
     show miyu naughty focuspose at Eight3 with Dissolve(0.2)
@@ -1799,7 +2009,7 @@ label ch01_08_disappearance:
     show hikaru angry at Eight1 with Dissolve(0.2)
     hy10 "Excuse me, madame. If I may,{w} I was temporarily given the second spare key as I needed to arrive at 5:30 for the dance activity preparations.{w} I never saw anyone else inside, up until Akira arrived."
     show hikaru serious at Eight1 with Dissolve(0.2)
-    hy10 "I never saw Miyu."
+    hy10 "Meaning, I never saw Miyu."
     show miyu naughty smirkpose at Eight3 with Dissolve(0.2)
     mh8 "You didn't.{w} I was in the bathroom at the time.{w} When you've got to go, you have to. {i}*giggle*{/i}"
     show hikaru focusright at Eight1 with Dissolve(0.5)
@@ -1816,7 +2026,8 @@ label ch01_08_disappearance:
     
     nvl clear
     narr "Rather than intensify the situation, nobody chose to speak further.{w} Instead, Mrs. Kanako arranged for a few changes in their activities.{w} She informed them of the stricter curfew time,{w} from 6:30 to 6:00."
-    narr "After forty minutes, the meeting adjourned.{w} She ensured that the students empty the classroom, save for the day’s cleaners.{w} When they were nearly done, she gave her final instructions to Sumiko."
+    stop music
+    narr "After forty minutes, the meeting adjourned.{w} She ensured that the students emptied the classroom, leaving no one inside save for the day’s cleaners.{w} When they were nearly done, she gave her final instructions to Sumiko."
 
     nvl clear
     window hide
@@ -1825,41 +2036,56 @@ label ch01_08_disappearance:
     t_kan "Sumiko, see to it that none of your classmates go astray.{w} I plead you, we shun another case!{w} Please relay my words to the rest."
     t_kan "I’ll leave the rest to you."
     show sumiko serioustalk at LS with Dissolve(0.2)
-    st3 "Understood{w} Keep safe, madame."
+    st3 "Understood.{w} Keep safe, madame and have a pleasant evening."
     hide sumiko with Dissolve(0.2)
+    play sound sfx_doorknob
 
+    scene bg msci evening with fade
     "As the teacher faded from his view, so did the sun.{w} It bore witness to the day’s events – times of order and confusion{w} – similar events repeating themselves too often they can be glossed over safely."
     "And curiosity?{w} What interest is there, indeed?{w} Hence, no further mention is necessary."
     return
 
 label ch01_09_labkyou1:
+    scene black with fade
+    play sound sfx_wind loop
     "JUNE 18, 2013 - Time Unknown"
+    scene bg freedompark night with fade
     show kyou calmleft at RS with Dissolve(0.2)
     window show
     nvl clear
-    narr "I’ve never arrived this early at the city square.{w} The moon and incandescent lamps as light sources, my brother and I walked across to the wet market.{w} He needed report materials; so did I,{w} but for a different reason."
+    narr "I’ve never arrived this early at the city square.{w} The moon and incandescent lamps as light sources, my brother and I walked across to the wet market.{w} He needed report materials; I went for a different reason."
     narr "I brought the class’s materials in advance yesterday,{w} but the Creatives Committee ran short late at night, our progress barely satisfactory.{w} As the earliest to arrive, I volunteered myself."
+    hide kyou with Dissolve(0.2)
+    scene bg wetmarket night with dissolve
     show kyou smile at RS with Dissolve(0.2)
     narr "Our head told me that the market stalls would be open as early as five.{w} My brother insisted on coming along; I accepted, since we always went to school together."
     show kyou surprisedleft2 at RS with Dissolve(0.2)
     narr "Along the way, we ran into a vagrant sniffing from a plastic bag.{w} With God watching us, no harm may befall us."
     hide kyou with Dissolve(0.2)
+    scene bg freedompark night with dissolve
     narr "We exited the market, the sun peering out a bit.{w} The square slightly increased its population, mostly students and employees."
     
     nvl clear
+    scene bg school gate morning with dissolve
     show kyou happy at LS with Dissolve(0.2)
     narr "We wished Onifuchi-san, the gate guard, a blessed day as usual.{w} The same went for the other guard at the front desk."
+    scene bg msci night with dissolve
     show kyou smirk at Three2 with Dissolve(0.2)
     narr "We parted ways, giving each other a fist bump, once we reached the staircase near IV-A.{w} The Senior-Year classrooms were devoid of life{w} – not even Akira, Miyu, Sayo, nor any of my classmates are present."
     show kyou proud at RS with Dissolve(0.2)
     narr "I inserted the key and unlocked the classroom door."
     hide kyou with Dissolve(0.2)
+    scene bg classroom2 morning with dissolve
     narr "The creepy vibe left me once the lights turned on.{w} I neatly arranged the materials – a ball of nylon thread, assorted colored papers, fans, among others."
+    scene bg classroom1 morning with dissolve
     narr "The sky brightened a little,{w} and I settled myself down.{w} Once more, I ran through our list and messaged the committee.{w} With a beep of confirmation, I let myself doze off."
 
+    stop sound
+    scene black with fade
     nvl clear
     window hide
 
+    play music sfx_static2 loop
     unk "{b}*COUGH*{/b}"
 
     window show
@@ -1869,6 +2095,8 @@ label ch01_09_labkyou1:
     narr "The air is giving me the chills.{w} The radio anchor reported a 24-degree morning, not a ten! What time is it now?"
 
     nvl clear
+    play sound sfx_chain
+    play sound sfx_chain
     narr "{i}*clatter* *clatter*{/i}"
 
     nvl clear
@@ -1877,26 +2105,43 @@ label ch01_09_labkyou1:
     narr "My eyes opened, waiting for the image to focus itself."
     narr "Hang on...{w} the ceiling’s farther than before.{w} Surely, I haven’t –"
 
+    stop music
     nvl clear
+    play sound sfx_chain
+    play sound sfx_chain
+    play sound sfx_chain
     narr "{i}*clatter* *clatter* {b}*CLATTER*{/b}{/i}"
 
+    window hide
+    scene bg emptycell with fade
+    window show
     nvl clear
     narr "Wait...{w} This isn’t our homeroom!{w} Where am I?!"
+    play sound sfx_chain
+    play sound sfx_chain
     narr "{i}{b}*CLATTER* *CLATTER*{/b}{/i}"
     narr "A maniac – a demon{w} – is holding me hostage!"
     narr "I rested myself for an hour, trying to endure the painful bout in my head.{w} It feels worse than being a zombie."
 
+    window hide
+    scene bg emptycell2 with dissolve
+    window show
     nvl clear
     narr "Floor to ceiling, I studied the room’s layout.{w} The room I’m in is at best,{w} depressing,{w} barely any furniture in sight, save for the bed and desk at my side."
+    scene bg emptycell with dissolve
     narr "I cannot go any farther{w} – my feet are shackled tightly at the two foot-side bedposts.{w} The other option, therefore,{w} is to search. Plenty points of interest in sight."
     narr "There are three drawers –{w} the middle containing a few markers and a rug, the top with a spare light bulb, and the bottom empty."
     narr "Other points of interest – the lampshade’s underside and the space beneath the bed,{w} nothing."
     narr "I scrutinized the pillow last, feeling it all over.{w} At the underside, I felt a thin solid rectangle with a bump converging to the middle.{w} My eyes flashed when I found the object."
 
+    window hide
+    scene bg envelopefour with fade
+    window show
     nvl clear
     narr "An envelope!"
     narr "The devil must’ve inserted this before I was detained.{w} A small key accompanied the letter, which fit the chain's lock perfectly.{w} It gave me a bit of freedom,{w} but there is still that barred door with a weird device beside it."
     narr "The letter piqued my curiosity,{w} so I sat down and examined its contents.{w} Addressed at the back of the envelope is my full name – no sender or a postage stamp visible."
+    scene bg letter a with dissolve
     narr "The parchment looks new but creased, courtesy of myself.{w} I didn’t recognize the handwriting, but{w} it does strike some familiarity."
     narr "What follows is a short message from whom I dub \"Mr. X.\""
 
@@ -1904,19 +2149,23 @@ label ch01_09_labkyou1:
     narr "{i}You’ve awaken,{w} Kyou Kirisaki.{/i}"
     narr "{i}No doubt, you lived the past few days on repeat {w}– only to end, sadly, in pain.{w} If not, what is the term again?{w} Apnea – yes, I figured you would cease breathing at some point in limbo.{/i}"
     narr "{i}It’s a meager, nevertheless.{w} I’ve no desire to waste your time, so I present my terms, \"rules\" you may refer them.{/i}"
+
+    nvl clear
     narr "{i}First,{w} you seek the truth for yourself.{w} I know well enough that you are a man of God and an enthusiast of Science;{w} thus, you can piece the facts scattered around here. Empty your mind...{w} \"Naivety won’t get you too far, but I’m not saying you are.\"{/i}"
     narr "{i}Second,{w} know that you aren’t alone in this place.{w} It could be me, another soul, or your God, if you prefer.{w} The catch is, you come out of here alone – no companions.{w} Leave everything behind and think for yourself...{w} think as if nobody exists.{w} I don’t either.{/i}"
     narr "{i}The third applies if{w} I don’t find you as a cadaver the next morning.{w} You’ll tell me everything{w} – how you perceive rationality – they all intrigue me.{w} What is a \"catalyst\" in your sense?{w} Whatever you hold, I'm certainly expecting more than that.{/i}"
 
     nvl clear
-    narr "{i}Otherwise,{w} you keep your word.{w} I’ll tell you everything in return{w} – about me and why I involved you in this.{w} You best hasten your steps{w} – your dear brother is worked up, with lack of a better word.{w} In fact, you share a mutual feeling.{/i}"
+    narr "{i}Otherwise,{w} you keep your word.{w} I’ll tell you everything in return{w} – about me and why I involved you in this.{w} You'd best hasten your steps{w} – your dear brother is worked up, with lack of a better word.{w} In fact, you share a mutual feeling.{/i}"
     narr "{i}I must warn you,{w} no refusals.{w} You MUST play by the rules.{w} The clock is already ahead of you – once it stops, you can never start it again.{w} A fair bargain if you consider my offer carefully.{/i}"
     narr "{i}Welcome to purgatory.{w} I sincerely hope you find your stay rather... endearing.{w} I shall see you soon.{/i}"
-    narr "{i}Signed,{w}\nL.C.{/i}"
+    scene bg letter b with dissolve
+    narr "{i}Signed,\nL.C.{/i}"
 
+    scene bg emptycell2 with dissolve
     nvl clear
     narr "Malice – the letter is peppered with it. Mr. X,{w} or rather, L.C., makes no effort to mask it.{w} He wants my skin, no doubt.{w} It just bugs me why he opted for his theatrics instead of doing away with me immediately."
-    narr "Speaking of, where is my watch{w} and my phone?!{w} He disposed of them, unsurprisingly."
+    narr "Speaking of, where is my watch{w} and my phone?!{w} Had he disposed of them?"
     narr "No time to waste! I’ve no choice but to play his game if I wish to live.{w} I’ll keep this letter for reference."
 
     nvl clear
@@ -1928,6 +2177,7 @@ label ch01_09_labkyou1:
     nvl clear
     narr "Nonsense!{w} There must be an inscription in this room or a keyword in this letter.{w} An expected reaction from me, nonetheless. Well-played!{w} I typed several words from the letter, hoping they would come through."
     narr "The bars did not move an inch.{w} {i}Access Denied{/i} – all of them!{w} At this point, I’m tempted to follow his ridiculous advice.{w} Sadly, I don’t even know the length of the passcode.{w} Let’s try something else, shall we?"
+    scene bg emptycell with dissolve
     narr "Specimen A:{w} the items in the middle drawer.{w} Probably useful for something else that I have no idea at present."
     narr "Specimen B:{w} the spare bulb in the top drawer.{w} If I replace the lamp’s bulb, what would be different?{w} It looks fine to me, evidently fresh. I only glossed over the former, honestly."
     narr "The bulb caught my attention. The glass is dark in color.{w} So, this must be a UV light bulb.{w} I switched the one currently installed with it."
@@ -1936,6 +2186,7 @@ label ch01_09_labkyou1:
     nvl clear
     narr "With this, there are now stray marks visible on the letter,{w} just random scribbles.{w} Flipping it around, a message eventually turned up on the paper’s middle section."
     narr "{i}Double lens. EASY, does it?{/i}"
+    scene bg emptycell with dissolve
     narr "It’s the word – I am certain of it.{w} Returning to the device, I typed in the word.{w} My heart throbbed wildly from the excitement, and I'm finally getting out of this wretched room."
 
     nvl clear
@@ -1953,9 +2204,13 @@ label ch01_09_labkyou1:
 
     nvl clear
     narr "{b}*CLANK* *HUM*{/b}"
+    window hide
+    scene bg darkhallway with fade
+    window show
     narr "The bars gave way to me, allowing the metal door to open freely.{w} From beyond is an empty corridor, well-lit unlike this cell.{w} Two doors are visible – one at the other end, the second just near the first at the left side."
     narr "Sneaky devil – I should be grateful for his invocation.{w} He might be clever, but as long as God is with me, nothing is impossible.{w} That’s the spirit.{w} As Dostoyevsky once said through Rodion Raskolnikov, \"May the Devil take the fool.\""
     narr "He’ll not lay a finger upon me{w} – never!"
+    scene black
     narr "{b}*BOOM* *CRACKLE*{/b} {i}*hiss*{/i}"
 
     nvl clear
@@ -1963,10 +2218,12 @@ label ch01_09_labkyou1:
     return
 
 label ch01_10_labinoue1:
+    scene black with fade
     "Date Unknown - Time Unknown"
     window show
     nvl clear
     narr "I feel worse than a caged canary."
+    scene bg emptycell with fade
     narr "There’s an unusual hospitality in that voice, but it still creeps me out.{w} What am I even doing here?{w} One minute I’m walking across the city square, then I wake up here the next."
     narr "The cell is minimalistic: bed, cabinet, and a CD player.{w} The last is of a similar brand to my own, but this isn’t mine. I’m sure of it.{w} In distress, I can only brush the piano keys with my fingers.{w} Damn me for forgetting my piano lessons!"
     narr "Instead of a working solution, the disembodied voice occupied my mind."
@@ -1980,8 +2237,9 @@ label ch01_10_labinoue1:
     unk "Know that another soul dwells this place. I am not here somewhere{w} – yet.{w} I guarantee one other person, if that’s enough to quell your curiosity.{w} Pray you do not cross paths{w} – you are set to kill each other.{w} A heartbeat less is enough, if you catch my drift."
     unk "If you refuse my orders,{w} then {i}I’ll{/i} personally come to end you both.{w} I’ll give you just enough time to decide and escape. I ask of you nothing else."
     unk "Consider this a closed deal between us.{w} Keep your knowledge to yourself."
-    unk "Thus, I welcome you as a guest,{w} and a guest you’ll {i}no longer be{i}.{w} Godspeed, Shinozaki, and retain your resolve.{w} The facility does not take such matters lightly."
+    unk "Thus, I welcome you as a guest,{w} and a guest you’ll {i}no longer be{/i}.{w} Godspeed, Shinozaki, and retain your resolve.{w} The facility does not take such matters lightly."
 
+    scene bg emptycell2 with dissolve
     window show
     nvl clear
     narr "I didn’t hear the recording cut itself; I let it run just to be safe.{w} The piano keyboard has 36 keys, starting with C and ending with B.{w} Pressing each once, they worked just fine."
@@ -1992,8 +2250,10 @@ label ch01_10_labinoue1:
     narr "This is the extent of it all, eh?{w} Secluded in a world not my own, there exists an odd feeling of serenity.{w} The ceiling animated itself,{w} projecting my subconscious thoughts.{w} I can see myself perfectly without a mirror."
     narr "This is the face I never showed anyone,{w} not even Sayo.{w} I gave a ninety-nine at best, a façade Kirisaki almost saw through.{w} L.C. is a special cookie, making him or her an exception."
     narr "Images flashed across the ceiling.{w} Memories of the past days manifested on those."
+    scene black with fade
     narr "{i}Ten{/i} victims from Sacred Heart Academy...{w} and one impacting detail still etched into my mind.{w} Perhaps it was thanks to Sayo that I found the tracks to the truth I’m seeking."
     narr "What business do I have with them?{w} Ikari is involved somehow{w} in the most minimal way possible.{w} I know her personally – she and big brother were classmates.{w} I asked him about it last Sunday."
+    scene bg livingroom with fade
     show inoue casual troubled at Three2 with Dissolve(0.2)
     narr "There’s nothing new initially, yet I convinced him to disclose further."
 
@@ -2014,6 +2274,7 @@ label ch01_10_labinoue1:
     is4 "But I heard it first from Sayo. Does that count?"
     tomonori "She knows her limits. I can say Suzumoto’s still in the safe zone.{w} Just heed my advice."
 
+    scene black with fade
     "I kept my promise, didn’t I?{w} So why am I convicted like a criminal?{w} This world has double standards. It makes me laugh."
 
     window show
@@ -2024,14 +2285,16 @@ label ch01_10_labinoue1:
     nvl clear
     window hide
 
+    scene bg emptycell with fade
     unk "An elementary rhyme, common amongst the French.{w} Tonight, the moon takes the front seat, awaiting your performance.{w} Kindly reproduce it – just this part.{w} Be swift or be driven mad from the endless repetition."
 
     window show
     nvl clear
     narr "The same verse of {i}Au Clair De La Lune{/i} played after the transmission.{w} This time, I listened more closely."
-    narr "Elementary enough, I say,{w} so the notes must be distinct."
+    narr "Elementary enough, I should say,{w} so the notes must be distinct."
     narr "This is a version different from the one I first played on the piano.{w} If I think about it, it kind of fits.{w} The amount of facts he presented creeps me out."
 
+    scene bg emptycell2 with dissolve
     nvl clear
     narr "From the drawer, I retrieved some writing materials.{w} Then, I drew a staff and marked the notes where I thought they should be.{w} Three drawings to check for any discrepancies."
     narr "I returned to the piano and marked the keys.{w} My strokes matched the tempo of the song as a fail-safe.{w} Most of the time, the notes match save for one or two.{w} They're only an estimation."
@@ -2042,6 +2305,7 @@ label ch01_10_labinoue1:
     nvl clear
     narr "{b}*CLANK* *HUM*{/b}"
 
+    scene bg darkhallway with dissolve
     nvl clear
     narr "The mechanism drowned my breath.{w} As my heart raced in anticipation, I waited as the metal bars reveal the opening.{w} My way out – a step closer, it seems."
     narr "My ear tingled, and a lava-like sensation rose up my neck.{w} My fever is returning, it seems,{w} and I haven’t any medicine with me.{w} In fact, my personal items aren’t, too{w} – not even my watch!"
@@ -2051,6 +2315,7 @@ label ch01_10_labinoue1:
     nvl clear
     window hide
 
+    scene black
     "{i}Impressive. I would have expected more.{\i}"
     is4 "{b}!{/b}"
     "{i}You have questions – I am aware of that.{w} Yes, I know you well enough, Shinozaki.{w} The choice of music is plain, if you’d realized.{w} The question now would be, \"is it mutual from your side?\"{w} You answer that for me.{/i}"
@@ -2070,10 +2335,12 @@ label ch01_10_labinoue1:
 
     "{b}*SLAM*{/b} {i}*hiss*{/i}"
 
+    play sound sfx_breathing
     is4 "Haa... Haa... Haa...{w} {i}*GULP*{/i} Kuh..."
 
     "{b}*THUD*{/b}"
 
+    scene bg emptycell with fade
     window show
     nvl clear
     narr "I never want to hear that demonic voice again{w} – especially that mocking laugh!{w} The wild throbbing filled my ears,{w} my face drained of blood.{w} My posture is that of a doll,{w} left by its owner on the bed after playtime."
@@ -2084,6 +2351,7 @@ label ch01_10_labinoue1:
     narr "I watched the door.{w} At any minute, a figure might emerge from the dark corridor.{w} He sees me, vulnerable and weak,{w} and does the most horrifying thing imaginable...{w} the end."
     narr "Nobody came, contrary to my expectation."
     narr "With what little strength remained, I forced myself up.{w} I held it in, pacing once per second as I made my way to the door."
+    scene bg darkhallway with dissolve
     narr "The sides supported my weight.{w} For another minute, I stared into the void.{w} I couldn’t make out a figure, but there are two doors in sight{w} – one across from here, and the second to my left."
     narr "But which one?"
 
@@ -2092,11 +2360,14 @@ label ch01_10_labinoue1:
     return
 
 label ch01_11_labkyou2:
+    scene black with fade
     "Date Unknown - Time Unknown"
+    scene bg darkhallway with fade
     window show
     nvl clear
     narr "I made the cell as my lantern, walking at the sides of the corridor.{w} Eventually, a door, similar to the previous one, came into contact.{w} It offered little resistance when it opened."
     narr "The space felt more enclosed.{w} My hand immediately traversed the wall for a switch.{w} There was nothing to be found.{w} Hesitantly, I stomached my way into the void."
+    scene black with fade
     narr "I shut the door in the off-chance that a stalker is behind me.{w} It wouldn’t make a difference if I close my eyes now, would it?{w} The pressure heightened,{w} no sound permitted itself to emanate from me."
 
     nvl clear
@@ -2107,12 +2378,15 @@ label ch01_11_labkyou2:
     nvl clear
     window hide
 
+    play sound sfx_doorknob
+    play sound sfx_doorknob
     "{i}*RATTLE* *RATTLE*{/i}"
     "If I could just{w} – tsk. That’s one pesky doorknob.{w} It wouldn’t even let my hand grip it."
     "Breathe, Kyou.{w} An insignificant object will not defeat you."
 
     kk9 "Ugh! Come on!"
 
+    play sound sfx_doorknob
     "{i}*RATTLE*{/i}"
 
     kk9 "Phew... You’re putting up quite a fight!{w} Now let me out, if you please?"
@@ -2123,12 +2397,16 @@ label ch01_11_labkyou2:
 
     kk9 "I know you’re there! Open up!"
 
+    play sound sfx_giggle
     "{i}*snicker* Hihihihihihi... Nyihihihihihihihi!{/i}"
 
     play music bg_hazydisorientation loop fadein 1.0
     window show
     nvl clear
     narr "The platform shook.{w} It’s as if the force on the door caused a quake,{w} or was it that...{w} that...{w} whatever that is.{w} My feet numbed from the tremor; I can hardly get up.{w} I rolled over."
+    window hide
+    scene bg abyss with dissolve
+    window show
     narr "From beyond, the endless void defined the boundary.{w} There’s no alternative. I may be going to Hell if I jump{w} – yet in this secluded world, I {i}am{/i} in Hell.{w} But I’m very much alive... beyond reasonable doubt."
     narr "The shaking stopped{w} – a snap underneath."
     narr "A black line creeped from the door, branching out towards me.{w} I smiled, accepting what’s to come.{w} And the platform felt more unstable, matching that of my own resolve."
@@ -2148,6 +2426,9 @@ label ch01_11_labkyou2:
 
     stop music
     nvl clear
+    play sound sfx_splatter
+    play sound sfx_glass
+    scene red
     narr "{b}*CRASH*{/b} {i}*SNAP*{/i} {b}*THUD*{/b}"
 
     nvl clear
@@ -2164,17 +2445,22 @@ label ch01_11_labkyou2:
 
     window show
     nvl clear
+    scene bg blood with fade
     narr "This is the aversion of death,{w} and that fall made me realize something.{w} Just how much damage can a mortal take?{w} Is he unbreakable as he is not led to believe?{w} My purpose is clear, and I hope to find a Grail at journey’s end."
     narr "I felt my head, warm near the crown.{w} The tips of my finger spouted a thick crimson liquid.{w} No signs of nausea, but I should cover the wound with a tourniquet – if there ever is one."
     narr "Debris scattered all over the floor.{w} Splinters of wood and broken bulbs littered the space where I lied down – a few inches away from a laceration."
     narr "Have I been that stupefied to even notice?"
 
+    window hide
+    scene bg storageroom with dissolve
+    window show
     nvl clear
     narr "Then I remembered why I came here."
     narr "Next to my feet glinted a tiny object – a metal key.{w} It could fit the other door’s keyhole perfectly, unless there are some special instructions entailed with it."
     narr "I’m in a closet, looking ransacked from whatever episode I had earlier.{w} I spotted a flashlight on the top-most shelf.{w} As it went with my hand, a small paper came flying.{w} I caught it, running a quick scan of its contents."
     narr "The room plunged into darkness – a lucky save by the flashlight.{w} Illuminated, the letter gave off a short message."
 
+    play sound sfx_pageturn
     nvl clear
     narr "{i}One does not speak, write, listen, and live forever.{w} He is part of a multitude of cycles, even which the universe is a major component.{w} Eventually, everything shall return the way they should be at the beginning of time.{/i}"
     narr "{i}For the love of God, would you kindly provide for me a pen to write with?{w} Fetch the torch for me too, please, as I may have forgotten it in a hurry.{w} Only then shall you pave your own path to the truth{w} – to me.{/i}"
@@ -2182,21 +2468,32 @@ label ch01_11_labkyou2:
 
     nvl clear
     narr "This is a joke.{w} He refers to my name one minute, regards me as a stranger the next.{w} Ah, well. I’ll be on my way. It’s not like he knows where I am right now.{w} No pens, though."
+    scene bg darkhallway with dissolve
     narr "At this point, the torch became my source of light.{w} The cell door apparently shut itself.{w} Nevertheless, I focused on the other unexamined door.{w} The key I found is a perfect fit, but the rust inside the lock made some resistance."
     narr "{b}*CLICK*{/b}"
     narr "That mundane sound lifted me up. With a push, a blinding light seeped out of the opening.{w} I shielded my eyes while opening the door to its furthest limit."
     narr "My whole system stopped as the image registered into my mind."
 
+    window hide
+    scene bg parlor with dissolve
+    window show
     nvl clear
     narr "I’m in a living quarters.{w} Just compare the bleakness of the cell I’ve been into – it’s absent here.{w} No word is sufficient to describe how peculiar to see its kind, especially in this place."
     narr "There are couches, ornaments, tables, to mention a few.{w} The center table sports a bonsai on top. Lovely as it is, yet unaesthetic at its position."
     
+    play sound sfx_dooropen
     nvl clear
     narr "Only when I closed the door did its artistic features sink in.{w} Symmetry is present, down to the most minute detail.{w} Each side has a door at the center, save for the one on my left."
     narr "It has a coffee table, same height as the one on the center.{w} In front of the wooden book display is a book stand and a pair of unlit candles."
+    window hide
+    scene bg hdml1347 with dissolve
+    window show
     narr "A painting adorned the wall above it.{w} Moving it is not an option; it’s too heavy and pinned tightly to the wall."
     narr "It shows a ship bearing {i}Q 1347{/i} on its hull, painted by R. Jeffs.{w} If it were a person instead of a ship, I’d say it was a shrine.{w} His eyes would meet the door across in that case. Doesn’t take a guess to figure out its state."
 
+    window hide
+    scene bg parlor with dissolve
+    window show
     nvl clear
     narr "And should I mention{w} – the one thing that breaks the symmetry?{w} The device makes its return.{w} This time, however, it consists of only an LED screen with no apparent means of input."
     narr "Our host has resorted to a minimalistic approach.{w} Nothing is off the ordinary...{w} save for that bonsai.{w} Who would dare put one ON A CENTER TABLE?! Come on. The room has four corners!"
@@ -2235,10 +2532,14 @@ label ch01_11_labkyou2:
 
     kk9 "{b}{i}*groan*{/i}{/b} Thousands of pages?{w} Bah! I’d rather sit and die if that’s the method.{w} Excuse the antithesis, but let's begin."
 
+    scene bg book with dissolve
+    play sound sfx_pageturn
     window show
     nvl clear
     narr "My hand reached for the first book.{w} Upon opening the first page, a bookmark fell on the table.{w} It piqued my attention, particularly the small letterings near the ribbon:"
     narr "{i}Numbers – p. 16{/i}"
+    play sound sfx_pageturn
+    play sound sfx_pageturn
     narr "Then I turned the pages to the section indicated.{w} I briefly relived my first moments in Nihongo class.{w} Sensei was firm even at basic topics such as this; everybody was interested mostly on writing, the Kanas and even Kanji!"
     narr "Before my eyes lay the first steps, like in any language, to count.{w} My recollection continued until I noticed an oddity{w} – {i}go{/i} underlined in blue.{w} That shade is familiar..."
     narr "Regardless, I scanned the rest of the book, but there were no other markings.{w} Just that one.{w} Perhaps a clue?{w} I’ll have it as a quick reference."
@@ -2251,14 +2552,19 @@ label ch01_11_labkyou2:
     nvl clear
     window hide
 
+    scene bg hdml1347 with dissolve
     "A second view of the painting helped calmed my nerves as I peacefully gathered my thoughts."
 
     kk9 "So, a boat. A WWII warship, maybe?{w} A string of ten words...{w} What’s the connection?{w} {i}*sigh*{/i} God, help me."
 
+    scene bg book with dissolve
+    scene bg hdml1347 with dissolve
+    scene bg book with dissolve
     "My attention altered between the painting and the open books.{w} Each travel puzzled my mind further,{w} but the subconscious is conjuring something bit by bit."
     "Using the blank pages at the books' ends, I played with the words, rearranging and reading them slowly.{w} Nonsensical messages appeared more often than those which are sensible, unsurprisingly."
     "{b}*CLAP*{/b}"
 
+    scene bg parlor with dissolve
     kk9 "Eureka!{w} So that was the message after all. It reads..."
     kk9 "Straightforward enough, and works for me!"
     kk9 "You’re telling me to check that bonsai out?!{w} My pleasure. I’d even dispose of it should you desire."
@@ -2269,6 +2575,7 @@ label ch01_11_labkyou2:
     kk9 "Ow! That hurt..."
 
     "The tree or something... pricked my finger!{w} It felt like a needle.{w} A red spot appeared amongst the stains.{w} I rubbed my hands vigorously, despite the absence of any sign of infection."
+    play sound sfx_glass
     "{b}*CRASH*{/b}"
 
     kk9 "That’ll teach you."
@@ -2281,35 +2588,48 @@ label ch01_11_labkyou2:
 
     "And I stood, prepared to give the books a second reading."
 
+    scene black
     "{b}*THUD*{/b}"
     "My feet lost balance, giving in to the peculiar sensation in my head.{w} The fever returned and my body slowly succumbed to it.{w} I shut my eyes and prayed.{w} This is worse than worst – I’m losing my hold."
+    play sound sfx_doorknob
+    play sound sfx_doorknob
+    play sound sfx_doorknob
     "{i}*rattle* *rattle* *rattle*{/i}"
 
     kk9 "Who goes there?!"
 
     "Something{w} or someone{w} is trying to break in.{w} It could only be in my head, but..."
+    play sound sfx_doorknob
+    play sound sfx_doorknob
     "{b}{i}*RATTLE* *RATTLE*{/i}{/b}"
 
     kk9 "Begone, you spawn!{w} By the power of Christ, I shall not allow you to take me.{w} Stay there... go back to whence you came!"
 
+    play sound sfx_heartbeat loop
     window show
     nvl clear
     narr "The shaking stopped."
     narr "My legs weakened as much as my breath shortened.{w} Patches of blue and white covered my vision, ever so slowly being invaded by darker shades of grey."
     narr "But it won’t stop.{w} The rattles continued, louder than ever{w} – to my left, to my right, even in front of me!{w} I can hear somebody laughing behind me,{w} not to my neck, no.{w} Farther than that."
+    play sound sfx_giggle
+    play sound sfx_giggle
     narr "{i}Ha... hahaha... hahahahahahaha... gyahahahahahahahaha... Woohahahahahaha!!!{/i}"
     narr "The warship; rather, its dead crewmen{w} are feasting upon my predicament.{w} Purgatory? Bah!"
 
     nvl clear
     window hide
 
+    play sound sfx_splatter
     "{b}*SNAP*{/b}"
 
+    scene red
     kk9 "Hngh!{w} AAAAAAAAAAAAAAAAAAHHHHHH!!!!!!"
     return
 
 label ch01_12_labinoue2:
+    scene black with fade
     "Date Unknown - Time Unknown"
+    scene bg darkhallway with fade
     window show
     nvl clear
     narr "Don't breathe."
@@ -2331,20 +2651,26 @@ label ch01_12_labinoue2:
     unk "I've enough of you.{w} {i}*step* *step* *step*{/i} Another down the drain...{w} Goodbye, you spawn. I never liked your face, anyway."
 
     "Who the devil might that be?{w} It sparks my curiosity to know; at the same time, I don’t want to.{w} I heard a door shut{w} – another mechanism."
+    play sound sfx_hiss
     "{i}*hissssssss*{/i}"
 
     is4 "{b}*GASP*{/b}!!!!!"
 
     "I didn’t expect that.{w} The moment that thing left the room, the door swung open by itself; it's kind of like magic.{w} However, I have to shake L.C.'s hands for orchestrating this well. He’d make a great puppet master."
 
+    scene black with fade
     unk "{i}Point of no return... Point of no return...{/i}"
 
+    play sound sfx_hiss
     "{i}*HISSSSSSS*{/i}"
     "I’m already waist-up into the new room{w} and the door is already closing by itself!"
+    scene bg blood
     "{b}{i}*WHOOSH*{/i}{w} *SQUELCH* *SNAP*{/b}"
 
     is4 "Hgk!{w} .........Gulg!!!"
 
+    scene bg blood2
+    play sound sfx_splatter
     "{b}*SPLATTER*{/b}"
 
     window show
@@ -2363,6 +2689,7 @@ label ch01_12_labinoue2:
     nvl clear
     narr "I withdrew my face in a flash."
     narr "I’m not sure...{w} but that isn’t my blood. It isn’t blood; not even a trace of iron!{w} It’s not just the face, but it snakes down my body as well."
+    scene black with fade
     narr "My legs are intact, crumpled and barely touching the door.{w} There are red patches at the space where my waist has supposedly been crushed.{w} I don’t know how, but my eyes did the trick."
     narr "And if so..."
 
@@ -2371,6 +2698,7 @@ label ch01_12_labinoue2:
 
     is4 "My... God..."
 
+    scene bg parlor with fade
     window show
     nvl clear
     narr "I’m in a living quarters{w} – how I’d wish I never went out of my cell."
@@ -2380,6 +2708,7 @@ label ch01_12_labinoue2:
     nvl clear
     window hide
 
+    scene bg blood2
     is4 "Eeeeeeeeeekkk!!!!!!"
 
     window show
@@ -2391,9 +2720,16 @@ label ch01_12_labinoue2:
     narr "Eyes away from the corpse. Everywhere else is macabre at best.{w} A trail of soiled footprints leads to the exit door. The device beside it flashes a message."
     narr "{i}Access Denied{/i}"
 
+    window hide
+    scene bg parlor with dissolve
+    window show
     nvl clear
     narr "The device itself lacks significant damage, unlike the rest of the room.{w} The doors have handprints all over, especially this one.{w} The middle couch is knocked to its side with a hole punched on its underside."
+    window hide
+    scene bg meadow with dissolve
+    window show
     narr "The painting?{w} It depicts two cows in the meadow. Nothing special about it.{w} Finally, the books, if I can obtain another clue in one.{w} I didn’t bother reading them all{w} – there were no bookmarks of any sort."
+    scene bg blood2 with fade
     narr "I’ve reached a dead end. And for whatever reason, my interest fell to the corpse.{w} It’s holding a crumpled paper strip in its hand.{w} If it doesn’t mind, I shall have a look."
     narr "A combination of four numbers – perhaps a code?{w} That’s a given.{w} But where is the device?{w} Not that non-operational one, of course.{w} Just in case, I’ll keep it."
 
@@ -2408,10 +2744,12 @@ label ch01_12_labinoue2:
 
     "...Kirisaki."
 
+    play music bg_controlledchaos loop
     is4 "Kirisaki-kun!{w} Who did this to you?! {i}*EXHALE*{/i} Where is he? Where is he? {i}*EXHALE*{/i}"
     "{i}I am nowhere. Do not bother trying to find me.{w} He simply knew too much – put it that way, simply.{w} It’s up to you now, what you do from here.{w} Never mind your friend; I’ll see to his honorable leave later.{/i}"
     "{i}The door is open, and you’re free to go.{w} Say, when was the last time you’ve ever stopped to question your environment,{w} your contacts,{w} and your existence?{/i}"
 
+    play sound sfx_heartbeat loop
     window show
     nvl clear
     narr "I’ve forgotten how to move."
@@ -2424,6 +2762,8 @@ label ch01_12_labinoue2:
     narr "Then again, maybe I’m just a bit too idealistic...{w} too naïve to think properly."
     narr "Sayo is right.{w} Thanks for slapping that to my face."
 
+    stop sound
+    stop music
     nvl clear
     narr "Did he say the door is open? I didn’t notice.{w} Perhaps the low rumble from behind overshadowed the device’s beeps,{w} or the latter made no sound at all.{w} At any rate..."
     narr "Hang on a minute..."
@@ -2432,7 +2772,9 @@ label ch01_12_labinoue2:
 
     nvl clear
     window hide
+    scene bg cowpainting with dissolve
 
+    play music bg_chloeslullaby loop
     "{b}{i}*CHIME*{/i}{/b}"
 
     window show
@@ -2445,7 +2787,9 @@ label ch01_12_labinoue2:
     nvl clear
     window hide
 
+    scene black with fade
     "{b}*POP*{/b} {i}*SPARK*{w} *HUM*{/i}"
+    stop sound
     ".........................................."
 
     window show
@@ -2460,6 +2804,8 @@ label ch01_12_labinoue2:
     narr "A blur.{w} My eyes took time to adjust to the darker surroundings.{w} I’m sure I haven’t gone anywhere, yet it all feels different.{w} A pair of orange spots caught my attention.{w} Slowly... slowly..."
     narr "The painting is at the center, and the orange spots are the flames.{w} This is an altar, no doubt. An altar for the sacred cow that {i}was{/i} in the painting.{w} Yes...{w} and I perfectly recognized the subject.{w} It registered immediately."
 
+    scene bg minotaur with fade
+    play music bg_roadtohell loop
     nvl clear
     narr "It’s a bull, covered with fur from tip to collarbone and horns slightly larger than usual.{w} From chest to bottom, the body of a muscular man. Not sure about the lower limbs."
     narr "Yep, it resembles that of a Minotaur,{w} from the Greek legend of the Labyrinth."
@@ -2480,10 +2826,13 @@ label ch01_12_labinoue2:
     narr "Somehow, I’ve descended to Hades...{w} No. I’m still on Earth,{w} an Earth warped in an unknown dimension.{w} Dreams and reality have inverted themselves, a possibility I feared long ago. Wishful thinking, indeed."
     narr "It all came back to me...{w} it all makes sense."
 
+    scene bg parlor with dissolve
     nvl clear
     narr "Pick up...{w} pick yourself up."
     narr "Sooner or later, even the floor might consume me.{w} I dare to avert myself to share Kirisaki’s fate.{w} And the first step is to the rear."
     narr "Now, the LCD screen displays nothing but black, yet it hums as if electricity is flowing through it.{w} It is not even responsive when the device is given a rap.{w} Just give an {i}Access Granted{/i} message, will you?"
+    stop music
+    scene bg darkhallway
     narr "{i}*WHOOSH*{/i}"
 
     nvl clear
@@ -2501,12 +2850,16 @@ label ch01_12_labinoue2:
     nvl clear
     window hide
 
+    scene bg minotaur with dissolve
     "I swiped a candle without regard of the sinister subject it’s supposed to illuminate."
     "{b}*GRUMBLE*{/b}"
+    scene bg darkhallway with dissolve
     "That was it,{w} the perfect time to scram.{w} The door shut itself as soon as I went through.{w} With a flat surface behind me, it is safe to breathe..."
 
     is4 "Phew. Finally."
 
+    play sound sfx_explosion
+    play music bg_satiate
     "{b}*CRASH*{w} *ROAR*{/b}"
 
     is4 "Ack, AH!{w} Hands off! Let me go! {i}*hic*{/i}{w} HELP!!!"
@@ -2522,14 +2875,21 @@ label ch01_12_labinoue2:
     nvl clear
     window hide
 
+    scene black with fade
+    play sound sfx_breathing
     is4 "Mama... Papa... {i}*choke*{/i} brother...{w} Come rescue me......... {b}GAH!{/b}"
 
     "Somebody help me...{w} please..."
+    stop sound
+    stop music
+    play sound sfx_thud2
     "{i}*SNAP* *CRACK*{/i}{w} {b}*THUD*{/b}"
     return
 
 label ch01_13_facts1:
+    scene black with fade
     "JUNE 20, 2013 - 0900H"
+    scene bg msci with fade
     window show
     nvl clear
     narr "Following the announcement, a state of calamity was raised."
@@ -2625,10 +2985,13 @@ label ch01_13_facts1:
     window show
     nvl clear
     narr "Then she returned to her previous mood."
+    scene bg classroom2 with dissolve
+    show sayo worried at LS with Dissolve(0.2)
     narr "She went to her seat, searching through her backpack.{w} She took out her journal, a maroon hard-covered book fastened with a similarly-colored ribbon.{w} She unfastened it and opened a few pages."
     narr "Within the most recently written pages, she had written the following:"
     hide sayo with Dissolve(0.2)
 
+    scene bg book with fade
     nvl clear
     narr "{i}June 19, 2013{/i}"
     narr "{i}It’s been a day since the disappearances of Inoue Shinozaki and Kyou Kirisaki, both of whom were my classmates during my First and Second Years, respectively{w} – at least from what I’ve heard first-hand from Mrs. Genkai and Ms. Harada.{/i}"
@@ -2665,6 +3028,7 @@ label ch01_13_facts1:
     nvl clear
     window hide
 
+    scene bg classroom1 with fade
     show miyu naughty focuspose at Three2 with Dissolve(0.2)
     show hikaru focusright at Three1 with Dissolve(0.2)
     "Miyu glanced at the problem."
@@ -2732,7 +3096,10 @@ label ch01_13_facts1:
     return
 
 label ch01_14_labinoue3:
+    scene black with fade
     "Date Unknown - Time Unknown"
+    play music sfx_heartbeat loop
+    play sound sfx_breathing
     window show
     nvl clear
     narr "Crawl... Crawl...{w} Like a worm, you must."
@@ -2746,22 +3113,33 @@ label ch01_14_labinoue3:
     narr "Everything faded to black,{w} and a force transported me to a dimension contrasting the reality I’ve known since.{w} And I care not if I’ll ever return.{w} Besides, who even managed to resurrect from death?"
     narr "No one.{w} No man ever did."
 
+    play sound sfx_thud
     nvl clear
     narr "The illusion has been shattered."
     narr "Heavy pressure crushed my body and my legs could propel me forward no longer,{w} but I won’t die.{w} Not if there’s an ounce of hope left."
     narr "And that ounce lay itself exposed to my delight."
     
+    window hide
+    stop music
+    scene bg darkhallway3 nightmare with fade
+    window show
     nvl clear
     narr "Among the cracked pieces of ceramic tiles and rusty paint, therein lies a crimson smear.{w} Initially hand-sized patches scattered around, they eventually converged to form a puddle,{w} But it was not just a puddle."
     narr "Somebody was dragged before me,{w} to the left passageway, I see.{w} Thus, I simply heeded my subconscious.{w} Though struggling, I managed to get on my feet and reached the door at the end."
+    play sound sfx_dooropen
     narr "I threw myself inside,{w} and the door forced itself shut, leaving me in the darkness once more.{w} The heavy footsteps echoed louder and louder...{w} then it stopped.{w} The entity reversed direction as its steps gradually became lighter.{w} Lighter... lighter... {i}lighter{/i}..."
     narr "It’s gone now,{w} probably shifting its interests to something else.{w} What’s that foul smell?"
 
     nvl clear
     narr "Then, from across my position{w} appeared a faint light ray.{w} Its color was indistinguishable, making the room’s features more apparent.{w} The blood smear – slushing at every foot contact – led to the center,{w} eventually ending at the larger body of liquid."
+    window hide
+    scene bg pool with fade
+    play music sfx_waterdrip loop
+    window show
     narr "I managed a peek.{w} Dark-bluish water filled the pool, welling from the two tanks on one end.{w} The light’s reflection presented more detail to its surroundings."
     narr "The square pool, depth unknown, has straight columns on each corner.{w} It’s missing a ladder, but the surface is about two inches from the floor.{w} There are exposed wires hanging from the columns, two big ones from the ceiling.{w} A death trap in plain sight!"
     narr "I sat at the nearest left column{w} as my legs are too weary to walk around.{w} I shut my eyes, wishing for all this to end.{w} But I can’t.{w} I’m cursed to live through Hell with no means of escaping...{w} not even sleep will save me."
+    stop music
 
     nvl clear
     narr "Half an hour passed{w} and the pain mellowed.{w} I’m able to walk, but only for a few moments, lest I spend another half hour recuperating;{w} worse, it might turn to hours."
@@ -2769,6 +3147,7 @@ label ch01_14_labinoue3:
     narr "A valve’s size is proportional to its pipe.{w} Likewise, there are three similarly-sized tanks each fitted with a pressure gauge going up to 100 psi."
     narr "Farthest to the left are some lockers large enough to fit in a suit.{w} One of them has a broken padlock.{w} Suppose something is there..."
 
+    play music guest_corpseparty loop
     nvl clear
     narr "A little later, my legs recovered;{w} thus, I can explore the area freely."
     narr "Inside the locker is a crowbar, much to my delight.{w} Ah, prepare for the mighty iron, you slobs!{w} And the crowbar mustered its magic."
@@ -2802,7 +3181,10 @@ label ch01_14_labinoue3:
     narr "Silence...{w} dead silence..."
     narr "No time to waste; I’ve already waited enough.{w} Any longer and another bizarre occurrence might pop up.{w} You never know."
 # Potential Puzzle on this Part
+
+    scene black with fade
     nvl clear
+    play sound sfx_hiss
     narr "{b}*WHIRR* *HUM*{/b}"
     narr "Oops...{w} That bellow doesn’t mean well.{w} What was the range again?{w} 70-100 psi,{w} and all movements restricted to a 100-psi maximum pressure."
     narr "Or is it trauma?{w} It wasn’t confined to the tanks nor the pipes.{w} A low sound came from the pool.{w} I spun around, witnessing the change in the water’s color.{w} In the process, the tanks might have partially drained the pool."
@@ -2812,8 +3194,11 @@ label ch01_14_labinoue3:
     nvl clear
     window hide
 
+    stop sound
+    stop music
     is4 "Is this a joke?!{w} I thought it all ended there...?"
 
+    scene bg pool nightmare with fade
     play music bg_satiate loop fadein 1.0
     window show
     nvl clear
@@ -2826,15 +3211,20 @@ label ch01_14_labinoue3:
     nvl clear
     window hide
 
+    play sound sfx_metaldrop
     "{b}{i}*CLANG*{/i}{/b}"
     "The crowbar fell from my hands, luckily not into the pool itself.{w} Its surface had apparitions swimming all around...{w} dancing... dancing...{w} forming figures once hidden in subconscious thoughts."
 
+    play sound sfx_static2
+    scene black with fade
     is4 "Gnnnkk... Gah... {i}*SQUEAL*{/i}{w} It hurts... It hurts... It hurts!"
     "{i}I’d like to clean – {b}SOME AFFAIRS{/b} – momentarily – personal {b}THINGS{/b}...{w} Naivety won’t get you too far. {b}I’M NOT SAYING YOU ARE{/b}...{w} {b}DO YOU{/b} – believe in – {b}GOD{/b}?{/i}"
     "...\n{w}...\n{w}......"
     is4 "AAAAAAAAAAAAAAAAHHHHHHHHHH!!!!!!! ENOUGH!!!!!!!"
 
+    play sound sfx_static
     "{b}*BUZZ* *STATIC*{/b}"
+    stop sound
 
     "{i}Clutch your head if you like. Scream until your voice dies away.{w} No one here is to help... except for yourself.{w} A naïve little girl you are, easily mended and easily swayed.{w} Swing, swing, swing.{w} Rocking like a hammock with a baby...{/i}"
     is4 "Shut up! I’m not afraid of you anymore!{w} All these monsters and gauntlets... you molded them out of my mind, didn’t you?!{w} And you dare mock me, Inoue Shinozaki?"
@@ -2851,6 +3241,7 @@ label ch01_14_labinoue3:
 
     stop music
     "{b}*BUZZ* *RING*{w} *BUZZ*{/b}"
+    play music sfx_heartbeat loop
     "Silence...{w} a relief{w} to never hear those damned voices again."
     "The tears continued to gush forth, a river sufficient enough to fill.{w} By this time, I had enough. Everything felt unnecessary.{w} Why wouldn’t they let me be?!"
     "The words resonated to my person, slowly infecting my system.{w} How could I consider something so toxic?{w} Have I... Have I..."
@@ -2876,13 +3267,17 @@ label ch01_14_labinoue3:
     is4 "Hold it!{w} The children earlier...{w} who are they?!{w} What do they mean by those words?"
     unk "Again, you are confused.{w} Leave it all behind – it is nothing.{w} Besides, what interest is there to behold?"
     is4 "{b}*GASP*{/b}{w} Don’t tell me you’re..."
+    stop music
 
     "{b}*BUZZ* *STATIC*{/b}"
+    play sound sfx_waterdrip
     "And I never heard from him again."
     "Partially, I resent the hostile demeanor.{w} That could spell the difference between my end and my survival.{w} Perhaps he does not mind? I don’t either."
+    scene bg pool nightmare with fade
     "I went with my business, sending the crowbar down to its job, before another spell effects on me.{w} I forbade my eyes to raise a single inch, knowing what’s down there."
 
     "{i}I didn't do it...{/i}"
+    stop sound
 
     "Shut up. Urgh.{w} There it is again... the air... that whistle...{w} Keep going. The claw is nearing the prize.{w} Just to stretch a bit farther..."
 
@@ -2893,26 +3288,33 @@ label ch01_14_labinoue3:
     is4 "Reach for it... {b}{i}*GRUNT*{/i}{/b}{w} Come on, now. Umph... {b}{i}*GRUNT*{/i}{/b}"
     is4 "Yes!"
 
+    scene black
     "I removed the card from the plastic pouch and examined it.{w} In my hands, I have the ticket to freedom!"
+    play sound sfx_explosion
     "{b}*BOOM*{/b}"
 
     is4 "NYAAAAAAAAAHHHHHHHHHH!!!!!!"
 
+    play sound sfx_splash
+    scene bg underwater nightmare
     "{b}{i}*SPLASH*{/i}{/b}"
     play music bg_corruption loop
 
+    play sound sfx_splash2
     is4 "Gah! Help me!!!{w} Somebody... please! I can’t swim!"
     is4 "Wah - {b}{i}*GURGLE* *GURGLE*{/i}{/b}{w} HAH! Anybody... please{w} just get me out of here, quick!{w} {b}*GASP* *GASP*{/b} L.C., still there?!"
 
     "No answer.{w} Why would he bother? He closed his ears to my pleas{w} – I’ve sent him away.{w} Right when I needed him... No. Actually, anybody! Anybody to fish me out of this hellhole!"
     "I’m swimming with a bunch of anguished souls, vermin who had rotten for a few days, and...{w} juice! Say not the word.{w} If he could see this image of a damsel flailing her arms around in futility..."
     "If –"
+    play sound sfx_splash2
     "{b}*SPLASH* {i}*GURGLE* *GURGLE*{/i}{/b}"
 
     is4 "HMPH! GRK!!! Ng... Ulk! {i}*GURGLE*{/i}"
 
     "Help..."
 
+    scene bg underwater with dissolve
     window show
     nvl clear
     narr "The chilly waters began devouring my whole body.{w} I can only stay afloat for so long, having barely enough strength to fight my way back up.{w} The only way is down... down where the current is forcing me to go."
@@ -2923,8 +3325,10 @@ label ch01_14_labinoue3:
     nvl clear
     window hide
 
+    scene bg underwater nightmare with dissolve
     "Somebody...{w} please..."
 
+    scene white with dissolve
     "{i}Get her up! Up!{w} Hey you, hang on for a bit.{/i}"
     "{i}Somebody call the medics, please!{w} ...I’ll handle the CPR. Stay with me...{w} One, two, three. {b}*SUCK* *BREATHE*{/b}{w} One, two, three. {b}*SUCK* *BREATHE*{/b}{/i}"
     "{i}Get her on the stretcher. She needs oxygen.{/i}"
@@ -2934,6 +3338,7 @@ label ch01_14_labinoue3:
     narr "Perhaps... they are already too late."
     narr "If only I had the chance to say sorry.{w} I never meant to inflict pain towards other people, especially my friends.{w} Do they still resent me?{w} That's a thought haunting enough to tether my soul to Earth at my passing."
     narr "But I am never guilty of anything. I never let blood stain my hands!{w} Absolve me, please!{w} That was just an accident. I had no hand in it!"
+    play sound sfx_rumble
     narr "{b}*RUMBLE* *BUZZ*{/b}"
 
     nvl clear
@@ -2943,6 +3348,7 @@ label ch01_14_labinoue3:
     nvl clear
     window hide
 
+    play sound sfx_ambulance1
     "{b}{i}*SIREN*{/i}{/b}"
 
     "{i}We’re here. Hold on...{w} Move! Move! Hurry!{/i}"
@@ -2952,6 +3358,7 @@ label ch01_14_labinoue3:
     narr "Everything happened in total darkness."
     narr "The gurney flew through the double doors, a pair on each side to guide the head and foot.{w} Then came another,{w} and the ride ran faster."
     narr "Onwards, all words became a murmur.{w} High and low tones mixed in the air, ears too numb to even distinguish which.{w} My body continued to fall, supported by a cushion to soften the blow."
+    play sound sfx_ekg loop
     narr "And it came to a halt{w} – body suspended in the air, stuck to that same cushion.{w} It has no grip on me... so..."
     narr "Now, only an unfamiliar pair remained.{w} Both were in a rush, flying past me at an incomprehensible pace."
     narr "More shouting...{w} all just a murmur.{w} At last, someone stopped,{w} standing right beside me."
@@ -2968,9 +3375,16 @@ label ch01_14_labinoue3:
 
     "{i}CLEAR!!!{/i}"
 
-    stop music fadeout 4.0
+    stop music
+    stop sound
+    play sound sfx_ekg2
+    scene red with dissolve
+    scene bg underwater nightmare with dissolve
+    scene bg underwater with dissolve
+    scene black with dissolve
     "{b}*BEEEEEEEEEEEEEEEEEEEEP*{/b}"
     "............................................."
+    stop sound
 
     "{i}Dead on arrival.{w} Transfer her to the morgue immediately.{w} You, kindly prepare the certificate for this one.{/i}"
 
@@ -2978,6 +3392,7 @@ label ch01_14_labinoue3:
     return
 
 label ch01_15_labkyou3:
+    scene black with fade
     "Date Unknown - Time Unknown"
     window show
     nvl clear
@@ -2988,10 +3403,12 @@ label ch01_15_labkyou3:
     nvl clear
     window hide
 
+    play sound sfx_spark
     "{b}*THUNDER*{/b}"
 
     unk "{i}*GASP*{/i}"
 
+    play sound sfx_thud2
     "{i}*THUD*{/i}"
 
     window show
@@ -3007,6 +3424,7 @@ label ch01_15_labkyou3:
     narr "There’s not a soul anywhere since the living room.{w} If I composed myself then, I’d have known the other person’s identity.{w} Then again, if the odds were ill, I would’ve wished otherwise."
     narr "Another dilemma.{w} If I only know where this adds up to."
 
+    play sound sfx_wind loop
     nvl clear
     narr "{b}*HUM*{/b}"
     narr "This time, the wall is barely visible within a few meters.{w} A light fixture illuminates the area, revealing a forked path upon closer inspection.{w} Which way to take this time, left or right?"
@@ -3025,10 +3443,18 @@ label ch01_15_labkyou3:
     narr "{i}Invert{/i} it, not {i}reverse{/i} it, if I remember correctly."
     narr "Our uniform’s practically uncomfortable having the back side at the front, which makes it impossible to fasten the buttons behind.{w} If I am wrong, then the devil be damned.{w} {i}*sigh*{/i} If only I have a map of this place."
 
+    window hide
+    scene bg darkhallway3 with dissolve
+    window show
     nvl clear
     narr "Thus, I’ve decided...{w} Let’s go left!{w} After a few steps, I shone my flashlight forward, its angle a little higher."
     narr "My feet stopped as I saw something obstructing the path."
+    window hide
+    scene bg eyesdark
+    window show
+    play sound sfx_static2
     narr "{b}*STATIC* *STATIC*{/b}"
+    stop sound
     play music bg_echoesoftime loop fadein 1.0
     narr "There it is again.{w} How can this be more spontaneous than it already is?{w} Slowly... slowly... the beam raised its angle...{w} and it stopped."
     narr "The figure wasn’t staying put{w} – it made an effort to advance even one step.{w} Behind it is a trail, a liquid I cannot distinguish, coming from its legs.{w} No, the torso is wetter, but its hair is the worst.{w} It’s a mop."
@@ -3041,19 +3467,25 @@ label ch01_15_labkyou3:
 
     "It stopped in its tracks, returning a deathly glare at me.{w} Just like seeing a basilisk eye to eye, it petrified my whole body.{w} What must I do?!"
 
+    stop music
+    scene black
     "{i}Friend – Now’s not the time for questions.{w} I suggest you {b}RUN{/b}!!!{/i}"
 
+    play music bg_controlledchaos loop
+    scene bg darkhallway3 with dissolve
     "Without hesitation, I dashed towards the other direction.{w} My left ankle nearly snapped, but I maintained my balance.{w} There was no time to point the flashlight forward...{w} just keep going!"
     "My senses became numb. The thirst faded, replaced with the urge to run away.{w} What’s the point if I am to be mauled, anyway?{w} The buzzing returned,{w} becoming more intense as the creature closed the distance between us."
     "I don’t know how long this path is or where it will wind up, but I must get away.{w} Looking back, my efforts seem useless!"
     "Unless..."
 
+    scene bg darkhallway3 nightmare with dissolve
     unk "Away with you!{w} Go find another prey to feed your appetite!"
     "{i}No...{w} wait... Stop! Come back!{/i}"
     "{i}No, keep moving! You’re almost there!{/i}"
 
     "It’s wishful thinking, but I doubt the flashlight is able to delay it.{w} To think that I used my only light source as a weapon..."
     "But then, I’ve lost all rationality already. What does it matter now?{w} Eh... Ehehehe... Ehehehehehehehehe..."
+    play sound sfx_clang
     "{b}{i}*CLANG*{/i}{/b}"
 
     unk "OW!!!"
@@ -3083,11 +3515,14 @@ label ch01_15_labkyou3:
     "With one last attempt, my fingers tapped in frantically,"
     "{i}1-6-6-5{/i}"
     "I’m not certain if the input is correct. I just wish...{w} Say the magic words, please..."
+    scene black
     "{i}*BEEP*{w} {b}*CLANK* *HUM*{/b}{/i}"
     "Only about eight feet between us."
     "The metal doors opened faster than those I encountered before,{w} and even faster how I squeezed through it.{w} A hard slam on the other device was enough to force the door closed once more!"
     "And without changing positions, I looked around for any viable weapon."
+    scene bg chemistrylab with fade
     "This is a fairly large room,{w} a Chemistry Laboratory to be accurate.{w} Four workstations, a wall lined with shelves, a fire cabinet, and a wardrobe for the lab coats."
+    play sound sfx_clang
     "{b}*BUMP*{/b}"
 
     "{i}Let me in! – YOU OPEN THIS DOOR RIGHT NOW!{w} – He’s coming... He’s coming... He’s coming...{/i}"
@@ -3098,6 +3533,7 @@ label ch01_15_labkyou3:
     narr "There’s an unbolted door on the right.{w} It is the perfect escape route,{w} but what’s beyond it is unknown.{w} After all, there could be a malicious snare on the other side."
     narr "I will not take kindly to such things any longer!"
     narr "................................................"
+    stop music fadeout 1.0
 
     play music bg_echoesoftime loop fadeout 2.0
     nvl clear
@@ -3131,6 +3567,7 @@ label ch01_15_labkyou3:
     window show
     nvl clear
     narr "Setting down the ampoule and continuing my search, I had found nothing else of interest{w} – no incriminating evidence against L.C.{w} There’s plenty of interesting points left to check."
+    scene bg labdoor
     narr "...And I didn’t even bother to reinforce the door."
     narr "My heart sank, unable to think of anything...{w} except maybe to charge at it and off its head!"
 
@@ -3139,13 +3576,13 @@ label ch01_15_labkyou3:
 
     "{i}Wait!{w} You...{/i}"
 
-    "The words almost escaped my tongue, \"Have you come to execute me?\"{w} Somehow, I felt the shadow as familiar. The hostility from the monster earlier was absent."
-    "Slowly... slowly... it exposed itself."
+    "The words almost escaped my tongue, \"Have you come to execute me?\"{w} Somehow, I felt the shadow as something familiar and the hostility absent."
+    "Slowly... slowly...{w} it exposed itself."
 
     unk "Kirisaki,{w} You're alive!{w} But... how...?"
 
     play music bg_awkwardmeeting loop fadein 2.0
-    show inoue noglass cry at Three2 with Dissolve(0.2)
+    show inoue noglass cry at Three2 with Dissolve(1.0)
     "Inoue Shinozaki, our class president.{w} She is the other person L.C. mentioned in his letter{w} – which means he has yet to arrive at this facility himself!{w} But the monster,{w} how come?"
     "She was dripping wet and leaving footprints on her path.{w} Poor girl was shivering...{w} If only I can find a cold medicine and a towel to comfort her."
 
@@ -3153,6 +3590,7 @@ label ch01_15_labkyou3:
     hide inoue with Dissolve(0.2)
 
     "Without question, she closed the door behind her.{w} This time, we spent a minute reinforcing the door.{w} The wardrobe should be enough to seal the entrance."
+    scene bg chemistrylab with dissolve
     "We sat down and savored our little reunion."
 
     show kyou sad2 at Three1 with Dissolve(0.2)
@@ -3319,6 +3757,7 @@ label ch01_15_labkyou3:
     hide inoue with Dissolve(0.2)
     show inoue noglass pissed at Three2 with Dissolve(1.0)
     show inoue creepy serious at Three2 with Dissolve(0.2)
+    play music bg_hazydisorientation loop fadein 1.0
     is4 "Do you exist?"
     kk9 "What's that for?"
     is4 "Do you {i}still{/i} exist?"
@@ -3352,12 +3791,14 @@ label ch01_15_labkyou3:
     show inoue creepy smirk at Three2 with Dissolve(0.5)
     hide inoue with Dissolve(0.5)
     "Satisfied, she flashed a grin before facing away from me,{w} towards the other door.{w} I couldn’t help but be wary at her sudden change in demeanor – jumping far too quickly within a short time span."
+    stop music
 
     is4 "Darn. My meal’s gone cold.{w} But that’s fine... I guess..."
     kk9 "Hm? You were saying?"
 
     "Just as she turned the door knob, she took a long glance back..."
     "...to find a bladed weapon two feet away pointing at her face."
+    play sound sfx_heartbeat loop
     show inoue creepy smirk at Three2 with Dissolve(0.5)
     "...to find a bladed weapon two feet away pointing at her face.{fast} It fueled her amusement, giggling as if it was a lollipop."
 
@@ -3380,6 +3821,7 @@ label ch01_15_labkyou3:
     is4 "Come on, Kirisaki...{w} embrace a bit of oddity for your own sake. Hehehehehehehe...{w} The outside is much weirder than we thought it was. How deranged can it get?"
 
     "................................................"
+    stop music
 
     show inoue creepy smile2 at Three2 with Dissolve(0.2)
     is4 "Lower that thing. It’s unbecoming of you.{w} You’re already starting to look like a maniac, you know.{w} Slowly... slowly..."
@@ -3391,7 +3833,9 @@ label ch01_15_labkyou3:
     show inoue creepy serious at Three2 with Dissolve(0.2)
     is4 "Believe in whatever you wish to believe. I’ve made my point already."
     hide inoue with Dissolve(0.2)
+    scene black
 
+    play sound sfx_thud2
     "{b}{i}*THUD*{/i}{/b}"
     "No use being paranoid at this moment.{w} This is all according to the battle plan, one to keep us in the dark.{w} For now, I’ll trust everything as they are."
     "For now."
@@ -3403,6 +3847,8 @@ label ch01_15_labkyou3:
 
     window show
     nvl clear
+    play voice sfx_clang
+    play sound sfx_glass
     narr "{i}{b}*CRASH*{/b} *CLINK* *CLINK*{/i}"
     narr "The force was enough to slam myself to the wall... hard!{w} My head barely touched the shelves,{w} but the force sent glassware and other apparatus into a furious hailstorm to my head."
     narr "If I remember, some of the flasks contained chemicals{w} bearing a foul smell, sharp enough to damage my nose.{w} One of them felt like acid!"
@@ -3422,16 +3868,23 @@ label ch01_15_labkyou3:
     narr "{i}You made a fateful mistake.{/i}"
     narr "{i}That’s what you get for doubting a truth that’s blatantly exposing itself to you.{w} Like sheep, you follow your God as if you’ve truly seen him in person!{w} And yet...{w} this?!{/i}"
     narr "{i}You believe more in the things that YOU CANNOT SEE yet ONLY FEEL?{w} Eat your words, Kirisaki.{w} \"A man ought not to remove a speck on another’s eye when he himself has a slab on his own.\"{/i}"
-    narr "{i}What’s the problem, fanatic? Regret having a blind faith?{w} You disgust me.{/i}"
-    hide inoue with Dissolve(0.2)
+    narr "{i}What’s the problem, fanatic? Regret having a blind faith?{/i}"
+    show inoue creepy smirk at Three2 with Dissolve(0.2)
+    play sound sfx_giggle
+    hide inoue with Dissolve(1.0)
     narr "The disembodied voice came out of nowhere, rubbing the pain into me...{w} {b}{i}*Ack!*{/i}{/b}"
     narr "So what if I did?{w} This punishment has gone too far!"
 
     nvl clear
     narr "I’ve been dragged by the feet...{w} to someplace I’m unsure of.{w} The acid forced my eyes shut and my ears rang indefinitely.{w} Everything else became limp..."
     narr "...and the only thing active is my own consciousness."
+    play sound sfx_doorknob
+    play sound sfx_dooropen
     narr "A door opening...{w} and another...{w} The sound of metal clanking amongst themselves...{w} Glass toppled to the ground...{w} A bump on my side, with someone rolling me over and posturing my body straight."
     narr "The same person ran everywhere,{w} breathing ceaselessly as she opened cupboards, looking for supplies to aid my injury.{w} Every bump she caused synced well with the loud throbs of my heart."
+    window hide
+    scene bg clinic with fade
+    window show
     narr "My vision slowly recovered from the blur,{w} drawing the figure of Inoue near the bed.{w} She was crying."
     show inoue noglass cry at Three2 with Dissolve(0.2)
 
@@ -3451,35 +3904,51 @@ label ch01_15_labkyou3:
 
     kk9 "Inoue...{w} wait..."
 
-    "She had already turned the handle."
-    "{b}*WHOOSH*{/b}"
-    "{i}{b}GAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHH!!!!!!!{/b}{/i}"
+    "She had already turned the handle.{nw}"
+    scene bg fire
+    play sound sfx_fire
+    "{b}*WHOOSH*{/b}{nw}"
+    play sound sfx_fire3
+    "{i}{b}GAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHH!!!!!!!{/b}{/i}{nw}"
     "{i}{b}IT BURNS!!! IT BURNS!!! HAAAAAAAA!!!!{/b}{/i}"
 
+    play music bg_ringaroundtherosie loop
     window show
     nvl clear
-    narr "{i}Ring around the rosie...{w}\nPocket full of posies...{w}\nAshes...{w} ashes...{w}\nWe all fall down...{/i}"
-    narr "Circling... circling... vision circling...{w} The chaotic blaze let a thousand tongues lick my face, down to my feet.{w} Not long, it engulfed my whole body."
+    narr "{i}Ring around the rosie...{w=6.0}\nPocket full of posies...{w=6.0}\nAshes...{w=2.0} ashes...{w=2.0}\nWe all fall down...{/i}"
+    play audio sfx_fire2 loop
+    narr "Circling...{w=0.25} circling...{w=0.25} vision circling...{w} The chaotic blaze let a thousand tongues lick my face, down to my feet.{w} Not long, it engulfed my whole body."
+    play sound sfx_giggle
+    play sound sfx_giggle
     narr "The rhyme went on and on, repeating itself endlessly...{w} The sound of children laughing,{w} mocking my misery."
+    stop music
 
     nvl clear
-    narr "{i}Ring around the rosie... *giggle* *giggle*{w}\nPocket full of posies...{/i}"
-    narr "{i}A’tishoo! {b}*hiss*{/b}{w} A’tishoo! {b}*hiss*{/b}{w}\nWe all...{w} fall...{w} down...{w} *giggle* *giggle* {b}*cackle* *cackle*{/b}{/i}"
+    play sound sfx_giggle
+    narr "{i}Ring around the rosie... *giggle* *giggle*{w=5.5}\nPocket full of posies...{/i}{w=6.0}{nw}"
+    narr "{i}A’tishoo! {b}*hiss*{/b}{w=2.0} A’tishoo! {b}*hiss*{/b}{w=2.0}\nWe all...{w=1.0} fall...{w=1.0} down...{w=1.0} *giggle* *giggle* {b}*cackle* *cackle*{/b}{/i}"
+    stop music
+    play sound sfx_giggle
+    play sound sfx_giggle
+    play sound sfx_giggle
     narr "{i}Hahahahahahahahahahaha!{/i}"
     narr "................................................"
-    narr "{i}Hush! Hush!{w} Hush! Hush!{w}\nAnd all...{w} fell down...{/i}"
+    narr "{i}Hush! Hush!{w=1.5} Hush! Hush!{w=1.5}\nAnd all...{w=2.0} fell down...{/i}"
 
     nvl clear
     window hide
     return
 
 label ch01_16_death01:
+    scene black with dissolve
     "Date Unknown - Time Unknown"
     play music bg_corruption loop
+    play sound sfx_fire2 loop
     "Kirisaki!{w} No!{w} What have I...{w} what have I done...?"
-    "I was only trying to help.{w} How has it come to this?{w} If it weren’t for..."
+    "I was only trying to help.{w} How has it come to this?{w} If it weren’t for...{nw}"
 
-    kk9 "Ugh... AAAAAAAHHHH!!! {b}*EXHALE*{/b} AAAAAAAAAAHHHHH!!!!!!!"
+    scene bg fire
+    kk9 "Ugh... AAAAAAAHHHH!!! {b}*EXHALE*{/b} AAAAAAAAAAHHHHH!!!!!!!{fast}"
 
     window show
     nvl clear
@@ -3511,10 +3980,15 @@ label ch01_16_death01:
     nvl clear
     window hide
 
+    play audio sfx_doorknob
+    play audio sfx_doorknob
+    play audio sfx_dooropen
     "{i}*RATTLE* *RATTLE*{w} {b}*WHOOSH*{/b}{/i}"
 
+    play voice sfx_breathing
     is4 "Haa... Haa... Haa...{w} {i}*gulp*{/i} Haa..."
 
+    scene bg chemistrylab
     window show
     nvl clear
     narr "In the entire duration of his monologue, I managed to limp to the lab door."
@@ -3522,11 +3996,14 @@ label ch01_16_death01:
     narr "The flames have already consumed him whole.{w} His body ceased convulsing and can only utter moans at best.{w} Kirisaki’s anguish is at end,{w} but the flames are not{w} – I am not yet safe."
     narr "Inside the fire cabinet is a water hose, a fire blanket, and an empty extinguisher.{w} The water isn’t running – I checked beforehand.{w} Fire blanket in hand, I returned to the clinic."
 
+    scene bg fire with dissolve
     nvl clear
     narr "The closer I move to Kirisaki’s bed, the more my eyes redden due to the violent smoke.{w} I stopped just a few feet away from the flames."
     narr "Pull the strings...{w} cover the body tight.{w} Wrap it tightly enough, leaving no flame astray.{w} Get back."
+    stop sound
     stop music fadeout 1.0
 
+    scene bg clinic with fade
     nvl clear
     narr "A long time has passed."
     narr "Kirisaki remains motionless.{w} A pulse check is unnecessary – the damage is too extensive for him to survive.{w} When the blanket matched his body temperature, I removed it and examined him."
@@ -3566,14 +4043,21 @@ label ch01_16_death01:
 
     "We shall see each other again...{w} or maybe not."
     hide inoue with Dissolve(0.2)
+    scene bg longhallway with fade
 
     window show
     nvl clear
+    play sound sfx_footsteps3 loop
     narr "As I walk this empty corridor, I could think of nothing.{w} My feet heaved my body towards the other end.{w} My whole being transformed itself to that of a robot, utterly devoid of any human emotion."
     narr "Footsteps and gasps echoed around the walls.{w} Nothing special about it."
+    stop sound
 
     nvl clear
+    play sound sfx_dooropen
     narr "Without regard, I shut the door behind me,{w} and looked around the new environment."
+    window hide
+    scene bg receptiondesk with fade
+    window show
     narr "Across the reception desk is another enforced door with a device.{w} The LCD screen grabbed my attention."
     narr "{i}1...{w} 1...{w} 1...{/i}"
     narr "The number displayed itself endlessly."
@@ -3588,19 +4072,26 @@ label ch01_16_death01:
 
     "{b}*CLANK*{w} *HUM*{/b}"
     "Only this time, at the other end..."
+    scene bg darkhallway2 with dissolve
     "Daylight..."
 
+    play sound sfx_footsteps3 loop
     "{i}{b}*STEP* *STEP* *STEP*{/b}{/i}"
     "............................................."
     "{i}{b}*step* *step*{/b} *step* *step* *step*{/i}"
+    scene black with dissolve
     "............................................."
+    stop sound
+    play sound sfx_thud2
     "{b}*THUD*{/b}"
     return
 
 label ch01_17_facts2:
+    scene black with fade
     "JUNE 24, 2013 - 1645H"
     "Six days{w} – the amount of time passed since Kyou Kirisaki and Inoue Shinozaki’s disappearance.{w} Six days of anxious waiting,{w} even a call or letter for ransom would have sufficed."
     "Alas, none of those surfaced."
+    scene bg msci evening with fade
     show sayo seriousnormal at Eight3 with Dissolve(0.2)
     "As she left, Sayo gave instructions to Ayumi not to let the cleaners surpass 5:30PM.{w} The students were issued a new order, reducing the curfew time by thirty minutes."
     show akira proud2 at Eight6 with Dissolve(0.2)
@@ -3623,10 +4114,12 @@ label ch01_17_facts2:
     "She motioned him to the stairs across IV-A."
     hide sayo with Dissolve(0.2)
     hide miyu with Dissolve(0.2)
+    scene bg school hallway with dissolve
     show sayo seriousnormal at Three3 with Dissolve(0.2)
     show miyu bored at Three2 with Dissolve(0.2)
     "She motioned him to the stairs across IV-A.{fast} They sat down at the fourth step and engaged in a discreet conversation."
 
+    play music bg_decline loop
     show sayo normaltalkleft at Three3 with Dissolve(0.2)
     sr5 "You’re familiar with Tomonori Shinozaki, right? Inoue’s brother two batches up?"
     show miyu confused at Three2 with Dissolve(0.2)
@@ -3669,6 +4162,7 @@ label ch01_17_facts2:
     mh8 "No offense, Sayo. I genuinely appreciate being a faucet for your concerns, but{w} why me?{w} Have you already spoken to Mrs. Genkai about this?"
     show sayo seriousnormal at Three3 with Dissolve(0.2)
     sr5 "Oh, I did,{w} just in case anything against me comes up.{w} For your first question..."
+    stop music fadeout 1.0
     show sayo smileopen2 at Three3 with Dissolve(0.2)
     sr5 "Oh, I did,{w} just in case anything against me comes up.{w} For your first question...{fast} Well, let’s just say you’ve got this \"particular set of skills\" and whatnot..."
     show miyu naughty blush at Three2 with Dissolve(0.2)
@@ -3711,6 +4205,7 @@ label ch01_17_facts2:
     hide miyu with Dissolve(0.5)
     hide sayo with Dissolve(0.2)
     "She hastened her steps, entering the office in a practiced manner.{w} The secretary guided her to the principal’s room, its interior visible through the glass door."
+    scene bg principalsoffice with dissolve
     "Accompanying Mrs. Sokoguchi, the principal, are two men of authority."
     show emmerich serious at RS with Dissolve(0.2)
     "The middle-aged man is a police sergeant.{w} He currently handles the case, one he considers a higher caliber than those he handled before.{w} With him, a much younger protégé.{w} Meek, as he would look from the surface."
@@ -3722,6 +4217,7 @@ label ch01_17_facts2:
     show emmerich serious at RS with Dissolve(0.2)
     p_insp "Ah, yes. My first case in the field, this,{w} and a pretty bad apple for –"
 
+    play sound sfx_knock
     "{i}{b}*knock* *knock* *knock*{/b}{/i}"
     "Seeing who is behind the door, the principal motioned Sayo to come inside.{w} The two men turned their attention to her, who slowly entered the room."
     show sayo smileclosed at LS with Dissolve(1.0)
@@ -3763,6 +4259,7 @@ label ch01_17_facts2:
     return
 
 label ch01_18_aftermath:
+    scene black with fade
     "JUNE 25, 2013 - 1800H"
     window show
     nvl clear
@@ -3771,16 +4268,21 @@ label ch01_18_aftermath:
     narr "With the appearance of Emmerich and Sergeant Deitch – two from the regional police{w} – this was no longer the case.{w} Police visibility increased throughout Kutsutochi and its surrounding municipalities and cities."
     narr "Newsflashes broadcasted the case’s details despite efforts to bar the media’s involvement.{w} But the school officials switched sides after receiving no significant updates from the local authorities.{w} They deemed the move necessary lest they get detracted upon by mindless keyboard-wielding zombies."
 
+    scene bg wetmarket night with fade
+    play sound sfx_street loop
     nvl clear
     narr "Yoshiro escorted his girlfriend home as usual, passing by the wet market on the way.{w} Blue-uniformed men were occasionally seen patrolling the streets,{w} asking for information or keeping an eye around the area."
     narr "Somehow, it still did not feel safe.{w} His girlfriend held tightly, watching for any intruder they might come across.{w} They made it past the market,{w} through the small park at the North,{w} and finally to her home."
     narr "They exchanged hugs as they parted ways, urging Yoshiro to take care and to keep his mind sharp.{w} She locked the gate, and he scurried off the way they came."
+    stop sound
 
+    scene bg alley with dissolve
     nvl clear
     narr "Yoshiro passed by a narrow street resembling that of another in Vigan.{w} One of the houses resides an old comedian, with his image proudly plastered on the banner on his front door."
     narr "Before turning the corner is an art studio,{w} decrepit on the surface but still a popular entrepreneurial establishment."
     narr "People are fascinated by the artist, the one sitting on a stool in front,{w} and his unconventional style.{w} His style and eccentricity combined rings a familiar tune,{w} a homage to Van Gogh or even Francis Bacon to some."
     narr "Nevertheless, Yoshiro finds his appearance weird and quickens his pace whenever he passes by the shop.{w} The sight of it gets on his nerves easily,{w} especially the artist."
+    scene bg eatery with dissolve
     narr "As he emerged from the alley, he saw a familiar face on one of the eateries on his left."
 
     nvl clear
@@ -3825,6 +4327,7 @@ label ch01_18_aftermath:
 
     show emmerich serious at Three1 with Dissolve(0.2)
     show yoshiro serious at Three2 with Dissolve(0.2)
+    play music bg_vulcan loop
     "He showed his little notebook to Yoshiro{w} and explained the clues and witness statements he gathered, including the connections he derived from them."
 
     show emmerich talk at Three1 with Dissolve(0.2)
@@ -3848,8 +4351,11 @@ label ch01_18_aftermath:
     ys6 "Have you checked any outside contacts?{w} Relatives, old friends?{w} Personally, I find no fault in Kirisaki{w} – it’s hard to imagine him in a fight."
     show yoshiro talkleft at Three2 with Dissolve(0.2)
     ys6 "Inoue?{w} I admit she has this{w} arrogant attitude that turns people off,{w} but it has never become a serious problem.{w} No one has ever come close to –"
+    stop music
 
+    play sound sfx_static2
     "{i}{b}*BUZZ*{/b}{/i}"
+    stop sound
 
     p_serg "Harold, you there?{w} You’ve got to hear this!"
     show emmerich talk at Three1 with Dissolve(0.2)
@@ -3883,9 +4389,11 @@ label ch01_18_aftermath:
     nvl clear
     narr "The inspector replaced his notebook in his jacket’s breast pocket and ran off."
     hide yoshiro with Dissolve(0.2)
+    scene bg wetmarket night with dissolve
     narr "Having not realized the danger it might pose him, Yoshiro tailed the inspector.{w} He stopped a block away,{w} when he saw Emmerich meet up with the Sergeant outside an alley to the market’s East."
     narr "Some of the stalls were closing, the time at quarter past six.{w} Once the two officers disappeared, he went to an adjacent shop to buy a gift.{w} Because of the silence, he heard some inaudible voices from the other side of the wall."
 
+    scene black
     nvl clear
     narr "{i}GAHAHAHAHAHAHAHAHAHAHA!!!{w} {b}*EXHALE*{/b} Hahahahahaha... *BREATHE*{w} Hahaha... Hu...{w} *whimper* *whimper*{/i}"
     narr "However, it was not what he expected to hear."
@@ -3895,6 +4403,7 @@ label ch01_18_aftermath:
     nvl clear
     window hide
 
+    scene bg darkalley with fade
     show emmerich worried at RS with Dissolve(0.2)
     p_emm "Miss Shinozaki, you’re safe now.{w} {i}{b}*GRUNT*{/b}{/i} Please, pull yourself together!"
     show inoue creepy blood angry at LS
@@ -3918,10 +4427,12 @@ label ch01_18_aftermath:
     ys6 "{i}Who's with you?{/i}"
     iy1 "{i}Miyu.{w} We were just going home together, and...{/i}"
     ys6 "{i}AND???{/i}"
+    stop music
     iy1 "{i}You might want to hold off dinner for tonight.{/i}"
 
     "An image immediately followed."
 
+    play music bg_controlledchaos loop
     ys6 "{i}WHAT THE HELL IS THAT???{w} If this is a joke, Ichirou...”{/i}"
 
     "Ichirou responded with more images,{w} each revealing more about the scene{w} and the corpse’s identity."
@@ -3949,7 +4460,8 @@ label ch01_18_aftermath:
     nvl clear
     narr "The inspector caught his attention.{w} Though embarrassed, he meekly attempted to justify his presence,{w} ultimately gaining the former’s disapproval."
     narr "Both men watched Inoue as she was being taken away...{w} All while crooning a little tune."
-    stop music fadeout 3.0
+    stop music fadeout 2.0
+    scene black with fade
     narr "{i}Ring around... the rosie...{w}\nPocket full of posies...{/i}"
     window hide
     show inoue noglass blood sad at Three2 with Dissolve(0.2)
@@ -3966,10 +4478,12 @@ label ch01_18_aftermath:
     return
 
 label ch01_19_funeral:
+    scene black with fade
     "JUNE 30, 2013 - 0730H"
     play music bg_onthingstocome loop fadein 2.0
     window show
     nvl clear
+    scene bg facultyroom with fade
     narr "The news broke out the following morning."
     narr "There was outrage,{w} with fingers pointing towards the administration and the authorities.{w} Had they taken appropriate measures immediately, it could have been prevented."
     narr "But who’s to say the culprit has not foreseen this?"
@@ -3985,6 +4499,7 @@ label ch01_19_funeral:
     narr "On political matters, the following changes are effective:{w} Sumiko is to succeed Kyou in the Science Club’s headship while I remain as Secretary,{w} and Inoue’s duties are temporarily upheld by her Vice officers."
     narr "Any complications the change would cause are yet to be resolved{w} – there may be one."
     window hide
+    scene bg principalsoffice with fade
     show emmerich serious at Three2 with Dissolve(0.2)
     window show
     narr "Miyu and I gave our statements to the investigating officer,{w} Emmerich, it seems.{w} Business-like and frank, unlike how Yoshiro described him to us."
@@ -4003,6 +4518,7 @@ label ch01_19_funeral:
     narr "As brief as that, and Miyu repeated everything I’ve said.{w} There was really nothing suspicious about it.{w} I even showed him prescriptions dated {i}June 25th, 2013{/i} as proof."
     window hide
     hide emmerich with Dissolve(0.2)
+    scene bg msci with dissolve
     show ichirou worried at Three2 with Dissolve(0.2)
     show miyu pissedclosed at Three3 with Dissolve(0.2)
     show sayo worried at Three1 with Dissolve(0.2)
@@ -4026,6 +4542,7 @@ label ch01_19_funeral:
 
     nvl clear
     narr "She went around handing papers to our batchmates."
+    scene bg bedroom with fade
     narr "It may not amount to much, but I’ll go.{w} I messaged her that night after my parents approved of my trip."
     narr "Miyu will be tagging along, too.{w} That way, we can ensure each other’s safety, especially on the way home."
     narr "Those who went finished their responsibilities the day before;{w} Likewise, I’ve posted all announcements before leaving.{w} We might not have a Wi-Fi connection there."
@@ -4033,6 +4550,8 @@ label ch01_19_funeral:
 
     nvl clear
     window hide
+    play music bg_decline loop fadein 1.0
+    scene bg freedompark with fade
     show akira serious at Eight2 with Dissolve(0.2)
     show sumiko seriousleft at Eight3 with Dissolve(0.2)
     show hiroshi worried at Eight5 with Dissolve(0.2)
@@ -4048,19 +4567,23 @@ label ch01_19_funeral:
     window show
     narr "Sayo arrived at 8AM along with Ikuko and Ayumi,{w} telling us that Hikaru will be going with her parents."
     hide sayo with Dissolve(0.2)
+    scene bg van with fade
     narr "We made small talk during the ride, mostly on random topics.{w} But if it would lead to something too disturbing, especially about the recent events,{w} someone would try to divert the issue.{w} At best, silence would befall us."
     narr "We are all shaken,{w} the imprint was still upon us.{w} Someone close to us{w} murdered in a way beyond forgiveness.{w} Heck, I don’t even want to know what exactly happened to Inoue!"
     narr "Maybe...{w} Maybe when she’s better...{w} Maybe if she’s willing to talk."
 
     nvl clear
+    scene bg church with dissolve
     narr "At 10:30AM, all of Kyou’s friends and relatives gathered in the front garden.{w} After a short prayer, we all set out to the nearby church, where a mass was held.{w} The priest kept the casket closed while he sprinkled holy water{w} – kids would find the sight unpleasant."
     narr "We relayed back to the van and followed the funeral coach.{w} It played sorrowful songs,{w} particularly those of Gary V., Martin Nievera, Phil Collins, and Josh Groban.{w} Mourners of black and white walked around us carrying balloons and umbrellas."
+    scene bg msci with dissolve
     narr "It brought us all back to the flag retreat.{w} Those thirty minutes sapped our energy coming to the weekend,{w} particularly, Ms. Harada’s heartfelt speech.{w} And Sayo, on behalf of the council..."
 
     nvl clear
     narr "{i}He may be a speck of dust compared to our numbers,{w} but the fact stands{w} – we’ve lost a brother.{w} May he pass on peacefully to the afterlife.{w} Let us offer a minute of prayer, and another of silence.{/i}"
     narr "After which, she looked towards our direction."
     narr "{i}I leave it all to you.{w} Thank you very much.{/i}"
+    scene bg van with dissolve
     narr "Her pace that afternoon matched that of the mourners outside.{w} At the front seat, Sayo wrapped herself firmly and bit down on her lips.{w} There’s a lump in my throat, invoking me to tear up,{w} and I'm sure the others felt the same."
     narr "I resisted."
 
@@ -4069,7 +4592,9 @@ label ch01_19_funeral:
     narr "The men carrying the casket went first.{w} We followed, climbing up a set of slopes before we reached the burial site.{w} The priest from the Mass led the committal."
     narr "All of those present spoke a few words to Kyou.{w} He responded with brief gusts, something only Miyu and Ikuko noticed.{w} The small children were passed over the casket, crying,{w} even though the faces were familiar to them."
     narr "As Kyou was being sealed in, the priest gave his final blessings and everyone threw roses and ribbons.{w} Wailing and sniffles were prevalent;{w} even my companions shared their grief."
+    stop music
 
+    scene bg functionroom with dissolve
     nvl clear
     narr "The reception, though the dishes hearty,{w} was clouded in a somber atmosphere.{w} Sure, the attendants laughed while commemorating Kyou’s halcyon days,{w} but the joy stayed there."
     narr "And they realized how worse it became."
@@ -4078,6 +4603,8 @@ label ch01_19_funeral:
 
     nvl clear
     narr "At three o’ clock, most of the guests have gone home.{w} Hikaru’s parents talked with the Kirisakis, while Sayo rounded us up to assist with the cleaning.{w} The activity relieved our minds of the grief even if partially."
+    scene bg kitchen with dissolve
+    play sound sfx_chirp loop
     narr "Hiroshi and I helped with the dishwashing."
 
     nvl clear
@@ -4103,18 +4630,22 @@ label ch01_19_funeral:
     "\"\"Hahahahahahahahaha!\"\""
     hide hiroshi with Dissolve(0.2)
     hide ichirou with Dissolve(0.2)
+    stop sound
 
     window show
     nvl clear
     narr "But he has a point."
     narr "Surely, the killer’s conscience must be upsetting him,{w} especially due to the extent of the damage he caused.{w} I would love to see that fearful look on his face."
+    scene bg functionroom with dissolve
     narr "We gathered in the dining room save for Hikaru.{w} There, we rested for a while.{w} A few minutes later, Mrs. Kirisaki emerged from the door,{w} her tone delightful."
 
     nvl clear
     window hide
 
+    play sound sfx_dooropen
     ms_kir "How are you doing, kids?{w} Join us in the living room, please, if you're already well-rested. We have a lot to discuss.{w} Oh, and calm yourselves. No pressure. {i}*chuckle*{/i}"
 
+    scene bg parlor with dissolve
     window show
     nvl clear
     narr "With a nod, we followed her.{w} Inside the parlor, her husband and Mr. Yamamoto were already seated; Mrs. Yamamoto and Hikaru arrived shortly after we did.{w} Mr. Kirisaki exchanged hands with us and asked a few general questions."
@@ -4125,7 +4656,9 @@ label ch01_19_funeral:
     return
 
 label ch01_20_epilogue:
+    scene black with fade
     "JUNE 30, 2013 - 2000H"
+    scene bg parlor with fade
     "{i}*RING* *RING*{/i}"
 
     show miyu pissed at Three3 with Dissolve(0.2)
@@ -4149,19 +4682,25 @@ label ch01_20_epilogue:
     hide ichirou with Dissolve(0.5)
     hide akira with Dissolve(0.2)
 
+    scene bg pasteur night with dissolve
+    play sound sfx_crickets loop
     nvl clear
     narr "A single light bulb illuminated the front porch.{w} It is mostly silent, occasionally broken by the bug zapper over the door.{w} Looking past the few buildings, the setting alone is fresh air for a city dweller like me."
     narr "Walks are perfect at night,{w} with the assurance of security so long as one doesn’t stray off the road.{w} Aside from the winds chilling your whole body, you’d be treated to a concert of the crickets.{w} It relieves tension, soothing the nerves so much they’ll absorb you wholly."
     narr "At the end of the wet season, cicadas would sometimes hang around a few trees.{w} There’s one buzzing on the right, two blocks from the Kirisaki residence."
     narr "{i}{b}*SNIFF*{/b}{/i} Aaaaaaahhhh..."
     narr "The roadside flowers are fragrant, too.{w} Only thing missing is the fruits, which are staples of the province."
+    stop sound
 
     nvl clear
     window hide
 
+    play sound sfx_ringtone loop
     "{i}*RING* *RING*{/i}"
     "I snapped out of my daydream.{w} Who could that be?"
 
+    scene black with fade
+    stop sound
     iy1 "Hello?"
     mh8 "Where are you?"
     iy1 "Just went out to catch some air.{w} Do you need me?"
@@ -4175,11 +4714,12 @@ label ch01_20_epilogue:
     "They're probably itching to go home and sleep.{w} Even I miss my bed."
 
     "{i}Slow down...{/i}"
-    play music bg_awkwardmeeting loop
+    play music bg_satiate loop
 
     window show
     nvl clear
     narr "Time halted after those two words."
+    scene bg village night with dissolve
     narr "Obstructing my path is a figure,{w} shadowy enough to conceal his identity.{w} He seems like a town drunkard or a junkie, something like that."
     narr "In any case, he’s not my problem.{w} But he’s not moving,{w} only facing towards me."
 
@@ -4202,8 +4742,213 @@ label ch01_20_epilogue:
     iy1 "Wait up! Hey!"
 
     scene black with fade
+    stop music fadeout 2.0
     centered "{i}{b}And thus, the night became peaceful no longer.{w}\nWho's next, I wonder?{/i}{/b}"
-    stop music fadeout 3.0
 
     centered "{b}***END OF JUNE CHAPTER***\n\n{i}TO BE CONTINUED...{/i}{/b}"
+    return
+
+label before_main_menu:
+    scene black with dissolve
+    show opening:
+        yanchor 0.5 ypos 0.5
+        xanchor 0.5 xpos 0.5
+    with Pause(5)
+    scene bg splashscreen with dissolve
+    show splash1:
+        yanchor 0.2 ypos 0.2
+        xanchor 0.5 xpos 0.5
+    show splash2:
+        yanchor 0.5 ypos 0.5
+        xanchor 0.5 xpos 0.5
+    with Pause(10)
+    scene black with fade
+    return
+
+label opening:
+    play music guest_chikai noloop
+    scene black with dissolve
+    show opening2:
+        yanchor 0.5 ypos 0.5
+        xanchor 0.5 xpos 0.5
+    with Pause(5)
+    hide opening2
+    show opening3:
+        yanchor 0.5 ypos 0.5
+        xanchor 0.5 xpos 0.5
+    with Pause(3.75)
+    hide opening3
+    scene op title1 with Pause(4)
+    scene op title2 with Pause(4)
+    scene red with dissolve
+    show opening4:
+        yanchor 1.0 ypos 1.0
+        xanchor 0.0 xpos 0.0
+    with Pause(6)
+    hide opening4
+    scene bg street rain with dissolve
+    show opening5:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.8 xpos 0.8
+    with Pause(4)
+    hide opening5
+    scene bg village night
+    show opening6:
+        yanchor 0.9 ypos 0.9
+        xanchor 0.1 xpos 0.1
+    with Pause(4)
+    hide opening6
+    scene bg msci night
+    show opening7:
+        yanchor 0.9 ypos 0.9
+        xanchor 0.1 xpos 0.1
+    with Pause(3)
+    hide opening7
+    scene bg underwater with dissolve
+    scene bg underwater
+    show opening8:
+        yanchor 0.5 ypos 0.5
+        xanchor 0.5 xpos 0.5
+    with Pause(4)
+    hide opening8
+    scene bg underwater nightmare with dissolve
+    scene bg underwater nightmare
+    show opening9:
+        yanchor 0.5 ypos 0.5
+        xanchor 0.5 xpos 0.5
+    with Pause(3.25)
+    hide opening9
+    scene bg blood with Pause(3.75)
+    scene bg blood2 with Pause(4.5)
+    scene black with dissolve
+    scene black with Pause(1.5)
+    scene bg msci nightmare
+    scene black with dissolve
+    scene bg msci nightmare
+    scene black with dissolve
+    scene bg msci nightmare with dissolve
+    show openingname1:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.7 xpos 0.7
+    show op sayo at slide_right("Sayo") with Pause(1.0)
+    hide openingname1 with Dissolve(0.25)
+    hide op sayo with Dissolve(0.25)
+    
+    show openingname2:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.3 xpos 0.3
+    show op hikaru at slide_left("Hikaru") with Pause(1.0)
+    hide openingname2 with Dissolve(0.25)
+    hide op hikaru with Dissolve(0.25)
+
+    show openingname3:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.7 xpos 0.7
+    show op kyou at slide_right("Kyou") with Pause(1.0)
+    hide openingname3 with Dissolve(0.25)
+    hide op kyou with Dissolve(0.25)
+    
+    show openingname4:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.3 xpos 0.3
+    show op inoue at slide_left("Inoue") with Pause(1.0)
+    hide openingname4 with Dissolve(0.25)
+    hide op inoue with Dissolve(0.25)
+    
+    show openingname5:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.7 xpos 0.7
+    show op miyu at slide_right("Miyu") with Pause(1.0)
+    hide openingname5 with Dissolve(0.25)
+    hide op miyu with Dissolve(0.25)
+    
+    show openingname6:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.3 xpos 0.3
+    show op ichirou at slide_left("Ichirou") with Pause(1.0)
+    hide openingname6 with Dissolve(0.25)
+    hide op ichirou with Dissolve(0.25)
+    
+    show openingname7:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.7 xpos 0.7
+    show op sumiko at slide_right("Sumiko") with Pause(1.0)
+    hide openingname7 with Dissolve(0.25)
+    hide op sumiko with Dissolve(0.25)
+    
+    show openingname8:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.3 xpos 0.3
+    show op akira at slide_left("Akira") with Pause(1.0)
+    hide openingname8 with Dissolve(0.25)
+    hide op akira with Dissolve(0.25)
+    
+    show openingname9:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.7 xpos 0.7
+    show op yoshiro at slide_right("Yoshiro") with Pause(1.0)
+    hide openingname9 with Dissolve(0.25)
+    hide op yoshiro with Dissolve(0.25)
+    
+    show openingname10:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.3 xpos 0.3
+    show op hiroshi at slide_left("Hiroshi") with Pause(1.0)
+    hide openingname10 with Dissolve(0.25)
+    hide op hiroshi with Dissolve(0.25)
+
+    scene bg msci with dissolve
+    scene bg msci with Pause(2.5)
+    scene bg school gate with Pause(3.0)
+    scene bg tvstatic with dissolve
+    scene bg tvstatic with Pause(3.5)
+    scene black with dissolve
+    scene black with Pause(2.0)
+    scene bg abyss with dissolve
+    scene bg abyss with Pause(3.0)
+    scene op roulette with dissolve
+    scene op roulette 
+    show opening10:
+        yanchor 0.5 ypos 0.5
+        xanchor 0.5 xpos 0.5
+    with Pause(4.0)
+    hide opening10
+    scene bg darkhallway3 with dissolve
+    scene bg darkhallway3
+    show opening11:
+        yanchor 0.6 ypos 0.6
+        xanchor 0.5 xpos 0.5
+    with Pause(1.5)
+    hide opening11
+    scene bg darkhallway3 nightmare
+    show opening11:
+        yanchor 0.6 ypos 0.6
+        xanchor 0.5 xpos 0.5
+    with Pause(1.5)
+    hide opening11
+    scene black with dissolve
+
+    stop music fadeout 1.0
+    return
+
+label credits:
+    $ credits_speed = 300 #scrolling speed in seconds
+    play music guest_whyorwhynot
+    scene black with dissolve
+    show theend:
+        yanchor 0.5 ypos 0.5
+        xanchor 0.5 xpos 0.5
+    with dissolve
+    with Pause(3)
+    hide theend
+    scene bg msci night with dissolve
+    show cred at Move((0.5, 5.0), (0.5, 0.0), credits_speed, repeat=False, bounce=False, xanchor="center", yanchor="bottom")
+    with Pause(credits_speed)
+    scene black with dissolve
+    show thanks:
+        yanchor 0.5 ypos 0.5
+        xanchor 0.5 xpos 0.5
+    with dissolve
+    with Pause(3)
+    hide thanks
     return

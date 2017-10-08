@@ -55,19 +55,22 @@ define gui.interface_text_color = '#ffffff'
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = "DejaVuSans.ttf"
+#define gui.text_font = "DejaVuSans.ttf"
+define gui.text_font = "CourierNew-Bold.ttf"
 
 ## The font used for character names.
-define gui.name_text_font = "DejaVuSans.ttf"
+#define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "CourierNew-Bold.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "DejaVuSans.ttf"
+#define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "CourierNew-Bold.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 20
+define gui.text_size = 22
 
 ## The size of character names.
-define gui.name_text_size = 26
+define gui.name_text_size = 28
 
 ## The size of text in the game's user interface.
 define gui.interface_text_size = 24
@@ -137,7 +140,7 @@ define gui.dialogue_xpos = 200
 define gui.dialogue_ypos = 30
 
 ## The maximum width of dialogue text, in pixels.
-define gui.dialogue_width = 750
+define gui.dialogue_width = 840
 
 ## The horizontal alignment of the dialogue text. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
@@ -382,14 +385,14 @@ define gui.nvl_name_xalign = 1.0
 ## The position, width, and alignment of the dialogue text.
 define gui.nvl_text_xpos = 450
 define gui.nvl_text_ypos = 8
-define gui.nvl_text_width = 590
+define gui.nvl_text_width = 720
 define gui.nvl_text_xalign = 0.0
 
 ## The position, width, and alignment of nvl_thought text (the text said by the
 ## nvl_narrator character.)
 define gui.nvl_thought_xpos = 240
 define gui.nvl_thought_ypos = 0
-define gui.nvl_thought_width = 780
+define gui.nvl_thought_width = 800
 define gui.nvl_thought_xalign = 0.0
 
 ## The position of nvl menu_buttons.

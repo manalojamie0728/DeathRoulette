@@ -18,7 +18,7 @@ define config.name = _("Death Roulette")
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## The version of the game.
@@ -37,6 +37,7 @@ define gui.about = _("")
 ## or semicolons.
 
 define build.name = "DeathRoulette"
+define build.executable_name = "DeathRoulette-01JUNE"
 
 
 ## Sounds and music ############################################################
