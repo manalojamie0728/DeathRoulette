@@ -36,7 +36,7 @@ define gui.about = _("")
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "DeathRoulette"
+define build.name = "DeathRoulette-02JULY"
 define build.executable_name = "DeathRoulette-01JUNE"
 
 
@@ -181,8 +181,15 @@ init python:
 
     ## To archive files, classify them as 'archive'.
 
-    # build.classify('game/**.png', 'archive')
-    # build.classify('game/**.jpg', 'archive')
+    build.classify('game/**.png', 'archive')
+    build.classify('game/**.jpg', 'archive')
+    build.classify('game/**.mp3', 'archive')
+    build.classify('game/**.wav', 'archive')
+    build.classify('game/**.ogg', 'archive')
+    build.classify('game/**.rpyc', 'archive')
+    build.classify('game/**.mov', None)
+    build.classify('game/**.rpy', None)
+
 
     ## Files matching documentation patterns are duplicated in a mac app build,
     ## so they appear in both the app and the zip file.

@@ -1,0 +1,24 @@
+# JULY CHAPTER SCRIPT
+
+label ch02_july:
+    centered "{i}{b}For the beast has unleashed its evil; from within the shadows, it lurks.{w}\nBy watching those shadows, it leaves it little chance to conceal itself.{w}\nYet by that principle,{w} it has learned to live under the light without notice.{/b}{/i}"
+    
+    call ch02_01_prologue1
+    call ch02_02_prologue2
+    call ch02_03_reforms
+    call ch02_04_therapy
+    call ch02_05_volleyball
+    call ch02_06_visit
+    call ch02_07_security
+    call ch02_08_review1
+    call ch02_09_facts3
+    call ch02_10_review2
+    call ch02_11_mockreview
+    call ch02_12_posteval
+    call ch02_13_death02
+    call ch02_14_investigation
+    call ch02_15_facts4
+    call ch02_16_suspicions
+    call ch02_17_epilogue
+    call credits
+    return
