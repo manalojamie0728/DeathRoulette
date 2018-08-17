@@ -1,14 +1,17 @@
--- CHAPTER NOTES: JUNE CHAPTER--
+-- CHAPTER NOTES: JUNE CHAPTER/MINAZUKI-HEN --
 
 * Central Protagonists: Kyou Kirisaki, Inoue Shinozaki
 * Victim: Kyou Kirisaki
-* Cause of Death: Burned Alive
+* Cause of Death: Burned Alive (Unknown Date/Time)
 * Suspect: Sayo Ronoroa, Inoue Shinozaki
 * Word Count Goal: 35,000 words
 * Estimated Length: 2-3 hours
 * Central Arc Focus: The Labyrinth
+* Primary Location: The Labyrinth
 * Nursery Rhyme: Ring Around The Rosie
-* Inspired By: Higurashi No Naku Koro Ni, Virtue's Last Reward, Silent Hill
+* Inspired By: Higurashi No Naku Koro Ni, Nine Hours Nine Persons Nine Doors, Silent Hill
+* Ten Little Indians Line: Two little Indians sitting in the sun; One got frizzled up and then there was One.
+* Major Plot Twist: Inoue, despite being shown dead at one point in The Labyrinth, ends up surviving the ordeal.
 
 * Scene Outline:
 - Prologue: The story opens at night at Maria St. Claire Institute. A night guard making his rounds spots a female student in the storage room performing an occultic ritual and is half-crazed. Fast-forward one year where ten interconnected deaths are being reported.
@@ -82,9 +85,11 @@
 - The prologue gives us an idea what the ending would be like.
 - It's not noticeable at first, but the presence of the book of music sheets gives us the identity of the culprit.
 - Akira is a bad secret keeper - this is a point that will be used against him several times later leading to his demise. Of course, Miyu was listening in on Sumiko and Akira's conversation so he knows about this fact. Keyword: chips - casino chips.
+- The entirety of the UNO game in the fourth segment gives off a TON of foreshadowing and general information about the plot.
 - The phone call. It gives us many hints on how Inoue will be mind tortured later.
 - Rika Suzumiya's death is given special attention in this chapter. The equivalent of her death to "Ten Little Indians" is a red herring. Cue Inoue drowning and ACTUALLY surviving despite her convincing death in the Labyrinth.
 - All this talk about a "catalyst" seems to apply only with Suzumoto after she's found half-crazed in the storage room. However, L.C. (Miyu) specifically points out in his letter asking Kyou, "What is a 'catalyst' in your sense?" He's basically saying, "Did you know that I'll go after you FIRST?" Kyou pieces the whole letter's message together and basically tells Inoue (and the audience) that he knows he's going to die.
+- Very subtle, but the characters' positions at the start of the "Countdown" tells us whose side thes main characters are, except for Akira (although he'll sit opposite Sumiko in the next scene, mimicking this effect). Also worth noting that Ichirou is the very next character shown after Sayo.
 - The solution to the puzzle in Inoue's cell is replicating the notes of Au Clair De La Lune, second verse. So how does it go? "Go to the neighbor's,/I think she's there/Because in her kitchen/Someone is lighting the fire." Yeah...
 - Kyou is bleeding on his crown after having several shelves topple over his head during his hallucination. His companion in the Labyrinth is Inoue, whose death is connected to "Jack and Jill." "Jack fell down and broke his crown and Jill came tumbling after."
 - Agatha Christie's "The Moving Finger" is the sixth book in the living quarter's book set. This is the basis for the plot of the November chapter.
@@ -126,10 +131,13 @@ The solution: S-S-M-M-L-M-L-M (100 psi | 80 psi | 70 psi)
 - Prisoner's Dilemma
 
 * Tips
+- Several plot points are given away in the UNO game.
+- The conversation between Ichirou and L.C./Miyu is extended in v1.1.
 
 * Potential Holes
 - So Kyou found an ink bottle (Segment 11). What purpose does it serve?
 
+* This chapter's murder is inspired by Dr. Henry Howard Holmes, the creator of the Murder Castle.
 * The girl's name in the beginning is Ikari Suzumoto, pleading a bargain to the supposed supernatural force that is instigating the fateful curse killings.
 * Take note of the details of Kugimiya Oizumi's death in the prologue. Later, when Sayo and Inoue exchange information about the past curse killings, you'll realize that the first letter of her name is part of another name: FURUDE RIKA. Why is the A and K switched? It's a subtle bit of foreshadowing later in the endgame.
 * On the subject of anagrams, Suzumoto's surname is part of one: BERNKASTEL. Again, the inscriptions on her hands are clues and lead-ins to the key riddle to be revealed at the endgame; that is, "What's left must be in order, what's right is in order."

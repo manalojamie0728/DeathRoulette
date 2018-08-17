@@ -1,22 +1,28 @@
 -- CHARACTERS --
 
-* Ichirou Yokohama (Red Motif) - The Upholder of Justice
-* Akira Ichibana (Black Motif) - The Comic Relief
-* Sumiko Tokubei (Grey Motif) - The Intelligent Yet Forgetful
-* Inoue Shinozaki (Pink Motif) - The Curious Cat
-* Sayo Ronoroa (Purple Motif) - The Leader and Most Responsible; the student council president and suspected to be the culprit for the killings. Graduates as a Top 5 student in their batch. "Besides, what interest is there?"
-* Yoshiro Suzuki (Yellow Motif) - The Puzzle Geek
-* Hiroshi Kano (Brown Motif) - The Silent Entertainer
-* Miyu Hirano (Violet/Green Motif) - The Cynical-Optimistic Detective/The Chessmaster; one of the students from IV-C and shows a lot of interest in mathematics and mystery-solving. He is actually the main antagonist and the origin of "Let". Graduates as a Top 8 student in their batch.
-* Kyou Kirisaki (Orange Motif) - The Pious
-* Hikaru Yamamoto (Blue Motif) - The Resident Prankster
-* Lilith/ Lawlet "Let" Carnegie - a manifestation of the culprit of the Death Roulette Curse Killings. Ambiguously male or female, because his/her gender is subject to whoever sees him/her. Is fond of nursery rhymes and violent games. The Death Roulette is his/her favorite, hence the moniker.
-* Ikuko Mimori - Sayo's classmate and fellow churchmate at the Youth Group. She occasionally gives Sayo useful advice which plays a vital role in the latter's subplot in the October chapter.
-* Sanae Yoshida - Miyu's close friend and love interest. They met each other at a high school before Miyu transferred to Maria St. Claire.
-* Aria Utada - Hikaru's best friend and one of the most popular singers in their batch.
+[Japanese/English]
+* Ichirou Yokohama/ Nathan Fortuno (Red Motif) - The Upholder of Justice; the male deuteragonist and the prospected valedictorian of their batch. Also Miyu's rival in the area of Mathematics. He is generally fair and seeks out the truth no matter how dangerous the path may be.
+* Akira Ichibana/ Dominic Cortez (Black Motif) - The Comic Relief
+* Sumiko Tokubei/ Troy Socorro (Grey Motif) - The Intelligent Yet Forgetful
+* Inoue Shinozaki/ Catryn Rose Pacion (Pink Motif) - The Curious Cat; the female deuteragonist and minor antagonist, the well-mannered child of Dr. Shinozaki, one of MSCI's most respected professionals. However, when the chain of mysterious murders began, her sanity slowly deteriorates, forcing her to question her confidence and reality.
+* Sayo Ronoroa/ Sanctuary "Sayo" Oropesa-Ronoroa (Purple Motif) - The Leader and Most Responsible; the primary female protagonist, the student council president and suspected to be the culprit for the killings. Graduates as a Top 5 student in their batch. "Besides, what interest is there?"
+* Yoshiro Suzuki/ Caesar Montenegro (Yellow Motif) - The Puzzle Geek
+* Hiroshi Kano/ September Caguia (Brown Motif) - The Silent Entertainer
+* Miyu Hirano/ Huey T. Morrison (Violet/Green Motif) - The Cynical-Optimistic Detective/The Chessmaster; one of the students from IV-C and shows a lot of interest in mathematics and mystery-solving. He is actually the main antagonist and the origin of "Let Carnegie." Graduates as a Top 8 student in their batch.
+* Kyou Kirisaki/ Larson Ephemerial (Orange Motif) - The Pious
+* Hikaru Yamamoto/ Candy Beatrice "Candice/Shine" Sevilla (Blue Motif) - The Resident Prankster
+* Hikari Yamamoto/ Light Sevilla (Blue Motif) - Hikaru's twin sister, name legally changed to Light before transferring to Switzerland for her secondary education. Only Aria knows of her existence outside of Hikaru's family, so when the unthinkable happens to Hikaru one day... "Inspector, I'm afraid I have confession to make. I did not survive the attack at the carnival. In fact, I didn't even experience it first-hand. You speak, rather, of my twin."
+* Inspector Harold Emmerich - originally from "The Hunter's Mansion," the main investigative officer for the Death Roulette Curse Killings.
+* Lilith/ Lawlet "Let" Carnegie - manifestations of the culprit of the Death Roulette Curse Killings. Ambiguously male or female, because their gender is subject to whoever sees them. Is fond of nursery rhymes and violent games. The Death Roulette is their favorite, hence the moniker.
+* Ikuko Mimori - Sayo's classmate and fellow churchmate at the Youth Group. She occasionally gives Sayo useful advice which plays a vital role in the latter's subplot in the October chapter. Her name is, with Bilingual Bonus and a little backwards-stretching, a play on "Ikaw at Ako," which means "You and Me." She is one of TWO subtle hints towards finding the true identity of L.C.
+* Ayumi Nakashima - the president of the English Club and one of Sayo's close friends. Her name is, with a little backwards-stretching, a play on "You and Me." She is one of TWO subtle hints towards finding the true identity of L.C.
+* Sanae "Nana" Yoshida - Miyu's close friend and love interest. They met each other at a high school before Miyu transferred to Maria St. Claire.
+* Aria Utada - Hikaru's best friend and one of the most popular singers in their batch. Named after Utada Hikaru, along with Hikaru herself.
+* Tomonori Shinozaki - Inoue's brother
+* Erika Kimura - the heroine of "The Hunter's Mansion," arrived to assist Emmerich in investigating the Death Roulette Curse Killings after her friend was murdered in a similar phenomenon one year prior.
 
 * Textbox Character Color Codes
-- Light Blue = Safe/Side Character
+- White = Safe/Side Character
 - Green = Fine
 - Yellow = Caution
 - Orange = Danger
@@ -25,19 +31,19 @@
 
 * RANDOM: Higurashi Equivalents
 - Ichirou = Keiichi Maebara
-- Inoue = Rena Ryugu
+- Inoue = Rena Ryuugu
 - Sayo = Mion Sonozaki
 - Miyu = Rika Furude/Miyo Takano
 - Hikaru = Satoko Houjou
 
 * RANDOM: Design Expies
 - Ichirou = Tomoe Minai (Higurashi No Naku Koro Ni)
-- Akira = Satoko Hojo (Higurashi No Naku Koro Ni)
+- Akira = Satoko Hojo/ Teppei Hojo (Higurashi No Naku Koro Ni)
 - Sumiko = Kasai Tatsuyoshi (Higurashi No Naku Koro Ni)
 - Inoue = Mion Sonozaki/ Natsumi Kimiyoshi (Higurashi No Naku Koro Ni)
 - Sayo = Hanyuu Furude (Higurashi No Naku Koro Ni)/ Eva Ushiromiya (Umineko No Naku Koro Ni)
 - Yoshiro = Mamoru Akasaka (Higurashi No Naku Koro Ni)/ Willard H. Wright (Umineko No Naku Koro Ni)
-- Hiroshi = Chie Rumiko (Higurashi No Naku Koro Ni)/ Shannon/Kanon (Umineko No Naku Koro Ni)
+- Hiroshi = Dr. Kyosuke Irie (Higurashi No Naku Koro Ni)/ Shannon/Kanon (Umineko No Naku Koro Ni)
 - Miyu = Rika Furude/ Miyo Takano (Higurashi No Naku Koro Ni)
 - Kyou = Keiichi Maebara (Higurashi No Naku Koro Ni)
 - Hikaru = Rena Ryuugu (Higurashi No Naku Koro Ni)
@@ -54,9 +60,97 @@
 - February: Miyu Hirano (Original), Miyu Hirano (Correct Order, Unending Demise)
 - March: Sumiko Tokubei (Original), Hiroshi Kano (Correct Order, Unending Demise)
 
+* SACRED HEART-KUTSUTOCHI VICTIM COUNTERPARTS
+- Fuujo Rikiyama		= Ichirou Yokohama (Electrocution as killing blow)
+- Utsune Mushido		= Miyu Hirano (Miyu by almost-suicide during field trip)
+- Rioichi Yasuda		= Yoshiro Suzuki (Hospital Death)
+- Ukemi Hajime			= Akira Ichibana (Found Dead in a Container)
+- Domina Shibuya		= Inoue Shinozaki (Throat Pierce)
+- Eiko Shikata			= Sayo Ronoroa (Gunshot Wound; Sayo's apparent cause of death is a Red Herring)
+- Rika Suzumiya			= Hiroshi Kano (Left Alone)
+- Ikaruga Takezono		= Hikaru Yamamoto (Drugged)
+- Ayanami Hayashibara	= Kyou Kirisaki (Burned to Death)
+- Kugimiya Oizumi		= Sumiko Tokubei (Hanging; part of head sliced)
+
+* PERSONAL PROBLEMS CONNECTED TO THE AUTHOR
+- Ichirou: Over-aggressive and Rash Decision-making
+- Akira: High Expectations by Family
+- Sumiko: ???
+- Inoue: Naivety
+- Sayo: Pressure as a Leader
+- Yoshiro: Prejudice
+- Hiroshi: Introversion
+- Miyu: Failed Love
+- Kyou: Narrow-minded View of Religion
+- Hikaru: ???
+
 * QUOTES
+- "Thoughts, come to my mind - mind, give me some thoughts to think about." (Lilith "Let" Carnegie, June Chapter)
 - "Naivety won't get you too far, but I'm not saying you are." (Kyou Kirisaki, June Chapter)
+- "For every effect there is a cause, the evidence present or not." (Kyou Kirisaki, June Chapter)
 - "Fear, not courage, is what makes men truly interesting. To exploit those as a weapon is to have him realize the insufferable truth -- stigmas that last forevermore." (Sayo Ronoroa, June Chapter)
 - "Even I make mistakes, you see... even the most fatal ones." (Sayo Ronoroa, June Chapter)
 - "There are things I've witnessed beyond my comprehension, things that aren’t even humanly possible." (Kyou Kirisaki, June Chapter)
 - "After all, this isn't a husk we're dealing with. What man is born devoid of emotion?" (Hiroshi Kano, June Chapter)
+- "The upliftment was a lie... Things must not go awry..." (Hiroshi Kano, July Chapter)
+- "But then, in the course of finding the answers to these questions, the students would soon learn that not every question is served to them... And when time runs short, they realize that they should not have dwelled on each passage longer than expected, setting aside their own questions for a more appropriate time." (Sayo Ronoroa and Ayumi Nakashima, July Chapter)
+- "This world is naught but an illusion, and all its inhabitants live with an illusion they cannot rid themselves of nonetheless."
+(L.C., July Chapter)
+- "After that incident, sometimes I ask myself, 'What have I done?' More appropriately, 'What have WE done?'" (Sayo Ronoroa, July Chapter)
+
+* TAGLINES
+- June: Naivety does not get one far.
+- July: The whole being refuses to remember... But why does fate dictate otherwise?
+- August: A smoke screen birthed from conflict. Oh, how much it overshadows the light!
+- September: Only the stars know what's coming. (Provisional)
+- October: Night of tragedy, Night of terror. (Provisional)
+- November: The departed commune with the living through shattered glass. (Provisional)
+- December: The matters of the heart conflict with those of the intellect. (Provisional)
+- January: Unfortunately, the truth dies with her.
+- February: What secrets can one's past unlock?
+- March: The tale is coming to a close... Until we meet again...
+
+* AND THEN THERE WERE NONE POEM CORRELATIONS
+Ten little Indians went out to dine;
+One choked his little self and then there were Nine.		- Ichirou Yokohama/ Utsune Mushido
+
+Nine little Indians sat up very late;
+One overslept himself and then there were Eight.			- Akira Ichibana/ Ikaruga Takezono
+
+Eight little Indians travelling in Devon;
+One said he’d stay there and then there were Seven.			- Hiroshi Kano/ Rika Suzumiya
+
+Seven little Indians chopping up sticks;
+One chopped himself in halves and then there were Six.		- Hikaru Yamamoto/ Ukemi Hajime
+
+Six little Indians playing with a hive;
+A bumble bee stung one and then there were Five.			- Inoue Shinozaki/ Domina Shibuya
+
+Five little Indians going in for law;
+One got in Chancery and then there were Four.				- Sayo Ronoroa/ Eiko Shikata
+
+Four little Indians going out to sea;
+A red herring swallowed one and then there were Three.		- Miyu Hirano/ Fuuko Rikiyama
+
+Three little Indians walking in the Zoo;
+A big bear hugged one and then there were Two.				- Yoshiro Suzuki/ Rioichi Yasuda
+
+Two little Indians sitting in the sun;
+One got frizzled up and then there was One.					- Kyou Kirisaki/ Ayanami Hayashibara
+
+One little Indian left all alone;
+He went and hanged himself									- Sumiko Tokubei/ Kugimiya Oizumi
+
+And then there were None.
+
+* DEATH SIMILARITIES TO THE HUNTER'S MANSION
+- Kyou Kirisaki: Jason Cubillo
+- Hiroshi Kano: Rina Ordonez
+- Ichirou Yokohama: Cheryl Heatherington
+- Yoshiro Suzuki: Gertrude Suarez
+- Inoue Shinozaki: Ave Cieto (Real Death)
+- Hikaru Yamamoto: Light Sevilla (Real Death)
+- Akira Ichibana: Aicelle Obando
+- Sayo Ronoroa: Sapphire Mercado/Shannon Bernardo/Gabriel Cannon
+- Miyu Hirano: None (still alive)
+- Sumiko Tokubei: Juniper Eleanor

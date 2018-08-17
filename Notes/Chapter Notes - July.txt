@@ -1,11 +1,159 @@
--- CHAPTER NOTES: JULY CHAPTER--
+-- CHAPTER NOTES: JULY CHAPTER/FUMIZUKI-HEN --
 
 * Central Protagonists: Hiroshi Kano, Akira Ichibana
 * Victim: Hiroshi Kano
-* Cause of Death: Five-Finger Fillet
+* Cause of Death: Five-Finger Fillet (July 19, 2013)
 * Suspect: Sayo Ronoroa
 * Word Count Goal: 30,000 words
 * Estimated Length: 2 hours
-* Central Arc Focus: College Entrance Exam Reviews
+* Central Arc Focus: The Rules of the Game
+* Primary Location: Maria St. Claire Institute
 * Nursery Rhyme: Ten Little Indians
 * Inspired By: Higurashi No Naku Koro Ni
+* Ten Little Indians Line: Eight little Indians travelling in Devon; One said he’d stay there and then there were Seven.
+* Major Plot Twist: MSCI students are not safe inside the campus.
+
+* The Student Council
+- Adviser: Mrs. Kiyobi Genkai
+- President: Sayo Ronoroa
+- Vice President: Yasuda
+- Secretary: Tanaka
+- Treasurer: Dojima
+- Auditor: Akira Ichibana
+- P.I.O: Watanabe
+- Peace Officer: Orihime
+- 4th Year Rep: Onizuka
+
+* Principal: Mrs. Sokoguchi
+
+* Advisers
+- IV-A: Ms. Ishii Harada
+- IV-B: Mrs. Yuna Ritsuko
+- IV-C: Mrs. Ren Kanako
+- IV-D: Mrs. Onna Kaida
+- IV-E: Mrs. Sasha Ichimiya
+
+* Science Club
+- President: Hiroshi Kano (Kyou Kirisaki, deceased)
+- Vice President: Sumiko Tokubei
+- Secretary: Ichirou Yokohama
+
+* Mathematics Club
+- President: Inoue Shinozaki (Temporarily Inactive)
+- Vice Presdient: Miyu Hirano (Acting President)
+- Treasurer: Hikaru Yamamoto
+
+* English Club
+- President: Ayumi Nakashima
+- Secretary: Ikuko Mimori
+
+* Police Investigative Authorities
+- Inspector Harold Emmerich
+- Sergeant Deitch
+
+* The Two Factions
+a. Sayo's Innocence (Defense)
+- Miyu Hirano (Leader)
+- Sayo Ronoroa
+- Sumiko Tokubei
+- Hikaru Yamamoto
+- Kyou Kirisaki (Unending Demise only)
+b. Sayo's Guilt (Prosecution)
+- Ichirou Yokohama (Leader)
+- Yoshiro Suzuki
+- Inoue Shinozaki
+- Akira Ichibana
+- Hiroshi Kano (Unending Demise only)
+
+* The Rules of the Game
+- Ichirou: Every month is divided into two halves - the former where you can ease yourselves and the latter where the amusement is.
+- Akira: No two people are alike. Do not bother finding a pattern as it is useless. There is, however, one way to find out if it is my own doing.
+- Sumiko: My identity is your responsibility. Even if all of this shall come to pass, I shall be forever enshrouded in mystery.
+- Inoue: Share this to no one and keep this simple. One of you is me. (Fake) You may either work alone or use your heads in figuring out the grander puzzle. However, you may regret choosing one over the other. (Real)
+- Sayo: There are ten chosen people. Whoever they are, you will find out soon if you have not already.
+- Yoshiro: I permit you to do my work for me. However, it is in my discretion to postpone the event for the month or to choose a replacement.
+- Miyu: Can you trust what you see, feel, and hear with your senses?
+- Hikaru: The period and scope are final. No bargaining allowed.
+
+* Thought Bubbles
+- First: Sayo
+- Second: Miyu
+- Third: Hikaru
+- Fourth: Yoshiro
+- Fifth: Sumiko
+- Sixth: Akira
+- Seventh: Ichirou
+
+* Outline of Review Sessions
+- Day 1-1: Science (IV-B, Chemistry and Physics) - Information identification and solving within bounds of the laws
+- Day 1-2: English (IV-D, Grammar and Writing) - Meticulosity in language and writing voice
+- Day 1-3: Mathematics (IV-E, Geometry and Trigonometry) - Logic and proving theories
+- Day 2: Emmerich's Phone Call
+- Day 2-1: English (IV-A, Reading Comprehension) - Understanding connotations and passage interpretations
+- Day 2-2: Science (IV-C, Biology) - Possible methods for murder and evidence collection techniques
+- Day 3: Developments of the Case
+- Day 4-1: Mathematics (IV-B, Algebra) - Rationality of a given problem
+- Day 4-2: Science (IV-C, General Science and Earth Science) - Distinction between natural and supernatural phenomena
+- Day 5: Pre-Mock Exam Meeting
+
+* Review Session Teams
+a. Science Club
+- Hiroshi: Biology
+- Sumiko: Chemistry and Physics
+- Yoshiro: General Science and Earth Science
+b. Mathematics Club
+- Miyu: Geometry and Trigonometry
+- Ichirou: Algebra
+c. English Club
+- Ayumi: Grammar and Writing
+- Ikuko: Reading Comprehension
+
+* Red Herrings
+- Whatever you do, don't listen to what Subconscious-Inoue is saying... some of it, at least.
+- Emmerich mentions that the new cameras installed are wired to an emergency generator in case of a power interruption. This sounds like a water-tight security system that would prevent any crimes from happening around the campus... until you realize that he never mentioned testing it against a lightning storm, which easily busts the generator. High-end security system, but the generator is somehow worse than the main school generator.
+- Akira allows Hiroshi thirty minutes to use his workstation, joking that if he doesn't come back by then, he is considered dead. It is just a joke, after all.
+- If you believe in superstitions, you might think that Sumiko will die next given that he's finally convinced to represent the Science Club after Kyou and Hiroshi's murders. Technically, this isn't true. Sumiko remains as Vice President while also being the acting president.
+ - What the audience and the seven survivors, aside from Inoue, don't realize is that the letter they intercepted is a fake. Inoue received the letter the same day everyone else did, but she switched the letters in order to spite Sayo (whom she thought is the mastermind behind her abduction). What she did actually helped L.C. in his plans!
+
+* Foreshadowing
+- Though the first part of the prologue seems to be irrelevant to the mystery, one of the things Miyu says foreshadows the chapter's murder. "Idleness can bring about the worst memories when one's guard is down."
+- When Ichirou gets stranded in the middle of a shrubbery in the prologue, he remarks that the fields invite a perfect atmosphere for a murder, sometimes with rape. He goes into detail with chop-chop victims and off-handedly mentions Lucila Lalu (a real victim in 1969) and "Samantha," the supposed resident chop-chop white lady in MSCI (Marisci in real-life). The latter's story plays a central role in the December Chapter.
+- Miyu sees Ichirou's doppelganger outside the fastfood restaurant's window at 7PM. Doppelgangers are believed to be omens of death (though, they're actually not) to the person or anyone close to them. Someone WILL die at around 7PM, but it's Hiroshi, not Ichirou.
+- Patient No. 4577, Inoue's number, spoils two deaths (Hers and ) if you know how to break it down.
+- One of Inoue's last words to Hiroshi before leaving is "I'll be seeing all of you, then?" Hiroshi jokingly responds, "Maybe?" It's sort of ironic hearing that from the person whom she will be seeing alive for the last time that very same afternoon.
+- The frequent appearance of doppelgangers hint at the circumstances of the murder later on. However, this describes more of the trick, rather than the presentation itself.
+- There's a possibility that the recording in the Flash Drive could have been manipulated out of Sayo's favor, which is why Hiroshi is adamant in proving her innocence. Of course, Miyu knows this fact and sets up a complex ruse to scare the hell out of everybody during the Mock Examinations.
+- There's something off with the Third-Person POV during the first part of the July 8 segment... if you can spot it. In one of the POV storytelling exceptions, Miyu is narrating the events and describing himself as if he is simply part of the scene.
+- Sayo staying behind foreshadows the circumstances of Hiroshi's death later on.
+- Emmerich ponders about the possibility of 1,000 other people having the same voice as Sayo, considering the angle that the phone conversation was a harmless prank after all. He's half right, because the voice is imitated/modulated.
+- Deitch mentions a "her" during his moment of reminiscence. While this is a in-passing reference to Erika Kimura (how they meet is explained in the Kairi Edogawa novel series), she will appear later on in the middle of the story.
+- Miyu explaining the odds for L.C. choosing a Second Indian out of the 202 MSCI Seniors seems to be basic infodump. If you read this part a little more closely at a certain angle, you'll notice he knows EXACTLY what he's talking about.
+- "Tell me, we didn’t imagine that broadcast... we all heard it? Ain’t I going crazy?" Akira is skeptical if he had been hallucinating the whole events last Saturday. The rest of the Student Council only stare at him, not sharing his thoughts. This is a recurring sign that a character is in danger of dying.
+- Toxin as used by Sayo sounds like metaphor at first, given the nature of her speech. However, this actually means something on literal level as well.
+- When a member of each club asks a question, pay attention to the wording of both the question and the answer. Most importantly, focus on WHO is asking the question.
+- Miyu and Ichirou brings up seeing the doppelgangers of Ichirou and Yoshiro, respectively. Guess who will die in the next two chapters.
+- At some point during Hiroshi's monologue, the perspective smoothly switches over to Akira without any timestamp. Note that this rarely happens after the first chapter. The mind only stops when the body does... or so L.C. says in his message using Hiroshi's blood.
+- Miyu knows exactly what he is talking about when he, Akira, and Yoshiro are discussing the killer.
+- The balloon thought experiment is basically Miyu telling Sanae, through a metaphorical situation, that one of them has finally snapped after witnessing one too many brutal events in such a short period of time. The balloon? Inoue Shinozaki.
+
+* Possible Holes
+- Minor; It's kind of weird there's a volleyball game when the UNO Game is obviously skipped.
+- Sayo isn't supposed to know about "her" phone conversation with Inoue.
+
+* This chapter's murder is inspired by Dennis Rader, the BTK Killer.
+* Take note: during the emergency council meeting, the heads of the three clubs involved (Science Club, Mathematics Club, English Club) are invited. This is the ONLY time they are in the council room, other than the actual murder itself. These are Hiroshi Kano, Miyu Hirano, and Ayumi Nakashima.
+* Though not a case of foreshadowing, this chapter focuses more on Ichirou than Sayo, setting up their conflict near the end of the chapter... or more accurately, the next chapter.
+* Inoue's hallucination scene with her subconscious is (accidentally) written to sound like a rape scene. Although, there is more emphasis on the "mind" aspect than "physical," the author (yours truly) tweeted an apology the day the scene was being transcribed.
+* Tomonori is in possession of a Flash Drive containing the recording of the June 13 call. This solidifies Inoue's claim that "Sayo" called her that night and subtly threatened her. Come on, who sings creepy nursery rhymes without malice and doesn't apologize the next day?
+* It is revealed that Tomonori is eavesdropping on Inoue in order to quell his suspicions on the mysterious caller.
+* MSCI's school song is titled, "Pride of the Land, Eternal Glimmer." The title is based on the first and last lines of the Marisci Hymn.
+* Emmerich made it clear that the newly-enforced security system cannot be tampered with in any way, lest the offender suffer the grave consequences. This doesn't stop the culprit from performing the murder later on.
+* The Day Counter returns from "The Hunter's Mansion" even lasting six days as in the story. Pretty cool, huh? Except the murder won't take place until after the 15th.
+* Each review session, while brief, outlines the tools necessary to solve the overall mystery. To spare the readers from indulging into academic-related details, the specifics of each subject matter are trimmed down or cut entirely.
+* The Case File Code for the Death Roulette Curse Killings is MH-0810, succeeding the Sacred Heart Curse Killings (MH-0809). This leads to some horrific thought as to just how bad the Sacred Heart murders are for the police to stop numbering after MH-0809, except for the current case.
+* The autopsy report, according to Emmerich's summary, states that Kyou (and by extension, Inoue) was drugged and starved regularly for the duration of their abduction. Whether this is accurate, is still up to debate. However, the basic facts are correct as of the current chapter.
+* The closing statement of Ayumi, with Sayo starting it, is the basis of the mystery's core. While the most essential questions are already present for the students and readers to scrutinize, they come across several questions that may be either not worth their time or unsolvable for the time being. This sets up the main hidden conflict for the rest of the story.
+* Hiroshi's thought monologue describing his introversion both benefits the plot and the meta-level. Sure it is an infodump moment, but using the fewest words possible, it outlines the key to understanding the murders in the first place as well as the emotions one may feel when isolated by choice or by design. Isolation is a tactic employed by L.C.
+* The prologue scene receives a call-back at the scene where the survivors are split between accusing Sayo and defending her. This time, however, the tension is raised because everyone's thoughts are projected for the audience. Also, Ichirou is also pissed, rather than embarrassed.
+* This is one of two chapters where the next central protagonists are introduced. The other being the end of the September Chapter, where Sayo is impeached as Council President.
+* The balloon thought experiment is a hypothetical continuation of the Schrodinger's Cat. What would happen when a previously unopened box is suddenly opened to reveal the state of the cat trapped inside? Naturally, if it was dead, then its corpse would give off a foul smell and it gets worse the longer it takes the box to open. Miyu is telling Sanae this: their (those involved in keeping Hiroshi's death lowkey) secret has been uncovered by Inoue, of all people. This causes her to snap... hard. She becomes the secondary antagonist (after L.C./Miyu) thereafter, though not a straight one.

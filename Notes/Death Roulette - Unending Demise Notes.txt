@@ -1,0 +1,105 @@
+-- DEATH ROULETTE: UNENDING DEMISE NOTES --
+
+* TYPES OF SCENARIOS
+- Best: All four possible endings are available
+- Normal: The current scenario is winnable; one or two Bad Endings and a Good Ending
+- Dead End: The current character dies at the end of the scenario; one to three possible Bad Endings
+
+* FACTORS IN DETERMINING SCENARIO TYPE AND NUMBER OF POSSIBLE ENDINGS
+- Characters currently alive/incapacitated/dead
+- Current month
+- Decisions made in the current and/or previous chapters
+- Time taken to investigate a scene
+- Tips read and evidence examined
+
+* RULES IN ORDERING ARCS
+[GENERAL RULES]
+- Ichirou's Arc: Anytime.
+- Akira's Arc: Either Ichirou or Sumiko's arcs must play first.
+- Sumiko's Arc: At least two from IV-C dies, except Miyu and himself (Akira, Yoshiro, and Hikaru), or either Ichirou or Sayo's arcs must play first.
+- Inoue's Arc: From July, before Miyu's arc.
+- Sayo's Arc: From June to February.
+- Yoshiro's Arc: From July to October, at least one protagonist dies or both Inoue and Ichirou's arcs must play first. From November onwards, before Miyu's arc.
+- Hiroshi's Arc: Anytime.
+- Miyu's Arc: February, or Sayo, Ichirou, Inoue, and Yoshiro's arcs must play first if any time from November to January.
+- Kyou's Arc: Before Inoue's arc, or from June to January.
+- Hikaru's Arc: Either Inoue or Sayo's arc must play first and it must be from November onwards.
+
+[CASES OF DEATH]
+- Ichirou's Arc: Either Hiroshi or Sumiko dies.
+- Akira's Arc: At least two from IV-C (Sumiko, Yoshiro, Miyu, Hikaru) die.
+- Sumiko's Arc: Both Sayo and Miyu die.
+- Inoue's Arc: Kyou dies and must be at least two months after his arc (she is confined under asylum the following arc).
+- Sayo's Arc: At least one death prior, or both Inoue and Hikaru die.
+- Yoshiro's Arc: Either Ichirou or Akira dies.
+- Hiroshi's Arc: Kyou dies.
+- Miyu's Arc: Sayo dies, or at least two specific protagonists (i.e. Yoshiro, Ichirou, Inoue, Hikaru) die.
+- Kyou's Arc: Either Inoue or Ichirou dies.
+- Hikaru's Arc: Either Inoue or Miyu dies.
+
+[OTHER RULES]
+- After Kyou's arc, Inoue disappears the following arc and only reappears in the next one.
+- If five deaths occur, Hikaru's arc will play immediately.
+- Any one of the four (Ichirou, Sumiko, Hiroshi, and Hikaru) arcs must be playable in March.
+- If Sayo dies, Miyu is guaranteed to survive.
+
+* CHARACTER ENDINGS
+1. Ichirou Yokohama
+- Good: 
+- Bad1: Barber's Razor
+- Bad2: Slaughterhouse Meat
+- Bad3: 
+
+2. Akira Ichibana
+- Good: 
+- Bad1: Taxidermy
+- Bad2: Hypothermia
+- Bad3: 
+
+3. Sumiko Tokubei
+- Good: 
+- Bad1: Scissortongue
+- Bad2: Rogue Chainsaw
+- Bad3: 
+
+4. Inoue Shinozaki
+- Good: 
+- Bad1: Nail Pierce
+- Bad2: Drowning
+- Bad3: Traffic Accident
+
+5. Sayo Ronoroa
+- Good: 
+- Bad1: Chocoball Bomb
+- Bad2: Booby-trapped Chair
+- Bad3: Heart Failure
+
+6. Yoshiro Suzuki
+- Good: 
+- Bad1: Falling Into Animal Pit
+- Bad2: Faulty Elevator
+- Bad3: 
+
+7. Hiroshi Kano
+- Good: 
+- Bad1: Five-Finger Fillet
+- Bad2: Computer Wires
+- Bad3: 
+
+8. Miyu Hirano
+- Good: 
+- Bad1: Forced Tooth Extraction
+- Bad2: Suicide by Falling
+- Bad3: 
+
+9. Kyou Kirisaki
+- Good: 
+- Bad1: Burned Alive
+- Bad2: Electrocution
+- Bad3: Cyanide Pill
+
+10. Hikaru Yamamoto
+- Good: 
+- Bad1: Lobotomization
+- Bad2: Toxic Fumes
+- Bad3: Glass Explosion
