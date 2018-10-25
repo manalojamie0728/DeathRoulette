@@ -37,7 +37,7 @@ define gui.about = _("")
 ## or semicolons.
 
 define build.name = "DeathRoulette-02JULY"
-define build.executable_name = "DeathRoulette-01JUNE"
+define build.executable_name = "DeathRoulette-02JULY"
 
 
 ## Sounds and music ############################################################
@@ -182,6 +182,7 @@ init python:
     ## To archive files, classify them as 'archive'.
 
     build.classify('game/**.png', 'archive')
+    build.classify('game/**.jpeg', 'archive')
     build.classify('game/**.jpg', 'archive')
     build.classify('game/**.mp3', 'archive')
     build.classify('game/**.wav', 'archive')

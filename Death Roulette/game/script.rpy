@@ -5,6 +5,7 @@
 
 # PRIMARY
 define narr = nvl_narrator
+define cen = Character(None, xalign=0.5)
 
 # -- General/Safe
 define iy1 = Character("Ichirou", color="#ffffff")
@@ -30,7 +31,7 @@ define f_mh8 = Character("Miyu", color="#08a000")
 define f_kk9 = Character("Kyou", color="#08a000")
 define f_hy10 = Character("Hikaru", color="#08a000")
 
-# -- Caution/Sane
+# -- Caution/Shaken
 define c_iy1 = Character("Ichirou", color="#eaff00")
 define c_ai2 = Character("Akira", color="#eaff00")
 define c_st3 = Character("Sumiko", color="#eaff00")
@@ -42,7 +43,7 @@ define c_mh8 = Character("Miyu", color="#eaff00")
 define c_kk9 = Character("Kyou", color="#eaff00")
 define c_hy10 = Character("Hikaru", color="#eaff00")
 
-# -- Danger/Sane
+# -- Danger/Traumatized
 define d_iy1 = Character("Ichirou", color="#e78d00")
 define d_ai2 = Character("Akira", color="#e78d00")
 define d_st3 = Character("Sumiko", color="#e78d00")
@@ -79,47 +80,57 @@ define u_kk9 = Character("Kyou", color="#808080")
 define u_hy10 = Character("Hikaru", color="#808080")
 
 # -- NVL
-define n_iy1 = Character("Ichirou", kind=nvl)
-define n_ai2 = Character("Akira", kind=nvl)
-define n_st3 = Character("Sumiko", kind=nvl)
-define n_is4 = Character("Inoue", kind=nvl)
-define n_sr5 = Character("Sayo", kind=nvl)
-define n_ys6 = Character("Yoshiro", kind=nvl)
-define n_hk7 = Character("Hiroshi", kind=nvl)
-define n_mh8 = Character("Miyu", kind=nvl)
-define n_kk9 = Character("Kyou", kind=nvl)
-define n_hy10 = Character("Hikaru", kind=nvl)
+define n_iy1 = Character("Ichirou", kind=nvl, color="#808080")
+define n_ai2 = Character("Akira", kind=nvl, color="#808080")
+define n_st3 = Character("Sumiko", kind=nvl, color="#808080")
+define n_is4 = Character("Inoue", kind=nvl, color="#808080")
+define n_sr5 = Character("Sayo", kind=nvl, color="#808080")
+define n_ys6 = Character("Yoshiro", kind=nvl, color="#808080")
+define n_hk7 = Character("Hiroshi", kind=nvl, color="#808080")
+define n_mh8 = Character("Miyu", kind=nvl, color="#808080")
+define n_kk9 = Character("Kyou", kind=nvl, color="#808080")
+define n_hy10 = Character("Hikaru", kind=nvl, color="#808080")
 
 # SECONDARY
 define tomonori = Character("Tomonori", color="#ffffff")
 define ikuko = Character("Ikuko", color="#ffffff")
 define sanae = Character("Sanae", color="#ffffff")
 define ayumi = Character("Ayumi", color="#ffffff")
+define odome = Character("Odome", color="#ffffff")
 define t_gen = Character("Mrs. Genkai", color="#ffffff")
 define t_har = Character("Ms. Harada", color="#ffffff")
 define t_rit = Character("Mrs. Ritsuko", color="#ffffff")
 define t_kan = Character("Mrs. Kanako", color="#ffffff")
 define t_kai = Character("Mrs. Kaida", color="#ffffff")
 define t_ich = Character("Mrs. Ichimiya", color="#ffffff")
+define t_aib = Character("Mrs. Aibara", color="#ffffff")
+define t_nat = Character("Ms. Natsumoto", color="#ffffff")
+define t_uen = Character("Mr. Uendo", color="#ffffff")
 define prin = Character("Mrs. Sokoguchi", color="#ffffff")
 define ms_shi = Character("Mrs. Shinozaki", color="#ffffff")
 define mr_shi = Character("Mr. Shinozaki", color="#ffffff")
 define ms_kir = Character("Mrs. Kirisaki", color="#ffffff")
+define mr_yok = Character("Mr. Yokohama", color="#ffffff")
 define p_serg = Character("Sergeant", color="#ffffff") # Same Character as Deitch
 define p_insp = Character("Inspector", color="#ffffff") # Same Character as Emmerich
 define p_emm = Character("Insp. Emmerich", color="#ffffff")
 define p_dei = Character("Sgt. Deitch", color="#ffffff")
+define nurse = Character("Nurse", color="#ffffff") # Same Character as Elisha
+define elisha = Character("Elisha", color="#ffffff")
+define eliza = Character("Eliza", color="#ffffff")
 
 # MISC
 define guard = Character("Guard", color="#ffffff")
-define nurse = Character("Nurse", color="#ffffff")
 define student = Character("Student", color="#ffffff")
 define officer = Character("Officer", color="#ffffff")
 define proctor = Character ("Proctor", color="#ffffff")
 define c_vp = Character("Vice President", color="#ffffff")
 define c_sec = Character("Secretary", color="#ffffff")
+define c_po = Character("Peace Officer", color="#ffffff")
 define c_4r = Character("Fourth-Year Rep", color="#ffffff")
 define neighbor = Character("Neighbor", color="#ffffff")
+define driver = Character("Driver", color="#ffffff")
+define librarian = Character("Librarian", color="#ffffff")
 define sanae_bro = Character("Sanae's Brother", color="#ffffff")
 define ms_yos = Character("Mrs. Yoshida", color="#ffffff")
 define unk = Character("???", color="#808080")
@@ -151,6 +162,61 @@ init:
         linear 35.0 xpos 1.0
         pause 2.0
         linear 5.0 alpha 0.0
+    python:
+        import math
+        class Shaker(object):
+        
+            anchors = {
+                'top' : 0.0,
+                'center' : 0.5,
+                'bottom' : 1.0,
+                'left' : 0.0,
+                'right' : 1.0,
+                }
+        
+            def __init__(self, start, child, dist):
+                if start is None:
+                    start = child.get_placement()
+                #
+                self.start = [ self.anchors.get(i, i) for i in start ]  # central position
+                self.dist = dist    # maximum distance, in pixels, from the starting point
+                self.child = child
+                
+            def __call__(self, t, sizes):
+                # Float to integer... turns floating point numbers to
+                # integers.                
+                def fti(x, r):
+                    if x is None:
+                        x = 0
+                    if isinstance(x, float):
+                        return int(x * r)
+                    else:
+                        return x
+
+                xpos, ypos, xanchor, yanchor = [ fti(a, b) for a, b in zip(self.start, sizes) ]
+
+                xpos = xpos - xanchor
+                ypos = ypos - yanchor
+                
+                nx = xpos + (1.0-t) * self.dist * (renpy.random.random()*2-1)
+                ny = ypos + (1.0-t) * self.dist * (renpy.random.random()*2-1)
+
+                return (int(nx), int(ny), 0, 0)
+        
+        def _Shake(start, time, child=None, dist=100.0, **properties):
+
+            move = Shaker(start, child, dist=dist)
+        
+            return renpy.display.layout.Motion(move,
+                          time,
+                          child,
+                          add_sizes=True,
+                          **properties)
+
+        Shake = renpy.curry(_Shake)
+    $ sshake = Shake((0, 0, 0, 0), 1.0, dist=15)
+    $ menu_page = 1
+    $ lock = 0
 
 # The game starts here.
 init python:
@@ -162,14 +228,15 @@ init python:
     credits = ('STORY', 'Jamie D.W.'), ('GUI', 'Jamie D.W.'), ('SPRITES', 'Made Using: IICharacterAlpha (nantoka.main.jp), 2011-2013'), ('BACKGROUNDS', 'mugenjohncel'), ('BACKGROUNDS', 'konnett'), ('BACKGROUNDS', 'Google Images'), ('BACKGROUNDS', 'Processed By: Jamie D.W.'), ('SOUND EFFECTS', 'https://freesound.org'), ('OTHER SOUND EFFECTS', '')
     credits += ('Eric Matyas (SFX)\nwww.soundimage.org', 'Street Ambience 5'), ('Eric Matyas (SFX)\nwww.soundimage.org', 'UI_Quirky18')
     credits += ('MUSIC', 'Licensed under CC Attr. 3.0 and 4.0')
-    credits += ('Eric Matyas (Music)\nwww.soundimage.org', 'Calmer Times'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Hazy Disorientation'), ('Eric Matyas (Music)\nwww.soundimage.org', 'On Things to Come'), ('Eric Matyas (Music)\nwww.soundimage.org', 'The Ant Hill Gang Goes West')
-    credits += ('Kevin MacLeod (Music)\nincompetech.com', 'Autumn Day'), ('Kevin MacLeod (Music)\nincompetech.com', 'Awkward Meeting'), ('Kevin MacLeod (Music)\nincompetech.com', 'Corruption'), ('Kevin MacLeod (Music)\nincompetech.com', 'Controlled Chaos'), ('Kevin MacLeod (Music)\nincompetech.com', 'Decline'), ('Kevin MacLeod (Music)\nincompetech.com', 'Echoes of Time')
-    credits += ('Kevin MacLeod (Music)\nincompetech.com', 'Ghost Story'), ('Kevin MacLeod (Music)\nincompetech.com', 'Merry Go'), ('Kevin MacLeod (Music)\nincompetech.com', 'Night of Chaos'), ('Kevin MacLeod (Music)\nincompetech.com', 'Porch Swing Days'), ('Kevin MacLeod (Music)\nincompetech.com', 'Road To Hell'), ('Kevin MacLeod (Music)\nincompetech.com', 'Satiate')
-    credits += ('Kevin MacLeod (Music)\nincompetech.com', 'Two Together'), ('Kevin MacLeod (Music)\nincompetech.com', 'Undaunted'), ('Kevin MacLeod (Music)\nincompetech.com', 'Vulcan')
+    credits += ('Eric Matyas (Music)\nwww.soundimage.org', 'Calmer Times'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Chasing Villains'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Great Minds'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Hazy Disorientation'), ('Eric Matyas (Music)\nwww.soundimage.org', 'On Things to Come')
+    credits += ('Eric Matyas (Music)\nwww.soundimage.org', 'Paling Around Paris'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Regrouping'), ('Eric Matyas (Music)\nwww.soundimage.org', 'The Ant Hill Gang Goes West'), ('Eric Matyas (Music)\nwww.soundimage.org', 'The Runaway')
+    credits += ('Kevin MacLeod (Music)\nincompetech.com', 'Autumn Day'), ('Kevin MacLeod (Music)\nincompetech.com', 'Awkward Meeting'), ('Kevin MacLeod (Music)\nincompetech.com', 'Corruption'), ('Kevin MacLeod (Music)\nincompetech.com', 'Controlled Chaos'), ('Kevin MacLeod (Music)\nincompetech.com', 'Decisions'), ('Kevin MacLeod (Music)\nincompetech.com', 'Decline'), ('Kevin MacLeod (Music)\nincompetech.com', 'Echoes of Time')
+    credits += ('Kevin MacLeod (Music)\nincompetech.com', 'Full On'), ('Kevin MacLeod (Music)\nincompetech.com', 'Ghost Story'), ('Kevin MacLeod (Music)\nincompetech.com', 'Interloper'), ('Kevin MacLeod (Music)\nincompetech.com', 'Merry Go'), ('Kevin MacLeod (Music)\nincompetech.com', 'Night of Chaos'), ('Kevin MacLeod (Music)\nincompetech.com', 'Porch Swing Days'), ('Kevin MacLeod (Music)\nincompetech.com', 'Road To Hell'), ('Kevin MacLeod (Music)\nincompetech.com', 'Satiate')
+    credits += ('Kevin MacLeod (Music)\nincompetech.com', 'The Complex'), ('Kevin MacLeod (Music)\nincompetech.com', 'Two Together'), ('Kevin MacLeod (Music)\nincompetech.com', 'Undaunted'), ('Kevin MacLeod (Music)\nincompetech.com', 'Vulcan')
     credits += ('Robert Austin (Music)', 'Chloe\'s Lullaby'), ('Marc Steene and Wray Burgess', 'Ring Around The Rosie (Slender Elementary Version)'), ('Marioverehrer (Original: Claude Debussy)', 'Au Clair De La Lune - Synthesia')
-    credits += ('COPYRIGHTED MUSIC', ''), ('Eiko Shimamiya', 'Chikai (Higurashi No Naku Koro Ni Chikai)'), ('tia koudelika (Original: Eiko Shimamiya)', 'Why or Why Not - Cover (Higurashi No Naku Koro Ni)'), ('Mao Hamamoto', 'Chapter1 MainBGM PSP-Original BGM11 (Corpse Party: Blood Covered Repeated Fear)')
+    credits += ('COPYRIGHTED MUSIC', ''), ('Eiko Shimamiya', 'Chikai (Higurashi No Naku Koro Ni Chikai)'), ('Sean Doody (From Channel: Andreas Brenno)', 'Fly Me To The Moon (Instrumental)'), ('tia koudelika (Original: Eiko Shimamiya)', 'Why or Why Not - Cover (Higurashi No Naku Koro Ni)'), ('Mao Hamamoto', 'Chapter1 MainBGM PSP-Original BGM11 (Corpse Party: Blood Covered Repeated Fear)')
     credits += ('SPECIAL THANKS TO', 'Lizeth Baldelomar - Stay Awesome! ;)')
-    credits += ('COPYRIGHT, 2017', 'Jamie D.W.')
+    credits += ('COPYRIGHT, 2018', 'Jamie D.W.')
     credits_s = "{size=50}CREDITS\n\n"
     c1 = ''
     for c in credits:
@@ -212,9 +279,54 @@ label start:
     stop music
     scene black with fade
 
+    #if menu_page == 1:
+    #    menu:
+    #        "{b}--SELECT CHAPTER--{/b}"
+    #        "June":
+    #            call ch01_june
+    #        "July":
+    #            call ch02_july
+    #        "August":
+    #            call ch03_august
+    #            jump start
+    #        "September":
+    #            "{color=#bd0000}NOT YET AVAILABLE"
+    #            jump start
+    #        "October":
+    #            "{color=#bd0000}NOT YET AVAILABLE"
+    #            jump start
+    #        ">>> NEXT PAGE":
+    #            $ menu_page = 2
+    #            jump start
+    #        "RETURN TO MAIN MENU":
+    #            return
+    #elif menu_page == 2:
+    #    menu:
+    #        "{b}--SELECT CHAPTER--{/b}"
+    #        "November":
+    #            "{color=#bd0000}NOT YET AVAILABLE"
+    #            jump start
+    #        "December":
+    #            "{color=#bd0000}NOT YET AVAILABLE"
+    #            jump start
+    #        "January":
+    #            "{color=#bd0000}NOT YET AVAILABLE"
+    #            jump start
+    #        "February":
+    #            "{color=#bd0000}NOT YET AVAILABLE"
+    #            jump start
+    #        "March":
+    #            "{color=#bd0000}NOT YET AVAILABLE"
+    #            jump start
+    #        "<<< PREVIOUS PAGE":
+    #            $ menu_page = 1
+    #            jump start
+    #        "RETURN TO MAIN MENU":
+    #            return
+
     #call ch01_june from _call_ch01_june
-    call ch02_july
-    #call ch03_august
+    #call ch02_july from _call_ch02_july
+    call ch03_august
     #call ch04_september
     #call ch05_october
     #call ch06_november
@@ -408,7 +520,7 @@ label opening:
     return
 
 label credits:
-    $ credits_speed = 300 #scrolling speed in seconds
+    $ credits_speed = 400 #scrolling speed in seconds
     play music guest_whyorwhynot
     scene black with dissolve
     show theend:

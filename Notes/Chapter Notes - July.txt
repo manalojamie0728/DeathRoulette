@@ -108,6 +108,12 @@ c. English Club
 - Ayumi: Grammar and Writing
 - Ikuko: Reading Comprehension
 
+* Nursery Rhyme Lyrics - Ten Little Indians (Shortened Version)
+	One little, Two little, Three little Indians,
+	Four little, Five little, Six little Indians,
+	Seven little, Eight little, Nine little Indians,
+	Ten little Indian boys...
+
 * Red Herrings
 - Whatever you do, don't listen to what Subconscious-Inoue is saying... some of it, at least.
 - Emmerich mentions that the new cameras installed are wired to an emergency generator in case of a power interruption. This sounds like a water-tight security system that would prevent any crimes from happening around the campus... until you realize that he never mentioned testing it against a lightning storm, which easily busts the generator. High-end security system, but the generator is somehow worse than the main school generator.
@@ -131,10 +137,14 @@ c. English Club
 - "Tell me, we didn’t imagine that broadcast... we all heard it? Ain’t I going crazy?" Akira is skeptical if he had been hallucinating the whole events last Saturday. The rest of the Student Council only stare at him, not sharing his thoughts. This is a recurring sign that a character is in danger of dying.
 - Toxin as used by Sayo sounds like metaphor at first, given the nature of her speech. However, this actually means something on literal level as well.
 - When a member of each club asks a question, pay attention to the wording of both the question and the answer. Most importantly, focus on WHO is asking the question.
+- The trio (Miyu, Sumiko, and Ichirou) is discussing the second verse of the Ten Little Indians poem: "Nine little Indians sat up very late. One overslept himself and then there were Eight." He says that the verse could very well apply to one of them. He's talking about themselves... including Akira.
 - Miyu and Ichirou brings up seeing the doppelgangers of Ichirou and Yoshiro, respectively. Guess who will die in the next two chapters.
 - At some point during Hiroshi's monologue, the perspective smoothly switches over to Akira without any timestamp. Note that this rarely happens after the first chapter. The mind only stops when the body does... or so L.C. says in his message using Hiroshi's blood.
 - Miyu knows exactly what he is talking about when he, Akira, and Yoshiro are discussing the killer.
+- Watch Miyu's actions closely during the climactic split-up. He is not worried about the contents of the letter; rather, he is afraid that he might be exposed as L.C. then and there.
+- "It's as if you know exactly what betrayal truly feels like..." This line uttered by Miyu counts as a triple foreshadowing: one for the true events of Hiroshi's murder (all this debate of loyalty and whatnot), and another for Miyu's backstory. The third can be obtained by reading the line in this manner: "I'm going to kill you next, you idiot."
 - The balloon thought experiment is basically Miyu telling Sanae, through a metaphorical situation, that one of them has finally snapped after witnessing one too many brutal events in such a short period of time. The balloon? Inoue Shinozaki.
+- Another one for the balloon thought experiment. A simple yet surprisingly complex game subtly reveals one disturbing aspect of Miyu: the ability to manipulate people in believing whatever he wishes them to in order to favor himself. That is, until his victim realizes something is off.
 
 * Possible Holes
 - Minor; It's kind of weird there's a volleyball game when the UNO Game is obviously skipped.
@@ -156,4 +166,5 @@ c. English Club
 * Hiroshi's thought monologue describing his introversion both benefits the plot and the meta-level. Sure it is an infodump moment, but using the fewest words possible, it outlines the key to understanding the murders in the first place as well as the emotions one may feel when isolated by choice or by design. Isolation is a tactic employed by L.C.
 * The prologue scene receives a call-back at the scene where the survivors are split between accusing Sayo and defending her. This time, however, the tension is raised because everyone's thoughts are projected for the audience. Also, Ichirou is also pissed, rather than embarrassed.
 * This is one of two chapters where the next central protagonists are introduced. The other being the end of the September Chapter, where Sayo is impeached as Council President.
+* When Miyu ponders "how many days has it been," he asks "Five?" or "Ten?" Both are contextually correct. The present day when this scene takes place is five days after the division of loyalty and ten days after Hiroshi's murder. The very next line supports the former idea, though.
 * The balloon thought experiment is a hypothetical continuation of the Schrodinger's Cat. What would happen when a previously unopened box is suddenly opened to reveal the state of the cat trapped inside? Naturally, if it was dead, then its corpse would give off a foul smell and it gets worse the longer it takes the box to open. Miyu is telling Sanae this: their (those involved in keeping Hiroshi's death lowkey) secret has been uncovered by Inoue, of all people. This causes her to snap... hard. She becomes the secondary antagonist (after L.C./Miyu) thereafter, though not a straight one.

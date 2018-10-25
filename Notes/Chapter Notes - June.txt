@@ -51,16 +51,22 @@
 - Akane Yuuichi
 
 * Sacred Heart Curse Killings Victim List
-- June:			Fuujo Rikiyama
-- July:			Utsune Mushido
-- August:		Rioichi Yasuda
-- September:	Ukemi Hajime
-- October:		Domina Shibuya
-- November:		Eiko Shikata
-- December:		Rika Suzumiya
-- January:		Ikaruga Takezono
-- February:		Ayanami Hayashibara
-- March:		Kugimiya Oizumi
+- June:			Fuuko Rikiyama (F; Live-wire Hanging - 06/28)
+- July:			Utsune Mushido (M; Poison Dart Chemical Overdose - 07/21)
+- August:		Rioichi Yasuda (M; Brain Hemorrhage - 08/26)
+- September:	Ukemi Hajime (F; Multiple Stab Wounds - 09/30)
+- October:		Domina Shibuya (F; Throat Drill - 10/19)
+- November:		Eiko Shikata (F; Chair Gun Trap - 11/23)
+- December:		Rika Suzumiya (F; Drowning - 12/25)
+- January:		Ikaruga Takezono (M; Crushed Under the Influence - 01/25)
+- February:		Ayanami Hayashibara (F; Tanning Machine Burns - 02/24)
+- March:		Kugimiya Oizumi (F; Head Slice - 03/28)
+
+* Nursery Rhyme Lyrics - Ring Around The Rosie
+	Ring around the rosies,
+	A pocket full of posies,
+	A-tishoo! A-tishoo!
+	We all fall down...
 
 * Red Herrings
 - Sayo narrating the latter part of the June 18, 2013 section - her catchphrase is present, despite the whole thing narrated in the Third-Person perspective. In truth, this is just meant to throw off readers in case they do not realize the similarity of events happening at the same time.
@@ -132,7 +138,7 @@ The solution: S-S-M-M-L-M-L-M (100 psi | 80 psi | 70 psi)
 
 * Tips
 - Several plot points are given away in the UNO game.
-- The conversation between Ichirou and L.C./Miyu is extended in v1.1.
+- The conversation between Ichirou and L.C. is extended in v1.1.
 
 * Potential Holes
 - So Kyou found an ink bottle (Segment 11). What purpose does it serve?

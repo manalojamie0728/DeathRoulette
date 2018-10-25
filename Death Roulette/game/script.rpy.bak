@@ -5,31 +5,129 @@
 
 # PRIMARY
 define narr = nvl_narrator
-define iy1 = Character("Ichirou")
-define ai2 = Character("Akira")
-define st3 = Character("Sumiko")
-define is4 = Character("Inoue")
-define sr5 = Character("Sayo")
-define ys6 = Character("Yoshiro")
-define hk7 = Character("Hiroshi")
-define mh8 = Character("Miyu")
-define kk9 = Character("Kyou")
-define hy10 = Character("Hikaru")
+define cen = Character(None, xalign=0.5)
+
+# -- General/Safe
+define iy1 = Character("Ichirou", color="#ffffff")
+define ai2 = Character("Akira", color="#ffffff")
+define st3 = Character("Sumiko", color="#ffffff")
+define is4 = Character("Inoue", color="#ffffff")
+define sr5 = Character("Sayo", color="#ffffff")
+define ys6 = Character("Yoshiro", color="#ffffff")
+define hk7 = Character("Hiroshi", color="#ffffff")
+define mh8 = Character("Miyu", color="#ffffff")
+define kk9 = Character("Kyou", color="#ffffff")
+define hy10 = Character("Hikaru", color="#ffffff")
+
+# -- Fine/Sane
+define f_iy1 = Character("Ichirou", color="#08a000")
+define f_ai2 = Character("Akira", color="#08a000")
+define f_st3 = Character("Sumiko", color="#08a000")
+define f_is4 = Character("Inoue", color="#08a000")
+define f_sr5 = Character("Sayo", color="#08a000")
+define f_ys6 = Character("Yoshiro", color="#08a000")
+define f_hk7 = Character("Hiroshi", color="#08a000")
+define f_mh8 = Character("Miyu", color="#08a000")
+define f_kk9 = Character("Kyou", color="#08a000")
+define f_hy10 = Character("Hikaru", color="#08a000")
+
+# -- Caution/Shaken
+define c_iy1 = Character("Ichirou", color="#eaff00")
+define c_ai2 = Character("Akira", color="#eaff00")
+define c_st3 = Character("Sumiko", color="#eaff00")
+define c_is4 = Character("Inoue", color="#eaff00")
+define c_sr5 = Character("Sayo", color="#eaff00")
+define c_ys6 = Character("Yoshiro", color="#eaff00")
+define c_hk7 = Character("Hiroshi", color="#eaff00")
+define c_mh8 = Character("Miyu", color="#eaff00")
+define c_kk9 = Character("Kyou", color="#eaff00")
+define c_hy10 = Character("Hikaru", color="#eaff00")
+
+# -- Danger/Traumatized
+define d_iy1 = Character("Ichirou", color="#e78d00")
+define d_ai2 = Character("Akira", color="#e78d00")
+define d_st3 = Character("Sumiko", color="#e78d00")
+define d_is4 = Character("Inoue", color="#e78d00")
+define d_sr5 = Character("Sayo", color="#e78d00")
+define d_ys6 = Character("Yoshiro", color="#e78d00")
+define d_hk7 = Character("Hiroshi", color="#e78d00")
+define d_mh8 = Character("Miyu", color="#e78d00")
+define d_kk9 = Character("Kyou", color="#e78d00")
+define d_hy10 = Character("Hikaru", color="#e78d00")
+
+# -- Critical/Insane
+define r_iy1 = Character("Ichirou", color="#bd0000")
+define r_ai2 = Character("Akira", color="#bd0000")
+define r_st3 = Character("Sumiko", color="#bd0000")
+define r_is4 = Character("Inoue", color="#bd0000")
+define r_sr5 = Character("Sayo", color="#bd0000")
+define r_ys6 = Character("Yoshiro", color="#bd0000")
+define r_hk7 = Character("Hiroshi", color="#bd0000")
+define r_mh8 = Character("Miyu", color="#bd0000")
+define r_kk9 = Character("Kyou", color="#bd0000")
+define r_hy10 = Character("Hikaru", color="#bd0000")
+
+# -- Dead/Unknown
+define u_iy1 = Character("Ichirou", color="#808080")
+define u_ai2 = Character("Akira", color="#808080")
+define u_st3 = Character("Sumiko", color="#808080")
+define u_is4 = Character("Inoue", color="#808080")
+define u_sr5 = Character("Sayo", color="#808080")
+define u_ys6 = Character("Yoshiro", color="#808080")
+define u_hk7 = Character("Hiroshi", color="#808080")
+define u_mh8 = Character("Miyu", color="#808080")
+define u_kk9 = Character("Kyou", color="#808080")
+define u_hy10 = Character("Hikaru", color="#808080")
+
+# -- NVL
+define n_iy1 = Character("Ichirou", kind=nvl, color="#808080")
+define n_ai2 = Character("Akira", kind=nvl, color="#808080")
+define n_st3 = Character("Sumiko", kind=nvl, color="#808080")
+define n_is4 = Character("Inoue", kind=nvl, color="#808080")
+define n_sr5 = Character("Sayo", kind=nvl, color="#808080")
+define n_ys6 = Character("Yoshiro", kind=nvl, color="#808080")
+define n_hk7 = Character("Hiroshi", kind=nvl, color="#808080")
+define n_mh8 = Character("Miyu", kind=nvl, color="#808080")
+define n_kk9 = Character("Kyou", kind=nvl, color="#808080")
+define n_hy10 = Character("Hikaru", kind=nvl, color="#808080")
 
 # SECONDARY
-define tomonori = Character("Tomonori")
-define ikuko = Character("Ikuko")
-define t_gen = Character("Mrs. Genkai")
-define t_har = Character("Ms. Harada")
-define t_kan = Character("Mrs. Kanako")
-define prin = Character("Mrs. Sokoguchi")
-define ms_shi = Character("Mrs. Shinozaki")
-define ms_kir = Character("Mrs. Kirisaki")
-define p_serg = Character("Sergeant")
-define p_insp = Character("Inspector") # Same Character as Emmerich
-define p_emm = Character("Insp. Emmerich")
-define guard = Character("Guard")
-define unk = Character("???")
+define tomonori = Character("Tomonori", color="#ffffff")
+define ikuko = Character("Ikuko", color="#ffffff")
+define sanae = Character("Sanae", color="#ffffff")
+define ayumi = Character("Ayumi", color="#ffffff")
+define t_gen = Character("Mrs. Genkai", color="#ffffff")
+define t_har = Character("Ms. Harada", color="#ffffff")
+define t_rit = Character("Mrs. Ritsuko", color="#ffffff")
+define t_kan = Character("Mrs. Kanako", color="#ffffff")
+define t_kai = Character("Mrs. Kaida", color="#ffffff")
+define t_ich = Character("Mrs. Ichimiya", color="#ffffff")
+define prin = Character("Mrs. Sokoguchi", color="#ffffff")
+define ms_shi = Character("Mrs. Shinozaki", color="#ffffff")
+define mr_shi = Character("Mr. Shinozaki", color="#ffffff")
+define ms_kir = Character("Mrs. Kirisaki", color="#ffffff")
+define mr_yok = Character("Mr. Yokohama", color="#ffffff")
+define p_serg = Character("Sergeant", color="#ffffff") # Same Character as Deitch
+define p_insp = Character("Inspector", color="#ffffff") # Same Character as Emmerich
+define p_emm = Character("Insp. Emmerich", color="#ffffff")
+define p_dei = Character("Sgt. Deitch", color="#ffffff")
+define nurse = Character("Nurse", color="#ffffff") # Same Character as Elisha
+define elisha = Character("Elisha", color="#ffffff")
+define eliza = Character("Eliza", color="#ffffff")
+
+# MISC
+define guard = Character("Guard", color="#ffffff")
+define student = Character("Student", color="#ffffff")
+define officer = Character("Officer", color="#ffffff")
+define proctor = Character ("Proctor", color="#ffffff")
+define c_vp = Character("Vice President", color="#ffffff")
+define c_sec = Character("Secretary", color="#ffffff")
+define c_po = Character("Peace Officer", color="#ffffff")
+define c_4r = Character("Fourth-Year Rep", color="#ffffff")
+define neighbor = Character("Neighbor", color="#ffffff")
+define sanae_bro = Character("Sanae's Brother", color="#ffffff")
+define ms_yos = Character("Mrs. Yoshida", color="#ffffff")
+define unk = Character("???", color="#808080")
 
 init:
     $ LS = Position(xpos=0.2, xanchor=0.2, ypos=0.55, yanchor=0.5, yoffset=100)
@@ -58,6 +156,60 @@ init:
         linear 35.0 xpos 1.0
         pause 2.0
         linear 5.0 alpha 0.0
+    python:
+        import math
+        class Shaker(object):
+        
+            anchors = {
+                'top' : 0.0,
+                'center' : 0.5,
+                'bottom' : 1.0,
+                'left' : 0.0,
+                'right' : 1.0,
+                }
+        
+            def __init__(self, start, child, dist):
+                if start is None:
+                    start = child.get_placement()
+                #
+                self.start = [ self.anchors.get(i, i) for i in start ]  # central position
+                self.dist = dist    # maximum distance, in pixels, from the starting point
+                self.child = child
+                
+            def __call__(self, t, sizes):
+                # Float to integer... turns floating point numbers to
+                # integers.                
+                def fti(x, r):
+                    if x is None:
+                        x = 0
+                    if isinstance(x, float):
+                        return int(x * r)
+                    else:
+                        return x
+
+                xpos, ypos, xanchor, yanchor = [ fti(a, b) for a, b in zip(self.start, sizes) ]
+
+                xpos = xpos - xanchor
+                ypos = ypos - yanchor
+                
+                nx = xpos + (1.0-t) * self.dist * (renpy.random.random()*2-1)
+                ny = ypos + (1.0-t) * self.dist * (renpy.random.random()*2-1)
+
+                return (int(nx), int(ny), 0, 0)
+        
+        def _Shake(start, time, child=None, dist=100.0, **properties):
+
+            move = Shaker(start, child, dist=dist)
+        
+            return renpy.display.layout.Motion(move,
+                          time,
+                          child,
+                          add_sizes=True,
+                          **properties)
+
+        Shake = renpy.curry(_Shake)
+    $ sshake = Shake((0, 0, 0, 0), 1.0, dist=15)
+    $ menu_page = 1
 
 # The game starts here.
 init python:
@@ -119,8 +271,53 @@ label start:
     stop music
     scene black with fade
 
+    #if menu_page == 1:
+    #    menu:
+    #        "{b}--SELECT CHAPTER--{/b}"
+    #        "June":
+    #            call ch01_june
+    #        "July":
+    #            call ch02_july
+    #        "August":
+    #            "{color=#bd0000}NOT YET AVAILABLE"
+    #            jump start
+    #        "September":
+    #            "{color=#bd0000}NOT YET AVAILABLE"
+    #            jump start
+    #        "October":
+    #            "{color=#bd0000}NOT YET AVAILABLE"
+    #            jump start
+    #        ">>> NEXT PAGE":
+    #            $ menu_page = 2
+    #            jump start
+    #        "RETURN TO MAIN MENU":
+    #            return
+    #elif menu_page == 2:
+    #    menu:
+    #        "{b}--SELECT CHAPTER--{/b}"
+    #        "November":
+    #            "{color=#bd0000}NOT YET AVAILABLE"
+    #            jump start
+    #        "December":
+    #            "{color=#bd0000}NOT YET AVAILABLE"
+    #            jump start
+    #        "January":
+    #            "{color=#bd0000}NOT YET AVAILABLE"
+    #            jump start
+    #        "February":
+    #            "{color=#bd0000}NOT YET AVAILABLE"
+    #            jump start
+    #        "March":
+    #            "{color=#bd0000}NOT YET AVAILABLE"
+    #            jump start
+    #        "<<< PREVIOUS PAGE":
+    #            $ menu_page = 1
+    #            jump start
+    #        "RETURN TO MAIN MENU":
+    #            return
+
     call ch01_june
-    #call ch02_july
+    #call ch02_july from _call_ch02_july
     #call ch03_august
     #call ch04_september
     #call ch05_october

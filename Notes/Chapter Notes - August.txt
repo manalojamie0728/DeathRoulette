@@ -5,7 +5,7 @@
 * Cause of Death: Barber's Razor (August 23, 2013)
 * Suspect: Miyu Hirano, Sayo Ronoroa
 * Word Count Goal: 35,000 words
-* Estimated Length: 2-3 hours
+* Estimated Length: 3 hours
 * Central Arc Focus: The Faction War
 * Primary Location: Kutsutochi
 * Nursery Rhyme: Baa Baa Black Sheep
@@ -13,4 +13,210 @@
 * Ten Little Indians Line: Ten little Indians went out to dine; One choked his little self and then there were Nine.
 * Major Plot Twist: The culprit has a split personality, both childlike (represented by Miyu and Sayo).
 
+* The Student Council
+- Adviser: Mrs. Kiyobi Genkai
+- President: Sayo Ronoroa
+- Vice President: Yasuda
+- Secretary: Tanaka
+- Treasurer: Dojima
+- Auditor: Akira Ichibana
+- P.I.O: Watanabe
+- Peace Officer: Orihime
+- 4th Year Rep: Onizuka
+
+* Principal: Mrs. Sokoguchi
+
+* Advisers
+- IV-A: Ms. Ishii Harada
+- IV-B: Mrs. Yuna Ritsuko
+- IV-C: Mrs. Ren Kanako
+- IV-D: Mrs. Onna Kaida
+- IV-E: Mrs. Sasha Ichimiya
+
+* Other Teachers/ School Officials
+- Guidance Counselor: Ms. Natsumoto
+- Kutsutochi Education Minister: Ms. Saotomi Khai
+
+* Science Club
+- President: Sumiko Tokubei
+- Vice President: Ichirou Yokohama
+- Secretary: Hisashi Odome
+
+* Mathematics Club
+- Adviser: Mrs. Enzei Aibara
+- Co-Adviser: Mr. Sasuke Uendo
+- President: Inoue Shinozaki
+- Vice Presdient: Miyu Hirano
+- Treasurer: Hikaru Yamamoto
+
+* English Club
+- President: Ayumi Nakashima
+- Secretary: Ikuko Mimori
+
+* Police Investigative Authorities
+- Inspector Harold Emmerich
+- Sergeant Deitch
+
+* The Two Factions
+a. Sayo's Innocence (Defense - Blue)
+- Miyu Hirano (Leader)
+- Sayo Ronoroa
+- Sumiko Tokubei
+- Hikaru Yamamoto
+- Kyou Kirisaki (Unending Demise only)
+b. Sayo's Guilt (Prosecution - Red)
+- Ichirou Yokohama (Leader)
+- Yoshiro Suzuki
+- Inoue Shinozaki
+- Akira Ichibana
+- Hiroshi Kano (Unending Demise only)
+
+* The Rules of the Game
+- Ichirou: Every month is divided into two halves - the former where you can ease yourselves and the latter where the amusement is.
+- Akira: No two people are alike. Do not bother finding a pattern as it is useless. There is, however, one way to find out if it is my own doing.
+- Sumiko: My identity is your responsibility. Even if all of this shall come to pass, I shall be forever enshrouded in mystery.
+- Inoue: Share this to no one and keep this simple. One of you is me. (Fake) You may either work alone or use your heads in figuring out the grander puzzle. However, you may regret choosing one over the other. (Real)
+- Sayo: There are ten chosen people. Whoever they are, you will find out soon if you have not already.
+- Yoshiro: I permit you to do my work for me. However, it is in my discretion to postpone the event for the month or to choose a replacement.
+- Miyu: Can you trust what you see, feel, and hear with your senses?
+- Hikaru: The period and scope are final. No bargaining allowed.
+
+* Multiple Side Word Counts (Current - for equalizing purposes)
+- Neutral: 11,874 words
+- Guilty: 11,983 words
+- Innocent: 11,372 words
+
+* Investigation: Questioning Inoue (Neutral: Miyu, Sumiko, Hikaru, Ichirou, Yoshiro, Akira)
+a. Innocent
+- Miyu: What state were you in when you've first woken up? (The "old soul" comment)
+- Sumiko: Hold on. "He?" (L.C.'s multiple personalities)
+- Hikaru: You saw Kirisaki dead? How? (Hallucination in the living room)
+b. Guilty
+- Ichirou: Can you describe the place where you've woken up? (Au Clair De La Lune)
+- Yoshiro: Voices? Of whom? (Mentioning the pool)
+- Akira: Maybe the corpse is a dummy? (Hallucination in the chemistry lab)
+
+* Investigation: Hiroshi Kano's Crime Scene (Neutral: Emmerich)
+1. Office
+- Workstation: Corpse, Bloody Message, Computer (unlock by Akira:"Discovered body")
+2. Conference Room
+- Sayo Ronoroa: "Last seen alive", "Power outage"
+- Akira Ichibana: "Discovered body", "Power outage"
+
+* Investigation: Kutsutochi Public Library (Guilty: Ichirou)
+1. Circulation
+- Information Desk: "Operating hours", "Archives section", "L.C. initials" (unlock by searching through the newspaper rack for the first time), "Children's section" (unlock by Inoue:"Nursery rhymes")
+- Yoshiro Suzuki: "What to look for?", "Night of the murder", "Science Club presidency"
+2. General Reference
+- Bookshelves: Biochemistry, Greek Mythology, Criminal Psychology
+- Akira Ichibana: "Sorry for prank", "Voices inside your head" (unlock by Akira:"Sorry for prank")
+3. Periodicals (unlock by asking the Information Desk)
+- Newspapers: Research, Obituaries (unlock by asking the Information Desk about L.C. initials), Sacred Heart Curse Killings
+- Photographs: Old MSCI, Missing child (unlock by reading Let Carnegie's obituary)
+- Inoue Shinozaki: "Nursery rhymes", "Au Clair De La Lune" (unlock by Inoue:"Can you describe the place...?"), "Let Carnegie" (unlock by viewing the Missing Child photograph)
+
+* Investigation: Capital Region Police District (Innocent: Miyu)
+1. Reception Area
+- Reception Desk: "Inspector Emmerich"
+- Sayo Ronoroa: "What to look for?", "L.C.'s challenge", "Inoue's memories" (unlock by Sumiko:"Hold on. He?")
+2. Office (unlock by talking to reception desk officer)
+- Inspector Emmerich: "Purpose of visit", "Hiroshi's case", "Cursed killings?", "Suspicious chemical" (unlock by finishing Archives and Akira:"Maybe the corpse is a dummy?")
+3. Archives (unlock by asking the first three questions for Emmerich)
+- Old Case Files - MH-0809: "Fuuko Rikiyama", "Rika Suzumiya" (unlock by "Voices? Of whom?" and by completing the Fuuko Rikiyama segment)
+- Walkie-talkie: Contact Sergeant (can only be completed by Sumiko:"Live wires")
+- Sumiko Tokubei (unlock by reading the Old Case Files): "Ichirou's decision", "Liquid chlorine" (unlock by Akira:"Maybe the corpse is a dummy?"), "Live wires"
+- Hikaru Yamamoto (unlock by reading the Old Case Files): "Inoue's condition", "Nursery rhymes"
+
+* Bonus Details (From Questioning Inoue)
+a. Innocent
+- "Can you describe the place where you've woken up?" causes a discussion interpreting the song's meaning.
+- "Hold on. He?" will bring up the scene during the UNO game where Sayo explains the significance of a tell.
+- "Voices? Of whom?" will have Sayo's group investigate Rika Suzumiya's death in addition to Fuuko Rikiyama's.
+- "Maybe the corpse is a dummy?" will prompt Sayo to ask Emmerich about the liquid chlorine found in the chemistry lab when they receive the autopsy reports from him.
+b. Guilty
+- "Can you describe the place where you've woken up?" will prompt Inoue to discuss her piano-learning history.
+- "Hold on. He?" will trigger a discussion between Ichirou and Akira about their potential suspects regarding L.C.'s identity besides Sayo.
+- "You saw Kirisaki dead? How?" will unlock a segment between Miyu and Ichirou about the involvement of supernatural forces.
+- "Maybe the corpse is a dummy?" will unlock a segment between Miyu and Ichirou regarding the possibility of the current Inoue being an impostor and the eighth letter's appearance as a device to play on their assumptions.
+
+* Nursery Rhyme Lyrics - Baa Baa Black Sheep
+	Baa, Baa, black sheep
+	Have you any wool?
+	Yes sir! Yes sir!
+	Three bags full.
+	Two for the master,
+	One for the dame,
+	None for the little boy,
+	Who cries down the lane...
+
+* Red Herrings
+- Just a minor point. Ichirou does not resign as an officer from the Environmental Organization despite his seemingly final decision whilst being dispirited. Yoshiro and Akira managed to change his mind later on. He does, however, replace Sumiko as Vice President of Science Club. Also, one factor in his disinterest at the presidency is the fact that Kyou Kirisaki and Hiroshi Kano -- two deceased students who were both President of the Science Club -- have died within one month of each other.
+- Despite the "fair play" statement by Sayo, she's not L.C. (depsite the latter saying something similar during the June Chapter)
+- First of all, you need to undestand that Inoue and Miyu are Unreliable Narrators. Not everything they say is true, the false ones especially if no one supports their statements.
+- According to Inoue, one of the Carnegie sisters underwent counseling after Let's tragic accident. As you would be led to believe later on, this isn't Elisha (despite her subservient personality to her sister). It's Eliza. Things snowball to Hell from there on.
+- There's a reason why Miyu asked Hikaru what her favorite nursery rhyme is. He wasn't bored or anything as he claimed.
+- In an unlockable dialogue, Miyu suggests that Inoue might be the true killer, given how her situation resembled that of Rika Suzumiya's. Though shown several times to snap, Inoue only hurts her friends and enemies, at best.
+- While waiting for the bell, Sayo swung her legs and clicked her tongue not unlike the two Let Carnegies' tics. She even beats a nursery rhyme with her tongue clicks. Hikaru was oblivious to all of this. Be like her.
+- Throughout the chapter, Inoue is continually suspected to be an impostor and/or an accomplice to L.C. She's 100% genuine.
+- Minister Khai is set up to be a Designated Villain, doing what any reasonable Minister of Education would in times of crisis. This makes her very unpopular with the students despite establishing herself as the daughter of MSCI's first principal. Gradually subverted later on when it's revealed that she's using her position to drive away Mrs. Sokoguchi because of some personal beef. She is also a corrupt bureaucrat and an ally of the Shinozakis.
+- Just so you know, Miyu and Ichirou offer interesting theories about either the hallucinations or Inoue's unexplained shift in behavior. Despite some of them being tangential to the actual truth of the crimes, none of them are valid conclusions.
+- Miyu is the only one missing in the Innocent side's third story part. You are supposed to believe either he or Ichirou had died sometime between Friday and the weekend. Heck, it's even presented like he was the next victim especially right before the cliffhanger. However, as we learn in the epilogue, he is alive and well.
+
+* Foreshadowing
+- Within the rhyme itself, as by the end of the chapter, there are now three victims. Two of these are believed to have been committed by Sayo (the master), and the third by Miyu (the dame) with Sayo as an accomplice.
+- Miyu asks himself if he would ever appear in a courtroom just because the testing room looks just like one. He does... two months later.
+- The proctor in the first part of the prologue? That's Eliza Carnegie, one of the two perpetrators of the Sacred Heart Curse Killings.
+- Miyu, at first glance, is confused upon learning that Inoue refers to L.C. using male pronouns. In reality, he is disturbed, which causes him to further distort people's perception of L.C. This isn't even the first time he was ALMOST exposed as L.C. either!
+- Take note of Miyu's comment regarding L.C. as an old soul. It's important when you find out more about the characters later on.
+- Akira warns Ichirou that the school might get probed if Hiroshi's death comes out in the open. Despite the IV-B's (and eventually, the whole batch's) efforts in controlling any information leak, the Ministry of Education pays them a visit nearly two weeks after.
+- Yoshiro's skepticism about Ichirou's testimony is not without basis. Remember that Akira couldn't see Ichirou, Miyu, and Sumiko during the time when Hiroshi was being killed and that Ikuko was still at MSCI at the time. Of course, Ichirou remembers "most" of the events because he's hiding critical details on purpose.
+- Notice who is listed among Ichirou's candidates of being psychopaths before ending with himself. While the first four has supposedly killed or will be accused of murder in the future, it makes you wonder why Ichirou has listed HIMSELF.
+- "Did I remember it right?" Uh oh...
+- The plate number, LCS-879, is a code to deduce LC's true identity.
+- The old photographs of MSCI has two significances. First, it involves twin sisters present one each in two of the photos (with Mrs. Kaida and Mrs. Ritsuko as advisers) - these are Elisha (IV-E) and Eliza (IV-C) Carnegie. Second, the two sections mentioned by Ichirou. One of them has the mastermind, present and past, and the other the unwitting pawn, also present and past.
+- Ichirou has been established as an unsympathetic jerkass given his bold accusation near the end of the previous chapter. His ideals stick until Yoshiro slaps the hard truth on him regarding his irrational decisions. Over time, he comes to regret his actions (if you read his dialogue carefully). Too bad he gets killed before he tells everyone the truth.
+- Read the scene closely when Ichirou gives a hand signal from inside when a neighbor does a safety check. This will come into play later on.
+- Sayo's armor-piercing question to Miyu is the following: "Ask yourself, did you ever will for this to happen?" Miyu falls silent and becomes afraid to answer that question. She's right, but she doesn't know it yet.
+- Miyu presents an alternate scenario where Ayumi is the Student Council President instead of Sayo. She affirms that, even if that were the case, L.C. would still carry on with their plans (without the risk of killing himself) because position is trivial to the motive. In "And Then There Were None," the ten victims were specifically handpicked by U.N. Owen because of a certain aspect to their character. Here, L.C. picks the ten students to perfectly represent each of his personal flaws and problems.
+- Miyu similarly (as Sayo, Emmerich, and possibly Deitch) dismisses the call recording between Sayo and Inoue as dubious evidence, suggesting that a voice modulator may have been used. Naturally, he knows that.
+- The Speculation about Fuuko Rikiyama's murder seems to be a shameless rehash of Hiroshi Kano's murder. Except... that's how it happened. And Miyu is the one narrating it.
+- Miyu and Hikaru are arguing about Inoue's trauma, the latter insisting that she will eventually see things much clearer when enough time has passed. Miyu rebutts, "When she finally dies?" He makes it happen, though.
+- Miyu's favorite nursery rhyme is "Jack and Jill." It's the same rhyme he hears before his false death in the theater. He's lucky it was Erika who found him and snapped him out of his delusion.
+- The existence of FDX-A (and FDX, in general) opens up a LOT of floodgates with regards to minor details surrounding every crime. For example, Inoue's unusual case of PTSD, or generally, any character's hallucination.
+- Miyu's quote regarding how the past and the future are important factors in deciding the present makes zero sense. That is until one interprets it this way: There is a pattern to the victims and both the Sacred Heart Cursed Killings and Miyu's past are the keys to stopping L.C.
+- Sayo suggests that Miyu should be the one to talk Ichirou out of his foolish conviction and that they settle their differences to finally apprehend L.C. The end result is the opposite of what she intended. Sayo and Miyu are accused later on with Ichirou's murder.
+- Sayo beats to "The Alphabet Song" while waiting for the end of the afternoon break. "The Alphabet Song" has the same tune as "Baa, Baa, Black Sheep," the rhyme used before Ichirou is murdered. Later on, Ikuko shares a verse with the Parable of the Lost Sheep.
+- Pay attention to the Innocent side's third story part. It's told from Sayo's perspective when it's supposed to be from Miyu's perspective (and he's the only one missing; compare it to the Guilty side where Ichirou is the only character from that side appearing). After all, he's one of the two central protagonists of this chapter. As L.C. stated, he wants to play fair. The first Knox Commandment states that the "criminal is not someone whose thoughts the reader is allowed to follow."
+- Inoue's constant agitation and refusal to the entire peace-talking scene only makes sense right at the end. She had received a letter from Ichirou that morning. He wrote it while he was being tortured the night Miyu came over.
+- It's not easily noticeable, but Ichirou remembers a certain line from Inoue whether or not you ask the question connected to it. It's a sign (aside from Ichirou not being able to speak) that the entire sequence is a dying dream/speculation by Yoshiro.
+- The color of the Date/Time of Ichirou's death scene is gray, the same as the Fuuko Rikiyama Speculation. The prologue of the next chapter confirms that, rendering Miyu and Sayo's guilt ambiguous.
+
+* Possible Holes
+- Sayo is suspicious of Miyu and Sumiko. Shouldn't she be trusting them just like they trust her? Well, among the four of them, the only one truly innocent of murdering Hiroshi is Hikaru. Sayo can share the information (i.e. Hiroshi's initial autopsy report) without any restraints.
+- So... what happened to the fastfood restaurant discussion?
+
 * This chapter's murder is inspired by Ted Bundy, the Charismatic Necrophile.
+* Courtroom No. 4 as well as Miyu's amusing thoughts before the examination are laden with Ace Attorney references.
+* Pedro, Diego, and Juan are the three brothers in the first act of "Ibong Adarna."
+* "He's the fool." Inoue is referring to her older brother Tomonori, not Hiroshi.
+* It's kind of sad that the person Inoue admires for his diligence is the very same person who would break her trust not long after. Inoue dies without personally telling Miyu these two words: "Thank you." He does, however, find out much later.
+* The surviving eight students note that Kyou and Hiroshi were both Presidents of the Science Club and that they both died while they were still in position. Some of them think the position is cursed. Ichirou, having this train of thought, vehemently refuses the position and concedes it to Sumiko instead, despite the latter already the top officer in both his homeroom and his organization. What Ichirou is actually saying -- if bitterness and the talk of betrayal added in -- is, "I wish you die next." Ironic, since Sumiko is actually the last to die amongst the ten chosen students.
+* Depending on the questions you ask Inoue, you will get to see the perspectives of either Miyu's side or Ichirou's side. Answering at least two first-choice questions will let you read the rest of the chapter from Miyu's perspective. The opposite is true for Ichirou's side. There are also subtle differences in subsequent scenes based on your questions.
+* Fundamentally, both Miyu and Ichirou's factions follow the same plot in their respective routes: investigation, contemplation, and revelation. However, the overall tones are polar opposites. Miyu's side retains the mystery-horror feel of the entire story with some bits of humor. Ichirou's route reads more like a high school comedy with a touch of horror. It also gives a subtle insight on the true conflict surrounding these two factions.
+* Sayo's group is the perfect composition, because each one of them possesses a specialized ability that can answer a specific component of L.C.'s game. In fact, each of the four books found in the library correspond to one person: Miyu for Greek Mythology, Sayo for Criminal Psychology, Sumiko for Biochemistry, and Hikaru for Nursery Rhymes.
+* Ichirou is an idiot for revealing his birthday wish. Now, the effects are more likely weakened, placing the four of them in danger (although Akira and Inoue are safe).
+* Hikaru was referencing Silent Hill when Inoue mentions the environment changing after she regains control of her senses. Miyu spoils this almost immediately, though. Made funnier when a direct nod is made with the Missing Child photo.
+* The scene immediately following Inoue's confession is the first diverging path of the story. Whichever side asked more is the main perspective for most of the chapter. There are a few minor details added to certain parts depending on the specific questions asked.
+* Emmerich's short scene in-between the diverging paths serves as an introduction to the investigation mechanics for the next scene and beyond. Also, he is referring to some of the cases he was involved in while he was still a crime laboratory assistant. His notes are taken from his investigation of Hiroshi's crime scene.
+* Sayo's fascination with the "ask the suspects in the crime scene" technique is brilliant if you consider that she loves studying psychological concepts.
+* Enjoy Miyu taking a jab at every transportation problem while commuting. It's a commentary that transcends into the actual country Death Roulette is based on.
+* Why is Fuuko Rikiyama the victim Miyu's group checked? She is the first victim. Naturally, they needed to start somewhere. Their interpretations of where should she fit in the "Ten Little Indians" rhyme are all incorrect. Additionally, if you asked a certain question earlier when Inoue was being questioned, they will also look up Rika Suzumiya. She is the prime suspect in at least one of the murders.
+* This is the first time Speculations will be used. Instead of describing each evidence into a long infodump, scenes will be created from these items based on one of the characters' interpretations. Of course, you should be able to discern which Speculation can be trusted.
+* Fenrerodoxinaline (FDX) is an odorless and colorless amphetamine. It is extracted from a flower indigenous to the country where Death Roulette is set. It has a variety of uses, all of which cause negative physical and mental changes in the body. It is manufactured in Japan by the Saito Yakuza group, distributed internationally by Oliver Claythorne Jr.
+* Fenrerodoxin-A (FDX-A) is an alcoholic derivative of FDX, modified to have barbiturate-like properties. It is a rare drug used as a hallucinogen and a poison if ingested at a high dosage. It is inspired by Silent Hill's PTV, possibly even surpassing the effects of the drug.
+* Fenrerodoxin-B (FDX-B) is a liquid chlorine-like derivative of FDX. It causes hormonal changes in the body and negatively affects emotional response. It tastes the same as chlorine, but it has an odor unlike the original chemical. It is first found in an ampoule Inoue and Kyou found in the Labyrinth's chemical lab and is collected at the facility's sedimentary pool.
+* "Truth hurts. It bites!" is an actual Thought for the Week based on the author's actual experiences. Fun fact.
+* Take note how the dialogue is written. There are hidden implications that can be found if one reads carefully. For example, Ichirou's cough and cold spells cause enough distraction for him not to notice sedatives being mixed into his glass of Coke.
+* Despite their differences, the six students sat in the same positions they sat on during the first chapter.
+* Ichirou is a left-handed person. The number of fingernails on each finger "Sayo" and "Miyu" slices matches the poem perfectly. The dominant hand represents the master; the other is the dame.
+* CONCEPT: This is the first chapter to introduce multiple perspectives. Choose from one of two sides: Ichirou or Miyu. Note the difference in sympathy levels depending on which side you are reading the story from. It is, however, imperative to read the chapter from both sides as they take place from different time periods.

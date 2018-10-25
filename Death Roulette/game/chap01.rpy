@@ -356,7 +356,7 @@ label ch01_03_clubday:
     show ichirou focusleft at LS with Dissolve(0.2)
     "Ichirou glanced at the neighbouring room.{w} Sumiko was inside, cross-armed and glaring at him. He motioned for Ichirou to come inside."
 
-    show ichirou embarassed at LS with Dissolve(0.2)
+    show ichirou embarrassed at LS with Dissolve(0.2)
     iy1 "Half-past five near the auditorium, Miyu. Spread the word."
 
     hide ichirou with Dissolve(0.2)
@@ -754,7 +754,7 @@ label ch01_04_tenvictims:
     show hikaru pissed at Eight8 with Dissolve(0.2)
     hy10 "The kicker?{w} Turns out she had a lot of tokens stashed away secretly! Hmph. What nerve!"
 
-    show ichirou embarassed at Eight3 with Dissolve(0.2)
+    show ichirou embarrassed at Eight3 with Dissolve(0.2)
     show akira smirk at Eight2 with Dissolve(0.2)
     show sumiko sighclosed at Eight1 with Dissolve(0.2)
     show kyou happyclosed at Eight4 with Dissolve(0.2)
@@ -3031,7 +3031,7 @@ label ch01_14_labinoue3:
     narr "A valve’s size is proportional to its pipe.{w} Likewise, there are three similarly-sized tanks each fitted with a pressure gauge going up to 100 psi."
     narr "Farthest to the left are some lockers large enough to fit in a suit.{w} One of them has a broken padlock.{w} Suppose something is there..."
 
-    play music guest_corpseparty loop
+    play music bg_thecomplex loop
     nvl clear
     narr "A little later, my legs recovered;{w} thus, I can explore the area freely."
     narr "Inside the locker is a crowbar, much to my delight.{w} Ah, prepare for the mighty iron, you slobs!{w} And the crowbar mustered its magic."
@@ -3818,7 +3818,7 @@ label ch01_15_labkyou3:
     narr "{i}Hahahahahahahahahahaha!{/i}"
     narr "................................................"
     narr "{i}Hush! Hush!{w=1.5} Hush! Hush!{w=1.5}\nAnd all...{w=2.0} fell down...{/i}"
-    stop sound
+    stop audio
 
     nvl clear
     window hide
@@ -4060,7 +4060,7 @@ label ch01_17_facts2:
     mh8 "She?{w} Wait a minute...{fast} {i}*GASP*{/i}{w} What did Hikaru tell you about me?!"
     show sayo smileopen at Three3 with Dissolve(0.2)
     sr5 "You have an affinity for the supernatural, haven’t you?{w} Or, let’s be more grounded.{w} Detective work, perhaps?"
-    show miyu embarassed at Three2 with Dissolve(0.2)
+    show miyu embarrassed at Three2 with Dissolve(0.2)
     mh8 "What? Ahahahahaha!{w} I’m in no position for that, Sayo.{w} This isn’t a random flash game on the internet, we’re dealing with real crime here."
 
     "Ikuko and Ayumi passed by, the latter giving Sayo a thumbs up."
