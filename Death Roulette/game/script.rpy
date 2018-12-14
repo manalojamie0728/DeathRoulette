@@ -111,6 +111,7 @@ define ms_shi = Character("Mrs. Shinozaki", color="#ffffff")
 define mr_shi = Character("Mr. Shinozaki", color="#ffffff")
 define ms_kir = Character("Mrs. Kirisaki", color="#ffffff")
 define mr_yok = Character("Mr. Yokohama", color="#ffffff")
+define ms_yok = Character("Mrs. Yokohama", color="#ffffff")
 define p_serg = Character("Sergeant", color="#ffffff") # Same Character as Deitch
 define p_insp = Character("Inspector", color="#ffffff") # Same Character as Emmerich
 define p_emm = Character("Insp. Emmerich", color="#ffffff")
@@ -118,6 +119,8 @@ define p_dei = Character("Sgt. Deitch", color="#ffffff")
 define nurse = Character("Nurse", color="#ffffff") # Same Character as Elisha
 define elisha = Character("Elisha", color="#ffffff")
 define eliza = Character("Eliza", color="#ffffff")
+define minister = Character("Minister", color="#ffffff")
+define rikiyama = Character("Rikiyama", color="#ffffff")
 
 # MISC
 define guard = Character("Guard", color="#ffffff")
@@ -131,6 +134,7 @@ define c_4r = Character("Fourth-Year Rep", color="#ffffff")
 define neighbor = Character("Neighbor", color="#ffffff")
 define driver = Character("Driver", color="#ffffff")
 define librarian = Character("Librarian", color="#ffffff")
+define teacher = Character("Teacher", color="#ffffff")
 define sanae_bro = Character("Sanae's Brother", color="#ffffff")
 define ms_yos = Character("Mrs. Yoshida", color="#ffffff")
 define unk = Character("???", color="#808080")
