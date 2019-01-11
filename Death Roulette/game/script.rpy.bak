@@ -96,17 +96,22 @@ define tomonori = Character("Tomonori", color="#ffffff")
 define ikuko = Character("Ikuko", color="#ffffff")
 define sanae = Character("Sanae", color="#ffffff")
 define ayumi = Character("Ayumi", color="#ffffff")
+define odome = Character("Odome", color="#ffffff")
 define t_gen = Character("Mrs. Genkai", color="#ffffff")
 define t_har = Character("Ms. Harada", color="#ffffff")
 define t_rit = Character("Mrs. Ritsuko", color="#ffffff")
 define t_kan = Character("Mrs. Kanako", color="#ffffff")
 define t_kai = Character("Mrs. Kaida", color="#ffffff")
 define t_ich = Character("Mrs. Ichimiya", color="#ffffff")
+define t_aib = Character("Mrs. Aibara", color="#ffffff")
+define t_nat = Character("Ms. Natsumoto", color="#ffffff")
+define t_uen = Character("Mr. Uendo", color="#ffffff")
 define prin = Character("Mrs. Sokoguchi", color="#ffffff")
 define ms_shi = Character("Mrs. Shinozaki", color="#ffffff")
 define mr_shi = Character("Mr. Shinozaki", color="#ffffff")
 define ms_kir = Character("Mrs. Kirisaki", color="#ffffff")
 define mr_yok = Character("Mr. Yokohama", color="#ffffff")
+define ms_yok = Character("Mrs. Yokohama", color="#ffffff")
 define p_serg = Character("Sergeant", color="#ffffff") # Same Character as Deitch
 define p_insp = Character("Inspector", color="#ffffff") # Same Character as Emmerich
 define p_emm = Character("Insp. Emmerich", color="#ffffff")
@@ -114,6 +119,8 @@ define p_dei = Character("Sgt. Deitch", color="#ffffff")
 define nurse = Character("Nurse", color="#ffffff") # Same Character as Elisha
 define elisha = Character("Elisha", color="#ffffff")
 define eliza = Character("Eliza", color="#ffffff")
+define minister = Character("Minister", color="#ffffff")
+define rikiyama = Character("Rikiyama", color="#ffffff")
 
 # MISC
 define guard = Character("Guard", color="#ffffff")
@@ -125,6 +132,9 @@ define c_sec = Character("Secretary", color="#ffffff")
 define c_po = Character("Peace Officer", color="#ffffff")
 define c_4r = Character("Fourth-Year Rep", color="#ffffff")
 define neighbor = Character("Neighbor", color="#ffffff")
+define driver = Character("Driver", color="#ffffff")
+define librarian = Character("Librarian", color="#ffffff")
+define teacher = Character("Teacher", color="#ffffff")
 define sanae_bro = Character("Sanae's Brother", color="#ffffff")
 define ms_yos = Character("Mrs. Yoshida", color="#ffffff")
 define unk = Character("???", color="#808080")
@@ -144,6 +154,8 @@ init:
     $ Eight6 = Position(xpos=0.71, xanchor=0.71, ypos=0.55, yanchor=0.5, yoffset=100)
     $ Eight7 = Position(xpos=0.86, xanchor=0.86, ypos=0.55, yanchor=0.5, yoffset=100)
     $ Eight8 = Position(xpos=1.0, xanchor=1.0, ypos=0.55, yanchor=0.5, yoffset=100)
+    $ PortraitL = Position(xpos=0.15, xanchor=0.15, ypos=0.1, yanchor=0.5, yoffset=100)
+    $ PortraitR = Position(xpos=0.85, xanchor=0.85, ypos=0.1, yanchor=0.5, yoffset=100)
     transform slide_left:
         zoom 2.0
         xpos 0.9 xanchor 0.9 ypos 0.85 yanchor 0.5
@@ -210,6 +222,7 @@ init:
         Shake = renpy.curry(_Shake)
     $ sshake = Shake((0, 0, 0, 0), 1.0, dist=15)
     $ menu_page = 1
+    $ lock = 0
 
 # The game starts here.
 init python:
@@ -221,14 +234,15 @@ init python:
     credits = ('STORY', 'Jamie D.W.'), ('GUI', 'Jamie D.W.'), ('SPRITES', 'Made Using: IICharacterAlpha (nantoka.main.jp), 2011-2013'), ('BACKGROUNDS', 'mugenjohncel'), ('BACKGROUNDS', 'konnett'), ('BACKGROUNDS', 'Google Images'), ('BACKGROUNDS', 'Processed By: Jamie D.W.'), ('SOUND EFFECTS', 'https://freesound.org'), ('OTHER SOUND EFFECTS', '')
     credits += ('Eric Matyas (SFX)\nwww.soundimage.org', 'Street Ambience 5'), ('Eric Matyas (SFX)\nwww.soundimage.org', 'UI_Quirky18')
     credits += ('MUSIC', 'Licensed under CC Attr. 3.0 and 4.0')
-    credits += ('Eric Matyas (Music)\nwww.soundimage.org', 'Calmer Times'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Hazy Disorientation'), ('Eric Matyas (Music)\nwww.soundimage.org', 'On Things to Come'), ('Eric Matyas (Music)\nwww.soundimage.org', 'The Ant Hill Gang Goes West')
-    credits += ('Kevin MacLeod (Music)\nincompetech.com', 'Autumn Day'), ('Kevin MacLeod (Music)\nincompetech.com', 'Awkward Meeting'), ('Kevin MacLeod (Music)\nincompetech.com', 'Corruption'), ('Kevin MacLeod (Music)\nincompetech.com', 'Controlled Chaos'), ('Kevin MacLeod (Music)\nincompetech.com', 'Decline'), ('Kevin MacLeod (Music)\nincompetech.com', 'Echoes of Time')
-    credits += ('Kevin MacLeod (Music)\nincompetech.com', 'Ghost Story'), ('Kevin MacLeod (Music)\nincompetech.com', 'Merry Go'), ('Kevin MacLeod (Music)\nincompetech.com', 'Night of Chaos'), ('Kevin MacLeod (Music)\nincompetech.com', 'Porch Swing Days'), ('Kevin MacLeod (Music)\nincompetech.com', 'Road To Hell'), ('Kevin MacLeod (Music)\nincompetech.com', 'Satiate')
-    credits += ('Kevin MacLeod (Music)\nincompetech.com', 'Two Together'), ('Kevin MacLeod (Music)\nincompetech.com', 'Undaunted'), ('Kevin MacLeod (Music)\nincompetech.com', 'Vulcan')
+    credits += ('Eric Matyas (Music)\nwww.soundimage.org', 'Calmer Times'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Chasing Villains'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Great Minds'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Hazy Disorientation'), ('Eric Matyas (Music)\nwww.soundimage.org', 'On Things to Come')
+    credits += ('Eric Matyas (Music)\nwww.soundimage.org', 'Paling Around Paris'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Regrouping'), ('Eric Matyas (Music)\nwww.soundimage.org', 'The Ant Hill Gang Goes West'), ('Eric Matyas (Music)\nwww.soundimage.org', 'The Runaway')
+    credits += ('Kevin MacLeod (Music)\nincompetech.com', 'Autumn Day'), ('Kevin MacLeod (Music)\nincompetech.com', 'Awkward Meeting'), ('Kevin MacLeod (Music)\nincompetech.com', 'Corruption'), ('Kevin MacLeod (Music)\nincompetech.com', 'Controlled Chaos'), ('Kevin MacLeod (Music)\nincompetech.com', 'Decisions'), ('Kevin MacLeod (Music)\nincompetech.com', 'Decline'), ('Kevin MacLeod (Music)\nincompetech.com', 'Echoes of Time')
+    credits += ('Kevin MacLeod (Music)\nincompetech.com', 'Full On'), ('Kevin MacLeod (Music)\nincompetech.com', 'Ghost Story'), ('Kevin MacLeod (Music)\nincompetech.com', 'Interloper'), ('Kevin MacLeod (Music)\nincompetech.com', 'Merry Go'), ('Kevin MacLeod (Music)\nincompetech.com', 'Night of Chaos'), ('Kevin MacLeod (Music)\nincompetech.com', 'Porch Swing Days'), ('Kevin MacLeod (Music)\nincompetech.com', 'Road To Hell'), ('Kevin MacLeod (Music)\nincompetech.com', 'Satiate')
+    credits += ('Kevin MacLeod (Music)\nincompetech.com', 'The Complex'), ('Kevin MacLeod (Music)\nincompetech.com', 'Two Together'), ('Kevin MacLeod (Music)\nincompetech.com', 'Undaunted'), ('Kevin MacLeod (Music)\nincompetech.com', 'Vulcan')
     credits += ('Robert Austin (Music)', 'Chloe\'s Lullaby'), ('Marc Steene and Wray Burgess', 'Ring Around The Rosie (Slender Elementary Version)'), ('Marioverehrer (Original: Claude Debussy)', 'Au Clair De La Lune - Synthesia')
-    credits += ('COPYRIGHTED MUSIC', ''), ('Eiko Shimamiya', 'Chikai (Higurashi No Naku Koro Ni Chikai)'), ('tia koudelika (Original: Eiko Shimamiya)', 'Why or Why Not - Cover (Higurashi No Naku Koro Ni)'), ('Mao Hamamoto', 'Chapter1 MainBGM PSP-Original BGM11 (Corpse Party: Blood Covered Repeated Fear)')
+    credits += ('COPYRIGHTED MUSIC', ''), ('Eiko Shimamiya', 'Chikai (Higurashi No Naku Koro Ni Chikai)'), ('Sean Doody (From Channel: Andreas Brenno)', 'Fly Me To The Moon (Instrumental)'), ('tia koudelika (Original: Eiko Shimamiya)', 'Why or Why Not - Cover (Higurashi No Naku Koro Ni)'), ('Mao Hamamoto', 'Chapter1 MainBGM PSP-Original BGM11 (Corpse Party: Blood Covered Repeated Fear)')
     credits += ('SPECIAL THANKS TO', 'Lizeth Baldelomar - Stay Awesome! ;)')
-    credits += ('COPYRIGHT, 2017', 'Jamie D.W.')
+    credits += ('COPYRIGHT, 2018', 'Jamie D.W.')
     credits_s = "{size=50}CREDITS\n\n"
     c1 = ''
     for c in credits:
@@ -279,7 +293,7 @@ label start:
     #        "July":
     #            call ch02_july
     #        "August":
-    #            "{color=#bd0000}NOT YET AVAILABLE"
+    #            call ch03_august
     #            jump start
     #        "September":
     #            "{color=#bd0000}NOT YET AVAILABLE"
@@ -316,9 +330,9 @@ label start:
     #        "RETURN TO MAIN MENU":
     #            return
 
-    call ch01_june
+    #call ch01_june from _call_ch01_june
     #call ch02_july from _call_ch02_july
-    #call ch03_august
+    call ch03_august
     #call ch04_september
     #call ch05_october
     #call ch06_november
@@ -512,7 +526,7 @@ label opening:
     return
 
 label credits:
-    $ credits_speed = 300 #scrolling speed in seconds
+    $ credits_speed = 400 #scrolling speed in seconds
     play music guest_whyorwhynot
     scene black with dissolve
     show theend:

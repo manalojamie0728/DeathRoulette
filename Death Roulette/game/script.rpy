@@ -154,6 +154,8 @@ init:
     $ Eight6 = Position(xpos=0.71, xanchor=0.71, ypos=0.55, yanchor=0.5, yoffset=100)
     $ Eight7 = Position(xpos=0.86, xanchor=0.86, ypos=0.55, yanchor=0.5, yoffset=100)
     $ Eight8 = Position(xpos=1.0, xanchor=1.0, ypos=0.55, yanchor=0.5, yoffset=100)
+    $ PortraitL = Position(xpos=0.15, xanchor=0.15, ypos=0.1, yanchor=0.5, yoffset=100)
+    $ PortraitR = Position(xpos=0.85, xanchor=0.85, ypos=0.1, yanchor=0.5, yoffset=100)
     transform slide_left:
         zoom 2.0
         xpos 0.9 xanchor 0.9 ypos 0.85 yanchor 0.5
@@ -232,15 +234,15 @@ init python:
     credits = ('STORY', 'Jamie D.W.'), ('GUI', 'Jamie D.W.'), ('SPRITES', 'Made Using: IICharacterAlpha (nantoka.main.jp), 2011-2013'), ('BACKGROUNDS', 'mugenjohncel'), ('BACKGROUNDS', 'konnett'), ('BACKGROUNDS', 'Google Images'), ('BACKGROUNDS', 'Processed By: Jamie D.W.'), ('SOUND EFFECTS', 'https://freesound.org'), ('OTHER SOUND EFFECTS', '')
     credits += ('Eric Matyas (SFX)\nwww.soundimage.org', 'Street Ambience 5'), ('Eric Matyas (SFX)\nwww.soundimage.org', 'UI_Quirky18')
     credits += ('MUSIC', 'Licensed under CC Attr. 3.0 and 4.0')
-    credits += ('Eric Matyas (Music)\nwww.soundimage.org', 'Calmer Times'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Chasing Villains'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Great Minds'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Hazy Disorientation'), ('Eric Matyas (Music)\nwww.soundimage.org', 'On Things to Come')
-    credits += ('Eric Matyas (Music)\nwww.soundimage.org', 'Paling Around Paris'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Regrouping'), ('Eric Matyas (Music)\nwww.soundimage.org', 'The Ant Hill Gang Goes West'), ('Eric Matyas (Music)\nwww.soundimage.org', 'The Runaway')
+    credits += ('Eric Matyas (Music)\nwww.soundimage.org', 'Calmer Times'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Chasing Villains'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Great Minds'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Disturbed Soundscape'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Great Minds'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Hazy Disorientation'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Mellow Puzzler'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Mind Bender')
+    credits += ('Eric Matyas (Music)\nwww.soundimage.org', 'On Things to Come'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Paling Around Paris'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Regrouping'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Sky Puzzler'), ('Eric Matyas (Music)\nwww.soundimage.org', 'The Ant Hill Gang Goes West'), ('Eric Matyas (Music)\nwww.soundimage.org', 'The Runaway'), ('Eric Matyas (Music)\nwww.soundimage.org', 'Tough Choices')
     credits += ('Kevin MacLeod (Music)\nincompetech.com', 'Autumn Day'), ('Kevin MacLeod (Music)\nincompetech.com', 'Awkward Meeting'), ('Kevin MacLeod (Music)\nincompetech.com', 'Corruption'), ('Kevin MacLeod (Music)\nincompetech.com', 'Controlled Chaos'), ('Kevin MacLeod (Music)\nincompetech.com', 'Decisions'), ('Kevin MacLeod (Music)\nincompetech.com', 'Decline'), ('Kevin MacLeod (Music)\nincompetech.com', 'Echoes of Time')
     credits += ('Kevin MacLeod (Music)\nincompetech.com', 'Full On'), ('Kevin MacLeod (Music)\nincompetech.com', 'Ghost Story'), ('Kevin MacLeod (Music)\nincompetech.com', 'Interloper'), ('Kevin MacLeod (Music)\nincompetech.com', 'Merry Go'), ('Kevin MacLeod (Music)\nincompetech.com', 'Night of Chaos'), ('Kevin MacLeod (Music)\nincompetech.com', 'Porch Swing Days'), ('Kevin MacLeod (Music)\nincompetech.com', 'Road To Hell'), ('Kevin MacLeod (Music)\nincompetech.com', 'Satiate')
     credits += ('Kevin MacLeod (Music)\nincompetech.com', 'The Complex'), ('Kevin MacLeod (Music)\nincompetech.com', 'Two Together'), ('Kevin MacLeod (Music)\nincompetech.com', 'Undaunted'), ('Kevin MacLeod (Music)\nincompetech.com', 'Vulcan')
     credits += ('Robert Austin (Music)', 'Chloe\'s Lullaby'), ('Marc Steene and Wray Burgess', 'Ring Around The Rosie (Slender Elementary Version)'), ('Marioverehrer (Original: Claude Debussy)', 'Au Clair De La Lune - Synthesia')
     credits += ('COPYRIGHTED MUSIC', ''), ('Eiko Shimamiya', 'Chikai (Higurashi No Naku Koro Ni Chikai)'), ('Sean Doody (From Channel: Andreas Brenno)', 'Fly Me To The Moon (Instrumental)'), ('tia koudelika (Original: Eiko Shimamiya)', 'Why or Why Not - Cover (Higurashi No Naku Koro Ni)'), ('Mao Hamamoto', 'Chapter1 MainBGM PSP-Original BGM11 (Corpse Party: Blood Covered Repeated Fear)')
     credits += ('SPECIAL THANKS TO', 'Lizeth Baldelomar - Stay Awesome! ;)')
-    credits += ('COPYRIGHT, 2018', 'Jamie D.W.')
+    credits += ('COPYRIGHT, 2019', 'Jamie D.W.')
     credits_s = "{size=50}CREDITS\n\n"
     c1 = ''
     for c in credits:
@@ -264,20 +266,43 @@ init:
     image opening9 = Text("{size=40}MUSIC AND SFX\n{size=30}Eric Matyas\nKevin MacLeod\nRobert Austin", text_align=0.5)
     image opening10 = Text("{size=40}FEATURING SONGS FROM\n{size=30}Higurashi No Naku Koro Ni\nCorpse Party: Blood Covered Repeated Fear", text_align=0.5)
     image opening11 = Text("{size=40}DIRECTED BY\n{size=30}Jamie D.W.", text_align=0.5)
-    image openingname1 = Text("{size=40}Sayo Ronoroa", text_align=0.5)
-    image openingname2 = Text("{size=40}Hikaru Yamamoto", text_align=0.5)
-    image openingname3 = Text("{size=40}Kyou Kirisaki", text_align=0.5)
-    image openingname4 = Text("{size=40}Inoue Shinozaki", text_align=0.5)
-    image openingname5 = Text("{size=40}Miyu Hirano", text_align=0.5)
-    image openingname6 = Text("{size=40}Ichirou Yokohama", text_align=0.5)
-    image openingname7 = Text("{size=40}Sumiko Tokubei", text_align=0.5)
-    image openingname8 = Text("{size=40}Akira Ichibana", text_align=0.5)
-    image openingname9 = Text("{size=40}Yoshiro Suzuki", text_align=0.5)
-    image openingname10 = Text("{size=40}Hiroshi Kano", text_align=0.5)
+    image openingname1 = Text("{size=40}{color=#bd0000}Sayo Ronoroa{/color}", text_align=0.5)
+    image openingname2 = Text("{size=40}{color=#bd0000}Hikaru Yamamoto{/color}", text_align=0.5)
+    image openingname3 = Text("{size=40}{color=#bd0000}Kyou Kirisaki{/color}", text_align=0.5)
+    image openingname4 = Text("{size=40}{color=#bd0000}Inoue Shinozaki{/color}", text_align=0.5)
+    image openingname5 = Text("{size=40}{color=#bd0000}Miyu Hirano{/color}", text_align=0.5)
+    image openingname6 = Text("{size=40}{color=#bd0000}Ichirou Yokohama{/color}", text_align=0.5)
+    image openingname7 = Text("{size=40}{color=#bd0000}Sumiko Tokubei{/color}", text_align=0.5)
+    image openingname8 = Text("{size=40}{color=#bd0000}Akira Ichibana{/color}", text_align=0.5)
+    image openingname9 = Text("{size=40}{color=#bd0000}Yoshiro Suzuki{/color}", text_align=0.5)
+    image openingname10 = Text("{size=40}{color=#bd0000}Hiroshi Kano{/color}", text_align=0.5)
+    image openingname11 = Text("{size=40}{color=#bd0000}Insp. Emmerich{/color}", text_align=0.5)
+    image openingname12 = Text("{size=40}{color=#bd0000}Ikuko Mimori{/color}", text_align=0.5)
+    image openingname13 = Text("{size=40}{color=#bd0000}Ayumi Nakashima{/color}", text_align=0.5)
     image splash1 = Text("{size=60}{color=#f00}WARNING{/color}", text_align=0.5)
     image splash2 = Text("{size=50}{color=#f00}The following contains acts of violence and other content that may be disturbing to some players.\nPlay at your own risk.{/color}", text_align=0.5)
     image theend = Text("{size=80}CREATED BY:\nJamie D.W.", text_align=0.5)
     image thanks = Text("{size=80}DEATH ROULETTE\nSEE YOU NEXT TIME!", text_align=0.5)
+
+    image openingb_1 = Text("{size=60}A GAME BY\nJamie D.W.", text_align=0.5)
+    image openingb_2 = Text("{size=60}A REN\'PY VISUAL NOVEL", text_align=0.5)
+    image openingb_3 = Text("{size=60}JAMIE D.W.\nPRESENTS", text_align=0.5)
+    image openingb_4 = Text("{size=40}SCENARIO\n{size=30}Jamie D.W.", text_align=0.5)
+    image openingb_5 = Text("{size=40}BACKGROUNDS\n{size=30}mugenjohncel (CC)", text_align=0.5)
+    image openingb_6 = Text("{size=40}SPRITES\n{size=30}Made with: IICharacterAlpha (nantoko.main.jp), 2011-2013", text_align=0.5)
+    image openingb_7 = Text("{size=40}MUSIC AND SFX\n{size=30}Eric Matyas (CC)\nKevin MacLeod (CC)\nRobert Austin\nwww.freesound.org", text_align=0.5)
+    image openingb_8 = Text("{size=40}DIRECTED BY\n{size=30}Jamie D.W.", text_align=0.5)
+    image openingb_9 = Text("{size=60}{color=#bd0000}{i}Who's next, I wonder?{/i}{/color}", text_align=0.5)
+    image opquote_sayo = Text("{size=20}{/size}", text_align=0.5)
+    image opquote_miyu = Text("{size=20}{/size}", text_align=0.5)
+    image opquote_inoue = Text("{size=20}{/size}", text_align=0.5)
+    image opquote_ichirou = Text("{size=20}{/size}", text_align=0.5)
+    image opquote_yoshiro = Text("{size=20}{/size}", text_align=0.5)
+    image opquote_hikaru = Text("{size=20}{/size}", text_align=0.5)
+    image opquote_sumiko = Text("{size=20}{/size}", text_align=0.5)
+    image opquote_akira = Text("{size=20}{/size}", text_align=0.5)
+    image opquote_kyou = Text("{size=20}{/size}", text_align=0.5)
+    image opquote_hiroshi = Text("{size=20}{/size}", text_align=0.5)
 
 label start:
     stop music
@@ -330,7 +355,7 @@ label start:
 
     #call ch01_june from _call_ch01_june
     #call ch02_july from _call_ch02_july
-    call ch03_august
+    call ch03_august from _call_ch03_august
     #call ch04_september
     #call ch05_october
     #call ch06_november
@@ -523,6 +548,157 @@ label opening:
     stop music fadeout 1.0
     return
 
+label opening2:
+    play music bg_decisions noloop
+    scene black with dissolve
+    show openingb_2:
+        yanchor 0.5 ypos 0.5
+        xanchor 0.5 xpos 0.5
+    with Pause(5)
+    hide openingb_2
+    show openingb_3:
+        yanchor 0.5 ypos 0.5
+        xanchor 0.5 xpos 0.5
+    with Pause(4)
+    hide openingb_3
+    scene op title1 with Pause(4)
+    scene op title2 with Pause(4)
+    scene bg sha corridor night with dissolve
+    show openingb_4:
+        yanchor 0.5 ypos 0.5
+        xanchor 0.5 xpos 0.5
+    with Pause(5)
+    hide openingb_4
+    scene bg library genreference with dissolve
+    show openingb_5:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.9 xpos 0.9
+    with Pause(4)
+    hide openingb_5
+    scene bg facultyroom night with dissolve
+    show openingb_6:
+        yanchor 0.5 ypos 0.5
+        xanchor 0.5 xpos 0.5
+    with Pause(4)
+    hide openingb_6
+    scene bg msci night with dissolve
+    show openingb_7:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.2 xpos 0.2
+    with Pause(4)
+    hide openingb_7
+    scene black with dissolve
+    show openingb_9:
+        yanchor 0.5 ypos 0.5
+        xanchor 0.5 xpos 0.5
+    with Pause(4)
+    hide openingb_9
+    scene bg conferenceroom dark with dissolve
+    show miyu pissed at Eight7
+    show sayo seriousserious at Eight2
+    show openingname1:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.15 xpos 0.15
+    show openingname5:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.85 xpos 0.85
+    with Pause(2.0)
+    hide openingname1 with Dissolve(0.5)
+    hide openingname5 with Dissolve(0.5)
+    hide sayo with Dissolve(0.1)
+    hide miyu with Dissolve(0.1)
+
+    scene bg darkhallway3 with dissolve
+    show inoue seriousleft at Eight7
+    show ichirou smile at Eight2
+    show openingname6:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.15 xpos 0.15
+    show openingname4:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.85 xpos 0.85
+    with Pause(2.0)
+    hide openingname6 with Dissolve(0.5)
+    hide openingname4 with Dissolve(0.5)
+    hide inoue with Dissolve(0.1)
+    hide ichirou with Dissolve(0.1)
+
+    scene bg school gate morning with dissolve
+    show yoshiro surprised2 at Eight7
+    show hikaru smirk at Eight2
+    show openingname2:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.15 xpos 0.15
+    show openingname9:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.85 xpos 0.85
+    with Pause(2.0)
+    hide openingname2 with Dissolve(0.5)
+    hide openingname9 with Dissolve(0.5)
+    hide hikaru with Dissolve(0.1)
+    hide yoshiro with Dissolve(0.1)
+
+    scene bg school fields night with dissolve
+    show sumiko serious at Eight7
+    show akira proud at Eight2
+    show openingname8:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.15 xpos 0.15
+    show openingname7:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.85 xpos 0.85
+    with Pause(2.0)
+    hide openingname8 with Dissolve(0.5)
+    hide openingname7 with Dissolve(0.5)
+    hide akira with Dissolve(0.1)
+    hide sumiko with Dissolve(0.1)
+
+    scene bg pasteur night with dissolve
+    show hiroshi bored at Eight7
+    show kyou confused2 at Eight2
+    show openingname3:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.15 xpos 0.15
+    show openingname10:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.85 xpos 0.85
+    with Pause(2.0)
+    hide openingname3 with Dissolve(0.5)
+    hide openingname10 with Dissolve(0.5)
+    hide kyou with Dissolve(0.1)
+    hide hiroshi with Dissolve(0.1)
+
+    scene bg facultyroom night with dissolve
+    show emmerich determined at Three2
+    show ayumi seriousleft at Eight7
+    show ikuko smile at Eight2
+    show openingname11:
+        yanchor 0.6 ypos 0.6
+        xanchor 0.5 xpos 0.5
+    show openingname12:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.15 xpos 0.15
+    show openingname13:
+        yanchor 0.8 ypos 0.8
+        xanchor 0.85 xpos 0.85
+    with Pause(2.0)
+    hide openingname12 with Dissolve(0.3)
+    hide openingname11 with Dissolve(0.3)
+    hide openingname13 with Dissolve(0.3)
+    hide ikuko with Dissolve(0.1)
+    hide ayumi with Dissolve(0.1)
+    hide emmerich with Dissolve(0.1)
+
+    scene op roulette with dissolve
+    show openingb_8:
+        yanchor 0.5 ypos 0.5
+        xanchor 0.5 xpos 0.5
+    with Pause(2.5)
+    hide openingb_8
+
+    stop music fadeout 2.0
+    return
+
 label credits:
     $ credits_speed = 400 #scrolling speed in seconds
     play music guest_whyorwhynot
@@ -542,5 +718,28 @@ label credits:
         xanchor 0.5 xpos 0.5
     with dissolve
     with Pause(3)
+    hide thanks
+    return
+
+label credits2:
+    $ credits_speed = 600 #scrolling speed in seconds
+    play music bg_corruption
+    scene black with dissolve
+    show theend:
+        yanchor 0.5 ypos 0.5
+        xanchor 0.5 xpos 0.5
+    with dissolve
+    with Pause(3)
+    hide theend
+    scene bg bedroom2 nightmare with dissolve
+    show cred at Move((0.5, 5.0), (0.5, 0.0), credits_speed, repeat=False, bounce=False, xanchor="center", yanchor="bottom")
+    with Pause(credits_speed)
+    scene black with dissolve
+    show thanks:
+        yanchor 0.5 ypos 0.5
+        xanchor 0.5 xpos 0.5
+    with dissolve
+    with Pause(3)
+    stop music fadeout 2.0
     hide thanks
     return
